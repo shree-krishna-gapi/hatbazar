@@ -1,0 +1,78 @@
+import 'dart:async';
+import 'package:flutter/material.dart';
+import 'package:hatbazar/db/deal_option_dao.dart';
+import 'package:hatbazar/api/common/ps_resource.dart';
+import 'package:hatbazar/api/common/ps_status.dart';
+import 'package:hatbazar/api/ps_api_service.dart';
+import 'package:hatbazar/repository/Common/ps_repository.dart';
+import 'package:hatbazar/viewobject/deal_option.dart';
+
+class ItemDealOptionRepository extends PsRepository {
+  ItemDealOptionRepository(
+      {@required PsApiService psApiService,
+      @required ItemDealOptionDao itemDealOptionDao}) {
+    _psApiService = psApiService;
+    _itemDealOptionDao = itemDealOptionDao;
+  }
+
+  PsApiService _psApiService;
+  ItemDealOptionDao _itemDealOptionDao;
+  final String _primaryKey = 'id';
+
+  Future<dynamic> insert(DealOption dealOption) async {
+    return _itemDealOptionDao.insert(_primaryKey, dealOption);
+  }
+
+  Future<dynamic> update(DealOption dealOption) async {
+    return _itemDealOptionDao.update(dealOption);
+  }
+
+  Future<dynamic> delete(DealOption dealOption) async {
+    return _itemDealOptionDao.delete(dealOption);
+  }
+
+  Future<dynamic> getItemDealOptionList(
+      StreamController<PsResource<List<DealOption>>> itemDealOptionListStream,
+      bool isConnectedToIntenet,
+      int limit,
+      int offset,
+      PsStatus status,
+      {bool isLoadFromServer = true}) async {
+    // final Finder finder = Finder(filter: Filter.equals('cat_id', categoryId));
+
+    itemDealOptionListStream.sink
+        .add(await _itemDealOptionDao.getAll(status: status));
+
+    final PsResource<List<DealOption>> _resource =
+        await _psApiService.getItemDealOptionList(limit, offset);
+
+    if (_resource.status == PsStatus.SUCCESS) {
+      await _itemDealOptionDao.insertAll(_primaryKey, _resource.data);
+      itemDealOptionListStream.sink.add(await _itemDealOptionDao.getAll());
+    }
+  }
+
+  Future<dynamic> getNextPageItemDealOptionList(
+      StreamController<PsResource<List<DealOption>>> itemDealOptionListStream,
+      bool isConnectedToIntenet,
+      int limit,
+      int offset,
+      PsStatus status,
+      {bool isLoadFromServer = true}) async {
+    itemDealOptionListStream.sink
+        .add(await _itemDealOptionDao.getAll(status: status));
+
+    final PsResource<List<DealOption>> _resource =
+        await _psApiService.getItemDealOptionList(limit, offset);
+
+    if (_resource.status == PsStatus.SUCCESS) {
+      _itemDealOptionDao
+          .insertAll(_primaryKey, _resource.data)
+          .then((dynamic data) async {
+        itemDealOptionListStream.sink.add(await _itemDealOptionDao.getAll());
+      });
+    } else {
+      itemDealOptionListStream.sink.add(await _itemDealOptionDao.getAll());
+    }
+  }
+}

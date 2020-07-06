@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "505384053995",
+    "firebase_url": "https://flutter-buy-and-sell.firebaseio.com",
+    "project_id": "flutter-buy-and-sell",
+    "storage_bucket": "flutter-buy-and-sell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505384053995:android:ee25be13120e023b4ae2ae",
+        "android_client_info": {
+          "package_name": "com.travhill.hatbazar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505384053995-os47l4nuda9ummu2u33btva3uocdoqd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtTRnm8XIQqcFo2B-eao0oelE4T0etKhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505384053995-os47l4nuda9ummu2u33btva3uocdoqd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

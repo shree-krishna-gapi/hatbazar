@@ -1,0 +1,310 @@
+[
+    {
+        "districtId" : 1,
+        "districtName" : "Panchther",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 2,
+        "districtName" : "Illam",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 3,
+        "districtName" : "Jhapa",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 4,
+        "districtName" : "Morang",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 5,
+        "districtName" : "Sunsari",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 6,
+        "districtName" : "Dhankuta",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 7,
+        "districtName" : "Terhathum",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 8,
+        "districtName" : "Sankhuwasabha",
+        "stateId" : 1 },
+    {
+        "districtId" : 9,
+        "districtName" : "Bhojpur",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 10,
+        "districtName" : "Solukhumbu",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 11,
+        "districtName" : "Okhaldhunga",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 12,
+        "districtName" : "Khotang",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 13,
+        "districtName" : "Udaypur",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 14,
+        "districtName" : "Saptari",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 15,
+        "districtName" : "Siraha",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 16,
+        "districtName" : "Dhanusha",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 17,
+        "districtName" : "Mahottari",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 18,
+        "districtName" : "Sarlahi",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 19,
+        "districtName" : "Rautahat",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 20,
+        "districtName" : "Bara",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 21,
+        "districtName" : "Parsa",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 22,
+        "districtName" : "Sindhuli",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 23,
+        "districtName" : "Ramechhap",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 24,
+        "districtName" : "Dolakha",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 25,
+        "districtName" : "Sindhupalchowk",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 26,
+        "districtName" : "Kavrepalanchowk",
+        "stateId" : 3 } ,
+    {
+        "districtId": 27,
+        "districtName" : "Lalitpur",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 28,
+        "districtName" : "Bhaktapur",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 29,
+        "districtName" : "Kathmandu",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 30,
+        "districtName" : "Nuwakot",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 31,
+        "districtName" : "Rasuwa",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 32,
+        "districtName" : "Dhadhing",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 33,
+        "districtName" : "Makwanpur",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 34,
+        "districtName" : "Chitwan",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 35,
+        "districtName" : "Gorkha",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 36,
+        "districtName" : "Lamjung",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 37,
+        "districtName" : "Tanahun",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 38,
+        "districtName" : "Syangjha",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 39,
+        "districtName" : "Kaski",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 40,
+        "districtName" : "Manang",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 41,
+        "districtName" : "Mustang",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 42,
+        "districtName" : "Myagdi",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 43,
+        "districtName" : "Parbat",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 44,
+        "districtName" : "Baglung",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 45,
+        "districtName" : "Nawalparasi East",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 46,
+        "districtName" : "Gulmi",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 47,
+        "districtName" : "Palpa",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 48,
+        "districtName" : "Rupandehi",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 49,
+        "districtName" : "Kapilbastu",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 50,
+        "districtName" : "Arghakhachi",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 51,
+        "districtName" : "Pyuthan",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 52,
+        "districtName" : "Rolpa",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 53,
+        "districtName" : "Rukum East",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 54,
+        "districtName" : "Dang",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 55,
+        "districtName" : "Banke",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 56,
+        "districtName" : "Bardiya",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 57,
+        "districtName" : "Nawalparasi West",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 58,
+        "districtName" : "Rukum West",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 59,
+        "districtName" : "Salyan",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 60,
+        "districtName" : "Surkhet",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 61,
+        "districtName" : "Dailekh",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 62,
+        "districtName" : "Jajarkot",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 63,
+        "districtName" : "Dolpa",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 64,
+        "districtName" : "Jumla",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 65,
+        "districtName" : "Kalikot",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 66,
+        "districtName" : "Mugu",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 67,
+        "districtName" : "Humla",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 68,
+        "districtName" : "Bajura",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 69,
+        "districtName" : "Bajhang",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 70,
+        "districtName" : "Achham",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 71,
+        "districtName" : "Doti",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 72,
+        "districtName" : "Kailali",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 73,
+        "districtName" : "Kanchanpur",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 74,
+        "districtName" : "Dadeldhura",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 75,
+        "districtName" : "Baitadi",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 76,
+        "districtName" : "Darchula",
+        "stateId" : 7 },
+    {
+        "districtId" : 77,
+        "districtName" : "Taplejung",
+        "stateId" : 1 }
+]

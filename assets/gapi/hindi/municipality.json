@@ -1,0 +1,33 @@
+[
+    {
+        "mId" : 1,
+        "name" : "Municipality 1",
+        "sid" : 1,
+        "did" : 1
+
+    },
+    {
+        "mId" : 2,
+        "name" : "Municipality 2",
+        "sid" : 1,
+        "did" : 1
+    },
+    {
+        "mId" : 3,
+        "name" : "Municipality 3",
+        "sid" : 2,
+        "did" : 1
+    },
+    {
+        "mId" : 4,
+        "name" : "Municipality 4",
+        "sid" : 2,
+        "did" : 1
+    },
+    {
+        "sId" : 5,
+        "name" : "Municipality 5",
+        "sid" : 3,
+        "did" : 1
+    }
+]

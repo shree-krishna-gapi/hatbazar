@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "962884002493",
+    "firebase_url": "https://hatbazar-34d3e.firebaseio.com",
+    "project_id": "hatbazar-34d3e",
+    "storage_bucket": "hatbazar-34d3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962884002493:android:6a70420780a34f3f298dd4",
+        "android_client_info": {
+          "package_name": "com.hatbazar.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962884002493-7q4m83pi2oamb82ltoa7hl25hihs7ole.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARfOaUcjbgiHGXtScipC1UpQstPuRQq6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962884002493-7q4m83pi2oamb82ltoa7hl25hihs7ole.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962884002493:android:72c525df9583d8b6298dd4",
+        "android_client_info": {
+          "package_name": "com.travhill.hatbazar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962884002493-7q4m83pi2oamb82ltoa7hl25hihs7ole.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARfOaUcjbgiHGXtScipC1UpQstPuRQq6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962884002493-7q4m83pi2oamb82ltoa7hl25hihs7ole.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

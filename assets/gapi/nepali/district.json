@@ -1,0 +1,310 @@
+[
+    {
+        "districtId" : 1,
+        "districtName" : "पाँचथर",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 2,
+        "districtName" : "ईलाम",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 3,
+        "districtName" : "झापा",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 4,
+        "districtName" : "मोरंग",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 5,
+        "districtName" : "सुनसरी",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 6,
+        "districtName" : "धनकुटा",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 7,
+        "districtName" : "तेहथुम",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 8,
+        "districtName" : "संखुवासभा",
+        "stateId" : 1 },
+    {
+        "districtId" : 9,
+        "districtName" : "भोजपुर",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 10,
+        "districtName" : "सोलुखुम्बु",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 11,
+        "districtName" : "ओखलढुंगा",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 12,
+        "districtName" : "खोटाङ",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 13,
+        "districtName" : "उदयपुर",
+        "stateId" : 1 } ,
+    {
+        "districtId" : 14,
+        "districtName" : "सप्तरी",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 15,
+        "districtName" : "सिराहा",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 16,
+        "districtName" : "धनुषा",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 17,
+        "districtName" : "महोत्तरी",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 18,
+        "districtName" : "सर्लाही",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 19,
+        "districtName" : "रौतहट",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 20,
+        "districtName" : "वारा",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 21,
+        "districtName" : "पर्सा",
+        "stateId" : 2 } ,
+    {
+        "districtId" : 22,
+        "districtName" : "सिन्धुली",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 23,
+        "districtName" : "रामेछाप",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 24,
+        "districtName" : "दोलखा",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 25,
+        "districtName" : "सिन्धुपाल्चोक",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 26,
+        "districtName" : "काभ्रेपलान्चोक",
+        "stateId" : 3 } ,
+    {
+        "districtId": 27,
+        "districtName" : "ललितपुर",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 28,
+        "districtName" : "भक्तपुर",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 29,
+        "districtName" : "काठमाण्डौ",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 30,
+        "districtName" : "नुवाकोट",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 31,
+        "districtName" : "रसुवा",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 32,
+        "districtName" : "धादिङ",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 33,
+        "districtName" : "मकवानपुर",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 34,
+        "districtName" : "चितवन",
+        "stateId" : 3 } ,
+    {
+        "districtId" : 35,
+        "districtName" : "गोरखा",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 36,
+        "districtName" : "लमजुङ",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 37,
+        "districtName" : "तनहुँ",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 38,
+        "districtName" : "स्याङजा",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 39,
+        "districtName" : "कास्की",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 40,
+        "districtName" : "मनाङ",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 41,
+        "districtName" : "मुस्ताङ",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 42,
+        "districtName" : "म्याग्दी",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 43,
+        "districtName" : "पर्वत",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 44,
+        "districtName" : "वाग्लुङ",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 45,
+        "districtName" : "नवलपरासी पूर्व",
+        "stateId" : 4 } ,
+    {
+        "districtId" : 46,
+        "districtName" : "गुल्मी",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 47,
+        "districtName" : "पाल्पा",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 48,
+        "districtName" : "रुपन्देही",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 49,
+        "districtName" : "कपिलबस्तु",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 50,
+        "districtName" : "अर्घाखाँची",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 51,
+        "districtName" : "प्यूठान",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 52,
+        "districtName" : "रोल्पा",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 53,
+        "districtName" : "रुकुम पूर्व",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 54,
+        "districtName" : "दाङ",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 55,
+        "districtName" : "बाँके",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 56,
+        "districtName" : "बर्दिया",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 57,
+        "districtName" : "नवलपरासी पश्चिम",
+        "stateId" : 5 } ,
+    {
+        "districtId" : 58,
+        "districtName" : "रुकुम पश्चिम",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 59,
+        "districtName" : "सल्यान",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 60,
+        "districtName" : "सुर्खेत",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 61,
+        "districtName" : "दैलेख",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 62,
+        "districtName" : "जाजरकोट",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 63,
+        "districtName" : "डोल्पा",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 64,
+        "districtName" : "जुम्ला",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 65,
+        "districtName" : "कालिकोट",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 66,
+        "districtName" : "मुगु",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 67,
+        "districtName" : "हुम्ला",
+        "stateId" : 6 } ,
+    {
+        "districtId" : 68,
+        "districtName" : "बाजुरा",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 69,
+        "districtName" : "बझाङ",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 70,
+        "districtName" : "अछाम",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 71,
+        "districtName" : "डोटी",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 72,
+        "districtName" : "कैलाली",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 73,
+        "districtName" : "कञ्चनपुर",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 74,
+        "districtName" : "डडेलधुरा",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 75,
+        "districtName" : "बैतडी",
+        "stateId" : 7 } ,
+    {
+        "districtId" : 76,
+        "districtName" : "दार्चुला",
+        "stateId" : 7 },
+    {
+        "districtId" : 77,
+        "districtName" : "ताप्लेजुङ",
+        "stateId" : 1 }
+]

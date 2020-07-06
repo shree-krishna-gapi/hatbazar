@@ -1,0 +1,27 @@
+[
+    {
+        "wId" : 1,
+        "name" : "ward 1",
+        "state" : 1
+    },
+    {
+        "wId" : 2,
+        "name" : "ward 2",
+        "state" : 1
+    },
+    {
+        "wId" : 3,
+        "name" : "ward 3",
+        "state" : 2
+    },
+    {
+        "wId" : 4,
+        "name" : "ward 4",
+        "state" : 2
+    },
+    {
+        "wId" : 5,
+        "name" : "ward 5",
+        "state" : 3
+    }
+]
