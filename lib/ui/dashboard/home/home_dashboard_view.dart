@@ -81,7 +81,7 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
   final CategoryParameterHolder categoryIconList = CategoryParameterHolder();
   // final FirebaseMessaging _fcm = FirebaseMessaging();
   final TextEditingController userInputItemNameTextEditingController =
-      TextEditingController();
+  TextEditingController();
 
   @override
   void dispose() {
@@ -220,10 +220,10 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                 if (valueHolder.loginUserId != null &&
                     valueHolder.loginUserId != '') {
                   final UserUnreadMessageParameterHolder
-                      userUnreadMessageHolder =
-                      UserUnreadMessageParameterHolder(
-                          userId: valueHolder.loginUserId,
-                          deviceToken: valueHolder.deviceToken);
+                  userUnreadMessageHolder =
+                  UserUnreadMessageParameterHolder(
+                      userId: valueHolder.loginUserId,
+                      deviceToken: valueHolder.deviceToken);
                   userUnreadMessageProvider
                       .userUnreadMessageCount(userUnreadMessageHolder);
                 }
@@ -241,50 +241,51 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
               lazy: false,
               create: (BuildContext context) {
                 final ItemListFromFollowersProvider provider =
-                    ItemListFromFollowersProvider(
-                        repo: repo2,
-                        psValueHolder: valueHolder,
-                        limit: PsConfig.FOLLOWER_ITEM_LOADING_LIMIT);
+                ItemListFromFollowersProvider(
+                    repo: repo2,
+                    psValueHolder: valueHolder,
+                    limit: PsConfig.FOLLOWER_ITEM_LOADING_LIMIT);
                 provider.loadItemListFromFollowersList(
                     Utils.checkUserLoginId(provider.psValueHolder));
                 return provider;
               }),
         ],
         child: Scaffold(
-          floatingActionButton: FadeTransition(
-            opacity: widget.animationControllerForFab,
-            child: ScaleTransition(
-              scale: widget.animationControllerForFab,
-              child: FloatingActionButton.extended(
-                onPressed: () async {
-                  if (await Utils.checkInternetConnectivity()) {
-                    Utils.navigateOnUserVerificationView(
-                        _categoryProvider, context, () async {
-                      Navigator.pushNamed(context, RoutePaths.itemEntry,
-                          arguments: ItemEntryIntentHolder(
-                              flag: PsConst.ADD_NEW_ITEM, item: Product()));
-                    });
-                  } else {
-                    showDialog<dynamic>(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return ErrorDialog(
-                            message: Utils.getString(
-                                context, 'error_dialog__no_internet'),
-                          );
-                        });
-                  }
-                },
-                icon: Icon(Icons.camera_alt, color: PsColors.white),
-                backgroundColor: PsColors.mainColor,
-                label: Text(Utils.getString(context, 'dashboard__submit_ad'),
-                    style: Theme.of(context)
-                        .textTheme
-                        .caption
-                        .copyWith(color: PsColors.white)),
-              ),
-            ),
-          ),
+//          floatingActionButton: FadeTransition(
+//            opacity: widget.animationControllerForFab,
+//            child: ScaleTransition(
+//              scale: widget.animationControllerForFab,
+//              child: FloatingActionButton.extended(
+//                onPressed: () async {
+//                  if (await Utils.checkInternetConnectivity()) {
+//                    Utils.navigateOnUserVerificationView(
+//                        _categoryProvider, context, () async {
+//                      Navigator.pushNamed(context, RoutePaths.itemEntry,
+//                          arguments: ItemEntryIntentHolder(
+//                              flag: PsConst.ADD_NEW_ITEM, item: Product()));
+//                    });
+//                  } else {
+//                    showDialog<dynamic>(
+//                        context: context,
+//                        builder: (BuildContext context) {
+//                          return ErrorDialog(
+//                            message: Utils.getString(
+//                                context, 'error_dialog__no_internet'),
+//                          );
+//                        });
+//                  }
+//                },
+//                icon: Icon(Icons.camera_alt, color: PsColors.white),
+//                backgroundColor: PsColors.mainColor,
+//                label: Text(Utils.getString(context, 'dashboard__submit_ad'),
+//                    style: Theme.of(context)
+//                        .textTheme
+//                        .caption
+//                        .copyWith(color: PsColors.white)),
+//              ),
+//            ),
+//          ),
+// gapi home page floating buttom no needed
 
           // floatingActionButton: AnimatedContainer(
           //   duration: const Duration(milliseconds: 300),
@@ -332,7 +333,7 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                 // FloatingActionButton(child: Icon(Icons.add), onPressed: () {}),
                 _HomeHeaderWidget(
                   animationController:
-                      widget.animationController, //animationController,
+                  widget.animationController, //animationController,
                   animation: Tween<double>(begin: 0.0, end: 1.0).animate(
                       CurvedAnimation(
                           parent: widget.animationController,
@@ -340,12 +341,12 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                               curve: Curves.fastOutSlowIn))),
                   psValueHolder: valueHolder,
                   itemNameTextEditingController:
-                      userInputItemNameTextEditingController,
+                  userInputItemNameTextEditingController,
                 ),
                 _HomeCategoryHorizontalListWidget(
                   psValueHolder: valueHolder,
                   animationController:
-                      widget.animationController, //animationController,
+                  widget.animationController, //animationController,
                   animation: Tween<double>(begin: 0.0, end: 1.0).animate(
                       CurvedAnimation(
                           parent: widget.animationController,
@@ -355,7 +356,7 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                 _RecentProductHorizontalListWidget(
                   psValueHolder: valueHolder,
                   animationController:
-                      widget.animationController, //animationController,
+                  widget.animationController, //animationController,
                   animation: Tween<double>(begin: 0.0, end: 1.0).animate(
                       CurvedAnimation(
                           parent: widget.animationController,
@@ -365,7 +366,7 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                 _HomePopularProductHorizontalListWidget(
                   psValueHolder: valueHolder,
                   animationController:
-                      widget.animationController, //animationController,
+                  widget.animationController, //animationController,
                   animation: Tween<double>(begin: 0.0, end: 1.0).animate(
                       CurvedAnimation(
                           parent: widget.animationController,
@@ -374,7 +375,7 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                 ),
                 _HomeBlogProductSliderListWidget(
                   animationController:
-                      widget.animationController, //animationController,
+                  widget.animationController, //animationController,
                   animation: Tween<double>(begin: 0.0, end: 1.0).animate(
                       CurvedAnimation(
                           parent: widget.animationController,
@@ -384,7 +385,7 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
 
                 _HomeItemListFromFollowersHorizontalListWidget(
                   animationController:
-                      widget.animationController, //animationController,
+                  widget.animationController, //animationController,
                   animation: Tween<double>(begin: 0.0, end: 1.0).animate(
                       CurvedAnimation(
                           parent: widget.animationController,
@@ -401,9 +402,9 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
 class _HomePopularProductHorizontalListWidget extends StatelessWidget {
   const _HomePopularProductHorizontalListWidget(
       {Key key,
-      @required this.animationController,
-      @required this.animation,
-      @required this.psValueHolder})
+        @required this.animationController,
+        @required this.animation,
+        @required this.psValueHolder})
       : super(key: key);
 
   final AnimationController animationController;
@@ -419,76 +420,76 @@ class _HomePopularProductHorizontalListWidget extends StatelessWidget {
           return AnimatedBuilder(
             animation: animationController,
             child: (productProvider.productList.data != null &&
-                    productProvider.productList.data.isNotEmpty)
+                productProvider.productList.data.isNotEmpty)
                 ? Column(
-                    children: <Widget>[
-                      _MyHeaderWidget(
-                        headerName: Utils.getString(
-                            context, 'home__drawer_menu_popular_item'),
-                        headerDescription: Utils.getString(
-                            context, 'dashboard__category_desc'),
-                        viewAllClicked: () {
-                          Navigator.pushNamed(
-                              context, RoutePaths.filterProductList,
-                              arguments: ProductListIntentHolder(
-                                  appBarTitle: Utils.getString(context,
-                                      'home__drawer_menu_popular_item'),
-                                  productParameterHolder:
-                                      ProductParameterHolder()
-                                          .getPopularParameterHolder()));
-                        },
-                      ),
-                      Container(
-                          height: PsDimens.space340,
-                          width: MediaQuery.of(context).size.width,
-                          child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemCount:
-                                  productProvider.productList.data.length,
-                              itemBuilder: (BuildContext context, int index) {
-                                if (productProvider.productList.status ==
-                                    PsStatus.BLOCK_LOADING) {
-                                  return Shimmer.fromColors(
-                                      baseColor: PsColors.grey,
-                                      highlightColor: PsColors.white,
-                                      child: Row(children: const <Widget>[
-                                        PsFrameUIForLoading(),
-                                      ]));
-                                } else {
-                                  final Product product =
-                                      productProvider.productList.data[index];
-                                  return ProductHorizontalListItem(
-                                    coreTagKey:
-                                        productProvider.hashCode.toString() +
-                                            product.id,
-                                    product:
-                                        productProvider.productList.data[index],
-                                    onTap: () {
-                                      print(productProvider.productList
-                                          .data[index].defaultPhoto.imgPath);
-                                      final ProductDetailIntentHolder holder =
-                                          ProductDetailIntentHolder(
-                                              product: productProvider
-                                                  .productList.data[index],
-                                              heroTagImage: productProvider
-                                                      .hashCode
-                                                      .toString() +
-                                                  product.id +
-                                                  PsConst.HERO_TAG__IMAGE,
-                                              heroTagTitle: productProvider
-                                                      .hashCode
-                                                      .toString() +
-                                                  product.id +
-                                                  PsConst.HERO_TAG__TITLE);
-                                      Navigator.pushNamed(
-                                          context, RoutePaths.productDetail,
-                                          arguments: holder);
-                                    },
-                                  );
-                                }
-                              }))
-                    ],
-                  )
+              children: <Widget>[
+                _MyHeaderWidget(
+                  headerName: Utils.getString(
+                      context, 'home__drawer_menu_popular_item'),
+                  headerDescription: Utils.getString(
+                      context, 'dashboard__category_desc'),
+                  viewAllClicked: () {
+                    Navigator.pushNamed(
+                        context, RoutePaths.filterProductList,
+                        arguments: ProductListIntentHolder(
+                            appBarTitle: Utils.getString(context,
+                                'home__drawer_menu_popular_item'),
+                            productParameterHolder:
+                            ProductParameterHolder()
+                                .getPopularParameterHolder()));
+                  },
+                ),
+                Container(
+                    height: PsDimens.space340,
+                    width: MediaQuery.of(context).size.width,
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount:
+                        productProvider.productList.data.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          if (productProvider.productList.status ==
+                              PsStatus.BLOCK_LOADING) {
+                            return Shimmer.fromColors(
+                                baseColor: PsColors.grey,
+                                highlightColor: PsColors.white,
+                                child: Row(children: const <Widget>[
+                                  PsFrameUIForLoading(),
+                                ]));
+                          } else {
+                            final Product product =
+                            productProvider.productList.data[index];
+                            return ProductHorizontalListItem(
+                              coreTagKey:
+                              productProvider.hashCode.toString() +
+                                  product.id,
+                              product:
+                              productProvider.productList.data[index],
+                              onTap: () {
+                                print(productProvider.productList
+                                    .data[index].defaultPhoto.imgPath);
+                                final ProductDetailIntentHolder holder =
+                                ProductDetailIntentHolder(
+                                    product: productProvider
+                                        .productList.data[index],
+                                    heroTagImage: productProvider
+                                        .hashCode
+                                        .toString() +
+                                        product.id +
+                                        PsConst.HERO_TAG__IMAGE,
+                                    heroTagTitle: productProvider
+                                        .hashCode
+                                        .toString() +
+                                        product.id +
+                                        PsConst.HERO_TAG__TITLE);
+                                Navigator.pushNamed(
+                                    context, RoutePaths.productDetail,
+                                    arguments: holder);
+                              },
+                            );
+                          }
+                        }))
+              ],
+            )
                 : Container(),
             builder: (BuildContext context, Widget child) {
               return FadeTransition(
@@ -509,9 +510,9 @@ class _HomePopularProductHorizontalListWidget extends StatelessWidget {
 class _RecentProductHorizontalListWidget extends StatefulWidget {
   const _RecentProductHorizontalListWidget(
       {Key key,
-      @required this.animationController,
-      @required this.animation,
-      @required this.psValueHolder})
+        @required this.animationController,
+        @required this.animation,
+        @required this.psValueHolder})
       : super(key: key);
 
   final AnimationController animationController;
@@ -545,89 +546,89 @@ class __RecentProductHorizontalListWidgetState
     }
 
     return SliverToBoxAdapter(
-        // fdfdf
+      // fdfdf
         child: Consumer<RecentProductProvider>(builder: (BuildContext context,
             RecentProductProvider productProvider, Widget child) {
-      return AnimatedBuilder(
-          animation: widget.animationController,
-          child: (productProvider.productList.data != null &&
+          return AnimatedBuilder(
+              animation: widget.animationController,
+              child: (productProvider.productList.data != null &&
                   productProvider.productList.data.isNotEmpty)
-              ? Column(children: <Widget>[
-                  _MyHeaderWidget(
-                    headerName:
-                        Utils.getString(context, 'dashboard_recent_product'),
-                    headerDescription:
-                        Utils.getString(context, 'dashboard_recent_item_desc'),
-                    viewAllClicked: () {
-                      Navigator.pushNamed(context, RoutePaths.filterProductList,
-                          arguments: ProductListIntentHolder(
-                              appBarTitle: Utils.getString(
-                                  context, 'dashboard_recent_product'),
-                              productParameterHolder: ProductParameterHolder()
-                                  .getRecentParameterHolder()));
-                    },
-                  ),
-                  Container(
-                      height: PsDimens.space340,
-                      width: MediaQuery.of(context).size.width,
-                      child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemCount: productProvider.productList.data.length,
-                          itemBuilder: (BuildContext context, int index) {
-                            if (productProvider.productList.status ==
-                                PsStatus.BLOCK_LOADING) {
-                              return Shimmer.fromColors(
-                                  baseColor: PsColors.grey,
-                                  highlightColor: PsColors.white,
-                                  child: Row(children: const <Widget>[
-                                    PsFrameUIForLoading(),
-                                  ]));
-                            } else {
-                              final Product product =
-                                  productProvider.productList.data[index];
-                              return ProductHorizontalListItem(
-                                coreTagKey:
-                                    productProvider.hashCode.toString() +
-                                        product.id,
-                                product:
-                                    productProvider.productList.data[index],
-                                onTap: () {
-                                  print(productProvider.productList.data[index]
-                                      .defaultPhoto.imgPath);
+                  ? Column(children: <Widget>[
+                _MyHeaderWidget(
+                  headerName:
+                  Utils.getString(context, 'dashboard_recent_product'),
+                  headerDescription:
+                  Utils.getString(context, 'dashboard_recent_item_desc'),
+                  viewAllClicked: () {
+                    Navigator.pushNamed(context, RoutePaths.filterProductList,
+                        arguments: ProductListIntentHolder(
+                            appBarTitle: Utils.getString(
+                                context, 'dashboard_recent_product'),
+                            productParameterHolder: ProductParameterHolder()
+                                .getRecentParameterHolder()));
+                  },
+                ),
+                Container(
+                    height: PsDimens.space340,
+                    width: MediaQuery.of(context).size.width,
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: productProvider.productList.data.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          if (productProvider.productList.status ==
+                              PsStatus.BLOCK_LOADING) {
+                            return Shimmer.fromColors(
+                                baseColor: PsColors.grey,
+                                highlightColor: PsColors.white,
+                                child: Row(children: const <Widget>[
+                                  PsFrameUIForLoading(),
+                                ]));
+                          } else {
+                            final Product product =
+                            productProvider.productList.data[index];
+                            return ProductHorizontalListItem(
+                              coreTagKey:
+                              productProvider.hashCode.toString() +
+                                  product.id,
+                              product:
+                              productProvider.productList.data[index],
+                              onTap: () {
+                                print(productProvider.productList.data[index]
+                                    .defaultPhoto.imgPath);
 
-                                  final ProductDetailIntentHolder holder =
-                                      ProductDetailIntentHolder(
-                                          product: productProvider
-                                              .productList.data[index],
-                                          heroTagImage: productProvider.hashCode
-                                                  .toString() +
-                                              product.id +
-                                              PsConst.HERO_TAG__IMAGE,
-                                          heroTagTitle: productProvider.hashCode
-                                                  .toString() +
-                                              product.id +
-                                              PsConst.HERO_TAG__TITLE);
-                                  Navigator.pushNamed(
-                                      context, RoutePaths.productDetail,
-                                      arguments: holder);
-                                },
-                              );
-                            }
-                          })),
-                  const PsAdMobBannerWidget(
-                    admobBannerSize: AdmobBannerSize.MEDIUM_RECTANGLE,
-                  ),
-                ])
-              : Container(),
-          builder: (BuildContext context, Widget child) {
-            return FadeTransition(
-                opacity: widget.animation,
-                child: Transform(
-                    transform: Matrix4.translationValues(
-                        0.0, 100 * (1.0 - widget.animation.value), 0.0),
-                    child: child));
-          });
-    }));
+                                final ProductDetailIntentHolder holder =
+                                ProductDetailIntentHolder(
+                                    product: productProvider
+                                        .productList.data[index],
+                                    heroTagImage: productProvider.hashCode
+                                        .toString() +
+                                        product.id +
+                                        PsConst.HERO_TAG__IMAGE,
+                                    heroTagTitle: productProvider.hashCode
+                                        .toString() +
+                                        product.id +
+                                        PsConst.HERO_TAG__TITLE);
+                                Navigator.pushNamed(
+                                    context, RoutePaths.productDetail,
+                                    arguments: holder);
+                              },
+                            );
+                          }
+                        })),
+                const PsAdMobBannerWidget(
+                  admobBannerSize: AdmobBannerSize.MEDIUM_RECTANGLE,
+                ),
+              ])
+                  : Container(),
+              builder: (BuildContext context, Widget child) {
+                return FadeTransition(
+                    opacity: widget.animation,
+                    child: Transform(
+                        transform: Matrix4.translationValues(
+                            0.0, 100 * (1.0 - widget.animation.value), 0.0),
+                        child: child));
+              });
+        }));
   }
 }
 
@@ -646,9 +647,9 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
     const int count = 6;
     final Animation<double> animation = Tween<double>(begin: 0.0, end: 1.0)
         .animate(CurvedAnimation(
-            parent: animationController,
-            curve: const Interval((1 / count) * 1, 1.0,
-                curve: Curves.fastOutSlowIn)));
+        parent: animationController,
+        curve: const Interval((1 / count) * 1, 1.0,
+            curve: Curves.fastOutSlowIn)));
 
     return SliverToBoxAdapter(
       child: Consumer<BlogProvider>(builder:
@@ -656,43 +657,43 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
         return AnimatedBuilder(
             animation: animationController,
             child: (blogProvider.blogList != null &&
-                    blogProvider.blogList.data.isNotEmpty)
+                blogProvider.blogList.data.isNotEmpty)
                 ? Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      _MyHeaderWidget(
-                        headerName:
-                            Utils.getString(context, 'home__menu_drawer_blog'),
-                        headerDescription: Utils.getString(context, ''),
-                        viewAllClicked: () {
-                          Navigator.pushNamed(
-                            context,
-                            RoutePaths.blogList,
-                          );
-                        },
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          boxShadow: <BoxShadow>[
-                            BoxShadow(
-                                color: PsColors.mainLightShadowColor,
-                                offset: const Offset(1.1, 1.1),
-                                blurRadius: 20.0),
-                          ],
-                        ),
-                        margin: const EdgeInsets.only(
-                            top: PsDimens.space8, bottom: PsDimens.space20),
-                        width: double.infinity,
-                        child: BlogSliderView(
-                          blogList: blogProvider.blogList.data,
-                          onTap: (Blog blog) {
-                            Navigator.pushNamed(context, RoutePaths.blogDetail,
-                                arguments: blog);
-                          },
-                        ),
-                      )
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                _MyHeaderWidget(
+                  headerName:
+                  Utils.getString(context, 'home__menu_drawer_blog'),
+                  headerDescription: Utils.getString(context, ''),
+                  viewAllClicked: () {
+                    Navigator.pushNamed(
+                      context,
+                      RoutePaths.blogList,
+                    );
+                  },
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    boxShadow: <BoxShadow>[
+                      BoxShadow(
+                          color: PsColors.mainLightShadowColor,
+                          offset: const Offset(1.1, 1.1),
+                          blurRadius: 20.0),
                     ],
-                  )
+                  ),
+                  margin: const EdgeInsets.only(
+                      top: PsDimens.space8, bottom: PsDimens.space20),
+                  width: double.infinity,
+                  child: BlogSliderView(
+                    blogList: blogProvider.blogList.data,
+                    onTap: (Blog blog) {
+                      Navigator.pushNamed(context, RoutePaths.blogDetail,
+                          arguments: blog);
+                    },
+                  ),
+                )
+              ],
+            )
                 : Container(),
             builder: (BuildContext context, Widget child) {
               return FadeTransition(
@@ -710,9 +711,9 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
 class _HomeCategoryHorizontalListWidget extends StatefulWidget {
   const _HomeCategoryHorizontalListWidget(
       {Key key,
-      @required this.animationController,
-      @required this.animation,
-      @required this.psValueHolder})
+        @required this.animationController,
+        @required this.animation,
+        @required this.psValueHolder})
       : super(key: key);
 
   final AnimationController animationController;
@@ -734,67 +735,67 @@ class __HomeCategoryHorizontalListWidgetState
         return AnimatedBuilder(
             animation: widget.animationController,
             child: (categoryProvider.categoryList.data != null &&
-                    categoryProvider.categoryList.data.isNotEmpty)
+                categoryProvider.categoryList.data.isNotEmpty)
                 ? Column(children: <Widget>[
-                    _MyHeaderWidget(
-                      headerName:
-                          Utils.getString(context, 'dashboard__categories'),
-                      headerDescription:
-                          Utils.getString(context, 'dashboard__category_desc'),
-                      viewAllClicked: () {
-                        Navigator.pushNamed(context, RoutePaths.categoryList,
-                            arguments: 'Categories');
-                      },
-                    ),
-                    Container(
-                      height: PsDimens.space140,
-                      width: MediaQuery.of(context).size.width,
-                      child: ListView.builder(
-                          shrinkWrap: true,
-                          padding:
-                              const EdgeInsets.only(left: PsDimens.space16),
-                          scrollDirection: Axis.horizontal,
-                          itemCount: categoryProvider.categoryList.data.length,
-                          itemBuilder: (BuildContext context, int index) {
-                            if (categoryProvider.categoryList.status ==
-                                PsStatus.BLOCK_LOADING) {
-                              return Shimmer.fromColors(
-                                  baseColor: PsColors.grey,
-                                  highlightColor: PsColors.white,
-                                  child: Row(children: const <Widget>[
-                                    PsFrameUIForLoading(),
-                                  ]));
-                            } else {
-                              return CategoryHorizontalListItem(
-                                category:
-                                    categoryProvider.categoryList.data[index],
-                                onTap: () {
-                                  FocusScope.of(context)
-                                      .requestFocus(FocusNode());
-                                  print(categoryProvider.categoryList
-                                      .data[index].defaultPhoto.imgPath);
-                                  final ProductParameterHolder
-                                      productParameterHolder =
-                                      ProductParameterHolder()
-                                          .getLatestParameterHolder();
-                                  productParameterHolder.catId =
-                                      categoryProvider
-                                          .categoryList.data[index].catId;
-                                  Navigator.pushNamed(
-                                      context, RoutePaths.filterProductList,
-                                      arguments: ProductListIntentHolder(
-                                        appBarTitle: categoryProvider
-                                            .categoryList.data[index].catName,
-                                        productParameterHolder:
-                                            productParameterHolder,
-                                      ));
-                                },
-                                // )
-                              );
-                            }
-                          }),
-                    )
-                  ])
+              _MyHeaderWidget(
+                headerName:
+                Utils.getString(context, 'dashboard__categories'),
+                headerDescription:
+                Utils.getString(context, 'dashboard__category_desc'),
+                viewAllClicked: () {
+                  Navigator.pushNamed(context, RoutePaths.categoryList,
+                      arguments: 'Categories');
+                },
+              ),
+              Container(
+                height: PsDimens.space140,
+                width: MediaQuery.of(context).size.width,
+                child: ListView.builder(
+                    shrinkWrap: true,
+                    padding:
+                    const EdgeInsets.only(left: PsDimens.space16),
+                    scrollDirection: Axis.horizontal,
+                    itemCount: categoryProvider.categoryList.data.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      if (categoryProvider.categoryList.status ==
+                          PsStatus.BLOCK_LOADING) {
+                        return Shimmer.fromColors(
+                            baseColor: PsColors.grey,
+                            highlightColor: PsColors.white,
+                            child: Row(children: const <Widget>[
+                              PsFrameUIForLoading(),
+                            ]));
+                      } else {
+                        return CategoryHorizontalListItem(
+                          category:
+                          categoryProvider.categoryList.data[index],
+                          onTap: () {
+                            FocusScope.of(context)
+                                .requestFocus(FocusNode());
+                            print(categoryProvider.categoryList
+                                .data[index].defaultPhoto.imgPath);
+                            final ProductParameterHolder
+                            productParameterHolder =
+                            ProductParameterHolder()
+                                .getLatestParameterHolder();
+                            productParameterHolder.catId =
+                                categoryProvider
+                                    .categoryList.data[index].catId;
+                            Navigator.pushNamed(
+                                context, RoutePaths.filterProductList,
+                                arguments: ProductListIntentHolder(
+                                  appBarTitle: categoryProvider
+                                      .categoryList.data[index].catName,
+                                  productParameterHolder:
+                                  productParameterHolder,
+                                ));
+                          },
+                          // )
+                        );
+                      }
+                    }),
+              )
+            ])
                 : Container(),
             builder: (BuildContext context, Widget child) {
               return FadeTransition(
@@ -829,93 +830,93 @@ class _HomeItemListFromFollowersHorizontalListWidget extends StatelessWidget {
           return AnimatedBuilder(
             animation: animationController,
             child: (itemListFromFollowersProvider.psValueHolder.loginUserId !=
-                        '' &&
-                    itemListFromFollowersProvider
-                            .itemListFromFollowersList.data !=
-                        null &&
-                    itemListFromFollowersProvider
-                        .itemListFromFollowersList.data.isNotEmpty)
+                '' &&
+                itemListFromFollowersProvider
+                    .itemListFromFollowersList.data !=
+                    null &&
+                itemListFromFollowersProvider
+                    .itemListFromFollowersList.data.isNotEmpty)
                 ? Column(
-                    children: <Widget>[
-                      _MyHeaderWidget(
-                        headerName: Utils.getString(
-                            context, 'dashboard__item_list_from_followers'),
-                        headerDescription: Utils.getString(
-                            context, 'dashboard_follow_item_desc'),
-                        viewAllClicked: () {
-                          Navigator.pushNamed(
-                              context, RoutePaths.itemListFromFollower,
-                              arguments: itemListFromFollowersProvider
-                                  .psValueHolder.loginUserId);
-                        },
-                      ),
-                      Container(
-                          height: PsDimens.space340,
-                          width: MediaQuery.of(context).size.width,
-                          child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemCount: itemListFromFollowersProvider
-                                  .itemListFromFollowersList.data.length,
-                              itemBuilder: (BuildContext context, int index) {
-                                if (itemListFromFollowersProvider
-                                        .itemListFromFollowersList.status ==
-                                    PsStatus.BLOCK_LOADING) {
-                                  return Shimmer.fromColors(
-                                      baseColor: PsColors.grey,
-                                      highlightColor: PsColors.white,
-                                      child: Row(children: const <Widget>[
-                                        PsFrameUIForLoading(),
-                                      ]));
-                                } else {
-                                  return ProductHorizontalListItem(
-                                    coreTagKey: itemListFromFollowersProvider
-                                            .hashCode
-                                            .toString() +
-                                        itemListFromFollowersProvider
-                                            .itemListFromFollowersList
-                                            .data[index]
-                                            .id,
-                                    product: itemListFromFollowersProvider
-                                        .itemListFromFollowersList.data[index],
-                                    onTap: () {
-                                      print(itemListFromFollowersProvider
-                                          .itemListFromFollowersList
-                                          .data[index]
-                                          .defaultPhoto
-                                          .imgPath);
-                                      final Product product =
-                                          itemListFromFollowersProvider
-                                              .itemListFromFollowersList
-                                              .data
-                                              .reversed
-                                              .toList()[index];
-                                      final ProductDetailIntentHolder holder =
-                                          ProductDetailIntentHolder(
-                                              product:
-                                                  itemListFromFollowersProvider
-                                                      .itemListFromFollowersList
-                                                      .data[index],
-                                              heroTagImage:
-                                                  itemListFromFollowersProvider
-                                                          .hashCode
-                                                          .toString() +
-                                                      product.id +
-                                                      PsConst.HERO_TAG__IMAGE,
-                                              heroTagTitle:
-                                                  itemListFromFollowersProvider
-                                                          .hashCode
-                                                          .toString() +
-                                                      product.id +
-                                                      PsConst.HERO_TAG__TITLE);
-                                      Navigator.pushNamed(
-                                          context, RoutePaths.productDetail,
-                                          arguments: holder);
-                                    },
-                                  );
-                                }
-                              }))
-                    ],
-                  )
+              children: <Widget>[
+                _MyHeaderWidget(
+                  headerName: Utils.getString(
+                      context, 'dashboard__item_list_from_followers'),
+                  headerDescription: Utils.getString(
+                      context, 'dashboard_follow_item_desc'),
+                  viewAllClicked: () {
+                    Navigator.pushNamed(
+                        context, RoutePaths.itemListFromFollower,
+                        arguments: itemListFromFollowersProvider
+                            .psValueHolder.loginUserId);
+                  },
+                ),
+                Container(
+                    height: PsDimens.space340,
+                    width: MediaQuery.of(context).size.width,
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: itemListFromFollowersProvider
+                            .itemListFromFollowersList.data.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          if (itemListFromFollowersProvider
+                              .itemListFromFollowersList.status ==
+                              PsStatus.BLOCK_LOADING) {
+                            return Shimmer.fromColors(
+                                baseColor: PsColors.grey,
+                                highlightColor: PsColors.white,
+                                child: Row(children: const <Widget>[
+                                  PsFrameUIForLoading(),
+                                ]));
+                          } else {
+                            return ProductHorizontalListItem(
+                              coreTagKey: itemListFromFollowersProvider
+                                  .hashCode
+                                  .toString() +
+                                  itemListFromFollowersProvider
+                                      .itemListFromFollowersList
+                                      .data[index]
+                                      .id,
+                              product: itemListFromFollowersProvider
+                                  .itemListFromFollowersList.data[index],
+                              onTap: () {
+                                print(itemListFromFollowersProvider
+                                    .itemListFromFollowersList
+                                    .data[index]
+                                    .defaultPhoto
+                                    .imgPath);
+                                final Product product =
+                                itemListFromFollowersProvider
+                                    .itemListFromFollowersList
+                                    .data
+                                    .reversed
+                                    .toList()[index];
+                                final ProductDetailIntentHolder holder =
+                                ProductDetailIntentHolder(
+                                    product:
+                                    itemListFromFollowersProvider
+                                        .itemListFromFollowersList
+                                        .data[index],
+                                    heroTagImage:
+                                    itemListFromFollowersProvider
+                                        .hashCode
+                                        .toString() +
+                                        product.id +
+                                        PsConst.HERO_TAG__IMAGE,
+                                    heroTagTitle:
+                                    itemListFromFollowersProvider
+                                        .hashCode
+                                        .toString() +
+                                        product.id +
+                                        PsConst.HERO_TAG__TITLE);
+                                Navigator.pushNamed(
+                                    context, RoutePaths.productDetail,
+                                    arguments: holder);
+                              },
+                            );
+                          }
+                        }))
+              ],
+            )
                 : Container(),
             builder: (BuildContext context, Widget child) {
               return FadeTransition(
@@ -1016,10 +1017,10 @@ class __MyHeaderWidgetState extends State<_MyHeaderWidget> {
 class _HomeHeaderWidget extends StatefulWidget {
   const _HomeHeaderWidget(
       {Key key,
-      @required this.animationController,
-      @required this.animation,
-      @required this.psValueHolder,
-      @required this.itemNameTextEditingController})
+        @required this.animationController,
+        @required this.animation,
+        @required this.psValueHolder,
+        @required this.itemNameTextEditingController})
       : super(key: key);
 
   final AnimationController animationController;
@@ -1043,12 +1044,12 @@ class __HomeHeaderWidgetState extends State<_HomeHeaderWidget> {
               children: <Widget>[
                 _MyHomeHeaderWidget(
                   userInputItemNameTextEditingController:
-                      widget.itemNameTextEditingController,
+                  widget.itemNameTextEditingController,
                   selectedLocation: () {
                     Navigator.pushNamed(context, RoutePaths.itemLocationList);
                   },
                   locationName:
-                      itemLocationProvider.psValueHolder.locactionName,
+                  itemLocationProvider.psValueHolder.locactionName,
                   psValueHolder: widget.psValueHolder,
                 )
               ],
@@ -1069,10 +1070,10 @@ class __HomeHeaderWidgetState extends State<_HomeHeaderWidget> {
 class _MyHomeHeaderWidget extends StatefulWidget {
   const _MyHomeHeaderWidget(
       {Key key,
-      @required this.userInputItemNameTextEditingController,
-      @required this.selectedLocation,
-      @required this.locationName,
-      @required this.psValueHolder})
+        @required this.userInputItemNameTextEditingController,
+        @required this.selectedLocation,
+        @required this.locationName,
+        @required this.psValueHolder})
       : super(key: key);
 
   final Function selectedLocation;
@@ -1158,7 +1159,7 @@ class __MyHomeHeaderWidgetState extends State<_MyHomeHeaderWidget> {
           child: PsTextFieldWidgetWithIcon(
             hintText: Utils.getString(context, 'home__bottom_app_bar_search'),
             textEditingController:
-                widget.userInputItemNameTextEditingController,
+            widget.userInputItemNameTextEditingController,
             psValueHolder: widget.psValueHolder,
           ),
           // onTap: () {

@@ -53,20 +53,21 @@ class ItemEntryContainerViewState extends State<ItemEntryContainerView>
     return WillPopScope(
       onWillPop: _requestPop,
       child: Scaffold(
-        appBar: AppBar(
-          brightness: Utils.getBrightnessForAppBar(context),
-          iconTheme: Theme.of(context)
-              .iconTheme
-              .copyWith(color: PsColors.mainColorWithWhite),
-          title: Text(
-            Utils.getString(context, 'item_entry__listing_entry'),
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headline6.copyWith(
-                fontWeight: FontWeight.bold,
-                color: PsColors.mainColorWithWhite),
-          ),
-          elevation: 0,
-        ),
+//        gapi commet this due to no needed
+//        appBar: AppBar(
+//          brightness: Utils.getBrightnessForAppBar(context),
+//          iconTheme: Theme.of(context)
+//              .iconTheme
+//              .copyWith(color: PsColors.mainColorWithWhite),
+//          title: Text(
+//            Utils.getString(context, 'item_entry__listing_entry'),
+//            textAlign: TextAlign.center,
+//            style: Theme.of(context).textTheme.headline6.copyWith(
+//                fontWeight: FontWeight.bold,
+//                color: PsColors.mainColorWithWhite),
+//          ),
+//          elevation: 0,
+//        ),
         body: ItemEntryView(
           animationController: animationController,
           flag: widget.flag,
