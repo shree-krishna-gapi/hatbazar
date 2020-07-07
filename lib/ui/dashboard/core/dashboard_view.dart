@@ -133,7 +133,7 @@ class _HomeViewState extends State<DashboardView>
   }
 
   int getBottonNavigationIndex(int param) {
-    int index = 2;
+    int index = 0;
     switch (param) {
       case PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT:
         index = 0;
@@ -206,19 +206,20 @@ class _HomeViewState extends State<DashboardView>
         break;
       case 2:
         index = PsConst.REQUEST_CODE__DASHBOARD_SELECT_WHICH_USER_FRAGMENT;
-        title = (psValueHolder == null ||
-                psValueHolder.userIdToVerify == null ||
-                psValueHolder.userIdToVerify == '')
-            ? Utils.getString(context, 'home__bottom_app_bar_login')
-            : Utils.getString(context, 'home__bottom_app_bar_verify_email');
-        break;
-      case 3:
-        index = PsConst.REQUEST_CODE__DASHBOARD_MESSAGE_FRAGMENT;
         title =
             Utils.getString(context, 'dashboard__bottom_navigation_message');
         break;
+      case 3:
+        index = PsConst.REQUEST_CODE__DASHBOARD_SELECT_WHICH_USER_FRAGMENT;
+        title = (psValueHolder == null ||
+            psValueHolder.userIdToVerify == null ||
+            psValueHolder.userIdToVerify == '')
+            ? Utils.getString(context, 'home__bottom_app_bar_login')
+            : Utils.getString(context, 'home__bottom_app_bar_verify_email');
+        break;
       case 4:
-        index = PsConst.REQUEST_CODE__DASHBOARD_SEARCH_FRAGMENT;
+        print('can you here me');
+        index = PsConst.REQUEST_CODE__DASHBOARD_MESSAGE_FRAGMENT; //REQUEST_CODE__DASHBOARD_SEARCH_FRAGMENT
         title = Utils.getString(context, 'home__bottom_app_bar_search');
         break;
 
@@ -674,6 +675,16 @@ class _HomeViewState extends State<DashboardView>
                       ),
                     ),
                     BottomNavigationBarItem(
+                        icon: Icon(Icons.add_circle,color: Colors.red.withOpacity(0.8)),
+                        backgroundColor: Colors.pink,
+
+                        activeIcon: Icon(Icons.add_circle,color: Colors.red),
+                        title: Text(
+                          Utils.getString(
+                              context, 'home__bottom_app_bar_add_or_remove'),
+                        )
+                    ),
+                    BottomNavigationBarItem(
                         icon: Icon(Icons.person),
                         title: Text(
                           Utils.getString(
@@ -781,12 +792,12 @@ class _HomeViewState extends State<DashboardView>
                           Utils.getString(
                               context, 'dashboard__bottom_navigation_message'),
                         )),
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.search),
-                      title: Text(
-                        Utils.getString(context, 'home__bottom_app_bar_search'),
-                      ),
-                    ),
+//                    BottomNavigationBarItem(
+//                      icon: Icon(Icons.search),
+//                      title: Text(
+//                        Utils.getString(context, 'home__bottom_app_bar_search'),
+//                      ),
+//                    ),
                   ],
                 ),
                 // ],
@@ -1693,6 +1704,7 @@ class _CallVerifyEmailWidget extends StatelessWidget {
             }
           },
           onSignInSelected: () {
+            print('your currentIndex is $currentIndex');
             if (currentIndex ==
                 PsConst.REQUEST_CODE__MENU_VERIFY_EMAIL_FRAGMENT) {
               updateCurrentIndex(Utils.getString(context, 'home__register'),

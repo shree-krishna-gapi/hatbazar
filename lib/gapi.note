@@ -1,2 +1,7 @@
 user/register/register_view
 adding field (state district & municipality)
+
+lib/ui/dashboard/core/dashboard_view.dart -> bottom tabbar
+
+lib/ui/dashboard/home/home_dashboard_view.dart -> homepage slider samachar title // samachar
+lib/ui/dashboard/home/blog_product_slider.dart -> homepage slider

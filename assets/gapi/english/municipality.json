@@ -3,4518 +3,4518 @@
         "municipalityId" : 1,
         "stateId" : 1,
         "districtId": 77,
-        "municipalityName":"फुङलिङ नगरपालिका"
+        "municipalityName":"Fungling Municipality"
     },
     {
         "municipalityId" : 2,
         "stateId" : 1,
         "districtId": 77,
-        "municipalityName":"आठराई त्रिवेणी गाउँपालिका"
+        "municipalityName":"Atharai Triveni village municipality"
     },
     {
         "municipalityId" : 3,
         "stateId" : 1,
         "districtId": 77,
-        "municipalityName":"सिदिङ्वा गाउँपालिका"
+        "municipalityName":"Sidingwa village municipalityFaktanglung"
     },
     {
         "municipalityId" : 4,
         "stateId" : 1,
         "districtId": 77,
-        "municipalityName":"फक्ताङलुङ गाउँपालिका"
+        "municipalityName":"Faktanglung village municipality"
     },
     {
         "municipalityId" : 5,
         "stateId" : 1,
         "districtId": 77,
-        "municipalityName":"मिक्वाखोला गाउँपालिका"
+        "municipalityName":"Mikwakhola village municipality"
     },
     {
         "municipalityId" : 6,
         "stateId" : 1,
         "districtId": 77,
-        "municipalityName":"मेरिङदेन गाउँपालिका"
+        "municipalityName":"Meringden village municipality"
     },
     {
         "municipalityId" : 7,
         "stateId" : 1,
         "districtId": 77,
-        "municipalityName":"मैवाखोला गाउँपालिका"
+        "municipalityName":"Maiwakhola village municipality"
     },
     {
         "municipalityId" : 8,
         "stateId" : 1,
         "districtId": 77,
-        "municipalityName":"पाथीभरा याङवरक गाउँपालिका"
+        "municipalityName":"Pathibhara Yangwarak village municipality"
     },
     {
         "municipalityId" : 9,
         "stateId" : 1,
         "districtId": 77,
-        "municipalityName":"सिरीजङ्घा गाउँपालिका"
+        "municipalityName":"Sirijangha village municipality"
     },
     {
         "municipalityId" : 10,
         "stateId" : 1,
         "districtId": 1,
-        "municipalityName":"फिदिम नगरपालिका"
+        "municipalityName":"Fidim Municipality"
     },
     {
         "municipalityId" : 11,
         "stateId" : 1,
         "districtId": 1,
-        "municipalityName":"फालेलुङ गाउँपालिका"
+        "municipalityName":"Phalelung village municipality"
     },
     {
         "municipalityId" : 12,
         "stateId" : 1,
         "districtId": 1,
-        "municipalityName":"फाल्गुनन्द गाउँपालिका"
+        "municipalityName":"Falgunand village municipality"
     },
     {
         "municipalityId" : 13,
         "stateId" : 1,
         "districtId": 1,
-        "municipalityName":"हिलिहाङ गाउँपालिका"
+        "municipalityName":"Hilihang village municipality"
     },
     {
         "municipalityId" : 14,
         "stateId" : 1,
         "districtId": 1,
-        "municipalityName":"मिक्लाजुङ गाउँपालिका"
+        "municipalityName":"Kummayak village municipality"
     },
     {
         "municipalityId" : 15,
         "stateId" : 1,
         "districtId": 1,
-        "municipalityName":"तुम्बेवा गाउँपालिका"
+        "municipalityName":"Tumbeva village municipality"
     },
     {
         "municipalityId" : 16,
         "stateId" : 1,
         "districtId": 1,
-        "municipalityName":"याङवरक गाउँपालिका"
+        "municipalityName":"Yangwarak village municipality"
     },
     {
         "municipalityId" : 17,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"ईलाम नगरपालिका"
+        "municipalityName":"Ilam Municipality"
     },
     {
         "municipalityId" : 18,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"देउमाई नगरपालिका"
+        "municipalityName":"Deumai Municipality"
     },
     {
         "municipalityId" : 19,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"माई नगरपालिका"
+        "municipalityName":"My municipality"
     },
     {
         "municipalityId" : 20,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"सूर्योदय नगरपालिका"
+        "municipalityName":"Sunrise Municipality"
     },
     {
         "municipalityId" : 21,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"फाकफोकथुम गाउँपालिका"
+        "municipalityName":"Fakphokathum village municipality"
     },
     {
         "municipalityId" : 22,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"चुलाचुली गाउँपालिका"
+        "municipalityName":"Chulachuli village municipality"
     },
     {
         "municipalityId" : 23,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"माईजोगमाई गाउँपालिका"
+        "municipalityName":"Maijogmai village municipality"
     },
     {
         "municipalityId" : 24,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"माङसेबुङ गाउँपालिका"
+        "municipalityName":"Mangsebung village municipality"
     },
     {
         "municipalityId" : 25,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"रोङ गाउँपालिका"
+        "municipalityName":"Rong village municipality"
     },
     {
         "municipalityId" : 26,
         "stateId" : 1,
         "districtId": 2,
-        "municipalityName":"सन्दकपुर गाउँपालिका"
+        "municipalityName":"Sandakpur village municipality"
     },
     {
         "municipalityId" : 27,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"मेचीनगर नगरपालिका"
+        "municipalityName":"Mechinagar Municipality"
     },
     {
         "municipalityId" : 28,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"दमक नगरपालिका"
+        "municipalityName":"Damak Municipality"
     },
     {
         "municipalityId" : 29,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"कन्काई नगरपालिका"
+        "municipalityName":"Kankai Municipality"
     },
     {
         "municipalityId" : 30,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"भद्रपुर नगरपालिका"
+        "municipalityName":"Bhadrapur Municipality"
     },
     {
         "municipalityId" : 31,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"अर्जुनधारा नगरपालिका"
+        "municipalityName":"Arjundhara Municipality"
     },
     {
         "municipalityId" : 32,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"शिवशताक्षी नगरपालिका"
+        "municipalityName":"Shivshatakshi Municipality"
     },
     {
         "municipalityId" : 33,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"गौरादह नगरपालिका"
+        "municipalityName":"Gauradaha Municipality"
     },
     {
         "municipalityId" : 34,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"विर्तामोड नगरपालिका"
+        "municipalityName":"Virtamod Municipality"
     },
     {
         "municipalityId" : 35,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"कमल गाउँपालिका"
+        "municipalityName":"Kamal village municipality"
     },
     {
         "municipalityId" : 36,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"गौरीगंज गाउँपालिका"
+        "municipalityName":"Gauriganj village municipality"
     },
     {
         "municipalityId" : 37,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"बाह्रदशी गाउँपालिका"
+        "municipalityName":"Bahardashi village municipality"
     },
     {
         "municipalityId" : 38,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"झापा गाउँपालिका"
+        "municipalityName":"Jhapa village municipality"
     },
     {
         "municipalityId" : 39,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"बुद्धशान्ति गाउँपालिका"
+        "municipalityName":"Buddhashanti village municipality"
     },
     {
         "municipalityId" : 40,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"हल्दिवारी गाउँपालिका"
+        "municipalityName":"Haldiwari village municipality"
     },
     {
         "municipalityId" : 41,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"कचनकवल गाउँपालिका"
+        "municipalityName":"Kachankawal village municipality"
     },
     {
         "municipalityId" : 42,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"विराटनगर महानगरपालिका"
+        "municipalityName":"Biratnagar Metropolitan City"
     },
     {
         "municipalityId" : 43,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"बेलवारी नगरपालिका"
+        "municipalityName":"Belwari Municipality"
     },
     {
         "municipalityId" : 44,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"लेटाङ नगरपालिका"
+        "municipalityName":"Letang Municipality"
     },
     {
         "municipalityId" : 45,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"पथरी शनिश्चरे नगरपालिका"
+        "municipalityName":"Pathari Saturn Municipality"
     },
     {
         "municipalityId" : 46,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"रंगेली नगरपालिका"
+        "municipalityName":"Rangeli Municipality"
     },
     {
         "municipalityId" : 47,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"रतुवामाई नगरपालिका"
+        "municipalityName":"Ratuwamai Municipality"
     },
     {
         "municipalityId" : 48,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"सुनवर्षि नगरपालिका"
+        "municipalityName":"Sunvarshi Municipality"
     },
     {
         "municipalityId" : 49,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"उर्लावारी नगरपालिका"
+        "municipalityName":"Urlavari Municipality"
     },
     {
         "municipalityId" : 50,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"सुन्दरहरैचा नगरपालिका"
+        "municipalityName":"Sundaraharaicha Municipality"
     },
     {
         "municipalityId" : 51,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"बुढीगंगा गाउँपालिका"
+        "municipalityName":"Budhiganga village municipality"
     },
     {
         "municipalityId" : 52,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"धनपालथान गाउँपालिका"
+        "municipalityName":"Dhanpalathan village municipality"
     },
     {
         "municipalityId" : 53,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"ग्रामथान गाउँपालिका"
+        "municipalityName":"Gramthan village municipality"
     },
     {
         "municipalityId" : 54,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"जहदा गाउँपालिका"
+        "municipalityName":"Jahda village municipality"
     },
     {
         "municipalityId" : 55,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"कानेपोखरी गाउँपालिका"
+        "municipalityName":"Kanepokhari village municipality"
     },
     {
         "municipalityId" : 56,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"कटहरी गाउँपालिका"
+        "municipalityName":"Katahari village municipality"
     },
     {
         "municipalityId" : 57,
         "stateId" : 1,
         "districtId": 4,
-        "municipalityName":"केरावारी गाउँपालिका"
+        "municipalityName":"Kerawari village municipality"
     },
     {
         "municipalityId" : 58,
         "stateId" : 1,
         "districtId": 1,
-        "municipalityName":"कुम्मायक गाउँपालिका"
+        "municipalityName":"Kumyak municipality"
     },
     {
         "municipalityId" : 59,
         "stateId" : 1,
         "districtId": 1,
-        "municipalityName":"मिक्लाजुङ गाउँपालिका"
+        "municipalityName":"Miklajung village municipality"
     },
     {
         "municipalityId" : 60,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"ईटहरी उपमहानगरपालिका"
+        "municipalityName":"Itahari Sub-metropolis"
     },
     {
         "municipalityId" : 61,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"धरान उपमहानगरपालिका"
+        "municipalityName":"Dharan Sub-metropolis"
     },
     {
         "municipalityId" : 62,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"ईनरुवा नगरपालिका"
+        "municipalityName":"Inaruwa Municipality"
     },
     {
         "municipalityId" : 63,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"दुहवी नगरपालिका"
+        "municipalityName":"Duhavi Municipality"
     },
     {
         "municipalityId" : 64,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"रामधुनी नगरपालिका"
+        "municipalityName":"Ramdhuni Municipality"
     },
     {
         "municipalityId" : 65,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"बराहक्षेत्र नगरपालिका"
+        "municipalityName":"Barakhshetra Municipality"
     },
     {
         "municipalityId" : 66,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"देवानगञ्ज गाउँपालिका"
+        "municipalityName":"Dewanganj village municipality"
     },
     {
         "municipalityId" : 67,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"कोशी गाउँपालिका"
+        "municipalityName":"Koshi village municipality"
     },
     {
         "municipalityId" : 68,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"गढी गाउँपालिका"
+        "municipalityName":"Gadhi village municipality"
     },
     {
         "municipalityId" : 69,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"बर्जु गाउँपालिका"
+        "municipalityName":"Barju village municipality"
     },
     {
         "municipalityId" : 70,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"भोक्राहा नरसिंह गाउँपालिका"
+        "municipalityName":"Bhokraha Narasimha village municipality"
     },
     {
         "municipalityId" : 71,
         "stateId" : 1,
         "districtId": 5,
-        "municipalityName":"हरिनगर गाउँपालिका"
+        "municipalityName":"Harinagar village municipality"
     },
     {
         "municipalityId" : 72,
         "stateId" : 1,
         "districtId": 3,
-        "municipalityName":"पाख्रिबास नगरपालिका"
+        "municipalityName":"Pakhribash Municipality"
     },
     {
         "municipalityId" : 73,
         "stateId" : 1,
         "districtId": 6,
-        "municipalityName":"धनकुटा नगरपालिका"
+        "municipalityName":"Dhankuta Municipality"
     },
     {
         "municipalityId" : 74,
         "stateId" : 1,
         "districtId": 6,
-        "municipalityName":"महालक्ष्मी नगरपालिका"
+        "municipalityName":"Mahalakshmi Municipality"
     },
     {
         "municipalityId" : 75,
         "stateId" : 1,
         "districtId": 6,
-        "municipalityName":"साँगुरीगढी गाउँपालिका"
+        "municipalityName":"Sangurigadhi village municipality"
     },
     {
         "municipalityId" : 76,
         "stateId" : 1,
         "districtId": 6,
-        "municipalityName":"सहिदभूमि गाउँपालिका"
+        "municipalityName":"Sahidbhoomi village municipality"
     },
     {
         "municipalityId" : 78,
         "stateId" : 1,
         "districtId": 6,
-        "municipalityName":"छथर जोरपाटी गाउँपालिका"
+        "municipalityName":"Chhatar Jorpati village municipality"
     },
     {
         "municipalityId" : 79,
         "stateId" : 1,
         "districtId": 6,
-        "municipalityName":"चौविसे गाउँपालिका"
+        "municipalityName":"Twenty-four village municipalities"
     },
     {
         "municipalityId" : 80,
         "stateId" : 1,
         "districtId": 7,
-        "municipalityName":"म्याङलुङ नगरपालिका"
+        "municipalityName":"Manglung Municipality"
     },
     {
         "municipalityId" : 81,
         "stateId" : 1,
         "districtId": 7,
-        "municipalityName":"लालीगुराँस नगरपालिका"
+        "municipalityName":"Laliguran's Municipality"
     },
     {
         "municipalityId" : 82,
         "stateId" : 1,
         "districtId": 7,
-        "municipalityName":"आठराई गाउँपालिका"
+        "municipalityName":"Atharai village municipality"
     },
     {
         "municipalityId" : 83,
         "stateId" : 1,
         "districtId": 7,
-        "municipalityName":"छथर गाउँपालिका"
+        "municipalityName":"Chhatar village municipality"
     },
     {
         "municipalityId" : 84,
         "stateId" : 1,
         "districtId": 7,
-        "municipalityName":"फेदाप गाउँपालिका"
+        "municipalityName":"Phedap village municipality"
     },
     {
         "municipalityId" : 85,
         "stateId" : 1,
         "districtId": 7,
-        "municipalityName":"मेन्छयायेम गाउँपालिका"
+        "municipalityName":"Menchhayayem village municipality"
     },
     {
         "municipalityId" : 86,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"चैनपुर नगरपालिका"
+        "municipalityName":"Chainpur Municipality"
     },
     {
         "municipalityId" : 87,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"धर्मदेवी नगरपालिका"
+        "municipalityName":"Dharmadevi Municipality"
     },
     {
         "municipalityId" : 88,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"खाँदवारी नगरपालिका"
+        "municipalityName":"Khandwari Municipality"
     },
     {
         "municipalityId" : 89,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"मादी नगरपालिका"
+        "municipalityName":"Madi municipality"
     },
     {
         "municipalityId" : 90,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"पाँचखपन नगरपालिका"
+        "municipalityName":"Panchkhapan Municipality"
     },
     {
         "municipalityId" : 91,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"भोटखोला गाउँपालिका"
+        "municipalityName":"Bhotkhola village municipality"
     },
     {
         "municipalityId" : 92,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"चिचिला गाउँपालिका"
+        "municipalityName":"Chichila village municipality"
     },
     {
         "municipalityId" : 93,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"मकालु गाउँपालिका"
+        "municipalityName":"Makalu village municipality"
     },
     {
         "municipalityId" : 94,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"सभापोखरी गाउँपालिका"
+        "municipalityName":"Sabhapokhari village municipality"
     },
     {
         "municipalityId" : 95,
         "stateId" : 1,
         "districtId": 8,
-        "municipalityName":"सिलीचोङ गाउँपालिका"
+        "municipalityName":"Silichong village municipality"
     },
     {
         "municipalityId" : 96,
         "stateId" : 1,
         "districtId": 9,
-        "municipalityName":"भोजपुर नगरपालिका"
+        "municipalityName":"Bhojpur Municipality"
     },
     {
         "municipalityId" : 97,
         "stateId" : 1,
         "districtId": 9,
-        "municipalityName":"षडानन्द नगरपालिका"
+        "municipalityName":"Shadananda Municipality"
     },
     {
         "municipalityId" : 98,
         "stateId" : 1,
         "districtId": 9,
-        "municipalityName":"टेम्केमैयुङ गाउँपालिका"
+        "municipalityName":"Temkemayung village municipality"
     },
     {
         "municipalityId" : 99,
         "stateId" : 1,
         "districtId": 9,
-        "municipalityName":"रामप्रसाद राई गाउँपालिका"
+        "municipalityName":"Ram Prasad Rai village municipality"
     },
     {
         "municipalityId" : 100,
         "stateId" : 1,
         "districtId": 9,
-        "municipalityName":"अरुण गाउँपालिका"
+        "municipalityName":"Arun village municipality"
     },
     {
         "municipalityId" : 101,
         "stateId" : 1,
         "districtId": 9,
-        "municipalityName":"पौवादुङमा गाउँपालिका"
+        "municipalityName":"Pauwadung village municipality"
     },
     {
         "municipalityId" : 102,
         "stateId" : 1,
         "districtId": 9,
-        "municipalityName":"साल्पासिलिछो गाउँपालिका"
+        "municipalityName":"Salpasilicho village municipality"
     },
     {
         "municipalityId" : 103,
         "stateId" : 1,
         "districtId": 9,
-        "municipalityName":"आमचोक गाउँपालिका"
+        "municipalityName":"Amchok village municipality"
     },
     {
         "municipalityId" : 104,
         "stateId" : 1,
         "districtId": 9,
-        "municipalityName":"हतुवागढी गाउँपालिका"
+        "municipalityName":"Hatuwagadhi village municipality"
     },
     {
         "municipalityId" : 105,
         "stateId" : 1,
         "districtId": 10,
-        "municipalityName":"सोलुदुधकुण्ड नगरपालिका"
+        "municipalityName":"Soludukund Municipality"
     },
     {
         "municipalityId" : 106,
         "stateId" : 1,
         "districtId": 10,
-        "municipalityName":"माप्य दुधकोशी गाउँपालिका"
+        "municipalityName":"Mapya Dudhkoshi village municipality"
     },
     {
         "municipalityId" : 107,
         "stateId" : 1,
         "districtId": 10,
-        "municipalityName":"खुम्वु पासाङल्हमु गाउँपालिका"
+        "municipalityName":"Khumbu Pasanglhamu village municipality"
     },
     {
         "municipalityId" : 108,
         "stateId" : 1,
         "districtId": 10,
-        "municipalityName":"थुलुङ दुधकोशी गाउँपालिका"
+        "municipalityName":"Thulung Dudhkoshi village municipality"
     },
     {
         "municipalityId" : 109,
         "stateId" : 1,
         "districtId": 10,
-        "municipalityName":"नेचासल्यान गाउँपालिका"
+        "municipalityName":"Nechasalyan village municipality"
     },
     {
         "municipalityId" : 110,
         "stateId" : 1,
         "districtId": 10,
-        "municipalityName":"माहाकुलुङ गाउँपालिका"
+        "municipalityName":"Mahakulung village municipality"
     },
     {
         "municipalityId" : 111,
         "stateId" : 1,
         "districtId": 10,
-        "municipalityName":"लिखु पिके गाउँपालिका"
+        "municipalityName":"Likhu Pike village municipality"
     },
     {
         "municipalityId" : 112,
         "stateId" : 1,
         "districtId": 10,
-        "municipalityName":"सोताङ गाउँपालिका"
+        "municipalityName":"Sotang village municipality"
     },
     {
         "municipalityId" : 113,
         "stateId" : 1,
         "districtId": 11,
-        "municipalityName":"सिद्दिचरण नगरपालिका"
+        "municipalityName":"Siddicharan Municipality"
     },
     {
         "municipalityId" : 114,
         "stateId" : 1,
         "districtId": 11,
-        "municipalityName":"खिजिदेम्बा गाउँपालिका"
+        "municipalityName":"Khijidemba village municipality"
     },
     {
         "municipalityId" : 115,
         "stateId" : 1,
         "districtId": 11,
-        "municipalityName":"चम्पादेवी गाउँपालिका"
+        "municipalityName":"Champadevi village municipality"
     },
     {
         "municipalityId" : 116,
         "stateId" : 1,
         "districtId": 11,
-        "municipalityName":"चिशंखुगढी गाउँपालिका"
+        "municipalityName":"Chishankhugadhi village municipality"
     },
     {
         "municipalityId" : 117,
         "stateId" : 1,
         "districtId": 11,
-        "municipalityName":"मानेभञ्याङ गाउँपालिका"
+        "municipalityName":"Manebhanyang village municipality"
     },
     {
         "municipalityId" : 118,
         "stateId" : 1,
         "districtId": 11,
-        "municipalityName":"मोलुङ गाउँपालिका"
+        "municipalityName":"Molung village municipality"
     },
     {
         "municipalityId" : 119,
         "stateId" : 1,
         "districtId": 11,
-        "municipalityName":"लिखु गाउँपालिका"
+        "municipalityName":"Likhu village municipality"
     },
     {
         "municipalityId" : 120,
         "stateId" : 1,
         "districtId": 11,
-        "municipalityName":"सुनकोशी गाउँपालिका"
+        "municipalityName":"Sunkoshi village municipality"
     },
     {
         "municipalityId" : 121,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"हलेसी तुवाचुङ नगरपालिका"
+        "municipalityName":"Halesi Tuvachung Municipality"
     },
     {
         "municipalityId" : 122,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"दिक्तेल रुपाकोट मझुवागढी नगरपालिका"
+        "municipalityName":"Diktel Rupakot Mazhuvagadhi Municipality"
     },
     {
         "municipalityId" : 123,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"ऐसेलुखर्क गाउँपालिका"
+        "municipalityName":"Aiselukharka village municipality"
     },
     {
         "municipalityId" : 124,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"रावा बेसी गाउँपालिका"
+        "municipalityName":"Rawa Besi village municipality"
     },
     {
         "municipalityId" : 125,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"जन्तेढुंगा गाउँपालिका"
+        "municipalityName":"Jantedhunga village municipality"
     },
     {
         "municipalityId" : 126,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"खोटेहाङ गाउँपालिका"
+        "municipalityName":"Khotehang village municipality"
     },
     {
         "municipalityId" : 127,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"केपिलासगढी गाउँपालिका"
+        "municipalityName":"Kepilasgadhi village municipality"
     },
     {
         "municipalityId" : 128,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"दिप्रुङ चुइचुम्मा गाउँपालिका"
+        "municipalityName":"Diprung Chuichumma village municipality"
     },
     {
         "municipalityId" : 129,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"साकेला गाउँपालिका"
+        "municipalityName":"Sakela village municipality"
     },
     {
         "municipalityId" : 130,
         "stateId" : 1,
         "districtId": 12,
-        "municipalityName":"वराहपोखरी गाउँपालिका"
+        "municipalityName":"Varahpokhari village municipality"
     },
     {
         "municipalityId" : 131,
         "stateId" : 1,
         "districtId": 13,
-        "municipalityName":"कटारी नगरपालिका"
+        "municipalityName":"Katari Municipality"
     },
     {
         "municipalityId" : 132,
         "stateId" : 1,
         "districtId": 13,
-        "municipalityName":"चौदण्डीगढी नगरपालिका"
+        "municipalityName":"Chaudandigarhi Municipality"
     },
     {
         "municipalityId" : 133,
         "stateId" : 1,
         "districtId": 13,
-        "municipalityName":"त्रियुगा नगरपालिका"
+        "municipalityName":"Triyuga Municipality"
     },
     {
         "municipalityId" : 134,
         "stateId" : 1,
         "districtId": 13,
-        "municipalityName":"वेलका नगरपालिका"
+        "municipalityName":"Velka Municipality"
     },
     {
         "municipalityId" : 135,
         "stateId" : 1,
         "districtId": 13,
-        "municipalityName":"उदयपुरगढी गाउँपालिका"
+        "municipalityName":"Udayapurgadhi village municipality"
     },
     {
         "municipalityId" : 136,
         "stateId" : 1,
         "districtId": 13,
-        "municipalityName":"ताप्ली गाउँपालिका"
+        "municipalityName":"Tapli village municipality"
     },
     {
         "municipalityId" : 137,
         "stateId" : 1,
         "districtId": 13,
-        "municipalityName":"रौतामाई गाउँपालिका"
+        "municipalityName":"Rautamai village municipality"
     },
     {
         "municipalityId" : 138,
         "stateId" : 1,
         "districtId": 13,
-        "municipalityName":"लिम्चुङ्बुङ गाउँपालिका"
+        "municipalityName":"Limchungbung village municipality"
     },
     {
         "municipalityId" : 139,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"राजविराज नगरपालिका"
+        "municipalityName":"Rajviraj Municipality"
     },
     {
         "municipalityId" : 140,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"कञ्चनरुप नगरपालिका"
+        "municipalityName":"Kanchanrup Municipality"
     },
     {
         "municipalityId" : 141,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"डाक्नेश्वरी नगरपालिका"
+        "municipalityName":"Dakneshwari Municipality"
     },
     {
         "municipalityId" : 142,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"बोदेबरसाईन नगरपालिका"
+        "municipalityName":"Bodebarsain Municipality"
     },
     {
         "municipalityId" : 143,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"खडक नगरपालिका"
+        "municipalityName":"Khadak Municipality"
     },
     {
         "municipalityId" : 144,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"शम्भुनाथ नगरपालिका"
+        "municipalityName":"Shambhunath Municipality"
     },
     {
         "municipalityId" : 145,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"सुरुङ्‍गा नगरपालिका"
+        "municipalityName":"Surunga Municipality"
     },
     {
         "municipalityId" : 146,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"हनुमाननगर कङ्‌कालिनी नगरपालिका"
+        "municipalityName":"Hanuman Nagar Kangkalini Municipality"
     },
     {
         "municipalityId" : 147,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"सप्तकोशी नगरपालिका"
+        "municipalityName":"Saptakoshi Municipality"
     },
     {
         "municipalityId" : 148,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"अग्निसाइर कृष्णासरवन गाउँपालिका"
+        "municipalityName":"Agnisair Krishnasaravan village municipality"
     },
     {
         "municipalityId" : 149,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"छिन्नमस्ता गाउँपालिका"
+        "municipalityName":"Chhinnamasta village municipality"
     },
     {
         "municipalityId" : 150,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"महादेवा गाउँपालिका"
+        "municipalityName":"Mahadeva village municipality"
     },
     {
         "municipalityId" : 151,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"तिरहुत गाउँपालिका"
+        "municipalityName":"Tirhut village municipality"
     },
     {
         "municipalityId" : 152,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"तिलाठी कोईलाडी गाउँपालिका"
+        "municipalityName":"Tilathi Koiladi village municipality"
     },
     {
         "municipalityId" : 153,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"रुपनी गाउँपालिका"
+        "municipalityName":"Rupani village municipality"
     },
     {
         "municipalityId" : 154,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"राजगढ गाउँपालिका"
+        "municipalityName":"Rajgad village municipality"
     },
     {
         "municipalityId" : 155,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"बिष्णुपुर गाउँपालिका"
+        "municipalityName":"Bishnupur village municipality"
     },
     {
         "municipalityId" : 156,
         "stateId" : 2,
         "districtId": 14,
-        "municipalityName":"बलान-बिहुल गाउँपालिका"
+        "municipalityName":"Balan-Bihul village municipality"
     },
     {
         "municipalityId" : 157,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"लहान नगरपालिका"
+        "municipalityName":"Lahan municipality"
     },
     {
         "municipalityId" : 158,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"धनगढीमाई नगरपालिका"
+        "municipalityName":"Dhangadhimai Municipality"
     },
     {
         "municipalityId" : 159,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"सिरहा नगरपालिका"
+        "municipalityName":"Siraha Municipality"
     },
     {
         "municipalityId" : 160,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"गोलबजार नगरपालिका"
+        "municipalityName":"Golbazar Municipality"
     },
     {
         "municipalityId" : 161,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"मिर्चैयाँ नगरपालिका"
+        "municipalityName":"Mirchaiya Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"कल्याणपुर नगरपालिका"
+        "municipalityName":"Kalyanpur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"कर्जन्हा नगरपालिका"
+        "municipalityName":"Karjanha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"सुखीपुर नगरपालिका"
+        "municipalityName":"Sukhipur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"भगवानपुर गाउँपालिका"
+        "municipalityName":"Bhagwanpur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"औरही गाउँपालिका"
+        "municipalityName":"Another village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"विष्णुपुर गाउँपालिका"
+        "municipalityName":"Bishnupur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"बरियारपट्टी गाउँपालिका"
+        "municipalityName":"Bariyarpatti village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"लक्ष्मीपुर पतारी गाउँपालिका"
+        "municipalityName":"Laxmipur Patari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"नरहा गाउँपालिका"
+        "municipalityName":"Naraha village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"सखुवानान्कारकट्टी गाउँपालिका"
+        "municipalityName":"Sakhuwanankarkatti village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"अर्नमा गाउँपालिका"
+        "municipalityName":"Arna municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 15,
-        "municipalityName":"नवराजपुर गाउँपालिका"
+        "municipalityName":"Nawarajpur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"जनकपुरधाम उपमहानगरपालिका"
+        "municipalityName":"Janakpurdham Sub-metropolis"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"क्षिरेश्वरनाथ नगरपालिका"
+        "municipalityName":"Kshireshwar Nath Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"गणेशमान चारनाथ नगरपालिका"
+        "municipalityName":"Ganeshman Charnath Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"धनुषाधाम नगरपालिका"
+        "municipalityName":"Dhanushadham Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"नगराइन नगरपालिका"
+        "municipalityName":"Nagarain Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"विदेह नगरपालिका"
+        "municipalityName":"Videha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"मिथिला नगरपालिका"
+        "municipalityName":"Mithila Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"शहीदनगर नगरपालिका"
+        "municipalityName":"Shahidnagar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"सबैला नगरपालिका"
+        "municipalityName":"Sabaila municipalities"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"कमला नगरपालिका"
+        "municipalityName":"Kamala Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"मिथिला बिहारी नगरपालिका"
+        "municipalityName":"Mithila Bihari Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"हंसपुर नगरपालिका"
+        "municipalityName":"Hanspur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"जनकनन्दिनी गाउँपालिका"
+        "municipalityName":"Janakandini village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"बटेश्वर गाउँपालिका"
+        "municipalityName":"Bateshwar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"मुखियापट्टी मुसहरमिया गाउँपालिका"
+        "municipalityName":"Mukhiyapatti Musaharmiya village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"लक्ष्मीनिया गाउँपालिका"
+        "municipalityName":"Laxminaya village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"औरही गाउँपालिका"
+        "municipalityName":"Auhrohi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 16,
-        "municipalityName":"धनौजी गाउँपालिका"
+        "municipalityName":"Dhanauji village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"जलेश्वर नगरपालिका"
+        "municipalityName":"Jaleshwar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"बर्दिबास नगरपालिका"
+        "municipalityName":"Bardibas Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"गौशाला नगरपालिका"
+        "municipalityName":"Gaushala Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"लोहरपट्टी नगरपालिका"
+        "municipalityName":"Loharpatti Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"रामगोपालपुर नगरपालिका"
+        "municipalityName":"Ramgopalpur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"मनरा शिसवा नगरपालिका"
+        "municipalityName":"Manara Shiswa Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"मटिहानी नगरपालिका"
+        "municipalityName":"Matihani Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"भँगाहा नगरपालिका"
+        "municipalityName":"Bhangaha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"बलवा नगरपालिका"
+        "municipalityName":"Balwa Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"औरही नगरपालिका"
+        "municipalityName":"Another municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"एकडारा गाउँपालिका"
+        "municipalityName":"Ekadara village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"सोनमा गाउँपालिका"
+        "municipalityName":"Sonam Village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"साम्सी गाउँपालिका"
+        "municipalityName":"Samsi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"महोत्तरी गाउँपालिका"
+        "municipalityName":"Mahottari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 17,
-        "municipalityName":"पिपरा गाउँपालिका"
+        "municipalityName":"Pipra village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"ईश्वरपुर नगरपालिका"
+        "municipalityName":"Ishwarpur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"मलंगवा नगरपालिका"
+        "municipalityName":"Malangwa Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"लालबन्दी नगरपालिका"
+        "municipalityName":"Lalbandi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"हरिपुर नगरपालिका"
+        "municipalityName":"Haripur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"हरिपुर्वा नगरपालिका"
+        "municipalityName":"Haripurwa Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"हरिवन नगरपालिका"
+        "municipalityName":"Hariwan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"बरहथवा नगरपालिका"
+        "municipalityName":"Barhathwa Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"बलरा नगरपालिका"
+        "municipalityName":"Ballara Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"गोडैटा नगरपालिका"
+        "municipalityName":"Godaita Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"बागमती नगरपालिका"
+        "municipalityName":"Bagmati Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"कविलासी नगरपालिका"
+        "municipalityName":"Kawilasi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"चक्रघट्टा गाउँपालिका"
+        "municipalityName":"Chakraghatta village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"चन्द्रनगर गाउँपालिका"
+        "municipalityName":"Chandranagar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"धनकौल गाउँपालिका"
+        "municipalityName":"Dhankaul village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"ब्रह्मपुरी गाउँपालिका"
+        "municipalityName":"Brahmapuri village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"रामनगर गाउँपालिका"
+        "municipalityName":"Ramnagar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"विष्णु गाउँपालिका"
+        "municipalityName":"Vishnu village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"कौडेना गाउँपालिका"
+        "municipalityName":"Kaudena village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"पर्सा गाउँपालिका"
+        "municipalityName":"Parsa village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 18,
-        "municipalityName":"बसबरीया गाउँपालिका"
+        "municipalityName":"Basbariya village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 22,
-        "municipalityName":"कमलामाई नगरपालिका"
+        "municipalityName":"Kamalamai Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 22,
-        "municipalityName":"दुधौली नगरपालिका"
+        "municipalityName":"Dudhauli Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 22,
-        "municipalityName":"गोलन्जर गाउँपालिका"
+        "municipalityName":"Golanjar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 22,
-        "municipalityName":"घ्याङलेख गाउँपालिका"
+        "municipalityName":"Ghyanglekh village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 22,
-        "municipalityName":"तीनपाटन गाउँपालिका"
+        "municipalityName":"Tinpatan village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 22,
-        "municipalityName":"फिक्कल गाउँपालिका"
+        "municipalityName":"Fikal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 22,
-        "municipalityName":"मरिण गाउँपालिका"
+        "municipalityName":"Marin village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 22,
-        "municipalityName":"सुनकोशी गाउँपालिका"
+        "municipalityName":"Sunkoshi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 22,
-        "municipalityName":"हरिहरपुरगढी गाउँपालिका"
+        "municipalityName":"Hariharpurgadhi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 23,
-        "municipalityName":"मन्थली नगरपालिका"
+        "municipalityName":"Manthali Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 23,
-        "municipalityName":"रामेछाप नगरपालिका"
+        "municipalityName":"Ramechhap Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 23,
-        "municipalityName":"उमाकुण्ड गाउँपालिका"
+        "municipalityName":"Umakunda village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 23,
-        "municipalityName":"खाँडादेवी गाउँपालिका"
+        "municipalityName":"Khandadevi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 23,
-        "municipalityName":"गोकुलगङ्गा गाउँपालिका"
+        "municipalityName":"Gokulganga village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 23,
-        "municipalityName":"दोरम्बा गाउँपालिका"
+        "municipalityName":"Doramba village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 23,
-        "municipalityName":"लिखु तामाकोशी गाउँपालिका"
+        "municipalityName":"Likhu Tamakoshi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 23,
-        "municipalityName":"सुनापती गाउँपालिका"
+        "municipalityName":"Sunapati village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 24,
-        "municipalityName":"जिरी नगरपालिका"
+        "municipalityName":"Jiri Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 24,
-        "municipalityName":"भिमेश्वर नगरपालिका"
+        "municipalityName":"Bhimeshwar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 24,
-        "municipalityName":"कालिन्चोक गाउँपालिका"
+        "municipalityName":"Kalinchok village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 24,
-        "municipalityName":"गौरीशङ्कर गाउँपालिका"
+        "municipalityName":"Gaurishankar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 24,
-        "municipalityName":"तामाकोशी गाउँपालिका"
+        "municipalityName":"Tamakoshi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 24,
-        "municipalityName":"मेलुङ्ग गाउँपालिका"
+        "municipalityName":"Melung village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 24,
-        "municipalityName":"विगु गाउँपालिका"
+        "municipalityName":"Vigu village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 24,
-        "municipalityName":"वैतेश्वर गाउँपालिका"
+        "municipalityName":"Vaiteshwar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 24,
-        "municipalityName":"शैलुङ्ग गाउँपालिका"
+        "municipalityName":"Shailung village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"चौतारा साँगाचोकगढी नगरपालिका"
+        "municipalityName":"Chautara Sangachokgadhi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"बाह्रविसे नगरपालिका"
+        "municipalityName":"Bharabise Municipalities"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"मेलम्ची नगरपालिका"
+        "municipalityName":"Melamchi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"ईन्द्रावती गाउँपालिका"
+        "municipalityName":"Indravati village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"जुगल गाउँपालिका"
+        "municipalityName":"Jugal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"पाँचपोखरी थाङपाल गाउँपालिका"
+        "municipalityName":"Panchpokhari Thangpal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"बलेफी गाउँपालिका"
+        "municipalityName":"Balefi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"भोटेकोशी गाउँपालिका"
+        "municipalityName":"Bhotekoshi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"लिसङ्खु पाखर गाउँपालिका"
+        "municipalityName":"Lisankhu Pakhar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"सुनकोशी गाउँपालिका"
+        "municipalityName":"Sunkoshi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"हेलम्बु गाउँपालिका"
+        "municipalityName":"Helambu village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 25,
-        "municipalityName":"त्रिपुरासुन्दरी गाउँपालिका"
+        "municipalityName":"Tripura Sundari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"धुलिखेल नगरपालिका"
+        "municipalityName":"Dhulikhel Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"बनेपा नगरपालिका"
+        "municipalityName":"Banepa Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"पनौती नगरपालिका"
+        "municipalityName":"Panauti Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"पाँचखाल नगरपालिका"
+        "municipalityName":"Panchkhal Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"नमोबुद्ध नगरपालिका"
+        "municipalityName":"Namobuddha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"मण्डनदेउपुर नगरपालिका"
+        "municipalityName":"Mandandeupur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"खानीखोला गाउँपालिका"
+        "municipalityName":"Khanikhola village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"चौंरीदेउराली गाउँपालिका"
+        "municipalityName":"Chaurideurali village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"तेमाल गाउँपालिका"
+        "municipalityName":"Temal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"बेथानचोक गाउँपालिका"
+        "municipalityName":"Bethanchowk village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"भुम्लु गाउँपालिका"
+        "municipalityName":"Bhumlu village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"महाभारत गाँउपालिका"
+        "municipalityName":"Mahabharat village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 26,
-        "municipalityName":"रोशी गाउँपालिका"
+        "municipalityName":"Roshi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 27,
-        "municipalityName":"ललितपुर महानगरपालिका"
+        "municipalityName":"Lalitpur Municipal Corporation"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 27,
-        "municipalityName":"गोदावरी नगरपालिका"
+        "municipalityName":"Godavari Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 27,
-        "municipalityName":"महालक्ष्मी नगरपालिका"
+        "municipalityName":"Mahalakshmi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 27,
-        "municipalityName":"कोन्ज्योसोम गाउँपालिका"
+        "municipalityName":"Konjyosom village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 27,
-        "municipalityName":"बागमती गाउँपालिका"
+        "municipalityName":"Bagmati village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 27,
-        "municipalityName":"महाङ्काल गाउँपालिका"
+        "municipalityName":"Mahankal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 28,
-        "municipalityName":"चाँगुनारायण नगरपालिका"
+        "municipalityName":"Changunarayan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 28,
-        "municipalityName":"भक्तपुर नगरपालिका"
+        "municipalityName":"Bhaktapur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 28,
-        "municipalityName":"मध्यपुर थिमी नगरपालिका"
+        "municipalityName":"Madhyapur Thimi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 28,
-        "municipalityName":"सूर्यविनायक नगरपालिका"
+        "municipalityName":"Suryavinayak Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"काठमाण्डौं महानगरपालिका"
+        "municipalityName":"Kathmandu Metropolitan City"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"कागेश्वरी मनोहरा नगरपालिका"
+        "municipalityName":"Kageshwari Manohara Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"कीर्तिपुर नगरपालिका"
+        "municipalityName":"Kirtipur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"गोकर्णेश्वर नगरपालिका"
+        "municipalityName":"Gokarneshwar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"चन्द्रागिरी नगरपालिका"
+        "municipalityName":"Chandragiri Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"टोखा नगरपालिका"
+        "municipalityName":"Tokha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"तारकेश्वर नगरपालिका"
+        "municipalityName":"Tarkeshwar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"दक्षिणकाली नगरपालिका"
+        "municipalityName":"Dakshinkali municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"नागार्जुन नगरपालिका"
+        "municipalityName":"Nagarjuna Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"बुढानिलकण्ठ नगरपालिका"
+        "municipalityName":"Budhanilkantha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 29,
-        "municipalityName":"शङ्खरापुर नगरपालिका"
+        "municipalityName":"Shankharapur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"विदुर नगरपालिका"
+        "municipalityName":"Vidur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"बेलकोटगढी नगरपालिका"
+        "municipalityName":"Belkotgadhi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"ककनी गाउँपालिका"
+        "municipalityName":"Kakani village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"किस्पाङ गाउँपालिका"
+        "municipalityName":"Kispang village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"तादी गाउँपालिका"
+        "municipalityName":"Tadi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"तारकेश्वर गाउँपालिका"
+        "municipalityName":"Tarkeshwar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"दुप्चेश्वर गाउँपालिका"
+        "municipalityName":"Dupcheshwor village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"पञ्चकन्या गाउँपालिका"
+        "municipalityName":"Panchakanya village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"लिखु गाउँपालिका"
+        "municipalityName":"Likhu village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"म्यगङ गाउँपालिका"
+        "municipalityName":"Myagang village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"शिवपुरी गाउँपालिका"
+        "municipalityName":"Shivpuri village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 30,
-        "municipalityName":"सुर्यगढी गाउँपालिका"
+        "municipalityName":"Suryagadhi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 31,
-        "municipalityName":"उत्तरगया गाउँपालिका"
+        "municipalityName":"Uttargaya village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 31,
-        "municipalityName":"कालिका गाउँपालिका"
+        "municipalityName":"Kalika village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 31,
-        "municipalityName":"गोसाईकुण्ड गाउँपालिका"
+        "municipalityName":"Gosaikunda village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 31,
-        "municipalityName":"नौकुण्ड गाउँपालिका"
+        "municipalityName":"Naukunda village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 31,
-        "municipalityName":"आमाछोदिङमो गाउँपालिका"
+        "municipalityName":"Amachhoding Village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"धुनीबेंशी नगरपालिका"
+        "municipalityName":"Dhunibenshi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"निलकण्ठ नगरपालिका"
+        "municipalityName":"Nilkantha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"खनियाबास गाउँपालिका"
+        "municipalityName":"Khaniyabas village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"गजुरी गाउँपालिका"
+        "municipalityName":"Gajuri village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"गल्छी गाउँपालिका"
+        "municipalityName":"Galchi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"गङ्गाजमुना गाउँपालिका"
+        "municipalityName":"Gangajmuna village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"ज्वालामूखी गाउँपालिका"
+        "municipalityName":"Jwalamukhi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"थाक्रे गाउँपालिका"
+        "municipalityName":"Thakre village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"नेत्रावती डबजोङ गाउँपालिका"
+        "municipalityName":"Netravati Dabjong village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"बेनीघाट रोराङ्ग गाउँपालिका"
+        "municipalityName":"Benighat Rorang village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"रुवी भ्याली गाउँपालिका"
+        "municipalityName":"Ruby Valley Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"सिद्धलेक गाउँपालिका"
+        "municipalityName":"Siddhalek village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 32,
-        "municipalityName":"त्रिपुरासुन्दरी गाउँपालिका"
+        "municipalityName":"Tripura Sundari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"हेटौडा उपमहानगरपालिका"
+        "municipalityName":"Hetauda Sub-metropolis"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"थाहा नगरपालिका"
+        "municipalityName":"Thahaa municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"इन्द्रसरोबर गाउँपालिका"
+        "municipalityName":"Indrasarobar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"कैलाश गाउँपालिका"
+        "municipalityName":"Kailash village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"बकैया गाउँपालिका"
+        "municipalityName":"Outstanding village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"बाग्मति गाउँपालिका"
+        "municipalityName":"Bagmati village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"भिमफेदी गाउँपालिका"
+        "municipalityName":"Bhimfedi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"मकवानपुरगढी गाउँपालिका"
+        "municipalityName":"Makwanpurgadhi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"मनहरी गाउँपालिका"
+        "municipalityName":"Manahari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 33,
-        "municipalityName":"राक्सिराङ्ग गाउँपालिका"
+        "municipalityName":"Raksirang village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"चन्द्रपुर नगरपालिका"
+        "municipalityName":"Chandrapur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"गरुडा नगरपालिका"
+        "municipalityName":"Garuda Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"गौर नगरपालिका"
+        "municipalityName":"Gaur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"बौधीमाई नगरपालिका"
+        "municipalityName":"Baudhimai Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"बृन्दावन नगरपालिका"
+        "municipalityName":"Brindavan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"देवाही गोनाही नगरपालिका"
+        "municipalityName":"Dewahi Gonahi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"गढीमाई नगरपालिका"
+        "municipalityName":"Gadhimai Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"गुजरा नगरपालिका"
+        "municipalityName":"Gujra Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"कटहरिया नगरपालिका"
+        "municipalityName":"Katahariya Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"माधव नारायण नगरपालिका"
+        "municipalityName":"Madhav Narayan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"मौलापुर नगरपालिका"
+        "municipalityName":"Maulapur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"फतुवाबिजयपुर नगरपालिका"
+        "municipalityName":"Fatuwabijaypur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"ईशनाथ नगरपालिका"
+        "municipalityName":"Ishnath Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"परोहा नगरपालिका"
+        "municipalityName":"Paroha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"राजपुर नगरपालिका"
+        "municipalityName":"Rajpur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"राजदेवी नगरपालिका"
+        "municipalityName":"Rajdevi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"दुर्गा भगवती गाउँपालिका"
+        "municipalityName":"Durga Bhagwati village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 19,
-        "municipalityName":"यमुनामाई गाउँपालिका"
+        "municipalityName":"Yamunamai village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"कलैया उपमहानगरपालिका"
+        "municipalityName":"Kalaiya Sub-metropolis"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"जीतपुर सिमरा उपमहानगरपालिका"
+        "municipalityName":"Jeetpur Simra Sub-metropolis"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"कोल्हवी नगरपालिका"
+        "municipalityName":"Kolhavi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"निजगढ नगरपालिका"
+        "municipalityName":"Nijgadh Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"महागढीमाई नगरपालिका"
+        "municipalityName":"Mahagadhimai Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"सिम्रौनगढ नगरपालिका"
+        "municipalityName":"Simraungadh Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"पचरौता नगरपालिका"
+        "municipalityName":"Pacharauta Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"आदर्श कोटवाल गाउँपालिका"
+        "municipalityName":"Adarsh ​​Kotwal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"करैयामाई गाउँपालिका"
+        "municipalityName":"Karaiyamai village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"देवताल गाउँपालिका"
+        "municipalityName":"Devtal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"परवानीपुर गाउँपालिका"
+        "municipalityName":"Parwanipur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"प्रसौनी गाउँपालिका"
+        "municipalityName":"Prasauni village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"फेटा गाउँपालिका"
+        "municipalityName":"Feta village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"बारागढीगाउँपालिका"
+        "municipalityName":"Baragadhi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 20,
-        "municipalityName":"सुवर्ण गाउँपालिका"
+        "municipalityName":"Golden village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"विश्रामपुर गाउँपालिका"
+        "municipalityName":"Vishrampur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"बिरगंज महानगरपालिका"
+        "municipalityName":"Birgunj Municipal Corporation"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"पोखरिया नगरपालिका"
+        "municipalityName":"Pokhariya Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"बहुदरमाई नगरपालिका"
+        "municipalityName":"Bahudarmai municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"पर्सागढी नगरपालिका"
+        "municipalityName":"Parsagadhi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"ठोरी गाउँपालिका"
+        "municipalityName":"Thori village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"जगरनाथपुर गाउँपालिका"
+        "municipalityName":"Jagarnathpur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"धोबीनी गाउँपालिका"
+        "municipalityName":"Dhobini village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"छिपहरमाई गाउँपालिका"
+        "municipalityName":"Chhipaharmai village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"पकाहा मैनपुर गाउँपालिका"
+        "municipalityName":"Pakaha Mainpur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"बिन्दबासिनी गाउँपालिका"
+        "municipalityName":"Bindabasini village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"सखुवा प्रसौनी गाउँपालिका"
+        "municipalityName":"Sakhuwa Prasauni village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"पटेर्वा सुगौली गाउँपालिका"
+        "municipalityName":"Paterwa Sugauli village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"कालिकामाई गाउँपालिका"
+        "municipalityName":"Kalikamai village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 2,
         "districtId": 21,
-        "municipalityName":"जिरा भवानी गाउँपालिका"
+        "municipalityName":"Jira Bhavani village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 34,
-        "municipalityName":"भरतपुर महानगरपालिका"
+        "municipalityName":"Bharatpur Municipal Corporation"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 34,
-        "municipalityName":"कालिका नगरपालिका"
+        "municipalityName":"Kalika Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 34,
-        "municipalityName":"खैरहनी नगरपालिका"
+        "municipalityName":"Khairhani Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 34,
-        "municipalityName":"माडी नगरपालिका"
+        "municipalityName":"Madi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 34,
-        "municipalityName":"रत्ननगर नगरपालिका"
+        "municipalityName":"Ratnanagar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 34,
-        "municipalityName":"राप्ती नगरपालिका"
+        "municipalityName":"Rapti Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 34,
-        "municipalityName":"इच्छाकामना गाउँपालिका"
+        "municipalityName":"Ichchakamana village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"गोरखा नगरपालिका"
+        "municipalityName":"Gorkha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"पालुङटार नगरपालिका"
+        "municipalityName":"Palungtar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"बारपाक सुलिकोट गाउँपालिका"
+        "municipalityName":"Barpak Sulikot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"सिरानचोक गाउँपालिका"
+        "municipalityName":"Siranchok village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"अजिरकोट गाउँपालिका"
+        "municipalityName":"Ajirkot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"आरूघाट गाउँपालिका"
+        "municipalityName":"Arughat village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"गण्डकी गाउँपालिका"
+        "municipalityName":"Gandaki village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"चुमनुव्री गाउँपालिका"
+        "municipalityName":"Chumanuvri village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"धार्चे गाउँपालिका"
+        "municipalityName":"Dharche village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"भिमसेनथापा गाउँपालिका"
+        "municipalityName":"Bhimsenthapa village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 35,
-        "municipalityName":"शहिद लखन गाउँपालिका"
+        "municipalityName":"Shahid Lakhan village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 36,
-        "municipalityName":"बेसीशहर नगरपालिका"
+        "municipalityName":"Besishahar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 36,
-        "municipalityName":"मध्यनेपाल नगरपालिका"
+        "municipalityName":"Central Nepal Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 36,
-        "municipalityName":"रार्इनास नगरपालिका"
+        "municipalityName":"Rarenas Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 36,
-        "municipalityName":"सुन्दरबजार नगरपालिका"
+        "municipalityName":"Sunderbazar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 36,
-        "municipalityName":"क्व्होलासोथार गाउँपालिका"
+        "municipalityName":"Kwalasothar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 36,
-        "municipalityName":"दूधपोखरी गाउँपालिका"
+        "municipalityName":"Dudhpokhari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 36,
-        "municipalityName":"दोर्दी गाउँपालिका"
+        "municipalityName":"Dordi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 36,
-        "municipalityName":"मर्स्याङदी गाउँपालिका"
+        "municipalityName":"Marsyangdi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 3,
         "districtId": 3,
-        "municipalityName":"भानु नगरपालिका"
+        "municipalityName":"Bhanu Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 37,
-        "municipalityName":"भिमाद नगरपालिका"
+        "municipalityName":"Bhimad Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 37,
-        "municipalityName":"व्यास नगरपालिका"
+        "municipalityName":"Beas Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 37,
-        "municipalityName":"शुक्लागण्डकी नगरपालिका"
+        "municipalityName":"Shuklagandaki municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 37,
-        "municipalityName":"आँबुखैरेनी गाउँपालिका"
+        "municipalityName":"Aanbukhaireni village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 37,
-        "municipalityName":"ऋषिङ्ग गाउँपालिका"
+        "municipalityName":"Rishing village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 37,
-        "municipalityName":"घिरिङ गाउँपालिका"
+        "municipalityName":"Ghiring village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 37,
-        "municipalityName":"देवघाट गाउँपालिका"
+        "municipalityName":"Devghat village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 37,
-        "municipalityName":"म्याग्दे गाउँपालिका"
+        "municipalityName":"Myagde village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 37,
-        "municipalityName":"वन्दिपुर गाउँपालिका"
+        "municipalityName":"Vandipur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"गल्याङ नगरपालिका"
+        "municipalityName":"Galyang Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"चापाकोट नगरपालिका"
+        "municipalityName":"Chapakot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"पुतलीबजार नगरपालिका"
+        "municipalityName":"Putlibazar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"भीरकोट नगरपालिका"
+        "municipalityName":"Bhirkot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"वालिङ नगरपालिका"
+        "municipalityName":"Waling Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"अर्जुनचौपारी गाउँपालिका"
+        "municipalityName":"Arjunchaupari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"आँधिखोला गाउँपालिका"
+        "municipalityName":"Andhikhola village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"कालीगण्डकी गाउँपालिका"
+        "municipalityName":"Kaligandaki village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"फेदीखोला गाउँपालिका"
+        "municipalityName":"Fedikhola village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"बिरुवा गाउँपालिका"
+        "municipalityName":"Biruwa village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 38,
-        "municipalityName":"हरिनास गाउँपालिका"
+        "municipalityName":"Harinas village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 39,
-        "municipalityName":"पोखरा महानगरपालिका"
+        "municipalityName":"Pokhara Metropolitan City"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 39,
-        "municipalityName":"अन्नपूर्ण गाउँपालिका"
+        "municipalityName":"Annapurna village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 39,
-        "municipalityName":"माछापुच्छ्रे गाउँपालिका"
+        "municipalityName":"Machhapuchhre village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 39,
-        "municipalityName":"मादी गाउँपालिका"
+        "municipalityName":"Madi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 39,
-        "municipalityName":"रूपा गाउँपालिका"
+        "municipalityName":"Rupa village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 40,
-        "municipalityName":"चामे गाउँपालिका"
+        "municipalityName":"Chame village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 40,
-        "municipalityName":"नार्पा भूमि गाउँपालिका"
+        "municipalityName":"Narpa land village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 40,
-        "municipalityName":"नासोँ गाउँपालिका"
+        "municipalityName":"Naso village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 40,
-        "municipalityName":"मनाङ ङिस्याङ गाउँपालिका"
+        "municipalityName":"Manang Ngisyang village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 41,
-        "municipalityName":"घरपझोङ गाउँपालिका"
+        "municipalityName":"Gharpajhong village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 41,
-        "municipalityName":"थासाङ गाउँपालिका"
+        "municipalityName":"Thasang village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 41,
-        "municipalityName":"लो-घेकर दामोदरकुण्ड गाउँपालिका"
+        "municipalityName":"Lo-Ghekar Damodarkund village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 41,
-        "municipalityName":"लोमन्थाङ गाउँपालिका"
+        "municipalityName":"Lomanthang village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 41,
-        "municipalityName":"वारागुङ मुक्तिक्षेत्र गाउँपालिका"
+        "municipalityName":"Waragung Free Zone Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 42,
-        "municipalityName":"बेनी नगरपालिका"
+        "municipalityName":"Beni Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 42,
-        "municipalityName":"अन्नपुर्ण गाउँपालिका"
+        "municipalityName":"Annapurna village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 42,
-        "municipalityName":"धवलागिरी गाउँपालिका"
+        "municipalityName":"Dhawalagiri village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 42,
-        "municipalityName":"मंगला गाउँपालिका"
+        "municipalityName":"Mangala village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 42,
-        "municipalityName":"मालिका गाउँपालिका"
+        "municipalityName":"Malika village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 42,
-        "municipalityName":"रघुगंगा गाउँपालिका"
+        "municipalityName":"Raghuganga village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 43,
-        "municipalityName":"कुश्मा नगरपालिका"
+        "municipalityName":"Kushma Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 43,
-        "municipalityName":"फलेवास नगरपालिका"
+        "municipalityName":"Phalewas Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 43,
-        "municipalityName":"जलजला गाउँपालिका"
+        "municipalityName":"Jaljala village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 43,
-        "municipalityName":"पैयूं गाउँपालिका"
+        "municipalityName":"Paiyun village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 43,
-        "municipalityName":"महाशिला गाउँपालिका"
+        "municipalityName":"Mahashila village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 43,
-        "municipalityName":"मोदी गाउँपालिका"
+        "municipalityName":"Modi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 43,
-        "municipalityName":"विहादी गाउँपालिका"
+        "municipalityName":"Vihadi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"बागलुङ नगरपालिका"
+        "municipalityName":"Baglung Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"गल्कोट नगरपालिका"
+        "municipalityName":"Galkot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"जैमूनी नगरपालिका"
+        "municipalityName":"Jaimuni Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"ढोरपाटन नगरपालिका"
+        "municipalityName":"Dhorpatan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"वरेङ गाउँपालिका"
+        "municipalityName":"Wareng village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"काठेखोला गाउँपालिका"
+        "municipalityName":"Kathekhola village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"तमानखोला गाउँपालिका"
+        "municipalityName":"Tamankhola village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"ताराखोला गाउँपालिका"
+        "municipalityName":"Tarakhola village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"निसीखोला गाउँपालिका"
+        "municipalityName":"Nisikhola village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 44,
-        "municipalityName":"वडिगाड गाउँपालिका"
+        "municipalityName":"Wadigad village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"मुसिकोट नगरपालिका"
+        "municipalityName":"Musikot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"रेसुङ्गा नगरपालिका"
+        "municipalityName":"Resunga Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"ईस्मा गाउँपालिका"
+        "municipalityName":"Isma village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"कालीगण्डकी गाउँपालिका"
+        "municipalityName":"Kaligandaki village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"गुल्मी दरबार गाउँपालिका"
+        "municipalityName":"Gulmi Durbar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"सत्यवती गाउँपालिका"
+        "municipalityName":"Satyavati village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"चन्द्रकोट गाउँपालिका"
+        "municipalityName":"Chandrakot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"रुरुक्षेत्र गाउँपालिका"
+        "municipalityName":"Rurukshetra village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"छत्रकोट गाउँपालिका"
+        "municipalityName":"Chhatrakot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"धुर्कोट गाउँपालिका"
+        "municipalityName":"Dhurkot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"मदाने गाउँपालिका"
+        "municipalityName":"Madane village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 46,
-        "municipalityName":"मालिका गाउँपालिका"
+        "municipalityName":"Malika village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"रामपुर नगरपालिका"
+        "municipalityName":"Rampur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"तानसेन नगरपालिका"
+        "municipalityName":"Tansen Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"निस्दी गाउँपालिका"
+        "municipalityName":"Nisdi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"पूर्वखोला गाउँपालिका"
+        "municipalityName":"Purbakhola village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"रम्भा गाउँपालिका"
+        "municipalityName":"Rambha village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"माथागढी गाउँपालिका"
+        "municipalityName":"Mathagadhi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"तिनाउ गाउँपालिका"
+        "municipalityName":"Tinau village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"बगनासकाली गाउँपालिका"
+        "municipalityName":"Baganaskali village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"रिब्दिकोट गाउँपालिका"
+        "municipalityName":"Ribdikot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 47,
-        "municipalityName":"रैनादेवी छहरा गाउँपालिका"
+        "municipalityName":"Rainadevi Chhahra village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"बुटवल उपमहानगरपालिका"
+        "municipalityName":"Butwal Sub-metropolis"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"देवदह नगरपालिका"
+        "municipalityName":"Devadaha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"लुम्बिनी सांस्कृतिक नगरपालिका"
+        "municipalityName":"Lumbini Cultural Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"सैनामैना नगरपालिका"
+        "municipalityName":"Sanamina Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"सिद्धार्थनगर नगरपालिका"
+        "municipalityName":"Siddharthnagar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"तिलोत्तमा नगरपालिका"
+        "municipalityName":"Tilotta Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"गैडहवा गाउँपालिका"
+        "municipalityName":"Gaidhawa village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"कन्चन गाउँपालिका"
+        "municipalityName":"Kanchan village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"कोटहीमाई गाउँपालिका"
+        "municipalityName":"Kothimai village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"मर्चवारी गाउँपालिका"
+        "municipalityName":"Marchwari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"मायादेवी गाउँपालिका"
+        "municipalityName":"Mayadevi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"ओमसतिया गाउँपालिका"
+        "municipalityName":"Omasatiya village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"रोहिणी गाउँपालिका"
+        "municipalityName":"Rohini village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"सम्मरीमाई गाउँपालिका"
+        "municipalityName":"Sammarimai village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"सियारी गाउँपालिका"
+        "municipalityName":"Siyari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 48,
-        "municipalityName":"शुद्धोधन गाउँपालिका"
+        "municipalityName":"Shuddhodhan village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"कपिलवस्तु नगरपालिका"
+        "municipalityName":"Kapilvastu Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"बुद्धभुमी नगरपालिका"
+        "municipalityName":"Buddhabhumi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"शिवराज नगरपालिका"
+        "municipalityName":"Shivraj Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"महाराजगंज नगरपालिका"
+        "municipalityName":"Maharajganj Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"कृष्णनगर नगरपालिका"
+        "municipalityName":"Krishnanagar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"बाणगंगा नगरपालिका"
+        "municipalityName":"Banganga Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"मायादेवी गाउँपालिका"
+        "municipalityName":"Mayadevi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"यसोधरा गाउँपालिका"
+        "municipalityName":"Yasodhara village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"सुद्धोधन गाउँपालिका"
+        "municipalityName":"Suddhodhan village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 49,
-        "municipalityName":"विजयनगर गाउँपालिका"
+        "municipalityName":"Vijayanagar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 50,
-        "municipalityName":"सन्धिखर्क नगरपालिका"
+        "municipalityName":"Sandhikharka Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 50,
-        "municipalityName":"शितगंगा नगरपालिका"
+        "municipalityName":"Shitganga Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 50,
-        "municipalityName":"भूमिकास्थान नगरपालिका"
+        "municipalityName":"Vumikasathan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 50,
-        "municipalityName":"छत्रदेव गाउँपालिका"
+        "municipalityName":"Chhatradev village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 50,
-        "municipalityName":"पाणिनी गाउँपालिका"
+        "municipalityName":"Panini village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 50,
-        "municipalityName":"मालारानी गाउँपालिका"
+        "municipalityName":"Malarani village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 51,
-        "municipalityName":"प्यूठान नगरपालिका"
+        "municipalityName":"Pyuthan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 51,
-        "municipalityName":"स्वर्गद्वारी नगरपालिका"
+        "municipalityName":"Swargadwari Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 51,
-        "municipalityName":"गौमुखी गाउँपालिका"
+        "municipalityName":"Gaumukhi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 51,
-        "municipalityName":"माण्डवी गाउँपालिका"
+        "municipalityName":"Mandvi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 51,
-        "municipalityName":"सरुमारानी गाउँपालिका"
+        "municipalityName":"Sarumarani village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 51,
-        "municipalityName":"मल्लरानी गाउँपालिका"
+        "municipalityName":"Mallarani village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 51,
-        "municipalityName":"नौवहिनी गाउँपालिका"
+        "municipalityName":"Nauwahini village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 51,
-        "municipalityName":"झिमरुक गाउँपालिका"
+        "municipalityName":"Zhimruk village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 51,
-        "municipalityName":"ऐरावती गाउँपालिका"
+        "municipalityName":"Airavati village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"रोल्पा नगरपालिका"
+        "municipalityName":"Rolpa Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"त्रिवेणी गाउँपालिका"
+        "municipalityName":"Triveni village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"परिवर्तन गाउँपालिका"
+        "municipalityName":"Parivartan village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"माडी गाउँपालिका"
+        "municipalityName":"Madi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"रुन्टीगढी गाउँपालिका"
+        "municipalityName":"Runtigadhi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"लुङग्री गाउँपालिका"
+        "municipalityName":"Lungri village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"गंगादेव गाउँपालिका"
+        "municipalityName":"Gangadev village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"सुनछहरी गाउँपालिका"
+        "municipalityName":"Sunchahari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"सुनिल स्मृति गाउँपालिका"
+        "municipalityName":"Sunil Smriti village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 52,
-        "municipalityName":"थवाङ गाउँपालिका"
+        "municipalityName":"Thawang village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 53,
-        "municipalityName":"मुसिकोट नगरपालिका"
+        "municipalityName":"Musikot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 53,
-        "municipalityName":"चौरजहारी नगरपालिका"
+        "municipalityName":"Chaurajahari Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 53,
-        "municipalityName":"आठबिसकोट नगरपालिका"
+        "municipalityName":"Athabiscot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 53,
-        "municipalityName":"पुथा उत्तरगंगा गाउँपालिका"
+        "municipalityName":"Putha Uttarganga village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 53,
-        "municipalityName":"भूमे गाउँपालिका"
+        "municipalityName":"Bhume village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 53,
-        "municipalityName":"सिस्ने गाउँपालिका"
+        "municipalityName":"Sisne village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 53,
-        "municipalityName":"बाँफिकोट गाउँपालिका"
+        "municipalityName":"Banfikot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 53,
-        "municipalityName":"त्रिवेणी गाउँपालिका"
+        "municipalityName":"Triveni village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 53,
-        "municipalityName":"सानी भेरी गाउँपालिका"
+        "municipalityName":"Sani Bheri village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"शारदा नगरपालिका"
+        "municipalityName":"Sharda Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"बागचौर नगरपालिका"
+        "municipalityName":"Bagchaur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"बनगाड कुपिण्डे नगरपालिका"
+        "municipalityName":"Bangad Kupinde Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"कालिमाटी गाउँपालिका"
+        "municipalityName":"Kalimati village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"त्रिवेणी गाउँपालिका"
+        "municipalityName":"Triveni village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"कपुरकोट गाउँपालिका"
+        "municipalityName":"Kapurkot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"छत्रेश्वरी गाउँपालिका"
+        "municipalityName":"Chhatreswari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"सिद्ध कुमाख गाउँपालिका"
+        "municipalityName":"Siddha Kumakh village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"कुमाख गाउँपालिका"
+        "municipalityName":"Kumakh village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 59,
-        "municipalityName":"दार्मा गाउँपालिका"
+        "municipalityName":"Darma village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"तुल्सीपुर उपमहानगरपालिका"
+        "municipalityName":"Tulsipur Sub-metropolis"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"घोराही उपमहानगरपालिका"
+        "municipalityName":"Ghorahi Sub-metropolis"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"लमही नगरपालिका"
+        "municipalityName":"Lamahi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"बंगलाचुली गाउँपालिका"
+        "municipalityName":"Bangalachuli village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"दंगीशरण गाउँपालिका"
+        "municipalityName":"Dangisharan village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"गढवा गाउँपालिका"
+        "municipalityName":"Gadhwa village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"राजपुर गाउँपालिका"
+        "municipalityName":"Rajpur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"राप्ती गाउँपालिका"
+        "municipalityName":"Rapti village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"शान्तिनगर गाउँपालिका"
+        "municipalityName":"Shantinagar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 54,
-        "municipalityName":"बबई गाउँपालिका"
+        "municipalityName":"Babai village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 55,
-        "municipalityName":"नेपालगंज उपमहानगरपालिका"
+        "municipalityName":"Nepalganj Sub-metropolis"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 55,
-        "municipalityName":"कोहलपुर नगरपालिका"
+        "municipalityName":"Kohalpur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 55,
-        "municipalityName":"नरैनापुर गाउँपालिका"
+        "municipalityName":"Narainapur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 55,
-        "municipalityName":"राप्ती सोनारी गाउँपालिका"
+        "municipalityName":"Rapti Sonari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 55,
-        "municipalityName":"बैजनाथ गाउँपालिका"
+        "municipalityName":"Baijnath village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 55,
-        "municipalityName":"खजुरा गाउँपालिका"
+        "municipalityName":"Khajura village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 55,
-        "municipalityName":"डुडुवा गाउँपालिका"
+        "municipalityName":"Duduwa village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 55,
-        "municipalityName":"जानकी गाउँपालिका"
+        "municipalityName":"Janaki village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 56,
-        "municipalityName":"गुलरिया नगरपालिका"
+        "municipalityName":"Gulariya Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 56,
-        "municipalityName":"मधुवन नगरपालिका"
+        "municipalityName":"Madhuvan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 56,
-        "municipalityName":"राजापुर नगरपालिका"
+        "municipalityName":"Rajapur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 56,
-        "municipalityName":"ठाकुरबाबा नगरपालिका"
+        "municipalityName":"Thakur Baba Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 56,
-        "municipalityName":"बाँसगढी नगरपालिका"
+        "municipalityName":"Bansgadhi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 56,
-        "municipalityName":"बारबर्दिया नगरपालिका"
+        "municipalityName":"Barbardia Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 56,
-        "municipalityName":"बढैयाताल गाउँपालिका"
+        "municipalityName":"Badaiyatal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 56,
-        "municipalityName":"गेरुवा गाउँपालिका"
+        "municipalityName":"Geruwa village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 60,
-        "municipalityName":"बीरेन्द्रनगर नगरपालिका"
+        "municipalityName":"Birendranagar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 60,
-        "municipalityName":"भेरीगंगा नगरपालिका"
+        "municipalityName":"Bheriganga Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 60,
-        "municipalityName":"गुर्भाकोट नगरपालिका"
+        "municipalityName":"Gurbhakot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 60,
-        "municipalityName":"पञ्चपुरी नगरपालिका"
+        "municipalityName":"Panchpuri Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 60,
-        "municipalityName":"लेकवेशी नगरपालिका"
+        "municipalityName":"Lekweshi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 60,
-        "municipalityName":"चौकुने गाउँपालिका"
+        "municipalityName":"Chowkune village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 60,
-        "municipalityName":"बराहताल गाउँपालिका"
+        "municipalityName":"Barahatal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 60,
-        "municipalityName":"चिङ्गाड गाउँपालिका"
+        "municipalityName":"Chingad village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 60,
-        "municipalityName":"सिम्ता गाउँपालिका"
+        "municipalityName":"Simta village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"नारायण नगरपालिका"
+        "municipalityName":"Narayan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"दुल्लु नगरपालिका"
+        "municipalityName":"Dullu Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"चामुण्डा विन्द्रासैनी नगरपालिका"
+        "municipalityName":"Chamunda Bindrasaini Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"आठबीस नगरपालिका"
+        "municipalityName":"Twenty-eight municipalities"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"भगवतीमाई गाउँपालिका"
+        "municipalityName":"Bhagwatimai village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"गुराँस गाउँपालिका"
+        "municipalityName":"Gurans village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"डुंगेश्वर गाउँपालिका"
+        "municipalityName":"Dungeshwar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"नौमुले गाउँपालिका"
+        "municipalityName":"Naumule village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"महावु गाउँपालिका"
+        "municipalityName":"Mahavu village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"भैरवी गाउँपालिका"
+        "municipalityName":"Bhairavi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 61,
-        "municipalityName":"ठाँटीकाँध गाउँपालिका"
+        "municipalityName":"Thantikandh village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 62,
-        "municipalityName":"भेरी नगरपालिका"
+        "municipalityName":"Bheri Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 62,
-        "municipalityName":"छेडागाड नगरपालिका"
+        "municipalityName":"Chhedagad Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 62,
-        "municipalityName":"नलगाड नगरपालिका"
+        "municipalityName":"Nalgad Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 62,
-        "municipalityName":"बारेकोट गाउँपालिका"
+        "municipalityName":"Barekot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 62,
-        "municipalityName":"कुसे गाउँपालिका"
+        "municipalityName":"Kuse village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 62,
-        "municipalityName":"जुनीचाँदे गाउँपालिका"
+        "municipalityName":"Junichande village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 62,
-        "municipalityName":"शिवालय गाउँपालिका"
+        "municipalityName":"Shivalaya village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 63,
-        "municipalityName":"ठूली भेरी नगरपालिका"
+        "municipalityName":"Thuli Bheri Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 63,
-        "municipalityName":"त्रिपुरासुन्दरी नगरपालिका"
+        "municipalityName":"Tripura Sundari Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 63,
-        "municipalityName":"डोल्पो बुद्ध गाउँपालिका"
+        "municipalityName":"Dolpo Buddha village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 63,
-        "municipalityName":"शे फोक्सुन्डो गाउँपालिका"
+        "municipalityName":"She Foksundo village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 63,
-        "municipalityName":"जगदुल्ला गाउँपालिका"
+        "municipalityName":"Jagadulla village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 63,
-        "municipalityName":"मुड्केचुला गाउँपालिका"
+        "municipalityName":"Mudkechula village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 63,
-        "municipalityName":"काईके गाउँपालिका"
+        "municipalityName":"Kaike village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 63,
-        "municipalityName":"छार्का ताङसोङ गाउँपालिका"
+        "municipalityName":"Charka Tangsong village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 64,
-        "municipalityName":"चन्दननाथ नगरपालिका"
+        "municipalityName":"Chandannath Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 64,
-        "municipalityName":"कनकासुन्दरी गाउँपालिका"
+        "municipalityName":"Kanakasundari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 64,
-        "municipalityName":"सिंजा गाउँपालिका"
+        "municipalityName":"Sinja village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 64,
-        "municipalityName":"हिमा गाउँपालिका"
+        "municipalityName":"Hima village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 64,
-        "municipalityName":"तिला गाउँपालिका"
+        "municipalityName":"Tila village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 64,
-        "municipalityName":"गुठिचौर गाउँपालिका"
+        "municipalityName":"Guthichaur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 64,
-        "municipalityName":"तातोपानी गाउँपालिका"
+        "municipalityName":"Tatopani village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 64,
-        "municipalityName":"पातारासी गाउँपालिका"
+        "municipalityName":"Patarasi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 65,
-        "municipalityName":"खाँडाचक्र नगरपालिका"
+        "municipalityName":"Khandachakra Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 65,
-        "municipalityName":"रास्कोट नगरपालिका"
+        "municipalityName":"Rascot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 65,
-        "municipalityName":"तिलागुफा नगरपालिका"
+        "municipalityName":"Tilagufa Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 65,
-        "municipalityName":"पचालझरना गाउँपालिका"
+        "municipalityName":"Pachaljharna village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 65,
-        "municipalityName":"सान्नी त्रिवेणी गाउँपालिका"
+        "municipalityName":"Sanni Triveni village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 65,
-        "municipalityName":"नरहरिनाथ गाउँपालिका"
+        "municipalityName":"Narharinath village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 65,
-        "municipalityName":"शुभ कालीका गाउँपालिका"
+        "municipalityName":"Shubh Kali Village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 65,
-        "municipalityName":"महावै गाउँपालिका"
+        "municipalityName":"Mahawai village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 65,
-        "municipalityName":"पलाता गाउँपालिका"
+        "municipalityName":"Palata village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 66,
-        "municipalityName":"छायाँनाथ रारा नगरपालिका"
+        "municipalityName":"Chhayannath Rara Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 66,
-        "municipalityName":"मुगुम कार्मारोंग गाउँपालिका"
+        "municipalityName":"Mugum Karmarong village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 66,
-        "municipalityName":"सोरु गाउँपालिका"
+        "municipalityName":"Soru village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 66,
-        "municipalityName":"खत्याड गाउँपालिका"
+        "municipalityName":"Khatyad village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 67,
-        "municipalityName":"सिमकोट गाउँपालिका"
+        "municipalityName":"Simkot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 67,
-        "municipalityName":"नाम्खा गाउँपालिका"
+        "municipalityName":"Namkha village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 67,
-        "municipalityName":"खार्पुनाथ गाउँपालिका"
+        "municipalityName":"Kharpunath village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 67,
-        "municipalityName":"सर्केगाड गाउँपालिका"
+        "municipalityName":"Sarkegad village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 67,
-        "municipalityName":"चंखेली गाउँपालिका"
+        "municipalityName":"Chankheli village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 67,
-        "municipalityName":"अदानचुली गाउँपालिका"
+        "municipalityName":"Adanchuli village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 6,
         "districtId": 67,
-        "municipalityName":"ताँजाकोट गाउँपालिका"
+        "municipalityName":"Tanjakot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 68,
-        "municipalityName":"बडीमालिका नगरपालिका"
+        "municipalityName":"Badimalika Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 68,
-        "municipalityName":"त्रिवेणी नगरपालिका"
+        "municipalityName":"Triveni Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 68,
-        "municipalityName":"बुढीगंगा नगरपालिका"
+        "municipalityName":"Budhiganga Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 68,
-        "municipalityName":"बुढीनन्दा नगरपालिका"
+        "municipalityName":"Budhinanda Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 68,
-        "municipalityName":"गौमुल गाउँपालिका"
+        "municipalityName":"Gaumul village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 68,
-        "municipalityName":"जगन्‍नाथ गाउँपालिका"
+        "municipalityName":"Jagannath village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 68,
-        "municipalityName":"स्वामीकार्तिक खापर गाउँपालिका"
+        "municipalityName":"Swamikartik Khapar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 68,
-        "municipalityName":"खप्तड छेडेदह गाउँपालिका"
+        "municipalityName":"Khaptad Chhededaha village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 68,
-        "municipalityName":"हिमाली गाउँपालिका"
+        "municipalityName":"Himali village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"जयपृथ्वी नगरपालिका"
+        "municipalityName":"Jaya Prithvi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"बुंगल नगरपालिका"
+        "municipalityName":"Bungal Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"तलकोट गाउँपालिका"
+        "municipalityName":"Talkot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"मष्टा गाउँपालिका"
+        "municipalityName":"Mashta village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"खप्तडछान्ना गाउँपालिका"
+        "municipalityName":"Khaptadchanna village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"थलारा गाउँपालिका"
+        "municipalityName":"Thalara village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"वित्थडचिर गाउँपालिका"
+        "municipalityName":"Vitthadchir village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"सूर्मा गाउँपालिका"
+        "municipalityName":"Surma village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"छबिसपाथिभेरा गाउँपालिका"
+        "municipalityName":"Chhabispathibhera village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"दुर्गाथली गाउँपालिका"
+        "municipalityName":"Durgathali village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"केदारस्युँ गाउँपालिका"
+        "municipalityName":"Kedarsyu village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 69,
-        "municipalityName":"साइपाल गाउँपालिका"
+        "municipalityName":"Saipal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"मंगलसेन नगरपालिका"
+        "municipalityName":"Mangalsen Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"कमलबजार नगरपालिका"
+        "municipalityName":"Kamalbazar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"साँफेबगर नगरपालिका"
+        "municipalityName":"Sanphebgar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"पन्चदेवल विनायक नगरपालिका"
+        "municipalityName":"Panchdewal Vinayak Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"चौरपाटी गाउँपालिका"
+        "municipalityName":"Chaurpati village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"मेल्लेख गाउँपालिका"
+        "municipalityName":"Mellekh village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"बान्निगढी जयगढ गाउँपालिका"
+        "municipalityName":"Bannigadhi Jayagarh village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"रामारोशन गाउँपालिका"
+        "municipalityName":"Ramaroshan village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"ढकारी गाउँपालिका"
+        "municipalityName":"Dhakari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 70,
-        "municipalityName":"तुर्माखाँद गाउँपालिका"
+        "municipalityName":"Turmakhand village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
-        "municipalityName":"दिपायल सिलगढी नगरपालिका"
+        "municipalityName":"Dipayal Silgadhi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
-        "municipalityName":"शिखर नगरपालिका"
+        "municipalityName":"Shikhar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
-        "municipalityName":"पूर्वीचौकी गाउँपालिका"
+        "municipalityName":"East Chowki village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
-        "municipalityName":"बडीकेदार गाउँपालिका"
+        "municipalityName":"Badikedar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
-        "municipalityName":"जोरायल गाउँपालिका"
+        "municipalityName":"Jorayal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
-        "municipalityName":"सायल गाउँपालिका"
+        "municipalityName":"Sayal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
-        "municipalityName":"आदर्श गाउँपालिका"
+        "municipalityName":"Ideal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
-        "municipalityName":"के.आई.सिं. गाउँपालिका"
+        "municipalityName":"K.I.S. Village Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
-        "municipalityName":"बोगटान फुड्सिल गाउँपालिका"
+        "municipalityName":"Bogtan Foodsil village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"धनगढी उपमहानगरपालिका"
+        "municipalityName":"Dhangadhi Sub-metropolis"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"टिकापुर नगरपालिका"
+        "municipalityName":"Tikapur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"घोडाघोडी नगरपालिका"
+        "municipalityName":"Ghodaghodi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"लम्कीचुहा नगरपालिका"
+        "municipalityName":"Lamkichuha Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"भजनी नगरपालिका"
+        "municipalityName":"Bhajani Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"गोदावरी नगरपालिका"
+        "municipalityName":"Godavari Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"गौरीगंगा नगरपालिका"
+        "municipalityName":"Gauriganga Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"जानकी गाउँपालिका"
+        "municipalityName":"Janaki village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"बर्दगोरिया गाउँपालिका"
+        "municipalityName":"Mohanyal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"मोहन्याल गाउँपालिका"
+        "municipalityName":"Mohanyalal Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"कैलारी गाउँपालिका"
+        "municipalityName":"Kailari village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"जोशीपुर गाउँपालिका"
+        "municipalityName":"Joshipur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"चुरे गाउँपालिका"
+        "municipalityName":"Chure village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 72,
-        "municipalityName":"भीमदत्त नगरपालिका"
+        "municipalityName":"Bhimdatta Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 73,
-        "municipalityName":"पुर्नवास नगरपालिका"
+        "municipalityName":"पुर्नवास"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 73,
-        "municipalityName":"वेदकोट नगरपालिका"
+        "municipalityName":"Vedkot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 73,
-        "municipalityName":"महाकाली नगरपालिका"
+        "municipalityName":"Mahakali Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 73,
-        "municipalityName":"शुक्लाफाँटा नगरपालिका"
+        "municipalityName":"Shuklaphanta municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 73,
-        "municipalityName":"बेलौरी नगरपालिका"
+        "municipalityName":"Belauri Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 73,
-        "municipalityName":"कृष्णपुर नगरपालिका"
+        "municipalityName":"Krishnapur Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 73,
-        "municipalityName":"बेलडाडी गाउँपालिका"
+        "municipalityName":"Beldadi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 73,
-        "municipalityName":"लालझाडी गाउँपालिका"
+        "municipalityName":"Laljhadi village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 74,
-        "municipalityName":"अमरगढी नगरपालिका"
+        "municipalityName":"Amargadhi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 74,
-        "municipalityName":"परशुराम नगरपालिका"
+        "municipalityName":"Parashuram Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 74,
-        "municipalityName":"आलिताल गाउँपालिका"
+        "municipalityName":"Alital village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 74,
-        "municipalityName":"भागेश्वर गाउँपालिका"
+        "municipalityName":"Bhageshwor village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 74,
-        "municipalityName":"नवदुर्गा गाउँपालिका"
+        "municipalityName":"Navdurga village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 74,
-        "municipalityName":"अजयमेरु गाउँपालिका"
+        "municipalityName":"Ajayameru village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 74,
-        "municipalityName":"गन्यापधुरा गाउँपालिका"
+        "municipalityName":"Ganyapadhura village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"दशरथचन्द नगरपालिका"
+        "municipalityName":"Dasharathchanda Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"पाटन नगरपालिका"
+        "municipalityName":"Patan Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"मेलौली नगरपालिका"
+        "municipalityName":"Melauli Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"पुर्चौडी नगरपालिका"
+        "municipalityName":"Purchaudi Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"सुर्नया गाउँपालिका"
+        "municipalityName":"Surnaya village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"सिगास गाउँपालिका"
+        "municipalityName":"Sigas village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"शिवनाथ गाउँपालिका"
+        "municipalityName":"Shivnath village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"पञ्चेश्वर गाउँपालिका"
+        "municipalityName":"Pancheshwor village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"दोगडाकेदार गाउँपालिका"
+        "municipalityName":"Dogadakedar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 75,
-        "municipalityName":"डीलासैनी गाउँपालिका"
+        "municipalityName":"Dilasani village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 76,
-        "municipalityName":"महाकाली नगरपालिका"
+        "municipalityName":"Mahakali Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 76,
-        "municipalityName":"शैल्यशिखर नगरपालिका"
+        "municipalityName":"Shailyashikhar Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 76,
-        "municipalityName":"मालिकार्जुन गाउँपालिका"
+        "municipalityName":"Malikarjun village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 76,
-        "municipalityName":"अपिहिमाल गाउँपालिका"
+        "municipalityName":"Apihimal village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 76,
-        "municipalityName":"दुहुँ गाउँपालिका"
+        "municipalityName":"Duhu village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 76,
-        "municipalityName":"नौगाड गाउँपालिका"
+        "municipalityName":"Naugad village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 76,
-        "municipalityName":"मार्मा गाउँपालिका"
+        "municipalityName":"Marma village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 76,
-        "municipalityName":"लेकम गाउँपालिका"
+        "municipalityName":"Lekam village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 76,
-        "municipalityName":"ब्याँस गाउँपालिका"
+        "municipalityName":"Byans village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"कावासोती नगरपालिका"
+        "municipalityName":"Kawasoti Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"गैडाकोट नगरपालिका"
+        "municipalityName":"Gaidakot Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"देवचुली नगरपालिका"
+        "municipalityName":"Devachuli Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"मध्यविन्दु नगरपालिका"
+        "municipalityName":"Midpoint Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"बौदीकाली गाउँपालिका"
+        "municipalityName":"Baudikali village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"बुलिङटार गाउँपालिका"
+        "municipalityName":"Bulingtar village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"विनयी त्रिवेणी गाउँपालिका"
+        "municipalityName":"Vinay Triveni village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"हुप्सेकोट गाउँपालिका"
+        "municipalityName":"Hupsekot village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"बर्दघाट नगरपालिका"
+        "municipalityName":"Bardaghat Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"रामग्राम नगरपालिका"
+        "municipalityName":"Ramgram Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"सुनवल नगरपालिका"
+        "municipalityName":"Sunwal Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"सुस्ता गाउँपालिका"
+        "municipalityName":"Susta village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"पाल्हीनन्दन गाउँपालिका"
+        "municipalityName":"Palhinandan village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"प्रतापपुर गाउँपालिका"
+        "municipalityName":"Pratappur village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 5,
         "districtId": 57,
-        "municipalityName":"सरावल गाउँपालिका"
+        "municipalityName":"Sarawal village municipality"
     }
 ]

@@ -46,7 +46,8 @@ abstract class PsApi {
 
       if (psApiResponse.isSuccessful()) {
         final dynamic hashMap = json.decode(response.body);
-
+        // TODO: print product detail
+        print(hashMap);
         if (!(hashMap is Map)) {
           final List<T> tList = <T>[];
           hashMap.forEach((dynamic data) {

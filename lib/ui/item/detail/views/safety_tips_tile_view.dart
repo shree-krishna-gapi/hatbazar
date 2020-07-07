@@ -32,15 +32,20 @@ class SafetyTipsTileView extends StatelessWidget {
       if (aboutUsProvider != null &&
           aboutUsProvider.aboutUsList != null &&
           aboutUsProvider.aboutUsList.data.isNotEmpty) {
+
         return Container(
           margin: const EdgeInsets.only(
               left: PsDimens.space12,
               right: PsDimens.space12,
               bottom: PsDimens.space12),
           decoration: BoxDecoration(
-            color: PsColors.backgroundColor,
+            color: Color(0xFFE5F6D2),
+//            gradient: LinearGradient(colors: <Color>[
+//              PsColors.mainColor,
+//              PsColors.mainDarkColor,
+//            ]),
             borderRadius:
-                const BorderRadius.all(Radius.circular(PsDimens.space8)),
+            const BorderRadius.all(Radius.circular(PsDimens.space8)),
           ),
           child: PsExpansionTile(
             initiallyExpanded: true,
@@ -50,13 +55,13 @@ class SafetyTipsTileView extends StatelessWidget {
               Column(
                 children: <Widget>[
                   const Divider(
-                    height: PsDimens.space1,
+                    height: PsDimens.space1, //color: Colors.white
                   ),
                   Padding(
                     padding: const EdgeInsets.all(PsDimens.space12),
                     child: Text(aboutUsProvider.aboutUsList.data[0].safetyTips,
                         maxLines: 3,
-                        style: Theme.of(context).textTheme.bodyText1),
+                        style: Theme.of(context).textTheme.bodyText1), // gapi added copyWith color
                   ),
                   Padding(
                     padding: const EdgeInsets.all(PsDimens.space12),
@@ -74,11 +79,11 @@ class SafetyTipsTileView extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             Utils.getString(
-                                context, 'safety_tips_tile__read_more_button'),
+                              context, 'safety_tips_tile__read_more_button',),
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText2
-                                .copyWith(color: PsColors.mainColor),
+                                .bodyText2.copyWith(color:PsColors.mainColor)
+                                , // gapi PsColors.mainColor
                           ),
                         ],
                       ),

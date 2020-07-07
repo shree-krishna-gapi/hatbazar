@@ -56,8 +56,8 @@ import 'package:url_launcher/url_launcher.dart';
 class ProductDetailView extends StatefulWidget {
   const ProductDetailView(
       {@required this.product,
-      @required this.heroTagImage,
-      @required this.heroTagTitle});
+        @required this.heroTagImage,
+        @required this.heroTagTitle});
 
   final Product product;
   final String heroTagImage;
@@ -115,67 +115,67 @@ class _ProductDetailState extends State<ProductDetailView>
     return PsWidgetWithMultiProvider(
         child: MultiProvider(
             providers: <SingleChildWidget>[
-          ChangeNotifierProvider<ItemDetailProvider>(
-            lazy: false,
-            create: (BuildContext context) {
-              final ItemDetailProvider itemDetailProvider = ItemDetailProvider(
-                  repo: productRepo, psValueHolder: psValueHolder);
+              ChangeNotifierProvider<ItemDetailProvider>(
+                lazy: false,
+                create: (BuildContext context) {
+                  final ItemDetailProvider itemDetailProvider = ItemDetailProvider(
+                      repo: productRepo, psValueHolder: psValueHolder);
 
-              final String loginUserId = Utils.checkUserLoginId(psValueHolder);
-              itemDetailProvider.loadProduct(widget.product.id, loginUserId);
+                  final String loginUserId = Utils.checkUserLoginId(psValueHolder);
+                  itemDetailProvider.loadProduct(widget.product.id, loginUserId);
 
-              return itemDetailProvider;
-            },
-          ),
-          ChangeNotifierProvider<HistoryProvider>(
-            lazy: false,
-            create: (BuildContext context) {
-              historyProvider = HistoryProvider(repo: historyRepo);
-              return historyProvider;
-            },
-          ),
-          ChangeNotifierProvider<AboutUsProvider>(
-            lazy: false,
-            create: (BuildContext context) {
-              aboutUsProvider = AboutUsProvider(
-                  repo: aboutUsRepo, psValueHolder: psValueHolder);
-              aboutUsProvider.loadAboutUsList();
-              return aboutUsProvider;
-            },
-          ),
-          ChangeNotifierProvider<MarkSoldOutItemProvider>(
-            lazy: false,
-            create: (BuildContext context) {
-              markSoldOutItemProvider =
-                  MarkSoldOutItemProvider(repo: productRepo);
+                  return itemDetailProvider;
+                },
+              ),
+              ChangeNotifierProvider<HistoryProvider>(
+                lazy: false,
+                create: (BuildContext context) {
+                  historyProvider = HistoryProvider(repo: historyRepo);
+                  return historyProvider;
+                },
+              ),
+              ChangeNotifierProvider<AboutUsProvider>(
+                lazy: false,
+                create: (BuildContext context) {
+                  aboutUsProvider = AboutUsProvider(
+                      repo: aboutUsRepo, psValueHolder: psValueHolder);
+                  aboutUsProvider.loadAboutUsList();
+                  return aboutUsProvider;
+                },
+              ),
+              ChangeNotifierProvider<MarkSoldOutItemProvider>(
+                lazy: false,
+                create: (BuildContext context) {
+                  markSoldOutItemProvider =
+                      MarkSoldOutItemProvider(repo: productRepo);
 
-              return markSoldOutItemProvider;
-            },
-          ),
-          ChangeNotifierProvider<UserProvider>(
-            lazy: false,
-            create: (BuildContext context) {
-              userProvider =
-                  UserProvider(repo: userRepo, psValueHolder: psValueHolder);
-              return userProvider;
-            },
-          ),
-          ChangeNotifierProvider<TouchCountProvider>(
-            lazy: false,
-            create: (BuildContext context) {
-              touchCountProvider = TouchCountProvider(
-                  repo: productRepo, psValueHolder: psValueHolder);
-              final String loginUserId = Utils.checkUserLoginId(psValueHolder);
+                  return markSoldOutItemProvider;
+                },
+              ),
+              ChangeNotifierProvider<UserProvider>(
+                lazy: false,
+                create: (BuildContext context) {
+                  userProvider =
+                      UserProvider(repo: userRepo, psValueHolder: psValueHolder);
+                  return userProvider;
+                },
+              ),
+              ChangeNotifierProvider<TouchCountProvider>(
+                lazy: false,
+                create: (BuildContext context) {
+                  touchCountProvider = TouchCountProvider(
+                      repo: productRepo, psValueHolder: psValueHolder);
+                  final String loginUserId = Utils.checkUserLoginId(psValueHolder);
 
-              final TouchCountParameterHolder touchCountParameterHolder =
+                  final TouchCountParameterHolder touchCountParameterHolder =
                   TouchCountParameterHolder(
                       itemId: widget.product.id, userId: loginUserId);
-              touchCountProvider
-                  .postTouchCount(touchCountParameterHolder.toMap());
-              return touchCountProvider;
-            },
-          )
-        ],
+                  touchCountProvider
+                      .postTouchCount(touchCountParameterHolder.toMap());
+                  return touchCountProvider;
+                },
+              )
+            ],
             child: Consumer<ItemDetailProvider>(
               builder: (BuildContext context, ItemDetailProvider provider,
                   Widget child) {
@@ -192,8 +192,8 @@ class _ProductDetailState extends State<ProductDetailView>
                   }
                   return Consumer<MarkSoldOutItemProvider>(builder:
                       (BuildContext context,
-                          MarkSoldOutItemProvider markSoldOutItemProvider,
-                          Widget child) {
+                      MarkSoldOutItemProvider markSoldOutItemProvider,
+                      Widget child) {
                     return Stack(
                       children: <Widget>[
                         CustomScrollView(slivers: <Widget>[
@@ -262,21 +262,21 @@ class _ProductDetailState extends State<ProductDetailView>
                                             right: PsDimens.space12),
                                         child: Column(
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                           mainAxisAlignment:
-                                              MainAxisAlignment.end,
+                                          MainAxisAlignment.end,
                                           mainAxisSize: MainAxisSize.max,
                                           children: <Widget>[
                                             if (provider.itemDetail.data
-                                                    .paidStatus ==
+                                                .paidStatus ==
                                                 PsConst.ADSPROGRESS)
                                               Container(
                                                 decoration: BoxDecoration(
                                                     borderRadius:
-                                                        BorderRadius.circular(
-                                                            PsDimens.space4),
+                                                    BorderRadius.circular(
+                                                        PsDimens.space4),
                                                     color:
-                                                        PsColors.paidAdsColor),
+                                                    PsColors.paidAdsColor),
                                                 padding: const EdgeInsets.all(
                                                     PsDimens.space12),
                                                 child: Text(
@@ -286,22 +286,22 @@ class _ProductDetailState extends State<ProductDetailView>
                                                       .textTheme
                                                       .bodyText2
                                                       .copyWith(
-                                                          color:
-                                                              PsColors.white),
+                                                      color:
+                                                      PsColors.white),
                                                 ),
                                               )
                                             else if (provider.itemDetail.data
-                                                        .paidStatus ==
-                                                    PsConst.ADSFINISHED &&
+                                                .paidStatus ==
+                                                PsConst.ADSFINISHED &&
                                                 provider.itemDetail.data
-                                                        .addedUserId ==
+                                                    .addedUserId ==
                                                     provider.psValueHolder
                                                         .loginUserId)
                                               Container(
                                                 decoration: BoxDecoration(
                                                     borderRadius:
-                                                        BorderRadius.circular(
-                                                            PsDimens.space4),
+                                                    BorderRadius.circular(
+                                                        PsDimens.space4),
                                                     color: PsColors.black),
                                                 padding: const EdgeInsets.all(
                                                     PsDimens.space12),
@@ -312,54 +312,54 @@ class _ProductDetailState extends State<ProductDetailView>
                                                       .textTheme
                                                       .bodyText2
                                                       .copyWith(
-                                                          color:
-                                                              PsColors.white),
+                                                      color:
+                                                      PsColors.white),
                                                 ),
                                               )
                                             else if (provider.itemDetail.data
-                                                    .paidStatus ==
-                                                PsConst.ADSNOTYETSTART)
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            PsDimens.space4),
-                                                    color: Colors.yellow),
-                                                padding: const EdgeInsets.all(
-                                                    PsDimens.space12),
-                                                child: Text(
-                                                  Utils.getString(context,
-                                                      'paid__ads_is_not_yet_start'),
-                                                  style: Theme.of(context)
-                                                      .textTheme
-                                                      .bodyText2
-                                                      .copyWith(
-                                                          color:
-                                                              PsColors.white),
-                                                ),
-                                              )
-                                            else
-                                              Container(),
+                                                  .paidStatus ==
+                                                  PsConst.ADSNOTYETSTART)
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          PsDimens.space4),
+                                                      color: Colors.yellow),
+                                                  padding: const EdgeInsets.all(
+                                                      PsDimens.space12),
+                                                  child: Text(
+                                                    Utils.getString(context,
+                                                        'paid__ads_is_not_yet_start'),
+                                                    style: Theme.of(context)
+                                                        .textTheme
+                                                        .bodyText2
+                                                        .copyWith(
+                                                        color:
+                                                        PsColors.white),
+                                                  ),
+                                                )
+                                              else
+                                                Container(),
                                             Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
+                                              MainAxisAlignment
+                                                  .spaceBetween,
                                               children: <Widget>[
                                                 if (provider.itemDetail.data
-                                                        .isSoldOut ==
+                                                    .isSoldOut ==
                                                     '1')
                                                   Container(
                                                     decoration: BoxDecoration(
                                                         borderRadius:
-                                                            BorderRadius
-                                                                .circular(
-                                                                    PsDimens
-                                                                        .space4),
+                                                        BorderRadius
+                                                            .circular(
+                                                            PsDimens
+                                                                .space4),
                                                         color:
-                                                            PsColors.mainColor),
+                                                        PsColors.mainColor),
                                                     padding:
-                                                        const EdgeInsets.all(
-                                                            PsDimens.space12),
+                                                    const EdgeInsets.all(
+                                                        PsDimens.space12),
                                                     child: Text(
                                                       Utils.getString(context,
                                                           'item_detail__sold'),
@@ -367,8 +367,8 @@ class _ProductDetailState extends State<ProductDetailView>
                                                           .textTheme
                                                           .bodyText2
                                                           .copyWith(
-                                                              color: PsColors
-                                                                  .white),
+                                                          color: PsColors
+                                                              .white),
                                                     ),
                                                   )
                                                 else
@@ -377,20 +377,20 @@ class _ProductDetailState extends State<ProductDetailView>
                                                       showDialog<dynamic>(
                                                           context: context,
                                                           builder: (BuildContext
-                                                              context) {
+                                                          context) {
                                                             return ConfirmDialogView(
                                                                 description: Utils
                                                                     .getString(
-                                                                        context,
-                                                                        'item_detail__sold_out_item'),
+                                                                    context,
+                                                                    'item_detail__sold_out_item'),
                                                                 leftButtonText:
-                                                                    Utils.getString(
-                                                                        context,
-                                                                        'item_detail__sold_out_dialog_cancel_button'),
+                                                                Utils.getString(
+                                                                    context,
+                                                                    'item_detail__sold_out_dialog_cancel_button'),
                                                                 rightButtonText:
-                                                                    Utils.getString(
-                                                                        context,
-                                                                        'item_detail__sold_out_dialog_ok_button'),
+                                                                Utils.getString(
+                                                                    context,
+                                                                    'item_detail__sold_out_dialog_ok_button'),
                                                                 onAgreeTap:
                                                                     () async {
                                                                   await markSoldOutItemProvider.loadmarkSoldOutItem(
@@ -398,22 +398,22 @@ class _ProductDetailState extends State<ProductDetailView>
                                                                           .loginUserId,
                                                                       markSoldOutItemHolder);
                                                                   if (markSoldOutItemProvider
-                                                                              .markSoldOutItem !=
-                                                                          null &&
+                                                                      .markSoldOutItem !=
+                                                                      null &&
                                                                       markSoldOutItemProvider
-                                                                              .markSoldOutItem
-                                                                              .data !=
+                                                                          .markSoldOutItem
+                                                                          .data !=
                                                                           null) {
                                                                     setState(
-                                                                        () {
-                                                                      provider.itemDetail.data.isSoldOut = markSoldOutItemProvider
-                                                                          .markSoldOutItem
-                                                                          .data
-                                                                          .isSoldOut;
-                                                                    });
+                                                                            () {
+                                                                          provider.itemDetail.data.isSoldOut = markSoldOutItemProvider
+                                                                              .markSoldOutItem
+                                                                              .data
+                                                                              .isSoldOut;
+                                                                        });
                                                                   }
                                                                   Navigator.of(
-                                                                          context)
+                                                                      context)
                                                                       .pop();
                                                                 });
                                                           });
@@ -421,15 +421,15 @@ class _ProductDetailState extends State<ProductDetailView>
                                                     child: Container(
                                                       decoration: BoxDecoration(
                                                           borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      PsDimens
-                                                                          .space4),
+                                                          BorderRadius
+                                                              .circular(
+                                                              PsDimens
+                                                                  .space4),
                                                           color: PsColors
                                                               .mainColor),
                                                       padding:
-                                                          const EdgeInsets.all(
-                                                              PsDimens.space12),
+                                                      const EdgeInsets.all(
+                                                          PsDimens.space12),
                                                       child: Text(
                                                         Utils.getString(context,
                                                             'item_detail__mark_sold'),
@@ -437,8 +437,8 @@ class _ProductDetailState extends State<ProductDetailView>
                                                             .textTheme
                                                             .bodyText2
                                                             .copyWith(
-                                                                color: PsColors
-                                                                    .white),
+                                                            color: PsColors
+                                                                .white),
                                                       ),
                                                     ),
                                                   ),
@@ -446,22 +446,22 @@ class _ProductDetailState extends State<ProductDetailView>
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                         borderRadius:
-                                                            BorderRadius
-                                                                .circular(
-                                                                    PsDimens
-                                                                        .space4),
+                                                        BorderRadius
+                                                            .circular(
+                                                            PsDimens
+                                                                .space4),
                                                         color: Colors.black45),
                                                     padding:
-                                                        const EdgeInsets.all(
-                                                            PsDimens.space12),
+                                                    const EdgeInsets.all(
+                                                        PsDimens.space12),
                                                     child: Row(
                                                       crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .end,
+                                                      CrossAxisAlignment
+                                                          .end,
                                                       mainAxisAlignment:
-                                                          MainAxisAlignment.end,
+                                                      MainAxisAlignment.end,
                                                       mainAxisSize:
-                                                          MainAxisSize.min,
+                                                      MainAxisSize.min,
                                                       children: <Widget>[
                                                         Icon(
                                                           Ionicons.md_images,
@@ -473,12 +473,12 @@ class _ProductDetailState extends State<ProductDetailView>
                                                         Text(
                                                           '${widget.product.photoCount}  ${Utils.getString(context, 'item_detail__photo')}',
                                                           style: Theme.of(
-                                                                  context)
+                                                              context)
                                                               .textTheme
                                                               .bodyText2
                                                               .copyWith(
-                                                                  color: PsColors
-                                                                      .white),
+                                                              color: PsColors
+                                                                  .white),
                                                         ),
                                                       ],
                                                     ),
@@ -487,7 +487,7 @@ class _ProductDetailState extends State<ProductDetailView>
                                                     Navigator.pushNamed(context,
                                                         RoutePaths.galleryGrid,
                                                         arguments:
-                                                            widget.product);
+                                                        widget.product);
                                                   },
                                                 ),
                                               ],
@@ -501,20 +501,20 @@ class _ProductDetailState extends State<ProductDetailView>
                                             PsDimens.space8),
                                         child: Row(
                                           mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
+                                          MainAxisAlignment.spaceBetween,
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.end,
+                                          CrossAxisAlignment.end,
                                           children: <Widget>[
                                             if (provider.itemDetail.data
-                                                    .paidStatus ==
+                                                .paidStatus ==
                                                 PsConst.ADSPROGRESS)
                                               Container(
                                                 decoration: BoxDecoration(
                                                     borderRadius:
-                                                        BorderRadius.circular(
-                                                            PsDimens.space4),
+                                                    BorderRadius.circular(
+                                                        PsDimens.space4),
                                                     color:
-                                                        PsColors.paidAdsColor),
+                                                    PsColors.paidAdsColor),
                                                 padding: const EdgeInsets.all(
                                                     PsDimens.space12),
                                                 child: Text(
@@ -524,22 +524,22 @@ class _ProductDetailState extends State<ProductDetailView>
                                                       .textTheme
                                                       .bodyText2
                                                       .copyWith(
-                                                          color:
-                                                              PsColors.white),
+                                                      color:
+                                                      PsColors.white),
                                                 ),
                                               )
                                             else if (provider.itemDetail.data
-                                                        .paidStatus ==
-                                                    PsConst.ADSFINISHED &&
+                                                .paidStatus ==
+                                                PsConst.ADSFINISHED &&
                                                 provider.itemDetail.data
-                                                        .addedUserId ==
+                                                    .addedUserId ==
                                                     provider.psValueHolder
                                                         .loginUserId)
                                               Container(
                                                 decoration: BoxDecoration(
                                                     borderRadius:
-                                                        BorderRadius.circular(
-                                                            PsDimens.space4),
+                                                    BorderRadius.circular(
+                                                        PsDimens.space4),
                                                     color: PsColors.black),
                                                 padding: const EdgeInsets.all(
                                                     PsDimens.space12),
@@ -550,50 +550,50 @@ class _ProductDetailState extends State<ProductDetailView>
                                                       .textTheme
                                                       .bodyText2
                                                       .copyWith(
-                                                          color:
-                                                              PsColors.white),
+                                                      color:
+                                                      PsColors.white),
                                                 ),
                                               )
                                             else if (provider.itemDetail.data
-                                                    .paidStatus ==
-                                                PsConst.ADSNOTYETSTART)
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            PsDimens.space4),
-                                                    color: Colors.yellow),
-                                                padding: const EdgeInsets.all(
-                                                    PsDimens.space12),
-                                                child: Text(
-                                                  Utils.getString(context,
-                                                      'paid__ads_is_not_yet_start'),
-                                                  style: Theme.of(context)
-                                                      .textTheme
-                                                      .bodyText2
-                                                      .copyWith(
-                                                          color:
-                                                              PsColors.white),
-                                                ),
-                                              )
-                                            else
-                                              Container(),
+                                                  .paidStatus ==
+                                                  PsConst.ADSNOTYETSTART)
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          PsDimens.space4),
+                                                      color: Colors.yellow),
+                                                  padding: const EdgeInsets.all(
+                                                      PsDimens.space12),
+                                                  child: Text(
+                                                    Utils.getString(context,
+                                                        'paid__ads_is_not_yet_start'),
+                                                    style: Theme.of(context)
+                                                        .textTheme
+                                                        .bodyText2
+                                                        .copyWith(
+                                                        color:
+                                                        PsColors.white),
+                                                  ),
+                                                )
+                                              else
+                                                Container(),
                                             InkWell(
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                     borderRadius:
-                                                        BorderRadius.circular(
-                                                            PsDimens.space4),
+                                                    BorderRadius.circular(
+                                                        PsDimens.space4),
                                                     color: Colors.black45),
                                                 padding: const EdgeInsets.all(
                                                     PsDimens.space12),
                                                 child: Row(
                                                   crossAxisAlignment:
-                                                      CrossAxisAlignment.end,
+                                                  CrossAxisAlignment.end,
                                                   mainAxisAlignment:
-                                                      MainAxisAlignment.end,
+                                                  MainAxisAlignment.end,
                                                   mainAxisSize:
-                                                      MainAxisSize.min,
+                                                  MainAxisSize.min,
                                                   children: <Widget>[
                                                     Icon(
                                                       Ionicons.md_images,
@@ -601,15 +601,15 @@ class _ProductDetailState extends State<ProductDetailView>
                                                     ),
                                                     const SizedBox(
                                                         width:
-                                                            PsDimens.space12),
+                                                        PsDimens.space12),
                                                     Text(
                                                       '${widget.product.photoCount}  ${Utils.getString(context, 'item_detail__photo')}',
                                                       style: Theme.of(context)
                                                           .textTheme
                                                           .bodyText2
                                                           .copyWith(
-                                                              color: PsColors
-                                                                  .white),
+                                                          color: PsColors
+                                                              .white),
                                                     ),
                                                   ],
                                                 ),
@@ -634,20 +634,22 @@ class _ProductDetailState extends State<ProductDetailView>
                                 color: PsColors.baseColor,
                                 child: Column(children: <Widget>[
                                   _HeaderBoxWidget(
-                                    itemDetail: provider,
-                                    product: widget.product,
-                                    heroTagTitle: widget.heroTagTitle,
+                                      itemDetail: provider,
+                                      product: widget.product,
+                                      heroTagTitle: widget.heroTagTitle,
+                                      pro: provider
                                   ),
-                                  SellerInfoTileView(
-                                    itemDetail: provider,
-                                  ),
+                                  // shift in another line
+//                                  SellerInfoTileView(
+//                                    itemDetail: provider,
+//                                  ),
                                   if (provider.itemDetail.data.isOwner ==
-                                          PsConst.ONE &&
+                                      PsConst.ONE &&
                                       provider.itemDetail.data.paidStatus ==
                                           PsConst.ADSNOTAVAILABLE)
                                     PromoteTileView(
                                         animationController:
-                                            animationController,
+                                        animationController,
                                         product: provider.itemDetail.data,
                                         provider: provider)
                                   else
@@ -657,9 +659,9 @@ class _ProductDetailState extends State<ProductDetailView>
                                   LocationTileView(item: widget.product),
                                   GettingThisTileView(
                                       detailOptionId:
-                                          provider.itemDetail.data.dealOptionId,
+                                      provider.itemDetail.data.dealOptionId,
                                       address:
-                                          provider.itemDetail.data.address),
+                                      provider.itemDetail.data.address),
                                   StatisticTileView(
                                     provider,
                                   ),
@@ -697,10 +699,10 @@ class _ProductDetailState extends State<ProductDetailView>
 class _PopUpMenuWidget extends StatelessWidget {
   const _PopUpMenuWidget(
       {@required this.userProvider,
-      @required this.itemId,
-      @required this.reportedUserId,
-      @required this.itemTitle,
-      @required this.itemImage});
+        @required this.itemId,
+        @required this.reportedUserId,
+        @required this.itemTitle,
+        @required this.itemImage});
   final UserProvider userProvider;
   final String itemId;
   final String reportedUserId;
@@ -710,8 +712,8 @@ class _PopUpMenuWidget extends StatelessWidget {
   Future<PsResource<ApiStatus>> _reportItem(
       String itemId, String reportedUserId, UserProvider userProvider) async {
     final UserReportItemParameterHolder userReportItemParameterHolder =
-        UserReportItemParameterHolder(
-            itemId: itemId, reportedUserId: reportedUserId);
+    UserReportItemParameterHolder(
+        itemId: itemId, reportedUserId: reportedUserId);
 
     final PsResource<ApiStatus> _apiStatus = await userProvider
         .userReportItem(userReportItemParameterHolder.toMap());
@@ -732,13 +734,13 @@ class _PopUpMenuWidget extends StatelessWidget {
         }
         break;
       case '2':
-        //Share.share('http://www.panacea-soft.com');
+      //Share.share('http://www.panacea-soft.com');
 
         final HttpClientRequest request = await HttpClient()
             .getUrl(Uri.parse(PsConfig.ps_app_image_url + itemImage));
         final HttpClientResponse response = await request.close();
         final Uint8List bytes =
-            await consolidateHttpClientResponseBytes(response);
+        await consolidateHttpClientResponseBytes(response);
         await Share.file(itemTitle, itemTitle + '.jpg', bytes, 'image/jpg',
             text: itemTitle);
         break;
@@ -783,14 +785,17 @@ class _PopUpMenuWidget extends StatelessWidget {
 class _HeaderBoxWidget extends StatefulWidget {
   const _HeaderBoxWidget(
       {Key key,
-      @required this.itemDetail,
-      @required this.product,
-      @required this.heroTagTitle})
+        @required this.itemDetail,
+        @required this.product,
+        @required this.heroTagTitle,
+        @required this.pro
+      })
       : super(key: key);
 
   final ItemDetailProvider itemDetail;
   final Product product;
   final String heroTagTitle;
+  final ItemDetailProvider pro;
 
   @override
   __HeaderBoxWidgetState createState() => __HeaderBoxWidgetState();
@@ -808,7 +813,7 @@ class __HeaderBoxWidgetState extends State<_HeaderBoxWidget> {
         decoration: BoxDecoration(
           color: PsColors.backgroundColor,
           borderRadius:
-              const BorderRadius.all(Radius.circular(PsDimens.space8)),
+          const BorderRadius.all(Radius.circular(PsDimens.space8)),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -831,34 +836,42 @@ class __HeaderBoxWidgetState extends State<_HeaderBoxWidget> {
               _IconsAndTowTitleWithColumnTextWidget(
                   icon: AntDesign.tago,
                   title:
-                      '${widget.itemDetail.itemDetail.data.itemCurrency.currencySymbol} ${widget.itemDetail.itemDetail.data.price}',
+                  '${widget.itemDetail.itemDetail.data.itemCurrency.currencySymbol} ${widget.itemDetail.itemDetail.data.price}',
                   subTitle:
-                      '(${widget.itemDetail.itemDetail.data.itemPriceType.name})',
+                  '(${widget.itemDetail.itemDetail.data.itemPriceType.name})',
                   color: PsColors.mainColor)
             else
               _IconsAndTitleTextWidget(
                   icon: AntDesign.tago,
                   title:
-                      '${widget.itemDetail.itemDetail.data.itemCurrency.currencySymbol} ${widget.itemDetail.itemDetail.data.price}',
+                  '${widget.itemDetail.itemDetail.data.itemCurrency.currencySymbol} ${widget.itemDetail.itemDetail.data.price}',
                   color: PsColors.mainColor),
-            _IconsAndTitleTextWidget(
-                icon: Icons.favorite_border,
-                title:
-                    '${widget.itemDetail.itemDetail.data.favouriteCount} ${Utils.getString(context, 'item_detail__like_count')}',
-                color: PsColors.mainColor),
+            // here display
+            SellerInfoTileView(
+              itemDetail: widget.pro,
+            ),
             _IconsAndTitleTextWidget(
                 icon: SimpleLineIcons.drawer,
                 title: widget.itemDetail.itemDetail.data.conditionOfItem.name,
                 color: null),
+
             _IconsAndTitleTextWidget(
                 icon: MaterialCommunityIcons.view_dashboard_outline,
                 title:
-                    '${widget.itemDetail.itemDetail.data.category.catName} / ${widget.itemDetail.itemDetail.data.subCategory.name}',
+                '${widget.itemDetail.itemDetail.data.category.catName} / ${widget.itemDetail.itemDetail.data.subCategory.name}',
                 color: null),
-            _IconsAndTitleTextWidget(
+//            _IconsAndTitleTextWidget(
+//                icon: MaterialCommunityIcons.arrow_left_right_bold_outline,
+//                title: '${widget.itemDetail.itemDetail.data.itemType.name}',
+//                color: null),
+            // gapi
+            _IconsAndTitleTextWidget1(
                 icon: MaterialCommunityIcons.arrow_left_right_bold_outline,
                 title: '${widget.itemDetail.itemDetail.data.itemType.name}',
+                subTitle: '${widget.itemDetail.itemDetail.data.highlightInformation}',
+//                subTitle: '${widget.itemDetail.itemDetail.data.description}',
                 color: null),
+
             _IconsAndTitleTextWidget(
                 icon: Octicons.archive,
                 title: widget.itemDetail.itemDetail.data.businessMode == '0'
@@ -869,6 +882,12 @@ class __HeaderBoxWidgetState extends State<_HeaderBoxWidget> {
                 icon: Octicons.info,
                 title: widget.itemDetail.itemDetail.data.description,
                 color: null),
+
+            _IconsAndTitleTextWidget(
+                icon: Icons.favorite_border,
+                title:
+                '${widget.itemDetail.itemDetail.data.favouriteCount} ${Utils.getString(context, 'item_detail__like_count')}',
+                color: PsColors.mainColor),
           ],
         ),
       );
@@ -877,7 +896,63 @@ class __HeaderBoxWidgetState extends State<_HeaderBoxWidget> {
     }
   }
 }
+class _IconsAndTitleTextWidget1 extends StatelessWidget {
+  const _IconsAndTitleTextWidget1({
+    Key key,
+    @required this.icon,
+    @required this.title,
+    @required this.color,
+    @required this.subTitle,
+  }) : super(key: key);
 
+  final IconData icon;
+  final String title;
+  final Color color;
+  final String subTitle;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(
+          left: PsDimens.space16,
+          right: PsDimens.space16,
+          bottom: PsDimens.space16),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          Icon(
+            icon,
+            size: PsDimens.space18,
+          ),
+          const SizedBox(
+            width: PsDimens.space16,
+          ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text('$subTitle',style: Theme.of(context).textTheme.bodyText1,),
+                SizedBox(height:10),
+                Text(
+                  title,
+                  style: color == null
+                      ? Theme.of(context).textTheme.bodyText1
+                      : Theme.of(context)
+                      .textTheme
+                      .bodyText1
+                      .copyWith(color: Colors.blue), //gapi color: color
+                ),
+
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
 class _IconsAndTitleTextWidget extends StatelessWidget {
   const _IconsAndTitleTextWidget({
     Key key,
@@ -913,9 +988,9 @@ class _IconsAndTitleTextWidget extends StatelessWidget {
               style: color == null
                   ? Theme.of(context).textTheme.bodyText1
                   : Theme.of(context)
-                      .textTheme
-                      .bodyText1
-                      .copyWith(color: color),
+                  .textTheme
+                  .bodyText1
+                  .copyWith(color: Colors.blue), //gapi color: color
             ),
           ),
         ],
@@ -1038,9 +1113,9 @@ class __CallAndChatButtonWidgetState extends State<_CallAndChatButtonWidget> {
                       BoxShadow(
                         color: PsColors.backgroundColor,
                         blurRadius:
-                            10.0, // has the effect of softening the shadow
+                        10.0, // has the effect of softening the shadow
                         spreadRadius:
-                            0, // has the effect of extending the shadow
+                        0, // has the effect of extending the shadow
                         offset: const Offset(
                           0.0, // horizontal, move right 10
                           0.0, // vertical, move down 10
@@ -1057,11 +1132,11 @@ class __CallAndChatButtonWidgetState extends State<_CallAndChatButtonWidget> {
                           hasShadow: false,
                           colorData: PsColors.black.withOpacity(0.1),
                           icon: widget.provider.itemDetail.data.isFavourited !=
-                                  null
+                              null
                               ? widget.provider.itemDetail.data.isFavourited ==
-                                      '0'
-                                  ? Icons.favorite_border
-                                  : Icons.favorite
+                              '0'
+                              ? Icons.favorite_border
+                              : Icons.favorite
                               : null,
                           iconColor: PsColors.mainColor,
                           width: 60,
@@ -1071,7 +1146,7 @@ class __CallAndChatButtonWidgetState extends State<_CallAndChatButtonWidget> {
                               Utils.navigateOnUserVerificationView(
                                   widget.provider, context, () async {
                                 if (widget.provider.itemDetail.data
-                                        .isFavourited ==
+                                    .isFavourited ==
                                     '0') {
                                   setState(() {
                                     widget.provider.itemDetail.data
@@ -1085,16 +1160,16 @@ class __CallAndChatButtonWidgetState extends State<_CallAndChatButtonWidget> {
                                 }
 
                                 final FavouriteParameterHolder
-                                    favouriteParameterHolder =
-                                    FavouriteParameterHolder(
-                                        itemId:
-                                            widget.provider.itemDetail.data.id,
-                                        userId:
-                                            widget.psValueHolder.loginUserId);
+                                favouriteParameterHolder =
+                                FavouriteParameterHolder(
+                                    itemId:
+                                    widget.provider.itemDetail.data.id,
+                                    userId:
+                                    widget.psValueHolder.loginUserId);
 
                                 final PsResource<Product> _apiStatus =
-                                    await favouriteProvider.postFavourite(
-                                        favouriteParameterHolder.toMap());
+                                await favouriteProvider.postFavourite(
+                                    favouriteParameterHolder.toMap());
 
                                 if (_apiStatus.data != null) {
                                   if (_apiStatus.status == PsStatus.SUCCESS) {
@@ -1106,7 +1181,7 @@ class __CallAndChatButtonWidgetState extends State<_CallAndChatButtonWidget> {
                                       widget.provider.itemDetail != null &&
                                       widget.provider.itemDetail.data != null &&
                                       widget.provider.itemDetail.data
-                                              .isFavourited ==
+                                          .isFavourited ==
                                           '0') {
                                     icon = Icon(Icons.favorite,
                                         color: PsColors.mainColor);
@@ -1125,7 +1200,7 @@ class __CallAndChatButtonWidgetState extends State<_CallAndChatButtonWidget> {
                           width: PsDimens.space10,
                         ),
                         if (widget.provider.itemDetail.data.user.userPhone !=
-                                null &&
+                            null &&
                             widget.provider.itemDetail.data.user.userPhone !=
                                 '')
                           PSButtonWithIconWidget(
@@ -1133,7 +1208,7 @@ class __CallAndChatButtonWidgetState extends State<_CallAndChatButtonWidget> {
                             icon: Icons.call,
                             width: 100,
                             titleText:
-                                Utils.getString(context, 'item_detail__call'),
+                            Utils.getString(context, 'item_detail__call'),
                             onPressed: () async {
                               if (await canLaunch(
                                   'tel://${widget.provider.itemDetail.data.user.userPhone}')) {
@@ -1151,27 +1226,27 @@ class __CallAndChatButtonWidgetState extends State<_CallAndChatButtonWidget> {
                         ),
                         Expanded(
                           child:
-                              // RaisedButton(
-                              //   child: Text(
-                              //     Utils.getString(context, 'item_detail__chat'),
-                              //     overflow: TextOverflow.ellipsis,
-                              //     maxLines: 1,
-                              //     textAlign: TextAlign.center,
-                              //     softWrap: false,
-                              //   ),
-                              //   color: PsColors.mainColor,
-                              //   shape: const BeveledRectangleBorder(
-                              //       borderRadius: BorderRadius.all(
-                              //     Radius.circular(PsDimens.space8),
-                              //   )),
-                              //   textColor: Theme.of(context).textTheme.button.copyWith(color: PsColors.white).color,
-                              //   onPressed: () {
-                              PSButtonWithIconWidget(
+                          // RaisedButton(
+                          //   child: Text(
+                          //     Utils.getString(context, 'item_detail__chat'),
+                          //     overflow: TextOverflow.ellipsis,
+                          //     maxLines: 1,
+                          //     textAlign: TextAlign.center,
+                          //     softWrap: false,
+                          //   ),
+                          //   color: PsColors.mainColor,
+                          //   shape: const BeveledRectangleBorder(
+                          //       borderRadius: BorderRadius.all(
+                          //     Radius.circular(PsDimens.space8),
+                          //   )),
+                          //   textColor: Theme.of(context).textTheme.button.copyWith(color: PsColors.white).color,
+                          //   onPressed: () {
+                          PSButtonWithIconWidget(
                             hasShadow: true,
                             icon: Icons.chat,
                             width: double.infinity,
                             titleText:
-                                Utils.getString(context, 'item_detail__chat'),
+                            Utils.getString(context, 'item_detail__chat'),
                             onPressed: () async {
                               if (await Utils.checkInternetConnectivity()) {
                                 Utils.navigateOnUserVerificationView(
@@ -1181,9 +1256,9 @@ class __CallAndChatButtonWidgetState extends State<_CallAndChatButtonWidget> {
                                       arguments: ChatHistoryIntentHolder(
                                         chatFlag: PsConst.CHAT_FROM_SELLER,
                                         itemId:
-                                            widget.provider.itemDetail.data.id,
+                                        widget.provider.itemDetail.data.id,
                                         buyerUserId:
-                                            widget.psValueHolder.loginUserId,
+                                        widget.psValueHolder.loginUserId,
                                         sellerUserId: widget.provider.itemDetail
                                             .data.addedUserId,
                                       ));
@@ -1237,7 +1312,7 @@ class _EditAndDeleteButtonWidget extends StatelessWidget {
                     BoxShadow(
                       color: PsColors.backgroundColor,
                       blurRadius:
-                          10.0, // has the effect of softening the shadow
+                      10.0, // has the effect of softening the shadow
                       spreadRadius: 0, // has the effect of extending the shadow
                       offset: const Offset(
                         0.0, // horizontal, move right 10
@@ -1253,27 +1328,27 @@ class _EditAndDeleteButtonWidget extends StatelessWidget {
                     children: <Widget>[
                       Expanded(
                         child:
-                            // RaisedButton(
-                            //   child: Text(
-                            //     Utils.getString(context, 'item_detail__delete'),
-                            //     overflow: TextOverflow.ellipsis,
-                            //     maxLines: 1,
-                            //     softWrap: false,
-                            //   ),
-                            //   color: PsColors.grey,
-                            //   shape: const BeveledRectangleBorder(
-                            //       borderRadius: BorderRadius.all(
-                            //     Radius.circular(PsDimens.space8),
-                            //   )),
-                            //   textColor: Theme.of(context).textTheme.button.copyWith(color: PsColors.white).color,
-                            //   onPressed: () async {
-                            PSButtonWithIconWidget(
+                        // RaisedButton(
+                        //   child: Text(
+                        //     Utils.getString(context, 'item_detail__delete'),
+                        //     overflow: TextOverflow.ellipsis,
+                        //     maxLines: 1,
+                        //     softWrap: false,
+                        //   ),
+                        //   color: PsColors.grey,
+                        //   shape: const BeveledRectangleBorder(
+                        //       borderRadius: BorderRadius.all(
+                        //     Radius.circular(PsDimens.space8),
+                        //   )),
+                        //   textColor: Theme.of(context).textTheme.button.copyWith(color: PsColors.white).color,
+                        //   onPressed: () async {
+                        PSButtonWithIconWidget(
                           hasShadow: true,
                           width: double.infinity,
                           icon: Icons.delete,
                           colorData: PsColors.grey,
                           titleText:
-                              Utils.getString(context, 'item_detail__delete'),
+                          Utils.getString(context, 'item_detail__delete'),
                           onPressed: () async {
                             showDialog<dynamic>(
                                 context: context,
@@ -1287,15 +1362,15 @@ class _EditAndDeleteButtonWidget extends StatelessWidget {
                                           context, 'dialog__ok'),
                                       onAgreeTap: () async {
                                         final UserDeleteItemParameterHolder
-                                            userDeleteItemParameterHolder =
-                                            UserDeleteItemParameterHolder(
+                                        userDeleteItemParameterHolder =
+                                        UserDeleteItemParameterHolder(
                                           itemId: provider.itemDetail.data.id,
                                         );
 
                                         final PsResource<ApiStatus> _apiStatus =
-                                            await provider.userDeleteItem(
-                                                userDeleteItemParameterHolder
-                                                    .toMap());
+                                        await provider.userDeleteItem(
+                                            userDeleteItemParameterHolder
+                                                .toMap());
                                         if (_apiStatus.data.status ==
                                             'success') {
                                           Fluttertoast.showToast(
@@ -1329,27 +1404,27 @@ class _EditAndDeleteButtonWidget extends StatelessWidget {
                       ),
                       Expanded(
                         child:
-                            //  RaisedButton(
-                            //   child: Text(
-                            //     Utils.getString(context, 'item_detail__edit'),
-                            //     overflow: TextOverflow.ellipsis,
-                            //     maxLines: 1,
-                            //     textAlign: TextAlign.center,
-                            //     softWrap: false,
-                            //   ),
-                            //   color: PsColors.mainColor,
-                            //   shape: const BeveledRectangleBorder(
-                            //       borderRadius: BorderRadius.all(
-                            //     Radius.circular(PsDimens.space8),
-                            //   )),
-                            //   textColor: Theme.of(context).textTheme.button.copyWith(color: PsColors.white).color,
-                            //   onPressed: () async {
-                            PSButtonWithIconWidget(
+                        //  RaisedButton(
+                        //   child: Text(
+                        //     Utils.getString(context, 'item_detail__edit'),
+                        //     overflow: TextOverflow.ellipsis,
+                        //     maxLines: 1,
+                        //     textAlign: TextAlign.center,
+                        //     softWrap: false,
+                        //   ),
+                        //   color: PsColors.mainColor,
+                        //   shape: const BeveledRectangleBorder(
+                        //       borderRadius: BorderRadius.all(
+                        //     Radius.circular(PsDimens.space8),
+                        //   )),
+                        //   textColor: Theme.of(context).textTheme.button.copyWith(color: PsColors.white).color,
+                        //   onPressed: () async {
+                        PSButtonWithIconWidget(
                           hasShadow: true,
                           width: double.infinity,
                           icon: Icons.edit,
                           titleText:
-                              Utils.getString(context, 'item_detail__edit'),
+                          Utils.getString(context, 'item_detail__edit'),
                           onPressed: () async {
                             Navigator.pushNamed(context, RoutePaths.itemEntry,
                                 arguments: ItemEntryIntentHolder(
@@ -1403,7 +1478,7 @@ class _IconsAndTowTitleWithColumnTextWidget extends StatelessWidget {
           const SizedBox(
             width: PsDimens.space16,
           ),
-          Column(
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
@@ -1411,19 +1486,19 @@ class _IconsAndTowTitleWithColumnTextWidget extends StatelessWidget {
                 style: color == null
                     ? Theme.of(context).textTheme.bodyText1
                     : Theme.of(context)
-                        .textTheme
-                        .bodyText1
-                        .copyWith(color: color),
+                    .textTheme
+                    .bodyText1
+                    .copyWith(color: color),
               ),
-
+              SizedBox(width: 12,),
               Text(
                 subTitle,
                 style: color == null
                     ? Theme.of(context).textTheme.bodyText1
                     : Theme.of(context)
-                        .textTheme
-                        .bodyText1
-                        .copyWith(color: color),
+                    .textTheme
+                    .bodyText1
+                    .copyWith(color: color),
               )
               // )
             ],
@@ -1437,9 +1512,9 @@ class _IconsAndTowTitleWithColumnTextWidget extends StatelessWidget {
 class PromoteTileView extends StatefulWidget {
   const PromoteTileView(
       {Key key,
-      @required this.animationController,
-      @required this.product,
-      @required this.provider})
+        @required this.animationController,
+        @required this.product,
+        @required this.provider})
       : super(key: key);
 
   final AnimationController animationController;
@@ -1458,7 +1533,7 @@ class _PromoteTileViewState extends State<PromoteTileView> {
         style: Theme.of(context).textTheme.subtitle1);
 
     final Widget _expansionTileLeadingIconWidget =
-        Icon(Ionicons.ios_megaphone, color: PsColors.mainColor);
+    Icon(Ionicons.ios_megaphone, color: PsColors.mainColor);
 
     return Container(
       margin: const EdgeInsets.only(
@@ -1486,6 +1561,7 @@ class _PromoteTileViewState extends State<PromoteTileView> {
                 child: Text(
                     Utils.getString(context, 'item_detail__promote_sub_title')),
               ),
+
               Padding(
                 padding: const EdgeInsets.only(
                     left: PsDimens.space12,
@@ -1507,16 +1583,16 @@ class _PromoteTileViewState extends State<PromoteTileView> {
                             width: double.infinity,
                             icon: Ionicons.ios_megaphone,
                             titleText:
-                                Utils.getString(context, 'item_detail__promte'),
+                            Utils.getString(context, 'item_detail__promte'),
                             onPressed: () async {
                               final dynamic returnData =
-                                  await Navigator.pushNamed(
-                                      context, RoutePaths.itemPromote,
-                                      arguments: widget.product);
+                              await Navigator.pushNamed(
+                                  context, RoutePaths.itemPromote,
+                                  arguments: widget.product);
                               if (returnData) {
                                 final String loginUserId =
-                                    Utils.checkUserLoginId(
-                                        widget.provider.psValueHolder);
+                                Utils.checkUserLoginId(
+                                    widget.provider.psValueHolder);
                                 widget.provider.loadProduct(
                                     widget.product.id, loginUserId);
                               }
