@@ -42,7 +42,7 @@ import 'package:hatbazar/constant/route_paths.dart';
 import 'package:hatbazar/provider/category/category_provider.dart';
 import 'package:hatbazar/repository/category_repository.dart';
 import 'package:hatbazar/repository/product_repository.dart';
-
+import 'package:cached_network_image/cached_network_image.dart';
 class HomeDashboardViewWidget extends StatefulWidget {
   const HomeDashboardViewWidget(
       this.scrollController,
@@ -673,6 +673,7 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
                   },
                 ),
                 Container(
+                  height: 450,
                   decoration: BoxDecoration(
                     boxShadow: <BoxShadow>[
                       BoxShadow(
@@ -691,7 +692,8 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
                           arguments: blog);
                     },
                   ),
-                )
+                ),
+
               ],
             )
                 : Container(),

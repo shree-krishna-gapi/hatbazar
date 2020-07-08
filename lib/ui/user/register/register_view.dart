@@ -300,6 +300,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
   int wardIndex;
   String wardText;
   int wardId = 0;
+  int wardTotal;
   // gapi
   double districtDialogHeight = 400.0;
   _stateDialog() {
@@ -666,6 +667,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                             });
                                           }
                                           wardId = currentId;
+                                          wardTotal = showData[index]['wardTotal'];
                                           prefs.setInt('municipalityId',currentId);
 
                                           municipalityIndex=index;
@@ -688,7 +690,9 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                               wardText = null;
                                             });
                                           }
+
                                           wardId = currentId;
+                                          wardTotal = showData[index]['wardTotal'];
                                           prefs.setInt('municipalityId',currentId);
 
                                           municipalityIndex=index;
@@ -783,20 +787,20 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                     itemBuilder: (BuildContext context, int index) {
 //                        indexDistrict
                                       return index == wardIndex ? InkWell(
-                                        child: Container(
+                                        child: index < wardTotal ? Container(
                                           color: PsColors.mainColor,
                                           padding: EdgeInsets.symmetric(horizontal: 15.0),
                                           child: Padding(
                                             padding: const EdgeInsets.symmetric(vertical: 8),
-                                            child: Text('${showData[index]['name']}',style: TextStyle(color: Colors.white),),
+                                            child: Text('${showData[index]['wardName']}',style: TextStyle(color: Colors.white),),
                                           ),
-                                        ),
+                                        ): Container(),
                                         onTap: () {
                                           wardIndex=index;
                                           setState(() {
-                                            wardText = showData[index]['name'];
+                                            wardText = showData[index]['wardName'];
                                           });
-                                          wardId = showData[index]['wId'];
+                                          wardId = showData[index]['wardId'];
                                           Navigator.of(context).pop();
                                         },
                                       ):
@@ -804,19 +808,19 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                         onTap: () {
                                           wardIndex=index;
                                           setState(() {
-                                            wardText = showData[index]['name'];
+                                            wardText = showData[index]['wardName'];
                                           });
-                                          wardId = showData[index]['wId'];
+                                          wardId = showData[index]['wardId'];
                                           Navigator.of(context).pop();
                                         },
-                                        child: Container(
+                                        child: index < wardTotal ? Container(
 //                                  color: Colors.cyan,
                                           padding: EdgeInsets.symmetric(horizontal: 15.0),
                                           child: Padding(
                                             padding: const EdgeInsets.symmetric(vertical: 7.5),
-                                            child: Text('${showData[index]['name']}'),
+                                            child: Text('${showData[index]['wardName']}'),
                                           ),
-                                        ),
+                                        ):Container(),
                                       );
                                     },
                                   ),
