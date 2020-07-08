@@ -61,6 +61,7 @@ class Blog extends PsObject<Blog> {
 
   @override
   Map<String, dynamic> toMap(Blog object) {
+
     if (object != null) {
       final Map<String, dynamic> data = <String, dynamic>{};
       data['id'] = object.id;
@@ -72,6 +73,7 @@ class Blog extends PsObject<Blog> {
       data['updated_user_id'] = object.updatedUserId;
       data['added_date_str'] = object.addedDateStr;
       data['default_photo'] = DefaultPhoto().toMap(object.defaultPhoto);
+//      print(data);
       return data;
     } else {
       return null;
