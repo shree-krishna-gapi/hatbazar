@@ -36,6 +36,7 @@ class RoutePaths {
   static const String blogList = '/blogList';
   static const String appinfo = '/appinfo';
   static const String blogDetail = '/blogDetail';
+  static const String blogDetail1 = '/blogDetail1';
   static const String paidAdItemList = '/paidAdItemList';
   static const String userItemList = '/userItemList';
   static const String transactionList = '/transactionList';

@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:hatbazar/viewobject/blog.dart';
 import 'package:hatbazar/config/ps_config.dart';
 import 'package:hatbazar/ui/common/ps_hero.dart';
+import 'package:hatbazar/constant/route_paths.dart';
+import 'package:hatbazar/gapi/blog_view1.dart';
 class BlogSliderView extends StatefulWidget {
   const BlogSliderView({
     Key key,
@@ -26,77 +28,126 @@ class _BlogSliderState extends State<BlogSliderView> {
   ScrollController _controller = new ScrollController();
   String _currentId;
   String url = 'me url';
-  double blogHeight = 100.0;
+  double blogImageHeight = 80.0;
+  int i=0;
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Container(
-//      height: widget.blogList.length == null ? blogHeight : blogHeight*widget.blogList.length,
-        height: 420.0,
-        //color: Colors.cyan,
-          padding: EdgeInsets.all(0.0),
-          margin: EdgeInsets.all(0.0),
-          child: ListView.builder(
-            physics: const AlwaysScrollableScrollPhysics(), // new
-            controller: _controller,
-            padding: EdgeInsets.all(0.0),
-//        scrollDirection: Axis.vertical,
-//        shrinkWrap: true,
-            itemCount: widget.blogList.length == null ? 0 : widget.blogList.length,
-            itemBuilder: (BuildContext context, int index) {
-              return Column(
-//            shrinkWrap: true,
-//            scrollDirection: Axis.vertical,
-                  children: <Widget>[
-                    SizedBox(height: 7,),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Expanded(child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                          child: CachedNetworkImage(
-                            placeholder: (context, url) => Image.asset(
-                              'assets/images/placeholder_image.png',
-                              width: double.infinity,
-                              height: 100,
-                              fit: BoxFit.cover,
-                            ),
-                            imageUrl: '${PsConfig.ps_app_image_thumbs_url}${widget.blogList[index].defaultPhoto.imgPath}',fit: BoxFit.cover,
-                            errorWidget: (context, url, error) => Image.asset(
-                              'assets/images/placeholder_image.png',
-                              width: double.infinity,
-                              height: 100,
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),flex:3),
-                        Expanded(child: PsHero(
-                          transitionOnUserGestures: true,
-                          tag: 'photoKey$index',
-                          child: GestureDetector(
-                            child: Padding(
-                              padding: const EdgeInsets.only(right: 15),
-                              child: Text('${widget.blogList[index].name}'),
-                            ),
-                          ),
-                        ),flex: 5,),
-                      ],
+//    widget.onTap(blogProduct);
+    return ListView(
+      shrinkWrap: true,
+      children: widget.blogList != null && widget.blogList.isNotEmpty
+          ? widget.blogList.map((Blog blogProduct) {
+//            print('Blog -- > ${widget.blogList}');
+//            print('Blog run -- > ${blogProduct.defaultPhoto.imgPath}');
+//            print('Blog p -- > ${blogProduct.name}');
+
+
+
+        return Container(
+          height: 120,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              SizedBox(height: 7,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(child: Container(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                      child: CachedNetworkImage(
+                        alignment: Alignment.topLeft,
+                        placeholder: (context, url) => Image.asset(
+                          'assets/images/placeholder_image.png',
+                          width: double.infinity,
+                          height: blogImageHeight,
+                          fit: BoxFit.fitWidth,
+                        ),
+//                imageUrl: '${PsConfig.ps_app_image_thumbs_url}${widget.blogList[i+1].defaultPhoto.imgPath}',
+                        imageUrl: '${PsConfig.ps_app_image_thumbs_url}${blogProduct.defaultPhoto.imgPath}',
+//                      height: blogImageHeight,
+                        fit: BoxFit.fitWidth,
+                        errorWidget: (context, url, error) => Image.asset(
+                          'assets/images/placeholder_image.png',
+                          width: double.infinity,
+//                      height: blogImageHeight,
+                          fit: BoxFit.fitWidth,
+                        ),
+                      ),
                     ),
-                    SizedBox(height: 7,),
-                    Divider(height: 1,)
-                  ],
-
-
-              );
-            },
+                  ),flex:3),
+                  Expanded(child: InkWell(
+                    onTap: () {
+                      widget.onTap(blogProduct);
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 15),
+                      child: Text('${blogProduct.name}'),
+                    ),
+                  ),flex: 5,),
+//            Expanded(child: PsHero(
+//              transitionOnUserGestures: true,
+//              tag: 'photoKey',
+//              child: GestureDetector(
+//                onTap: () {
+//                              widget.onTap(blogProduct);
+//                },
+//                child: Padding(
+//                  padding: const EdgeInsets.only(right: 15),
+//                  child: Text('${blogProduct.name}'),
+//                ),
+//              ),
+//            ),flex: 5,),
+                ],
+              ),
+              SizedBox(height: 7,),
+              Divider(height: 1,)
+            ],
           ),
-        ),
+        );
+
+
+      }).toList()
+          : <Widget>[Container()],
     );
   }
 }
+//ListView(
+//
+//children: widget.blogList != null && widget.blogList.isNotEmpty
+//? widget.blogList.map((Blog blogProduct) {
+//return ListView.builder(
+//itemCount: 2,
+//physics: const AlwaysScrollableScrollPhysics(), // new
+//controller: _controller,
+//shrinkWrap: true,
+//itemBuilder: (BuildContext context,int a){
+//return Text('sdf');
+//});
+//
+//
+//}).toList()
+//    : <Widget>[Container()],
+//)
 
-
+//Row(
+//mainAxisSize: MainAxisSize.min,
+//mainAxisAlignment: MainAxisAlignment.center,
+//children: widget.blogList != null && widget.blogList.isNotEmpty
+//? widget.blogList.map((Blog blogProduct) {
+//return Builder(builder: (BuildContext context) {
+//return InkWell(
+//onTap: () {
+//widget.onTap(blogProduct);
+//},
+//
+//);
+//});
+//}).toList()
+//    : <Widget>[Container()],
+//)
 //class oldCode extends StatelessWidget {
 //  @override
 //  Widget build(BuildContext context) {

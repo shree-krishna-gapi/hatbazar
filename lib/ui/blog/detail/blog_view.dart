@@ -34,7 +34,7 @@ class _BlogViewState extends State<BlogView> {
         });
       });
     }
-
+    print(widget.blog.runtimeType);
     return Scaffold(
         body: CustomScrollView(
       shrinkWrap: true,
