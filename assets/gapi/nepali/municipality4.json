@@ -1,0 +1,532 @@
+[{
+    "municipalityId" : 1,
+    "stateId" : 4,
+    "districtId": 35,
+    "wardTotal": 10,
+    "municipalityName":"गोरखा नगरपालिका"
+},
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"पालुङटार नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"बारपाक सुलिकोट गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"सिरानचोक गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"अजिरकोट गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"आरूघाट गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"गण्डकी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"चुमनुव्री गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"धार्चे गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"भिमसेनथापा गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"शहिद लखन गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"बेसीशहर नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"मध्यनेपाल नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"रार्इनास नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"सुन्दरबजार नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"क्व्होलासोथार गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"दूधपोखरी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"दोर्दी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"मर्स्याङदी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"भिमाद नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"व्यास नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"शुक्लागण्डकी नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"आँबुखैरेनी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"ऋषिङ्ग गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"घिरिङ गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"देवघाट गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"म्याग्दे गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"वन्दिपुर गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"गल्याङ नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"चापाकोट नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"पुतलीबजार नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"भीरकोट नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"वालिङ नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"अर्जुनचौपारी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"आँधिखोला गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"कालीगण्डकी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"फेदीखोला गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"बिरुवा गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"हरिनास गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"पोखरा महानगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"अन्नपूर्ण गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"माछापुच्छ्रे गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"मादी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"रूपा गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 40,
+        "wardTotal": 10,
+        "municipalityName":"चामे गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 40,
+        "wardTotal": 10,
+        "municipalityName":"नार्पा भूमि गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 40,
+        "wardTotal": 10,
+        "municipalityName":"नासोँ गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 40,
+        "wardTotal": 10,
+        "municipalityName":"मनाङ ङिस्याङ गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"घरपझोङ गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"थासाङ गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"लो-घेकर दामोदरकुण्ड गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"लोमन्थाङ गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"वारागुङ मुक्तिक्षेत्र गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"बेनी नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"अन्नपुर्ण गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"धवलागिरी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"मंगला गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"मालिका गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"रघुगंगा गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"कुश्मा नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"फलेवास नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"जलजला गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"पैयूं गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"महाशिला गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"मोदी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"विहादी गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"बागलुङ नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"गल्कोट नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"जैमूनी नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"ढोरपाटन नगरपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"वरेङ गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"काठेखोला गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"तमानखोला गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"ताराखोला गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"निसीखोला गाउँपालिका"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"वडिगाड गाउँपालिका"
+    }]

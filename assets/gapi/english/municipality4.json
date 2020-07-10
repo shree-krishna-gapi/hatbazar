@@ -1,0 +1,533 @@
+[{
+    "municipalityId" : 1,
+    "stateId" : 4,
+    "districtId": 35,
+    "wardTotal": 10,
+    "municipalityName":"Gorkha Municipality"
+},
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Palungtar Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Barpak Sulikot village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Siranchok village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Ajirkot village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Arughat village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Gandaki village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Chumanuvri village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Dharche village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Bhimsenthapa village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 35,
+        "wardTotal": 10,
+        "municipalityName":"Shahid Lakhan village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"Besishahar Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"Central Nepal Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"Rarenas Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"Sunderbazar Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"Kwalasothar village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"Dudhpokhari village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"Dordi village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 36,
+        "wardTotal": 10,
+        "municipalityName":"Marsyangdi village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"Bhimad Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"Beas Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"Shuklagandaki municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"Aanbukhaireni village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"Rishing village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"Ghiring village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"Devghat village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"Myagde village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 37,
+        "wardTotal": 10,
+        "municipalityName":"Vandipur village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Galyang Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Chapakot Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Putlibazar Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Bhirkot Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Waling Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Arjunchaupari village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Andhikhola village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Kaligandaki village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Fedikhola village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Biruwa village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 38,
+        "wardTotal": 10,
+        "municipalityName":"Harinas village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"Pokhara Metropolitan City"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"Annapurna village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"Machhapuchhre village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"Madi village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 39,
+        "wardTotal": 10,
+        "municipalityName":"Rupa village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 40,
+        "wardTotal": 10,
+        "municipalityName":"Chame village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 40,
+        "wardTotal": 10,
+        "municipalityName":"Narpa land village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 40,
+        "wardTotal": 10,
+        "municipalityName":"Naso village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 40,
+        "wardTotal": 10,
+        "municipalityName":"Manang Ngisyang village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"Gharpajhong village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"Thasang village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"Lo-Ghekar Damodarkund village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"Lomanthang village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 41,
+        "wardTotal": 10,
+        "municipalityName":"Waragung Free Zone Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"Beni Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"Annapurna village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"Dhawalagiri village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"Mangala village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"Malika village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 42,
+        "wardTotal": 10,
+        "municipalityName":"Raghuganga village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"Kushma Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"Phalewas Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"Jaljala village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"Paiyun village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"Mahashila village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"Modi village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 43,
+        "wardTotal": 10,
+        "municipalityName":"Vihadi village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Baglung Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Galkot Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Jaimuni Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Dhorpatan Municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Wareng village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Kathekhola village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Tamankhola village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Tarakhola village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Nisikhola village municipality"
+    },
+    {
+        "municipalityId" : 1,
+        "stateId" : 4,
+        "districtId": 44,
+        "wardTotal": 10,
+        "municipalityName":"Wadigad village municipality"
+    }
+]

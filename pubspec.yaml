@@ -125,13 +125,34 @@ flutter:
 #    - assets/district.json
     - assets/gapi/english/state.json
     - assets/gapi/english/district.json
-    - assets/gapi/english/municipality.json
+    - assets/gapi/english/municipality1.json
+    - assets/gapi/english/municipality2.json
+    - assets/gapi/english/municipality3.json
+    - assets/gapi/english/municipality4.json
+    - assets/gapi/english/municipality5.json
+    - assets/gapi/english/municipality6.json
+    - assets/gapi/english/municipality7.json
     - assets/gapi/english/ward.json
     - assets/gapi/nepali/state.json
     - assets/gapi/nepali/district.json
-    - assets/gapi/nepali/municipality.json
+    - assets/gapi/nepali/municipality1.json
+    - assets/gapi/nepali/municipality2.json
+    - assets/gapi/nepali/municipality3.json
+    - assets/gapi/nepali/municipality4.json
+    - assets/gapi/nepali/municipality5.json
+    - assets/gapi/nepali/municipality6.json
+    - assets/gapi/nepali/municipality7.json
     - assets/gapi/nepali/ward.json
-
+    - assets/gapi/hindi/state.json
+    - assets/gapi/hindi/district.json
+    - assets/gapi/hindi/municipality1.json
+    - assets/gapi/hindi/municipality2.json
+    - assets/gapi/hindi/municipality3.json
+    - assets/gapi/hindi/municipality4.json
+    - assets/gapi/hindi/municipality5.json
+    - assets/gapi/hindi/municipality6.json
+    - assets/gapi/hindi/municipality7.json
+    - assets/gapi/hindi/ward.json
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

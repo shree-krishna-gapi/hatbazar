@@ -13,6 +13,13 @@
   "warning__choose__district" : "First, Select the District",
   "warning__choose__municipality" : "First, Select the Municipality",
   "home__bottom_app_bar_add_or_remove" : "Add New",
+  "home__drawer_menu_additional_title" : "Useful Information",
+  "home__drawer_menu_additional_national_news" : "National News",
+  "home__drawer_menu_additional_agriculture_video" : "Agriculture Video",
+  "home__drawer_menu_additional_about_us" : "About Us",
+  "home__drawer_menu_additional_fm" : "FM",
+  "home__drawer_menu_additional_guide_video" : "App Instruction Video",
+
 
   "app_name": "Hat Bazar - Kishan",
   "force_update__update": "UPDATE",

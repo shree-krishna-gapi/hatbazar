@@ -13,6 +13,13 @@
     "warning__choose__district" : "पहिला, जिल्ला छन्नुहोस",
     "warning__choose__municipality" : "पहिला, स्थानीय तह छन्नुहोस",
     "home__bottom_app_bar_add_or_remove" : "सामन राख्न",
+    "home__drawer_menu_additional_title" : "उपयोगी जानकारी",
+    "home__drawer_menu_additional_national_news" : "राष्ट्रिय समाचार",
+    "home__drawer_menu_additional_agriculture_video" : "कृसी भिडियो",
+    "home__drawer_menu_additional_about_us" : "हाम्रो बारेमा",
+    "home__drawer_menu_additional_fm" : "एफ एम ",
+    "home__drawer_menu_additional_guide_video" : "एप चलाउने तरिका",
+
 
     "app_name" : "हाटबजार - किसान",
     "force_update__update" : "अपडेट गर्नुहोस",
@@ -257,6 +264,15 @@
     "home__menu_drawer_featured_product" : "विज्ञापनका सामानहरु",
     "home__drawer_menu_trending_product" : "ट्रेंडिंग सामानहरु",
     "home__drawer_menu_popular_item" : "लोकप्रिय सामानहरु",
+
+    "home__drawer_menu_popular_item1" : "उपयोगी जानकारी",
+    "home__drawer_menu_popular_item2" : "राष्ट्रिय समाचार",
+    "home__drawer_menu_popular_item3" : "कृसी भिडियो",
+    "home__drawer_menu_popular_item4" : "हाम्रो बारेमा",
+    "home__drawer_menu_popular_item5" : "एफ एम ",
+    "home__drawer_menu_popular_item6" : "एप चलाउने तरिका",
+
+
     "home__menu_drawer_collection" : "कलेक्सन",
     "home__menu_drawer_user_info" : "उपयोगकर्ताको जानकारी",
     "home__menu_drawer_profile" : "प्रोफायल",

@@ -8,7 +8,7 @@ import 'package:hatbazar/viewobject/blog.dart';
 import 'package:hatbazar/config/ps_config.dart';
 import 'package:hatbazar/ui/common/ps_hero.dart';
 import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/gapi/blog_view1.dart';
+//import 'package:hatbazar/gapi/blog_view1.dart';
 class BlogSliderView extends StatefulWidget {
   const BlogSliderView({
     Key key,
@@ -33,8 +33,8 @@ class _BlogSliderState extends State<BlogSliderView> {
   @override
   Widget build(BuildContext context) {
 //    widget.onTap(blogProduct);
-    return ListView(
-      shrinkWrap: true,
+    return Column(
+//      shrinkWrap: true,
       children: widget.blogList != null && widget.blogList.isNotEmpty
           ? widget.blogList.map((Blog blogProduct) {
 //            print('Blog -- > ${widget.blogList}');
@@ -44,7 +44,7 @@ class _BlogSliderState extends State<BlogSliderView> {
 
 
         return Container(
-          height: 120,
+//          height: 120,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,

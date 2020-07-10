@@ -56,6 +56,7 @@ import 'package:hatbazar/viewobject/holder/intent_holder/item_entry_intent_holde
 import 'package:hatbazar/viewobject/product.dart';
 
 import 'package:hatbazar/ui/item/entry/item_entry_container.dart';
+import 'test.dart';
 class DashboardView extends StatefulWidget {
   @override
   _HomeViewState createState() => _HomeViewState();
@@ -285,7 +286,9 @@ class _HomeViewState extends State<DashboardView>
     }
 
     Future<void> updateSelectedIndexWithAnimation(
+
         String title, int index) async {
+
       await animationController.reverse().then<dynamic>((void data) {
         if (!mounted) {
           return;
@@ -394,6 +397,76 @@ class _HomeViewState extends State<DashboardView>
                   const Divider(
                     height: PsDimens.space1,
                   ),
+//                  // gapi
+//                  "home__drawer_menu_additional_national_news" : "रास्तिर्य समाचार",
+//                  "home__drawer_menu_additional_agriculture_video" : "कृसी भिडियो",
+//                  "home__drawer_menu_additional_about_us" : "हाम्रो बारेमा",
+//                  "home__drawer_menu_additional_fm" : "एफ एम ",
+//                  "home__drawer_menu_additional_guide_video" : "एप चलाउने तरिका",
+
+                  ListTile(
+                    title: Text(
+                        Utils.getString(context, 'home__drawer_menu_additional_title')),
+                  ),
+                  _DrawerMenuWidget(
+                      icon: Icons.chrome_reader_mode,
+                      title: Utils.getString(context, 'home__drawer_menu_additional_national_news'),
+                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
+                      onTap: (String title,int index) {
+                        Navigator.pop(context);
+
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Test()),
+                        );
+//                        updateSelectedIndexWithAnimation(title, index);
+                      }),
+                  _DrawerMenuWidget(
+                      icon: Icons.ondemand_video,
+                      title: Utils.getString(context, 'home__drawer_menu_additional_agriculture_video'),
+                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
+                      onTap: (String title, int index) {
+                        Navigator.pop(context);
+                        updateSelectedIndexWithAnimation(title, index);
+                      }),
+                  _DrawerMenuWidget(
+                      icon: Icons.live_help,
+                      title: Utils.getString(context, 'home__drawer_menu_additional_about_us'),
+                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
+                      onTap: (String title, int index) {
+                        Navigator.pop(context);
+                        updateSelectedIndexWithAnimation(title, index);
+                      }),
+                  _DrawerMenuWidget(
+                      icon: Icons.radio,
+                      title: Utils.getString(context, 'home__drawer_menu_additional_fm'),
+                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
+                      onTap: (String title, int index) {
+                        Navigator.pop(context);
+                        updateSelectedIndexWithAnimation(title, index);
+                      }),
+                  _DrawerMenuWidget(
+                      icon: Icons.videogame_asset,
+                      title: Utils.getString(context, 'home__drawer_menu_additional_guide_video'),
+                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
+                      onTap: (String title, int index) {
+                        Navigator.pop(context);
+                        updateSelectedIndexWithAnimation(title, index);
+                      }),
+                  _DrawerMenuWidget(
+                      icon: Icons.share,
+                      title: Utils.getString(context, 'home__drawer_menu_additional_guide_video'),
+                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
+                      onTap: (String title, int index) {
+                        Navigator.pop(context);
+                        updateSelectedIndexWithAnimation(title, index);
+                      }),
+                  const Divider(
+                    height: PsDimens.space1,
+                  ),
+
+
+                  //gapi
                   ListTile(
                     title: Text(Utils.getString(
                         context, 'home__menu_drawer_user_info')),
