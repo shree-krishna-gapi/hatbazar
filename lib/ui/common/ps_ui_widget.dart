@@ -40,9 +40,6 @@ class PsNetworkImage extends StatelessWidget {
             fit: boxfit,
           ));
     } else {
-      // print(
-      // 'tag : $photoKey${PsConfig.ps_app_image_url}${defaultPhoto.imgPath}');
-      print('real path ${PsConfig.ps_app_image_thumbs_url}${defaultPhoto.imgPath}');
       return PsHero(
         transitionOnUserGestures: true,
         tag: photoKey,

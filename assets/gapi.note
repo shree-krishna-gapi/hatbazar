@@ -5,3 +5,13 @@ lib/ui/dashboard/core/dashboard_view.dart -> bottom tabbar
 
 lib/ui/dashboard/home/home_dashboard_view.dart -> homepage slider samachar title // samachar
 lib/ui/dashboard/home/blog_product_slider.dart -> homepage slider
+lib/api/common pa_api.dart -> signUp data post
+            rest/users/add/api_key/hatbazarthamelktm1/
+            https://demo.wfusion.us/hatbazar/index.php/rest/appinfo/get_delete_history/api_key/hatbazarthamelktm1
+
+**************New Server Info*******************
+new sever url: https://sajilo.net/hatbazaar/index.php/login
+username: root@admin.com
+password: password
+
+base_api_url : https://sajilo.net/hatbazaar/index.php/

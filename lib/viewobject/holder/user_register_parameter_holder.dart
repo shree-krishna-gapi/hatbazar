@@ -12,7 +12,9 @@ class UserRegisterParameterHolder
       @required this.userEmail,
       @required this.userPassword,
       @required this.userPhone,
-      @required this.deviceToken});
+      @required this.deviceToken,
+      @required this.stateId
+      });
 //  final String pOne;
   final String userId;
   final String userName;
@@ -20,9 +22,10 @@ class UserRegisterParameterHolder
   final String userPassword;
   final String userPhone;
   final String deviceToken;
-
+  final int stateId;
   @override
   Map<String, dynamic> toMap() {
+
     final Map<String, dynamic> map = <String, dynamic>{};
 
     map['user_id'] = userId;
@@ -31,7 +34,7 @@ class UserRegisterParameterHolder
     map['user_password'] = userPassword;
     map['user_phone'] = userPhone;
     map['device_token'] = deviceToken;
-
+    map['stateId'] = stateId;
     return map;
   }
 
@@ -44,6 +47,7 @@ class UserRegisterParameterHolder
       userPassword: dynamicData['user_password'],
       userPhone: dynamicData['user_phone'],
       deviceToken: dynamicData['device_token'],
+      stateId: dynamicData['state_id'],
     );
   }
 

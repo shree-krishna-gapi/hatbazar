@@ -110,6 +110,7 @@ class _RegisterViewState extends State<RegisterView>
                           ),
                           _TermsAndConCheckbox(
                             provider: provider,
+//                            streetTextEditingController: streetController,
                             nameTextEditingController: nameController,
                             emailTextEditingController: emailController,
                             passwordTextEditingController: passwordController,
@@ -119,6 +120,7 @@ class _RegisterViewState extends State<RegisterView>
                           ),
                           _SignInButtonWidget(
                             provider: provider,
+//                            streetTextEditingController: streetController,
                             nameTextEditingController: nameController,
                             emailTextEditingController: emailController,
                             passwordTextEditingController: passwordController,
@@ -154,6 +156,7 @@ class _RegisterViewState extends State<RegisterView>
 class _TermsAndConCheckbox extends StatefulWidget {
   const _TermsAndConCheckbox({
     @required this.provider,
+//    @required this.streetTextEditingController,
     @required this.nameTextEditingController,
     @required this.emailTextEditingController,
     @required this.passwordTextEditingController,
@@ -276,6 +279,7 @@ class _TextFieldWidget extends StatefulWidget {
     @required this.nameText,
     @required this.emailText,
     @required this.passwordText,
+//    @required this.streetName,
   });
 
   final TextEditingController nameText, emailText, passwordText;
@@ -507,7 +511,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                     shrinkWrap: true,
                                     itemCount: showData == null ? 0 : showData.length,
                                     itemBuilder: (BuildContext context, int index) {
-                                      print('you choose state id-> $stateId && ${showData[index]['stateId']}');
+//                                      print('you choose state id-> $stateId && ${showData[index]['stateId']}');
                                       return index == districtIndex ? InkWell(
                                         child: showData[index]['stateId'] == stateId ? Container(
                                           color: PsColors.mainColor,
@@ -590,9 +594,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
           return AlertDialog(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(5.0))),
-
               contentPadding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-
               content: Container(
                   height: districtDialogHeight,
                   width: double.infinity,
@@ -612,7 +614,6 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                       topRight: Radius.circular(5)),
                                   color: PsColors.mainColor,
                                 ),
-
                                 child: Row(
                                   children: <Widget>[
                                     const SizedBox(
@@ -637,30 +638,29 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                               child: FutureBuilder(builder: (context,snapshot) {
                                 var showData = json.decode(snapshot.data.toString());
                                 return Container(
-//                          height: disctictDialogHeight, // Change as per your requirement
                                   width: 300.0, // Change as per your requirement
                                   child: FadeAnimation(
                                     0.1, ListView.builder(
                                     shrinkWrap: true,
                                     itemCount: showData == null ? 0 : showData.length,
                                     itemBuilder: (BuildContext context, int index) {
-//                        indexDistrict
-                                    print('${showData[index]['districtId']} & $districtId'  );
-                                      return index == municipalityIndex ? InkWell(
-                                        child: showData[index]['districtId'] == districtId ? Container(
+                                      return
+                                        showData[index]['districtId'] == districtId ?
+                                        index == municipalityIndex ? InkWell(
+                                        child: Container(
                                           color: PsColors.mainColor,
                                           padding: EdgeInsets.symmetric(horizontal: 15.0),
                                           child: Padding(
                                             padding: const EdgeInsets.symmetric(vertical: 8),
                                             child: Text('${showData[index]['municipalityName']}',style: TextStyle(color: Colors.white),),
                                           ),
-                                        ): Container(height: 0,),
+                                        ),
                                         onTap: () async{
                                           SharedPreferences prefs = await SharedPreferences.getInstance();
                                           int oldId = prefs.get('municipalityId');
                                           int currentId = showData[index]['municipalityId'];
                                           if(oldId != currentId) {
-
+                                            print('hello $currentId');
                                             wardId = 0;
                                             setState(() {
                                               wardText = null;
@@ -669,7 +669,6 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                           wardId = currentId;
                                           wardTotal = showData[index]['wardTotal'];
                                           prefs.setInt('municipalityId',currentId);
-
                                           municipalityIndex=index;
                                           setState(() {
                                             municipalityText = showData[index]['municipalityName'];
@@ -684,7 +683,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                           int oldId = prefs.get('municipalityId');
                                           int currentId = showData[index]['municipalityId'];
                                           if(oldId != currentId) {
-
+                                              print('hello $currentId');
                                             wardId = 0;
                                             setState(() {
                                               wardText = null;
@@ -702,15 +701,16 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                           municipalityId = currentId;
                                           Navigator.of(context).pop();
                                         },
-                                        child: showData[index]['districtId'] == districtId ? Container(
+                                        child: Container(
 //                                  color: Colors.cyan,
                                           padding: EdgeInsets.symmetric(horizontal: 15.0),
                                           child: Padding(
                                             padding: const EdgeInsets.symmetric(vertical: 7.5),
                                             child: Text('${showData[index]['municipalityName']}'),
                                           ),
-                                        ):Container(height: 0,),
-                                      );
+                                        ),
+                                      )
+                                        : Container();
                                     },
                                   ),
                                   ),
@@ -732,9 +732,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
           return AlertDialog(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(5.0))),
-
               contentPadding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-
               content: Container(
                   height: districtDialogHeight,
                   width: double.infinity,
@@ -1051,7 +1049,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                   child: Container(
 //                    color: Colors.amber,
                     margin: _marginEdgeInsetWidget,
-                    child: wardText == null ? TextField(
+                    child: wardText == null || wardText=='' ? TextField(
                       style: Theme.of(context).textTheme.button.copyWith(),
                       readOnly: true,
                       onTap: () {
@@ -1117,6 +1115,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                       .copyWith(color: PsColors.textPrimaryLightColor),
                   icon: Icon(Icons.location_on,
                       color: Theme.of(context).iconTheme.color)),
+
             ),
           ),
           Divider(height: 1.0,),
@@ -1216,13 +1215,16 @@ class _HeaderIconAndTextWidget extends StatelessWidget {
 class _SignInButtonWidget extends StatefulWidget {
   const _SignInButtonWidget(
       {@required this.provider,
+        @required this.streetTextEditingController,
         @required this.nameTextEditingController,
         @required this.emailTextEditingController,
         @required this.passwordTextEditingController,
         this.onRegisterSelected});
   final UserProvider provider;
   final Function onRegisterSelected;
-  final TextEditingController nameTextEditingController,
+  final TextEditingController
+  streetTextEditingController,
+  nameTextEditingController,
       emailTextEditingController,
       passwordTextEditingController;
 
@@ -1277,6 +1279,7 @@ class __SignInButtonWidgetState extends State<_SignInButtonWidget> {
                   userPassword: widget.passwordTextEditingController.text,
                   userPhone: '',
                   deviceToken: widget.provider.psValueHolder.deviceToken,
+                  stateId: 1,
                 );
 
                 final PsResource<User> _apiStatus = await widget.provider
@@ -1319,7 +1322,7 @@ class __SignInButtonWidgetState extends State<_SignInButtonWidget> {
                       widget.provider.psValueHolder.userNameToVerify = '';
                       widget.provider.psValueHolder.userEmailToVerify = '';
                       widget.provider.psValueHolder.userPasswordToVerify = '';
-                      print(user.userId);
+//                      print(user.userId);
                       Navigator.of(context).pop();
                     }
                   }

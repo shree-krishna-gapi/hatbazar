@@ -22,10 +22,10 @@ class PsConfig {
   ///
   /// API URL
   /// Change your backend url
-  ///
-  static const String ps_app_url =
-      'https://demo.wfusion.us/hatbazar/index.php/';
-
+  // TODO: Base Url
+//  static const String ps_app_url =
+//      'https://demo.wfusion.us/hatbazar/index.php/';  // old_base_url
+  static const String ps_app_url = 'https://sajilo.net/hatbazaar/index.php/'; //new_base_url
   static const String ps_app_image_url =
       'https://demo.wfusion.us/hatbazar/uploads/';
 

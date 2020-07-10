@@ -56,7 +56,8 @@ import 'package:hatbazar/viewobject/holder/intent_holder/item_entry_intent_holde
 import 'package:hatbazar/viewobject/product.dart';
 
 import 'package:hatbazar/ui/item/entry/item_entry_container.dart';
-import 'test.dart';
+//import 'test.dart';
+import 'package:hatbazar/gapi/newDrawer/news/news.dart';
 class DashboardView extends StatefulWidget {
   @override
   _HomeViewState createState() => _HomeViewState();
@@ -417,7 +418,7 @@ class _HomeViewState extends State<DashboardView>
 
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Test()),
+                          MaterialPageRoute(builder: (context) => News()),
                         );
 //                        updateSelectedIndexWithAnimation(title, index);
                       }),
