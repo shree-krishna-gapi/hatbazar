@@ -323,11 +323,11 @@ class __UserUploadDatWidgetState extends State<_UserUploadDatWidget> {
                                             productProvider
                                                 .itemList.data[index].id,
                                         onTap: () {
-                                          print(productProvider
-                                              .itemList
-                                              .data[index]
-                                              .defaultPhoto
-                                              .imgPath);
+//                                          print(productProvider
+//                                              .itemList
+//                                              .data[index]
+//                                              .defaultPhoto
+//                                              .imgPath);
                                           final Product product =
                                               productProvider
                                                   .itemList.data.reversed

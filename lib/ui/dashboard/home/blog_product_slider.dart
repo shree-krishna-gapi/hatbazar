@@ -27,7 +27,6 @@ class BlogSliderView extends StatefulWidget {
 class _BlogSliderState extends State<BlogSliderView> {
   ScrollController _controller = new ScrollController();
   String _currentId;
-  String url = 'me url';
   double blogImageHeight = 80.0;
   int i=0;
   @override

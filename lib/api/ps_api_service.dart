@@ -216,12 +216,13 @@ class PsApiService extends PsApi {
       int limit, int offset) async {
     final String url =
         '${PsUrl.ps_category_url}/api_key/${PsConfig.ps_api_key}/limit/$limit/offset/$offset';
-
+  print('getCategoryList -> $url');
     return await getServerCall<Category, List<Category>>(Category(), url);
   }
 
   Future<PsResource<List<Category>>> getAllCategoryList(
       Map<dynamic, dynamic> jsonMap) async {
+    print('here i am a $jsonMap');
     const String url =
         '${PsUrl.ps_category_url}/api_key/${PsConfig.ps_api_key}';
 
@@ -345,7 +346,7 @@ class PsApiService extends PsApi {
       Map<dynamic, dynamic> paramMap, int limit, int offset) async {
     final String url =
         '${PsUrl.ps_product_url}/api_key/${PsConfig.ps_api_key}/limit/$limit/offset/$offset';
-
+    // TODO:// product list
     return await postData<Product, List<Product>>(Product(), url, paramMap);
   }
 

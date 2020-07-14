@@ -68,7 +68,8 @@ dependencies:
   esys_flutter_share: 1.0.2
   apple_sign_in: 0.1.0
   simple_animations: ^2.2.1
-
+  share: ^0.6.4+3
+#  advanced_share: ^0.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -13,7 +13,12 @@ class UserRegisterParameterHolder
       @required this.userPassword,
       @required this.userPhone,
       @required this.deviceToken,
-      @required this.stateId
+      @required this.stateId,
+      @required this.districtId,
+      @required this.municipalityId,
+      @required this.wardId,
+      @required this.streetName,
+
       });
 //  final String pOne;
   final String userId;
@@ -23,6 +28,11 @@ class UserRegisterParameterHolder
   final String userPhone;
   final String deviceToken;
   final int stateId;
+  final int districtId;
+  final int municipalityId;
+  final int wardId;
+  final String streetName;
+
   @override
   Map<String, dynamic> toMap() {
 
@@ -34,7 +44,12 @@ class UserRegisterParameterHolder
     map['user_password'] = userPassword;
     map['user_phone'] = userPhone;
     map['device_token'] = deviceToken;
-    map['stateId'] = stateId;
+    map['state_id'] = stateId;
+    map['district_id'] = districtId;
+    map['municipality_id'] = municipalityId;
+    map['ward_id'] = wardId;
+    map['street_name'] = streetName;
+
     return map;
   }
 
@@ -48,6 +63,11 @@ class UserRegisterParameterHolder
       userPhone: dynamicData['user_phone'],
       deviceToken: dynamicData['device_token'],
       stateId: dynamicData['state_id'],
+      districtId: dynamicData['district_id'],
+      municipalityId: dynamicData['municipality_id'],
+      wardId: dynamicData['ward_id'],
+      streetName: dynamicData['street_name'],
+
     );
   }
 
@@ -73,6 +93,9 @@ class UserRegisterParameterHolder
     if (deviceToken != '') {
       key += deviceToken;
     }
+//    if (streetName != '') {
+//      key += streetName;
+//    }
     return key;
   }
 }

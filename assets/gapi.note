@@ -1,5 +1,5 @@
 user/register/register_view
-adding field (state district & municipality)
+adding field (state district municipality ward and street)
 
 lib/ui/dashboard/core/dashboard_view.dart -> bottom tabbar
 
@@ -15,3 +15,10 @@ username: root@admin.com
 password: password
 
 base_api_url : https://sajilo.net/hatbazaar/index.php/
+
+
+
+
+token list
+genymotion 5 = e6NQe_v5Tdq39fkxpy9GxG:APA91bF4OGGUvnvkRoiFlKVHNWjAlyov4_CtF7Gd8bEjEX1PBP3SIxsLEvtvxBQEa_Jcqo8XyHpRkz9wGawzhBhjkdNZOPYevs6_tTcZFAMBn9N4viAC_If5MEgYt0Ra75qXWNytGyiP
+note 4 = cMThU59tSsGzuvnRNNZ0zc:APA91bGrQ102uj8hSRQoOQIzeDfmZxFAEEBeUnekcnYkwWKoA8Yln5iCdOI5dNNuwTdV25iyHUuS_pDjbANWcfcQqKUrewWolgqCOq2t-FQA44yRZ4W7R5SSKPUPTO428sB3K3XlYPec

@@ -27,18 +27,21 @@ class _TabOneState extends State<TabOne> {
   rowChips() {
     return Row(
       children: <Widget>[
+        SizedBox(width: 10,),
         chipForRow('title1',Color(0xFF79aa93)),
-        chipForRow('title1',Color(0xFF89ab33)),
-        chipForRow('title1',Color(0xFF69a223)),
+        SizedBox(width: 10,),
+        chipForRow('title1',Color(0xFF89ab33)),SizedBox(width: 10,),
+        chipForRow('title1',Color(0xFF69a223)),SizedBox(width: 10,),
         chipForRow('title1',Color(0xFF89a113)),
       ],
     );
   }
   Widget chipForRow(String label,Color color) {
     return Chip(
-      labelPadding: EdgeInsets.all(2.0),
+//      labelPadding: EdgeInsets.all(0.0),
+      padding: EdgeInsets.all(0.0),
       avatar: CircleAvatar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.green[900],
         child: Text('AB'),
       ),
         label: Text(label,style: TextStyle(color: Colors.white),

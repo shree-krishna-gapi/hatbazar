@@ -673,7 +673,7 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
                   },
                 ),
                 Container(
-                  height: 450,
+//                  height: 450,
                   decoration: BoxDecoration(
                     boxShadow: <BoxShadow>[
                       BoxShadow(

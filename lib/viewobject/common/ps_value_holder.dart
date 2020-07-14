@@ -9,6 +9,7 @@ class PsValueHolder {
       @required this.locationLat,
       @required this.locationLng,
       @required this.userIdToVerify,
+      @required this. userStreetToVerify,
       @required this.userNameToVerify,
       @required this.userEmailToVerify,
       @required this.userPasswordToVerify,
@@ -44,6 +45,7 @@ class PsValueHolder {
   String loginUserId;
   String loginUserName;
   String userIdToVerify;
+  String userStreetToVerify;
   String userNameToVerify;
   String userEmailToVerify;
   String userPasswordToVerify;

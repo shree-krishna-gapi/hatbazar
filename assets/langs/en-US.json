@@ -20,6 +20,18 @@
   "home__drawer_menu_additional_fm" : "FM",
   "home__drawer_menu_additional_guide_video" : "App Instruction Video",
   "news__section__main__heading" : "News",
+  "news__section__main__tab__heading1" : "Latest News",
+  "news__section__main__tab__heading2" : "Popular",
+  "news__section__main__tab__heading3" : "Videos",
+  "news__section__main__tab__heading4" : "Economics",
+  "warning_dialog__input_state": "Please Select the State",
+  "warning_dialog__input_district": "Please Select the District",
+  "warning_dialog__input_municipality": "Please Select the Municipality",
+  "warning_dialog__input_ward": "Please Select the Ward",
+  "warning_dialog__input_street": "Please input street Name",
+
+
+
 
   "app_name": "Hat Bazar - Kishan",
   "force_update__update": "UPDATE",

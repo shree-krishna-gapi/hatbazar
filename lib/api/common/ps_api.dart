@@ -41,7 +41,7 @@ abstract class PsApi {
     final Client client = http.Client();
     try {
       final Response response = await client.get('${PsConfig.ps_app_url}$url');
-      print('${PsConfig.ps_app_url}$url');
+//      print('${PsConfig.ps_app_url}$url');
       final PsApiResponse psApiResponse = PsApiResponse(response);
 
       if (psApiResponse.isSuccessful()) {
@@ -68,8 +68,8 @@ abstract class PsApi {
   Future<PsResource<R>> postData<T extends PsObject<dynamic>, R>(
       T obj, String url, Map<dynamic, dynamic> jsonMap) async {
     final Client client = http.Client();
-    print('signUp -> ${PsConfig.ps_app_url}$url');
-    print('data -> $jsonMap');
+//    print('signUp -> ${PsConfig.ps_app_url}$url');
+//    print('data -> $jsonMap');
     //TODO: SignUp Api Post
     try {
       final Response response = await client
@@ -80,7 +80,7 @@ abstract class PsApi {
         print('** Error Post Data');
         print(e.error);
       });
-      print('response -> ${response.body}');
+//      print('response -> ${response.body}');
       final PsApiResponse psApiResponse = PsApiResponse(response);
 
       if (psApiResponse.isSuccessful()) {

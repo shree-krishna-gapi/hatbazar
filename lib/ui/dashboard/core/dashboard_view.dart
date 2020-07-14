@@ -54,10 +54,12 @@ import 'package:hatbazar/utils/utils.dart';
 import 'package:provider/single_child_widget.dart';
 import 'package:hatbazar/viewobject/holder/intent_holder/item_entry_intent_holder.dart';
 import 'package:hatbazar/viewobject/product.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 import 'package:hatbazar/ui/item/entry/item_entry_container.dart';
 //import 'test.dart';
 import 'package:hatbazar/gapi/newDrawer/news/news.dart';
+import 'package:hatbazar/gapi/newDrawer/agriculturalVideo/agriculturalVideo.dart';
+import 'package:share/share.dart';
 class DashboardView extends StatefulWidget {
   @override
   _HomeViewState createState() => _HomeViewState();
@@ -140,7 +142,6 @@ class _HomeViewState extends State<DashboardView>
 
   int getBottonNavigationIndex(int param) {
     int index = 0;
-    print('default index -> $param');
     switch (param) {
       case PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT: // 1005
         index = 0;
@@ -212,7 +213,6 @@ class _HomeViewState extends State<DashboardView>
         title = Utils.getString(context, 'dashboard__categories');
         break;
       case 2:
-        print('title 2');
         index = PsConst.REQUEST_CODE__DASHBOARD_SELECT_WHICH_USER_FRAGMENT;
         title = (psValueHolder == null ||
             psValueHolder.userIdToVerify == null ||
@@ -221,7 +221,6 @@ class _HomeViewState extends State<DashboardView>
             : Utils.getString(context, 'home__bottom_app_bar_verify_email');
         break;
       case 3:
-        print('title 3');
         index = PsConst.REQUEST_CODE__DASHBOARD_MESSAGE_FRAGMENT;
         title =
             Utils.getString(context, 'home__bottom_app_bar_login'); //dashboard__bottom_navigation_message
@@ -232,7 +231,6 @@ class _HomeViewState extends State<DashboardView>
         break;
 
       default:
-        print('default 1');
         index = 0;
         title = ''; //Utils.getString(context, 'app_name');
         break;
@@ -248,6 +246,33 @@ class _HomeViewState extends State<DashboardView>
   DeleteTaskProvider deleteTaskProvider;
   UserUnreadMessageProvider userUnreadMessageProvider;
   UserUnreadMessageRepository userUnreadMessageRepository;
+
+
+  void handleResponse(response, {String appName}) {
+    if (response == 0) {
+      print("failed.");
+    } else if (response == 1) {
+      print("success");
+    } else if (response == 2) {
+      print("application isn't installed");
+      if (appName != null) {
+        scaffoldKey.currentState.showSnackBar(new SnackBar(
+          content: new Text("${appName} isn't installed."),
+          duration: new Duration(seconds: 4),
+        ));
+      }
+    }
+  }
+  void shareApp() {
+
+
+    final RenderBox box = context.findRenderObject();
+    Share.share('www.hatbazar.com',
+        subject: 'hatbazar subject',
+        sharePositionOrigin:
+        box.localToGlobal(Offset.zero) &
+        box.size);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -352,7 +377,7 @@ class _HomeViewState extends State<DashboardView>
             child: Consumer<UserProvider>(
               builder:
                   (BuildContext context, UserProvider provider, Widget child) {
-                print(provider.psValueHolder.loginUserId);
+//                print(provider.psValueHolder.loginUserId);
                 return ListView(padding: EdgeInsets.zero, children: <Widget>[
                   _DrawerHeaderWidget(),
                   ListTile(
@@ -409,35 +434,50 @@ class _HomeViewState extends State<DashboardView>
                     title: Text(
                         Utils.getString(context, 'home__drawer_menu_additional_title')),
                   ),
-                  _DrawerMenuWidget(
-                      icon: Icons.chrome_reader_mode,
-                      title: Utils.getString(context, 'home__drawer_menu_additional_national_news'),
-                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
-                      onTap: (String title,int index) {
-                        Navigator.pop(context);
-
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => News()),
-                        );
-//                        updateSelectedIndexWithAnimation(title, index);
-                      }),
+//                  _DrawerMenuWidget(
+//                      icon: Icons.chrome_reader_mode,
+//                      title: Utils.getString(context, 'home__drawer_menu_additional_national_news'),
+//                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
+//                      onTap: (String title,int index) {
+//                        Navigator.pop(context);
+//
+//                        Navigator.push(
+//                          context,
+//                          MaterialPageRoute(builder: (context) => News()),
+//                        );
+////                        updateSelectedIndexWithAnimation(title, index);
+//                      }),
                   _DrawerMenuWidget(
                       icon: Icons.ondemand_video,
                       title: Utils.getString(context, 'home__drawer_menu_additional_agriculture_video'),
                       index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
-                      onTap: (String title, int index) {
-                        Navigator.pop(context);
-                        updateSelectedIndexWithAnimation(title, index);
+//                      onTap: (String title, int index) {
+//                        Navigator.pop(context);
+//                        Navigator.push(
+//                          context,
+//                          MaterialPageRoute(builder: (context) => AgriculturalVideo()),
+//                        );
+////                        updateSelectedIndexWithAnimation(title, index);
+//                      }),
+
+                      onTap: (String title, int index)async {
+                        String url = 'https://www.youtube.com/channel/UCKVrP_Cw9jD8eBPoeZfOKlA/videos?view_as=subscriber';
+                        if (await canLaunch(url)) {
+                        await launch(url);
+                        } else {
+                        throw 'Could not launch $url';
+                        }
+                      Navigator.pop(context);
                       }),
-                  _DrawerMenuWidget(
-                      icon: Icons.live_help,
-                      title: Utils.getString(context, 'home__drawer_menu_additional_about_us'),
-                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
-                      onTap: (String title, int index) {
-                        Navigator.pop(context);
-                        updateSelectedIndexWithAnimation(title, index);
-                      }),
+
+//                  _DrawerMenuWidget(
+//                      icon: Icons.live_help,
+//                      title: Utils.getString(context, 'home__drawer_menu_additional_about_us'),
+//                      index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
+//                      onTap: (String title, int index) {
+//                        Navigator.pop(context);
+//                        updateSelectedIndexWithAnimation(title, index);
+//                      }),
                   _DrawerMenuWidget(
                       icon: Icons.radio,
                       title: Utils.getString(context, 'home__drawer_menu_additional_fm'),
@@ -459,8 +499,11 @@ class _HomeViewState extends State<DashboardView>
                       title: Utils.getString(context, 'home__drawer_menu_additional_guide_video'),
                       index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
                       onTap: (String title, int index) {
-                        Navigator.pop(context);
-                        updateSelectedIndexWithAnimation(title, index);
+//                        Navigator.pop(context);
+//                        updateSelectedIndexWithAnimation(title, index);
+
+                        shareApp();
+
                       }),
                   const Divider(
                     height: PsDimens.space1,
@@ -923,16 +966,12 @@ class _HomeViewState extends State<DashboardView>
             : null,
         body: Builder(
           builder: (BuildContext context) {
-            print('currentIndex Starting ......-> $_currentIndex');
             if (_currentIndex ==
                 PsConst.REQUEST_CODE__DASHBOARD_CATEGORY_FRAGMENT) {
-              // index1 bargikaran
-              print('currentindex00');
               return CategoryListView();
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__DASHBOARD_SELECT_WHICH_USER_FRAGMENT) { //REQUEST_CODE__DASHBOARD_SELECT_WHICH_USER_FRAGMENT
               //message
-              print('currentindex0 = $_currentIndex & ${PsConst.REQUEST_CODE__DASHBOARD_SELECT_WHICH_USER_FRAGMENT}');
               // current show profile should to be show add product
               return ChangeNotifierProvider<UserProvider>(
                   lazy: false,
@@ -944,7 +983,6 @@ class _HomeViewState extends State<DashboardView>
                   },
                   child: Consumer<UserProvider>(builder: (BuildContext context,
                       UserProvider provider, Widget child) {
-                    print('currentindex01');
                     if (provider == null ||
                         provider.psValueHolder.userIdToVerify == null ||
                         provider.psValueHolder.userIdToVerify == '') {
@@ -952,7 +990,6 @@ class _HomeViewState extends State<DashboardView>
                           provider.psValueHolder == null ||
                           provider.psValueHolder.loginUserId == null ||
                           provider.psValueHolder.loginUserId == '') {
-                        print('currentindex03');
                         return _CallLoginWidget(
                             currentIndex: _currentIndex,
                             animationController: animationController,
@@ -974,13 +1011,11 @@ class _HomeViewState extends State<DashboardView>
                             });
                       } else {
                         // hello this is me now
-                        print('currentindex04');
                         return ItemEntryContainerView(
                             flag: PsConst.ADD_NEW_ITEM, item: Product()
                         );
                       }
                     } else {
-                      print('currentindex05');
                       return _CallVerifyEmailWidget(
                           animationController: animationController,
                           animation: animation,
@@ -1035,8 +1070,7 @@ class _HomeViewState extends State<DashboardView>
             if (_currentIndex ==
                 PsConst.REQUEST_CODE__DASHBOARD_MESSAGE_FRAGMENT) { //REQUEST_CODE__DASHBOARD_MESSAGE_FRAGMENT this is orginal
               //message REQUEST_CODE__DASHBOARD_SELECT_WHICH_USER_FRAGMENT
-              // 2nd Way
-                print('currentindex2 = $_currentIndex & ${PsConst.REQUEST_CODE__DASHBOARD_MESSAGE_FRAGMENT}');
+
                 //TODO: index 3 profile hunu parne aile vaira xa search page
               return ChangeNotifierProvider<UserProvider>(
                   lazy: false,
@@ -1113,7 +1147,6 @@ class _HomeViewState extends State<DashboardView>
                 PsConst.REQUEST_CODE__DASHBOARD_PHONE_SIGNIN_FRAGMENT ||
                 _currentIndex ==
                     PsConst.REQUEST_CODE__MENU_PHONE_SIGNIN_FRAGMENT) {
-              print('currentindex3 = $_currentIndex & ${PsConst.REQUEST_CODE__DASHBOARD_PHONE_SIGNIN_FRAGMENT}');
               return Stack(children: <Widget>[
                 Container(
                   color: PsColors.mainLightColor,
@@ -1173,7 +1206,6 @@ class _HomeViewState extends State<DashboardView>
                 PsConst.REQUEST_CODE__DASHBOARD_PHONE_VERIFY_FRAGMENT ||
                 _currentIndex ==
                     PsConst.REQUEST_CODE__MENU_PHONE_VERIFY_FRAGMENT) {
-              print('currentindex4 = $_currentIndex & ${PsConst.REQUEST_CODE__DASHBOARD_PHONE_VERIFY_FRAGMENT}');
               return _CallVerifyPhoneWidget(
                   userName: phoneUserName,
                   phoneNumber: phoneNumber,
@@ -1198,7 +1230,6 @@ class _HomeViewState extends State<DashboardView>
                 PsConst.REQUEST_CODE__DASHBOARD_USER_PROFILE_FRAGMENT ||
                 _currentIndex ==
                     PsConst.REQUEST_CODE__MENU_USER_PROFILE_FRAGMENT) {
-              print('currentindex5 = $_currentIndex & ${PsConst.REQUEST_CODE__DASHBOARD_USER_PROFILE_FRAGMENT}');
               return ProfileView(
                 scaffoldKey: scaffoldKey,
                 animationController: animationController,
@@ -1211,11 +1242,9 @@ class _HomeViewState extends State<DashboardView>
               );
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_CATEGORY_FRAGMENT) {
-              print('currentindex6 = $_currentIndex & ${PsConst.REQUEST_CODE__MENU_CATEGORY_FRAGMENT}');
               return CategoryListView();
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_LATEST_PRODUCT_FRAGMENT) {
-              print('currentindex7 = $_currentIndex & ${PsConst.REQUEST_CODE__MENU_LATEST_PRODUCT_FRAGMENT}');
               return ProductListWithFilterView(
                 key: const Key('1'),
                 animationController: animationController,
@@ -1224,7 +1253,6 @@ class _HomeViewState extends State<DashboardView>
               );
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_DISCOUNT_PRODUCT_FRAGMENT) {
-              print('currentindex8 = $_currentIndex & ${PsConst.REQUEST_CODE__MENU_DISCOUNT_PRODUCT_FRAGMENT}');
               return ProductListWithFilterView(
                 key: const Key('2'),
                 animationController: animationController,
@@ -1233,7 +1261,6 @@ class _HomeViewState extends State<DashboardView>
               );
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_TRENDING_PRODUCT_FRAGMENT) {
-              print('currentindex9 = $_currentIndex & ${PsConst.REQUEST_CODE__MENU_TRENDING_PRODUCT_FRAGMENT}');
               return ProductListWithFilterView(
                 key: const Key('3'),
                 animationController: animationController,
@@ -1242,7 +1269,6 @@ class _HomeViewState extends State<DashboardView>
               );
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_FEATURED_PRODUCT_FRAGMENT) {
-              print('currentindex10 = $_currentIndex & ${PsConst.REQUEST_CODE__MENU_FEATURED_PRODUCT_FRAGMENT}');
               return ProductListWithFilterView(
                 key: const Key('4'),
                 animationController: animationController,
@@ -1253,7 +1279,6 @@ class _HomeViewState extends State<DashboardView>
                 PsConst.REQUEST_CODE__DASHBOARD_FORGOT_PASSWORD_FRAGMENT ||
                 _currentIndex ==
                     PsConst.REQUEST_CODE__MENU_FORGOT_PASSWORD_FRAGMENT) {
-              print('currentindex11 = $_currentIndex & ${PsConst.REQUEST_CODE__DASHBOARD_FORGOT_PASSWORD_FRAGMENT}');
               return Stack(children: <Widget>[
                 Container(
                   color: PsColors.mainLightColorWithBlack,
@@ -1295,7 +1320,6 @@ class _HomeViewState extends State<DashboardView>
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__DASHBOARD_REGISTER_FRAGMENT ||
                 _currentIndex == PsConst.REQUEST_CODE__MENU_REGISTER_FRAGMENT) {
-              print('currentindex12 = $_currentIndex & ${PsConst.REQUEST_CODE__DASHBOARD_REGISTER_FRAGMENT}');
               return Stack(children: <Widget>[
                 Container(
                   color: PsColors.mainLightColorWithBlack,
@@ -1308,7 +1332,6 @@ class _HomeViewState extends State<DashboardView>
                       animationController: animationController,
                       onRegisterSelected: (String userId) {
                         _userId = userId;
-                        print('currentindex infinite');
                         // widget.provider.psValueHolder.loginUserId = userId;
                         if (_currentIndex ==
                             PsConst.REQUEST_CODE__MENU_REGISTER_FRAGMENT) {
@@ -1352,7 +1375,6 @@ class _HomeViewState extends State<DashboardView>
                 PsConst.REQUEST_CODE__DASHBOARD_VERIFY_EMAIL_FRAGMENT ||
                 _currentIndex ==
                     PsConst.REQUEST_CODE__MENU_VERIFY_EMAIL_FRAGMENT) {
-              print('currentindex 15');
               return _CallVerifyEmailWidget(
                   animationController: animationController,
                   animation: animation,
@@ -1374,7 +1396,6 @@ class _HomeViewState extends State<DashboardView>
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__DASHBOARD_LOGIN_FRAGMENT ||
                 _currentIndex == PsConst.REQUEST_CODE__MENU_LOGIN_FRAGMENT) {
-              print('currentindex06');
               return _CallLoginWidget(
                   currentIndex: _currentIndex,
                   animationController: animationController,
@@ -1396,7 +1417,6 @@ class _HomeViewState extends State<DashboardView>
                   });
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_SELECT_WHICH_USER_FRAGMENT) {
-              print('currentindex07');
               return ChangeNotifierProvider<UserProvider>(
                   lazy: false,
                   create: (BuildContext context) {
@@ -1546,18 +1566,15 @@ class _HomeViewState extends State<DashboardView>
                   }));
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_FAVOURITE_FRAGMENT) {
-              print('currentindex08');
               return FavouriteProductListView(
 
                   animationController: animationController);
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_TRANSACTION_FRAGMENT) {
-              print('currentindex09');
               return PaidAdItemListView(
                   animationController: animationController);
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_USER_HISTORY_FRAGMENT) {
-              print('currentindex0010');
               return HistoryListView(animationController: animationController);
             }
             // else if (_currentIndex ==
@@ -1567,7 +1584,6 @@ class _HomeViewState extends State<DashboardView>
             // }
             else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_LANGUAGE_FRAGMENT) {
-              print('currentindex0011');
               return LanguageSettingView(
                   animationController: animationController,
                   languageIsChanged: () {
@@ -1581,7 +1597,6 @@ class _HomeViewState extends State<DashboardView>
                   });
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_CONTACT_US_FRAGMENT) {
-              print('currentindex0012');
               return ContactUsView(animationController: animationController);
             } else if (_currentIndex ==
                 PsConst.REQUEST_CODE__MENU_SETTING_FRAGMENT) {

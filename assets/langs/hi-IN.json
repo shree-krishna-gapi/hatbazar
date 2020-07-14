@@ -6,7 +6,7 @@
     "choose__district" : "जिल्ला छन्नुहोस",
     "label__municipality" : "स्थानीय तह ",
     "choose__municipality" : "स्थानीय तह छन्नुहोस",
-    "label__ward" : "वार्ड ",
+    "label__ward" : "वार्ड",
     "choose__ward" : "वार्ड छन्नुहोस",
     "label__street" : "तोल को नाम ",
     "warning__choose__state" : "पहिला, प्रदेश छन्नुहोस",
@@ -24,6 +24,16 @@
     "news__section__main__tab__heading2" : "लोक्प्रिये",
     "news__section__main__tab__heading3" : "भिडियो",
     "news__section__main__tab__heading4" : "अर्थ",
+    "warning_dialog__input_state": "कृपया प्रदेश छन्नुहोस",
+    "warning_dialog__input_district": "कृपया जिल्ला छन्नुहोस",
+    "warning_dialog__input_municipality": "कृपया पालिका छन्नुहोस",
+    "warning_dialog__input_ward": "कृपया वार्ड छन्नुहोस",
+    "warning_dialog__input_street": "कृपया थेगना लेख्नुहोस्",
+
+
+
+
+
 
 
     "app_name" : "हाट बजार - किसान",

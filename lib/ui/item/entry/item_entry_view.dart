@@ -1006,28 +1006,6 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
         textAboutMe: false,
         textEditingController: widget.userInputBrand,
       ),
-      PsDropdownBaseWithControllerWidget(
-          title: Utils.getString(context, 'item_entry__price_type'),
-          textEditingController: widget.priceTypeController,
-          onTap: () async {
-            FocusScope.of(context).requestFocus(FocusNode());
-            final ItemEntryProvider provider =
-                Provider.of<ItemEntryProvider>(context, listen: false);
-
-            final dynamic itemPriceTypeResult =
-                await Navigator.pushNamed(context, RoutePaths.itemPriceType);
-
-            if (itemPriceTypeResult != null &&
-                itemPriceTypeResult is ItemPriceType) {
-              provider.itemPriceTypeId = itemPriceTypeResult.id;
-              // provider.subCategoryId = '';
-
-              setState(() {
-                widget.priceTypeController.text = itemPriceTypeResult.name;
-                // provider.selectedSubCategoryName = '';
-              });
-            }
-          }),
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -1069,6 +1047,29 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
           ),
         ],
       ),
+      PsDropdownBaseWithControllerWidget(
+          title: Utils.getString(context, 'item_entry__price_type'),
+          textEditingController: widget.priceTypeController,
+          onTap: () async {
+            FocusScope.of(context).requestFocus(FocusNode());
+            final ItemEntryProvider provider =
+                Provider.of<ItemEntryProvider>(context, listen: false);
+
+            final dynamic itemPriceTypeResult =
+                await Navigator.pushNamed(context, RoutePaths.itemPriceType);
+
+            if (itemPriceTypeResult != null &&
+                itemPriceTypeResult is ItemPriceType) {
+              provider.itemPriceTypeId = itemPriceTypeResult.id;
+              // provider.subCategoryId = '';
+
+              setState(() {
+                widget.priceTypeController.text = itemPriceTypeResult.name;
+                // provider.selectedSubCategoryName = '';
+              });
+            }
+          }),
+
       Column(
         // mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -1090,7 +1091,7 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
             padding: const EdgeInsets.only(left: PsDimens.space40),
             child: Text(
                 Utils.getString(context, 'item_entry__show_more_than_one'),
-                style: Theme.of(context).textTheme.bodyText1),
+                style: Theme.of(context).textTheme.bodyText1.copyWith(color: PsColors.mainColor)),
           ),
         ],
       ),
@@ -1170,6 +1171,13 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
           )
         ],
       ),
+      PsTextFieldWidget(
+        titleText: Utils.getString(context, 'item_entry__address'),
+        textAboutMe: false,
+        height: PsDimens.space160,
+        textEditingController: widget.userInputAddress,
+        hintText: Utils.getString(context, 'item_entry__address'),
+      ),
       PsDropdownBaseWithControllerWidget(
           title: Utils.getString(context, 'item_entry__location'),
           // selectedText: provider.selectedItemLocation == ''
@@ -1208,6 +1216,7 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
               });
             }
           }),
+
       Padding(
         padding: const EdgeInsets.only(right: 8, left: 8),
         child: Container(
@@ -1257,13 +1266,7 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
         textAboutMe: false,
         textEditingController: widget.userInputLongitude,
       ),
-      PsTextFieldWidget(
-        titleText: Utils.getString(context, 'item_entry__address'),
-        textAboutMe: false,
-        height: PsDimens.space160,
-        textEditingController: widget.userInputAddress,
-        hintText: Utils.getString(context, 'item_entry__address'),
-      ),
+
       _uploadItemWidget
     ]);
   }
@@ -1702,7 +1705,7 @@ class _BusinessModeCheckbox extends State<BusinessModeCheckbox> {
         Expanded(
           child: InkWell(
             child: Text(Utils.getString(context, 'item_entry__is_shop'),
-                style: Theme.of(context).textTheme.bodyText1),
+                style: Theme.of(context).textTheme.bodyText1.copyWith(color: PsColors.mainColor)),
             onTap: () {
               FocusScope.of(context).requestFocus(FocusNode());
               widget.onCheckBoxClick();
