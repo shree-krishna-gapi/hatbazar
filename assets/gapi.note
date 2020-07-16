@@ -1,6 +1,7 @@
 user/register/register_view
 adding field (state district municipality ward and street)
-
+getCategoryList -> rest/categories/get/api_key/hatbazarthamelktm1/limit/10/offset/0  // offline save data
+lib/constant/router.dart  -> routing pages
 lib/ui/dashboard/core/dashboard_view.dart -> bottom tabbar
 lib/ui/dashboard/core/dashboard_view.dart ->  line no. 494
 lib/ui/dashboard/home/home_dashboard_view.dart -> homepage slider samachar title // samachar

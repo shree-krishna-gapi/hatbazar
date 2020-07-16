@@ -41,7 +41,7 @@ abstract class PsApi {
     final Client client = http.Client();
     try {
       final Response response = await client.get('${PsConfig.ps_app_url}$url');
-//      print('${PsConfig.ps_app_url}$url');
+      print('getting url of category -> ${PsConfig.ps_app_url}$url');
       final PsApiResponse psApiResponse = PsApiResponse(response);
 
       if (psApiResponse.isSuccessful()) {

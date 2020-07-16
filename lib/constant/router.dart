@@ -70,7 +70,7 @@ import 'package:hatbazar/viewobject/message.dart';
 import 'package:hatbazar/viewobject/noti.dart';
 import 'package:hatbazar/viewobject/product.dart';
 import 'package:hatbazar/viewobject/ps_app_version.dart';
-
+import 'package:hatbazar/ui/blog_video/blog_video.dart';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case '/':
@@ -225,6 +225,21 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         return BlogView(
           blog: blog,
           heroTagImage: blog.id,
+        );
+      });
+
+
+
+
+      // gapi
+
+    case '${RoutePaths.blogVideos}':
+      return MaterialPageRoute<dynamic>(builder: (BuildContext context) {
+        final Object args = settings.arguments;
+        final Blog blog = args ?? Blog;
+        return BlogVideo(
+//          blog: blog,
+//          heroTagImage: blog.id,
         );
       });
     case '${RoutePaths.paidAdItemList}':

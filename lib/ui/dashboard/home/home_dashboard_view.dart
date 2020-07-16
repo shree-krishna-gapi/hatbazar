@@ -1,4 +1,5 @@
 import 'package:admob_flutter/admob_flutter.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/rendering.dart';
 import 'package:hatbazar/api/common/ps_admob_banner_widget.dart';
 import 'package:hatbazar/config/ps_colors.dart';
@@ -175,6 +176,8 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                 }
                 return provider;
               }),
+
+          // TODO: Home page category
           ChangeNotifierProvider<CategoryProvider>(
               lazy: false,
               create: (BuildContext context) {
@@ -684,27 +687,29 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
                         arguments: blog);
                   },
                 ),
-//                _MyHeaderWidget(
-//                  headerName:
-//                  Utils.getString(context, 'home__menu_drawer_blog'),
-//                  headerDescription: Utils.getString(context, ''),
-//                  viewAllClicked: () {
-//                    Navigator.pushNamed(
-//                      context,
-//                      RoutePaths.blogList,
-//                    );
-//                  },
-//                ),
-//                VideoBlog(
-//                  blogList: blogProvider.blogList.data,
-//                  onTap: (Blog blog) {
-//                    print(RoutePaths.blogDetail);
-//                    print(blog);
-//                    Navigator.pushNamed(context, RoutePaths.blogDetail,
-//                        arguments: blog);
-//                  },
-//                ),
-
+                _MyHeaderWidget(
+                  headerName:
+                  Utils.getString(context, 'news__section__main__tab__heading3'),
+                  headerDescription: Utils.getString(context, ''),
+                  viewAllClicked: () {
+                    Navigator.pushNamed(
+                      context,
+                      RoutePaths.blogList,
+                    );
+                  },
+                ),
+                VideoBlog(
+                  blogList: blogProvider.blogList.data,
+                  onTap: (Blog blog) {
+                    print(RoutePaths.blogDetail);
+                    print(RoutePaths.blogVideos);
+                    Navigator.pushNamed(context, RoutePaths.blogVideos,
+                        arguments: blog);
+                  },
+                ),
+                rowChips(),
+                rowChips(),
+                SizedBox(height: 15,),
 //                Container(
 //                  height: 450,
 //                  decoration: BoxDecoration(
@@ -741,6 +746,38 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
                       child: child));
             });
       }),
+    );
+  }
+  rowChips() {
+    return FittedBox(
+      child: Container(
+//        width: double.infinity,
+        padding: EdgeInsets.symmetric(horizontal: 10),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            chipForRow('title1',Color(0xFF79aa93)),
+            chipForRow('title1',Color(0xFF69a223)),
+            chipForRow('title1',Color(0xFF89a113)),
+          ],
+        ),
+      ),
+    );
+  }
+  Widget chipForRow(String label,Color color) {
+    return Chip(
+//      labelPadding: EdgeInsets.all(0.0),
+      padding: EdgeInsets.all(0.0),
+      avatar: CircleAvatar(
+        backgroundColor: Colors.green[900],
+        child: Text('AB'),
+      ),
+      label: Text(label,style: TextStyle(),
+
+      ),
+      backgroundColor: Colors.transparent,
+      shape: StadiumBorder(side: BorderSide()),
+
     );
   }
 }

@@ -70,6 +70,10 @@ dependencies:
   simple_animations: ^2.2.1
   share: ^0.6.4+3
   flutter_radio: ^0.1.8
+  geolocator: ^5.1.5
+  flutter_offline: ^0.3.0
+  video_player: ^0.10.11+2
+  chewie: ^0.9.10
 #  advanced_share: ^0.1.0
 dev_dependencies:
   flutter_test:

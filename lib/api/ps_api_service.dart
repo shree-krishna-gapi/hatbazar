@@ -215,7 +215,7 @@ class PsApiService extends PsApi {
   Future<PsResource<List<Category>>> getCategoryList(
       int limit, int offset) async {
     final String url =
-        '${PsUrl.ps_category_url}/api_key/${PsConfig.ps_api_key}/limit/$limit/offset/$offset';
+        '${PsUrl.ps_category_url}api_key/${PsConfig.ps_api_key}/limit/$limit/offset/$offset';
   print('getCategoryList -> $url');
     return await getServerCall<Category, List<Category>>(Category(), url);
   }
