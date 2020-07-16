@@ -32,8 +32,9 @@ class _BlogSliderState extends State<BlogSliderView> {
   @override
   Widget build(BuildContext context) {
 //    widget.onTap(blogProduct);
-    return Column(
-//      shrinkWrap: true,
+    return ListView(
+      shrinkWrap: true,
+      scrollDirection: Axis.horizontal,
       children: widget.blogList != null && widget.blogList.isNotEmpty
           ? widget.blogList.map((Blog blogProduct) {
 //            print('Blog -- > ${widget.blogList}');
@@ -42,70 +43,7 @@ class _BlogSliderState extends State<BlogSliderView> {
 
 
 
-        return Container(
-//          height: 120,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              SizedBox(height: 7,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Expanded(child: Container(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                      child: CachedNetworkImage(
-                        alignment: Alignment.topLeft,
-                        placeholder: (context, url) => Image.asset(
-                          'assets/images/placeholder_image.png',
-                          width: double.infinity,
-                          height: blogImageHeight,
-                          fit: BoxFit.fitWidth,
-                        ),
-//                imageUrl: '${PsConfig.ps_app_image_thumbs_url}${widget.blogList[i+1].defaultPhoto.imgPath}',
-                        imageUrl: '${PsConfig.ps_app_image_thumbs_url}${blogProduct.defaultPhoto.imgPath}',
-//                      height: blogImageHeight,
-                        fit: BoxFit.fitWidth,
-                        errorWidget: (context, url, error) => Image.asset(
-                          'assets/images/placeholder_image.png',
-                          width: double.infinity,
-//                      height: blogImageHeight,
-                          fit: BoxFit.fitWidth,
-                        ),
-                      ),
-                    ),
-                  ),flex:3),
-                  Expanded(child: InkWell(
-                    onTap: () {
-                      widget.onTap(blogProduct);
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.only(right: 15),
-                      child: Text('${blogProduct.name}'),
-                    ),
-                  ),flex: 5,),
-//            Expanded(child: PsHero(
-//              transitionOnUserGestures: true,
-//              tag: 'photoKey',
-//              child: GestureDetector(
-//                onTap: () {
-//                              widget.onTap(blogProduct);
-//                },
-//                child: Padding(
-//                  padding: const EdgeInsets.only(right: 15),
-//                  child: Text('${blogProduct.name}'),
-//                ),
-//              ),
-//            ),flex: 5,),
-                ],
-              ),
-              SizedBox(height: 7,),
-              Divider(height: 1,)
-            ],
-          ),
-        );
+        return Container(height: 100,child: Text('hello world'));
 
 
       }).toList()

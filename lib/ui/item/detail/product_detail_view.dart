@@ -855,10 +855,12 @@ class __HeaderBoxWidgetState extends State<_HeaderBoxWidget> {
                 title: widget.itemDetail.itemDetail.data.conditionOfItem.name,
                 color: null),
 
-            _IconsAndTitleTextWidget(
-                icon: MaterialCommunityIcons.view_dashboard_outline,
+            _IconsAndTitleTextWidget2(
+//                icon: MaterialCommunityIcons.view_dashboard_outline,
+                icon: Icons.category,
                 title:
-                '${widget.itemDetail.itemDetail.data.category.catName} / ${widget.itemDetail.itemDetail.data.subCategory.name}',
+                '${widget.itemDetail.itemDetail.data.category.catName}',
+                subTitle : '${widget.itemDetail.itemDetail.data.subCategory.name}',
                 color: null),
 //            _IconsAndTitleTextWidget(
 //                icon: MaterialCommunityIcons.arrow_left_right_bold_outline,
@@ -998,7 +1000,67 @@ class _IconsAndTitleTextWidget extends StatelessWidget {
     );
   }
 }
+class _IconsAndTitleTextWidget2 extends StatelessWidget {
+  const _IconsAndTitleTextWidget2({
+    Key key,
+    @required this.icon,
+    @required this.title,
+    @required this.subTitle,
+    @required this.color,
+  }) : super(key: key);
 
+  final IconData icon;
+  final String title;
+  final String subTitle;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(
+          left: PsDimens.space16,
+          right: PsDimens.space16,
+          bottom: PsDimens.space16),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Icon(
+            icon,
+            size: PsDimens.space18,
+          ),
+          const SizedBox(
+            width: PsDimens.space16,
+          ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  title,
+                  style: color == null
+                      ? Theme.of(context).textTheme.bodyText1.copyWith(fontWeight: FontWeight.w600)
+                      : Theme.of(context)
+                      .textTheme
+                      .bodyText1
+                      .copyWith(color: Colors.blue), //gapi color: color
+                ),
+                Text(
+                  subTitle,
+                  style: color == null
+                      ? Theme.of(context).textTheme.bodyText1
+                      : Theme.of(context)
+                      .textTheme
+                      .bodyText1
+                      .copyWith(color: Colors.blue), //gapi color: color
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
 class _IconsAndTwoTitleTextWidget extends StatelessWidget {
   const _IconsAndTwoTitleTextWidget({
     Key key,

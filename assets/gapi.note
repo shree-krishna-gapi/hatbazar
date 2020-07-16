@@ -2,9 +2,10 @@ user/register/register_view
 adding field (state district municipality ward and street)
 
 lib/ui/dashboard/core/dashboard_view.dart -> bottom tabbar
-
+lib/ui/dashboard/core/dashboard_view.dart ->  line no. 494
 lib/ui/dashboard/home/home_dashboard_view.dart -> homepage slider samachar title // samachar
 lib/ui/dashboard/home/blog_product_slider.dart -> homepage slider
+lib/ui/item/detail/views/safety_tips_tile_view.dart: -> product view detail
 lib/api/common pa_api.dart -> signUp data post
             rest/users/add/api_key/hatbazarthamelktm1/
             https://demo.wfusion.us/hatbazar/index.php/rest/appinfo/get_delete_history/api_key/hatbazarthamelktm1

@@ -43,6 +43,9 @@ import 'package:hatbazar/provider/category/category_provider.dart';
 import 'package:hatbazar/repository/category_repository.dart';
 import 'package:hatbazar/repository/product_repository.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'news_blog.dart';
+import 'video_blog.dart';
+
 class HomeDashboardViewWidget extends StatefulWidget {
   const HomeDashboardViewWidget(
       this.scrollController,
@@ -672,27 +675,59 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
                     );
                   },
                 ),
-                Container(
-//                  height: 450,
-                  decoration: BoxDecoration(
-                    boxShadow: <BoxShadow>[
-                      BoxShadow(
-                          color: PsColors.mainLightShadowColor,
-                          offset: const Offset(1.1, 1.1),
-                          blurRadius: 20.0),
-                    ],
-                  ),
-                  margin: const EdgeInsets.only(
-                      top: PsDimens.space8, bottom: PsDimens.space20),
-                  width: double.infinity,
-                  child: BlogSliderView(
-                    blogList: blogProvider.blogList.data,
-                    onTap: (Blog blog) {
-                      Navigator.pushNamed(context, RoutePaths.blogDetail,
-                          arguments: blog);
-                    },
-                  ),
+                NewsBlog(
+                  blogList: blogProvider.blogList.data,
+                  onTap: (Blog blog) {
+                    print(RoutePaths.blogDetail);
+                    print(blog);
+                    Navigator.pushNamed(context, RoutePaths.blogDetail,
+                        arguments: blog);
+                  },
                 ),
+//                _MyHeaderWidget(
+//                  headerName:
+//                  Utils.getString(context, 'home__menu_drawer_blog'),
+//                  headerDescription: Utils.getString(context, ''),
+//                  viewAllClicked: () {
+//                    Navigator.pushNamed(
+//                      context,
+//                      RoutePaths.blogList,
+//                    );
+//                  },
+//                ),
+//                VideoBlog(
+//                  blogList: blogProvider.blogList.data,
+//                  onTap: (Blog blog) {
+//                    print(RoutePaths.blogDetail);
+//                    print(blog);
+//                    Navigator.pushNamed(context, RoutePaths.blogDetail,
+//                        arguments: blog);
+//                  },
+//                ),
+
+//                Container(
+//                  height: 450,
+//                  decoration: BoxDecoration(
+//                    boxShadow: <BoxShadow>[
+//                      BoxShadow(
+//                          color: PsColors.mainLightShadowColor,
+//                          offset: const Offset(1.1, 1.1),
+//                          blurRadius: 20.0),
+//                    ],
+//                  ),
+//                  margin: const EdgeInsets.only(
+//                      top: PsDimens.space8, bottom: PsDimens.space20),
+//                  width: double.infinity,
+//                  child: BlogSliderView(
+//                    blogList: blogProvider.blogList.data,
+//                    onTap: (Blog blog) {
+//                      print(RoutePaths.blogDetail);
+//                      print(blog);
+//                      Navigator.pushNamed(context, RoutePaths.blogDetail,
+//                          arguments: blog);
+//                    },
+//                  ),
+//                ),
 
               ],
             )

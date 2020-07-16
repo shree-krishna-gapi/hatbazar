@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:hatbazar/constant/router.dart' as router;
+import 'package:hatbazar/gapi/newDrawer/radio/radioStream.dart';
 import 'package:hatbazar/viewobject/common/language.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +68,8 @@ class _PSApp1State extends State<PSApp1> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: RegisterView(),
+//      home: RegisterView(),
+    home: RadioStream(),
     );
   }
 }

@@ -69,6 +69,7 @@ dependencies:
   apple_sign_in: 0.1.0
   simple_animations: ^2.2.1
   share: ^0.6.4+3
+  flutter_radio: ^0.1.8
 #  advanced_share: ^0.1.0
 dev_dependencies:
   flutter_test:
@@ -123,6 +124,17 @@ flutter:
     - assets/images/baseline_favourite_grey_24.png
     - assets/images/default_image.png
     - assets/images/baseline_promotion_color_74.png
+    - assets/images/radio/kantipur.png
+    - assets/images/radio/capital.png
+    - assets/images/radio/radio_nepal.png
+    - assets/images/radio/ujyaalo.png
+    - assets/images/radio/onlineradio.png
+    - assets/images/radio/radiojanata.png
+    - assets/images/radio/radionamaste.png
+    - assets/images/radio/machapuchere.png
+    - assets/images/radio/illam.png
+    - assets/images/radio/internetradio.png
+    - assets/images/radio/nagarik.png
 #    - assets/district.json
     - assets/gapi/english/state.json
     - assets/gapi/english/district.json
@@ -154,6 +166,9 @@ flutter:
     - assets/gapi/hindi/municipality6.json
     - assets/gapi/hindi/municipality7.json
     - assets/gapi/hindi/ward.json
+    - assets/gapi/radio/nepali/radio.json
+    - assets/gapi/radio/english/radio.json
+    - assets/gapi/radio/hindi/radio.json
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

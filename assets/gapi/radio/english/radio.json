@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Kantipur",
+        "url": "http://broadcast.radiokantipur.com:7248/stream",
+        "logo": "assets/images/radio/kantipur.png",
+        "channel": "Kathmandu, Nepal",
+        "picture": ""
+    },
+    {
+        "name": "Ujyaalo",
+        "url": "http://node-12.zeno.fm/h527zwd11uquv?rj-ttl=5&rj-tok=AAABc1GHx8wAxfFqD8EvYswNjw",
+        "logo": "assets/images/radio/ujyaalo.png",
+        "channel": "",
+        "picture": ""
+    },
+    {
+        "name": "Radio Nepal",
+        "url": "http://radionepal.gov.np:40100/stream",
+        "logo": "assets/images/radio/radio_nepal.png",
+        "channel": "",
+        "picture": ""
+    },
+    {
+        "name": "Capital",
+        "url": "http://streaming.softnep.net:8037",
+        "logo": "assets/images/radio/capital.png",
+        "channel": "",
+        "picture": ""
+    },
+    {
+        "name": "Online Radio",
+        "url": "https://stream.zenolive.com/v3e78tqm5gruv.aac",
+        "logo": "assets/images/radio/onlineradio.png",
+        "channel": "",
+        "picture": ""
+    },
+    {
+        "name": "Radio Janata",
+        "url": "http://144.76.110.138:9610",
+        "logo": "assets/images/radio/radiojanata.png",
+        "channel": "",
+        "picture": ""
+    },
+    {
+        "name": "Radio Namaste",
+        "url": "http://live.itechnepal.com:8338/stream?type=.mp3",
+        "logo": "assets/images/radio/radionamaste.png",
+        "channel": "",
+        "picture": ""
+    },
+    {
+        "name": "Machapuchere",
+        "url": "http://167.114.131.90:5037/stream?type=.mp3/;stream.mp3",
+        "logo": "assets/images/radio/machapuchere.png",
+        "channel": "",
+        "picture": ""
+    },
+    {
+        "name": "Internet Radio",
+        "url": "http://server.internetradiohd.com/stream11",
+        "logo": "assets/images/radio/internetradio.png",
+        "channel": "Pop  top40",
+        "picture": ""
+    },
+    {
+        "name": "Illam",
+        "url": "http://live.itechnepal.com:9635/stream",
+        "logo": "assets/images/radio/illam.png",
+        "channel": "Illam, Nepal",
+        "picture": ""
+    },
+    {
+        "name": "Nagarik FM",
+        "url": "http://live.itechnepal.com:7031/stream?type=.mp3",
+        "logo": "assets/images/radio/nagarik.png",
+        "channel": "Dance  Pop",
+        "picture": ""
+    }
+]

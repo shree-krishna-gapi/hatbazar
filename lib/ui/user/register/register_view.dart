@@ -204,6 +204,7 @@ class __TermsAndConCheckboxState extends State<_TermsAndConCheckbox> {
                   widget.provider.isCheckBoxSelect,
                   context,
                   widget.provider,
+                  widget.streetTextEditingController,
                   widget.nameTextEditingController,
                   widget.emailTextEditingController,
                   widget.passwordTextEditingController);
@@ -222,6 +223,7 @@ class __TermsAndConCheckboxState extends State<_TermsAndConCheckbox> {
                     widget.provider.isCheckBoxSelect,
                     context,
                     widget.provider,
+                    widget.streetTextEditingController,
                     widget.nameTextEditingController,
                     widget.emailTextEditingController,
                     widget.passwordTextEditingController);
@@ -238,6 +240,7 @@ void updateCheckBox(
     bool isCheckBoxSelect,
     BuildContext context,
     UserProvider provider,
+    TextEditingController streetTextEditingController,
     TextEditingController nameTextEditingController,
     TextEditingController emailTextEditingController,
     TextEditingController passwordTextEditingController) {
@@ -246,6 +249,7 @@ void updateCheckBox(
   } else {
     provider.isCheckBoxSelect = true;
     //it is for holder
+    provider.psValueHolder.userStreetToVerify = streetTextEditingController.text;
     provider.psValueHolder.userNameToVerify = nameTextEditingController.text;
     provider.psValueHolder.userEmailToVerify = emailTextEditingController.text;
     provider.psValueHolder.userPasswordToVerify =

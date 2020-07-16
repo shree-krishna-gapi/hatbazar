@@ -57,9 +57,10 @@ import 'package:hatbazar/viewobject/product.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:hatbazar/ui/item/entry/item_entry_container.dart';
 //import 'test.dart';
-import 'package:hatbazar/gapi/newDrawer/news/news.dart';
+//import 'package:hatbazar/gapi/newDrawer/news/news.dart';
 import 'package:hatbazar/gapi/newDrawer/agriculturalVideo/agriculturalVideo.dart';
 import 'package:share/share.dart';
+import 'package:hatbazar/gapi/newDrawer/radio/radioStream.dart';
 class DashboardView extends StatefulWidget {
   @override
   _HomeViewState createState() => _HomeViewState();
@@ -484,7 +485,11 @@ class _HomeViewState extends State<DashboardView>
                       index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
                       onTap: (String title, int index) {
                         Navigator.pop(context);
-                        updateSelectedIndexWithAnimation(title, index);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => RadioStream()),
+                        );
+//                        updateSelectedIndexWithAnimation(title, index);
                       }),
                   _DrawerMenuWidget(
                       icon: Icons.videogame_asset,
@@ -496,7 +501,7 @@ class _HomeViewState extends State<DashboardView>
                       }),
                   _DrawerMenuWidget(
                       icon: Icons.share,
-                      title: Utils.getString(context, 'home__drawer_menu_additional_guide_video'),
+                      title: Utils.getString(context, 'home__drawer_menu_additional_app_share'),
                       index: PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT,
                       onTap: (String title, int index) {
 //                        Navigator.pop(context);
