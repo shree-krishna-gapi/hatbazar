@@ -80,7 +80,7 @@
         "stateId" : 1,
         "districtId": 1,
         "wardTotal": 10,
-        "municipalityName":"Falgunand village municipality"
+        "municipalityName":"Falgunanda village municipality"
     },
     {
         "municipalityId" : 13,
@@ -129,14 +129,14 @@
         "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
-        "municipalityName":"My municipality"
+        "municipalityName":"mai municipality"
     },
     {
         "municipalityId" : 20,
         "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
-        "municipalityName":"Sunrise Municipality"
+        "municipalityName":"Suryodaya Municipality"
     },
     {
         "municipalityId" : 21,
@@ -234,7 +234,7 @@
         "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
-        "municipalityName":"Virtamod Municipality"
+        "municipalityName":"Birtamod Municipality"
     },
     {
         "municipalityId" : 35,
@@ -311,7 +311,7 @@
         "stateId" : 1,
         "districtId": 4,
         "wardTotal": 10,
-        "municipalityName":"Pathari Saturn Municipality"
+        "municipalityName":"Pathari Sanischare Municipality"
     },
     {
         "municipalityId" : 46,
@@ -451,7 +451,7 @@
         "stateId" : 1,
         "districtId": 5,
         "wardTotal": 10,
-        "municipalityName":"Barakhshetra Municipality"
+        "municipalityName":"Baraha  Municipality"
     },
     {
         "municipalityId" : 66,
@@ -535,14 +535,14 @@
         "stateId" : 1,
         "districtId": 6,
         "wardTotal": 10,
-        "municipalityName":"Chhatar Jorpati village municipality"
+        "municipalityName":"Chha thar Jorpati village municipality"
     },
     {
         "municipalityId" : 79,
         "stateId" : 1,
         "districtId": 6,
         "wardTotal": 10,
-        "municipalityName":"Twenty-four village municipalities"
+        "municipalityName":" Chaubese village municipalities"
     },
     {
         "municipalityId" : 80,
@@ -724,7 +724,7 @@
         "stateId" : 1,
         "districtId": 10,
         "wardTotal": 10,
-        "municipalityName":"Soludukund Municipality"
+        "municipalityName":" Solududhkund Municipality"
     },
     {
         "municipalityId" : 106,
@@ -871,7 +871,7 @@
         "stateId" : 1,
         "districtId": 12,
         "wardTotal": 10,
-        "municipalityName":"Khotehang village municipality"
+        "municipalityName":"Khotang village municipality"
     },
     {
         "municipalityId" : 127,
@@ -885,7 +885,7 @@
         "stateId" : 1,
         "districtId": 12,
         "wardTotal": 10,
-        "municipalityName":"Diprung Chuichumma village municipality"
+        "municipalityName":"Diprung Chungchumma village municipality"
     },
     {
         "municipalityId" : 129,
@@ -899,7 +899,7 @@
         "stateId" : 1,
         "districtId": 12,
         "wardTotal": 10,
-        "municipalityName":"Varahpokhari village municipality"
+        "municipalityName":"Barha Pokhari village municipality"
     },
     {
         "municipalityId" : 131,

@@ -234,7 +234,7 @@
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
-        "municipalityName":"East Chowki village municipality"
+        "municipalityName":"Purbi Chowki village municipality"
     },
     {
         "municipalityId" : 1,
@@ -262,21 +262,21 @@
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
-        "municipalityName":"Ideal village municipality"
+        "municipalityName":"Adarsha village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
-        "municipalityName":"K.I.S. Village Municipality"
+        "municipalityName":"K.I.Singh. Village Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
-        "municipalityName":"Bogtan Foodsil village municipality"
+        "municipalityName":"Bogtan Phudsil village municipality"
     },
     {
         "municipalityId" : 1,
@@ -339,7 +339,7 @@
         "stateId" : 7,
         "districtId": 72,
         "wardTotal": 10,
-        "municipalityName":"Mohanyal village municipality"
+        "municipalityName":"Bardagoria village municipality"
     },
     {
         "municipalityId" : 1,
@@ -381,7 +381,7 @@
         "stateId" : 7,
         "districtId": 73,
         "wardTotal": 10,
-        "municipalityName":"पुर्नवास"
+        "municipalityName":"Purarbas"
     },
     {
         "municipalityId" : 1,

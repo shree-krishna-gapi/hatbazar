@@ -66,7 +66,7 @@
         "stateId" : 2,
         "districtId": 14,
         "wardTotal": 10,
-        "municipalityName":"Agnisair Krishnasaravan village municipality"
+        "municipalityName":"Krishnasaravan village municipality"
     },
     {
         "municipalityId" : 149,
@@ -108,7 +108,7 @@
         "stateId" : 2,
         "districtId": 14,
         "wardTotal": 10,
-        "municipalityName":"Rajgad village municipality"
+        "municipalityName":"Rajgard village municipality"
     },
     {
         "municipalityId" : 155,
@@ -192,7 +192,7 @@
         "stateId" : 2,
         "districtId": 15,
         "wardTotal": 10,
-        "municipalityName":"Another village municipality"
+        "municipalityName":"Airahi village municipality"
     },
     {
         "municipalityId" : 1,
@@ -234,7 +234,7 @@
         "stateId" : 2,
         "districtId": 15,
         "wardTotal": 10,
-        "municipalityName":"Arna municipality"
+        "municipalityName":"Ariapatti municipality"
     },
     {
         "municipalityId" : 1,
@@ -311,7 +311,7 @@
         "stateId" : 2,
         "districtId": 16,
         "wardTotal": 10,
-        "municipalityName":"Kamala Municipality"
+        "municipalityName":"Kamala Sidhidatri Municipality"
     },
     {
         "municipalityId" : 1,
@@ -668,7 +668,7 @@
         "stateId" : 2,
         "districtId": 20,
         "wardTotal": 10,
-        "municipalityName":"Adarsh ​​Kotwal village municipality"
+        "municipalityName":"Adarsh Kotwal village municipality"
     },
     {
         "municipalityId" : 1,

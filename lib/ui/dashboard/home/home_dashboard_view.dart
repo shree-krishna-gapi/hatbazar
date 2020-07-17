@@ -46,7 +46,7 @@ import 'package:hatbazar/repository/product_repository.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'news_blog.dart';
 import 'video_blog.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 class HomeDashboardViewWidget extends StatefulWidget {
   const HomeDashboardViewWidget(
       this.scrollController,
@@ -749,18 +749,16 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
     );
   }
   rowChips() {
-    return FittedBox(
-      child: Container(
+    return Container(
 //        width: double.infinity,
-        padding: EdgeInsets.symmetric(horizontal: 10),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            chipForRow('title1',Color(0xFF79aa93)),
-            chipForRow('title1',Color(0xFF69a223)),
-            chipForRow('title1',Color(0xFF89a113)),
-          ],
-        ),
+      padding: EdgeInsets.symmetric(horizontal: 10),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          chipForRow('title1',Color(0xFF79aa93)),
+          chipForRow('title1',Color(0xFF69a223)),
+          chipForRow('title1',Color(0xFF89a113)),
+        ],
       ),
     );
   }
@@ -821,6 +819,7 @@ class __HomeCategoryHorizontalListWidgetState
                       arguments: 'Categories');
                 },
               ),
+              // TODO:// category list
               Container(
                 height: PsDimens.space140,
                 width: MediaQuery.of(context).size.width,
@@ -843,7 +842,12 @@ class __HomeCategoryHorizontalListWidgetState
                         return CategoryHorizontalListItem(
                           category:
                           categoryProvider.categoryList.data[index],
-                          onTap: () {
+                          onTap: () async {
+                            SharedPreferences prefs = await SharedPreferences.getInstance();
+                            var catId = categoryProvider.categoryList.data[index].catId;
+                              prefs.setString('categoryCatId', catId);
+                              String titleName = categoryProvider.categoryList.data[index].catName;
+                              prefs.setString('subCategoryForHome', titleName);
                             FocusScope.of(context)
                                 .requestFocus(FocusNode());
                             print(categoryProvider.categoryList
@@ -856,13 +860,16 @@ class __HomeCategoryHorizontalListWidgetState
                                 categoryProvider
                                     .categoryList.data[index].catId;
                             Navigator.pushNamed(
-                                context, RoutePaths.filterProductList,
-                                arguments: ProductListIntentHolder(
-                                  appBarTitle: categoryProvider
-                                      .categoryList.data[index].catName,
-                                  productParameterHolder:
-                                  productParameterHolder,
-                                ));
+                                context, RoutePaths.subCategoryForHome,
+                                arguments: categoryProvider
+                                    .categoryList.data[index].catId,
+//                                arguments: ProductListIntentHolder(
+//                                  appBarTitle: categoryProvider
+//                                      .categoryList.data[index].catName,
+//                                  productParameterHolder:
+//                                  productParameterHolder,
+//                                )
+                            );
                           },
                           // )
                         );
@@ -1139,6 +1146,7 @@ class __HomeHeaderWidgetState extends State<_HomeHeaderWidget> {
       },
     ));
   }
+
 }
 
 class _MyHomeHeaderWidget extends StatefulWidget {

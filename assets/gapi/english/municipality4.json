@@ -17,7 +17,7 @@
         "stateId" : 4,
         "districtId": 35,
         "wardTotal": 10,
-        "municipalityName":"Barpak Sulikot village municipality"
+        "municipalityName":" Sulikot  Barpak village municipality"
     },
     {
         "municipalityId" : 1,
@@ -87,14 +87,14 @@
         "stateId" : 4,
         "districtId": 36,
         "wardTotal": 10,
-        "municipalityName":"Central Nepal Municipality"
+        "municipalityName":"Madhya Nepal Municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 36,
         "wardTotal": 10,
-        "municipalityName":"Rarenas Municipality"
+        "municipalityName":"Rainas Municipality"
     },
     {
         "municipalityId" : 1,
@@ -143,7 +143,7 @@
         "stateId" : 4,
         "districtId": 37,
         "wardTotal": 10,
-        "municipalityName":"Beas Municipality"
+        "municipalityName":"Byas Municipality"
     },
     {
         "municipalityId" : 1,
@@ -325,14 +325,14 @@
         "stateId" : 4,
         "districtId": 40,
         "wardTotal": 10,
-        "municipalityName":"Naso village municipality"
+        "municipalityName":"Nasong village municipality"
     },
     {
         "municipalityId" : 1,
         "stateId" : 4,
         "districtId": 40,
         "wardTotal": 10,
-        "municipalityName":"Manang Ngisyang village municipality"
+        "municipalityName":"Ngisyang village municipality"
     },
     {
         "municipalityId" : 1,
@@ -367,7 +367,7 @@
         "stateId" : 4,
         "districtId": 41,
         "wardTotal": 10,
-        "municipalityName":"Waragung Free Zone Municipality"
+        "municipalityName":"varagung Free Zone Municipality"
     },
     {
         "municipalityId" : 1,
@@ -493,7 +493,7 @@
         "stateId" : 4,
         "districtId": 44,
         "wardTotal": 10,
-        "municipalityName":"Wareng village municipality"
+        "municipalityName":"Bareng village municipality"
     },
     {
         "municipalityId" : 1,

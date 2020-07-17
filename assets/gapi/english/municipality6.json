@@ -59,7 +59,7 @@
         "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
-        "municipalityName":"Kumakh village municipality"
+        "municipalityName":"Kumakh Malika village municipality"
     },
     {
         "municipalityId" : 1,
@@ -227,7 +227,7 @@
         "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
-        "municipalityName":"Twenty-eight municipalities"
+        "municipalityName":"Aath Bis municipalities"
     },
     {
         "municipalityId" : 1,
@@ -486,7 +486,7 @@
         "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
-        "municipalityName":"Shubh Kali Village municipality"
+        "municipalityName":"Kalika Village municipality"
     },
     {
         "municipalityId" : 1,

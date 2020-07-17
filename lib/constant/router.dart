@@ -71,6 +71,7 @@ import 'package:hatbazar/viewobject/noti.dart';
 import 'package:hatbazar/viewobject/product.dart';
 import 'package:hatbazar/viewobject/ps_app_version.dart';
 import 'package:hatbazar/ui/blog_video/blog_video.dart';
+import 'package:hatbazar/subCategoryForHome.dart';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case '/':
@@ -381,7 +382,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         final String category = args ?? String;
         return SubCategorySearchListView(categoryId: category);
       });
-
+    case '${RoutePaths.subCategoryForHome}':
+      return MaterialPageRoute<dynamic>(builder: (BuildContext context) {
+        final Object args = settings.arguments;
+        final String category = args ?? String;
+        return SubCategoryForHome(categoryId: category);
+      });
     // case '${RoutePaths.trendingCategoryList}':
     //   return MaterialPageRoute<dynamic>(builder: (BuildContext context) {
     //     return TrendingCategoryListView();

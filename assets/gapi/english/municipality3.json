@@ -619,7 +619,7 @@
         "stateId" : 3,
         "districtId": 31,
         "wardTotal": 10,
-        "municipalityName":"Amachhoding Village municipality"
+        "municipalityName":" Aamachhodingmo Village municipality"
     },
     {
         "municipalityId" : 1,
@@ -745,7 +745,7 @@
         "stateId" : 3,
         "districtId": 33,
         "wardTotal": 10,
-        "municipalityName":"Outstanding village municipality"
+        "municipalityName":"Bakaiya village municipality"
     },
     {
         "municipalityId" : 1,
@@ -906,7 +906,7 @@
         "stateId" : 3,
         "districtId": 19,
         "wardTotal": 10,
-        "municipalityName":"Yamunamai village municipality"
+        "municipalityName":"Yamuna mai village municipality"
     },
     {
         "municipalityId" : 1,

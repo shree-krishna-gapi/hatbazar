@@ -67,6 +67,7 @@ class RoutePaths {
   static const String homeItemSearch = '/homeItemSearch';
   static const String searchCategory = '/searchCategory';
   static const String searchSubCategory = '/searchSubCategory';
+  static const String subCategoryForHome = '/subCategoryForHome';
   static const String basketList = '/basketList';
   static const String checkout = '/checkout';
   static const String checkout_container = '/checkout_container';
