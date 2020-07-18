@@ -26,66 +26,53 @@ class SubCategorySearchListItem1 extends StatelessWidget {
       animation: animationController,
       child: Container(
         color: Colors.black12,
-        child: Stack(
-          children: <Widget>[
+        child: InkWell(
+          onTap: onTap,
+          child: Stack(
+            children: <Widget>[
 
-            InkWell(
-              onTap: onTap,
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                child: CachedNetworkImage(
-                  alignment: Alignment.topLeft,
-                  placeholder: (context, url) => Image.asset(
-                    'assets/images/placeholder_image.png',
-                    width: double.infinity,
-                    fit: BoxFit.fitWidth,
-                  ),
+             Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: CachedNetworkImage(
+                    alignment: Alignment.topLeft,
+                    placeholder: (context, url) => Image.asset(
+                      'assets/images/placeholder_image.png',
+                      width: double.infinity,
+                      fit: BoxFit.fitWidth,
+                    ),
 //                  imageUrl: '${PsConfig.ps_app_image_thumbs_url}${widget.blogList[i+1].defaultPhoto.imgPath}',
-                  imageUrl: '${PsConfig.ps_app_image_thumbs_url}${subCategory.defaultPhoto.imgPath}',
+                    imageUrl: '${PsConfig.ps_app_image_thumbs_url}${subCategory.defaultPhoto.imgPath}',
 //                      height: blogImageHeight,
-                  fit: BoxFit.cover,
-                  errorWidget: (context, url, error) => Image.asset(
-                    'assets/images/placeholder_image.png',
-                    width: double.infinity,
+                    fit: BoxFit.cover,
+                    errorWidget: (context, url, error) => Image.asset(
+                      'assets/images/placeholder_image.png',
+                      width: double.infinity,
 //                      height: blogImageHeight,
-                    fit: BoxFit.fitWidth,
-                  ),
-                ),
-//          child: Ink(
-//            color: PsColors.backgroundColor,
-//            child: Padding(
-//              padding: const EdgeInsets.all(PsDimens.space16),
-//              child: Text(
-//                subCategory.name,
-//                textAlign: TextAlign.start,
-//                style: Theme.of(context)
-//                    .textTheme
-//                    .subtitle2
-//                    .copyWith(fontWeight: FontWeight.bold),
-//              ),
-//            ),
-//          ),
-              ),
-            ),
-            Positioned(child: Container(
-                color: Colors.black38,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 13),
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      subCategory.name,
-                      textAlign: TextAlign.start,
-                      style: Theme.of(context)
-                          .textTheme
-                          .subtitle2
-                          .copyWith(fontWeight: FontWeight.bold,color: Colors.white),
+                      fit: BoxFit.fitWidth,
                     ),
                   ),
-                )
-            ),bottom: 0, left:0 , right: 0,
-            ),
-          ],
+                ),
+
+              Positioned(child: Container(
+                  color: Colors.black38,
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 13),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        subCategory.name,
+                        textAlign: TextAlign.start,
+                        style: Theme.of(context)
+                            .textTheme
+                            .subtitle2
+                            .copyWith(fontWeight: FontWeight.bold,color: Colors.white),
+                      ),
+                    ),
+                  )
+              ),bottom: 0, left:0 , right: 0,
+              ),
+            ],
+          ),
         ),
       ),
       builder: (BuildContext contenxt, Widget child) {

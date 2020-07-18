@@ -144,9 +144,6 @@ class _SubCategorySearchListViewState extends State<SubCategorySearchListView>
 
                                 Navigator.of(context, rootNavigator: true)
                                     .pop(provider.subCategoryList.data[index]);
-
-                                print(
-                                    provider.subCategoryList.data[index].name);
                                 // if (index == 0) {
                                 //   Navigator.pushNamed(
                                 //     context,

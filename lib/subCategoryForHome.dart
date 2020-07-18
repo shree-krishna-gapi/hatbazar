@@ -152,7 +152,25 @@ class _SubCategoryForHomeState extends State<SubCategoryForHome>
                                     ),
                                   ),
                                   subCategory: provider.subCategoryList.data[index],
-                                ));
+                                  onTap: () {
+                                    print(provider.subCategoryList.data[index]
+                                        .defaultPhoto.imgPath);
+                                    //Navigator.pop(context, provider.subCategoryList.data[index]);
+
+                                    Navigator.of(context, rootNavigator: true)
+                                        .pop(provider.subCategoryList.data[index]);
+
+                                    print(
+                                        provider.subCategoryList.data[index].name);
+                                    // if (index == 0) {
+                                    //   Navigator.pushNamed(
+                                    //     context,
+                                    //     RoutePaths.searchCategory,
+                                    //   );
+                                    // }
+                                  },
+                                ),
+                            );
                           }
                         }),
                       );

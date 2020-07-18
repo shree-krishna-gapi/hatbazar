@@ -1,264 +1,264 @@
 [{
-    "municipalityId" : 1,
+    "municipalityId" : 665,
     "stateId" : 7,
     "districtId": 68,
     "wardTotal": 10,
     "municipalityName":"Badimalika Municipality"
 },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 666,
         "stateId" : 7,
         "districtId": 68,
         "wardTotal": 10,
         "municipalityName":"Triveni Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 667,
         "stateId" : 7,
         "districtId": 68,
         "wardTotal": 10,
         "municipalityName":"Budhiganga Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 668,
         "stateId" : 7,
         "districtId": 68,
         "wardTotal": 10,
         "municipalityName":"Budhinanda Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 669,
         "stateId" : 7,
         "districtId": 68,
         "wardTotal": 10,
         "municipalityName":"Gaumul village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 670,
         "stateId" : 7,
         "districtId": 68,
         "wardTotal": 10,
         "municipalityName":"Jagannath village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 671,
         "stateId" : 7,
         "districtId": 68,
         "wardTotal": 10,
         "municipalityName":"Swamikartik Khapar village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 672,
         "stateId" : 7,
         "districtId": 68,
         "wardTotal": 10,
         "municipalityName":"Khaptad Chhededaha village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 673,
         "stateId" : 7,
         "districtId": 68,
         "wardTotal": 10,
         "municipalityName":"Himali village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 674,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Jaya Prithvi Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 675,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Bungal Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 676,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Talkot village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 677,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Mashta village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 678,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Khaptadchanna village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 679,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Thalara village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 680,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Vitthadchir village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 681,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Surma village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 682,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Chhabispathibhera village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 683,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Durgathali village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 684,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Kedarsyu village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 685,
         "stateId" : 7,
         "districtId": 69,
         "wardTotal": 10,
         "municipalityName":"Saipal village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 686,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Mangalsen Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 687,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Kamalbazar Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 688,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Sanphebgar Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 689,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Panchdewal Vinayak Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 690,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Chaurpati village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 691,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Mellekh village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 692,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Bannigadhi Jayagarh village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 693,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Ramaroshan village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 694,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Dhakari village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 695,
         "stateId" : 7,
         "districtId": 70,
         "wardTotal": 10,
         "municipalityName":"Turmakhand village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 696,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
         "municipalityName":"Dipayal Silgadhi Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 697,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
         "municipalityName":"Shikhar Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 698,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
         "municipalityName":"Purbi Chowki village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 699,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
         "municipalityName":"Badikedar village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 700,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
         "municipalityName":"Jorayal village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 701,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
         "municipalityName":"Sayal village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 702,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
@@ -272,28 +272,28 @@
         "municipalityName":"K.I.Singh. Village Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 703,
         "stateId" : 7,
         "districtId": 71,
         "wardTotal": 10,
         "municipalityName":"Bogtan Phudsil village municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 704,
         "stateId" : 7,
         "districtId": 72,
         "wardTotal": 10,
         "municipalityName":"Dhangadhi Sub-metropolis"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 705,
         "stateId" : 7,
         "districtId": 72,
         "wardTotal": 10,
         "municipalityName":"Tikapur Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 706,
         "stateId" : 7,
         "districtId": 72,
         "wardTotal": 10,
@@ -307,14 +307,14 @@
         "municipalityName":"Lamkichuha Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 707,
         "stateId" : 7,
         "districtId": 72,
         "wardTotal": 10,
         "municipalityName":"Bhajani Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 708,
         "stateId" : 7,
         "districtId": 72,
         "wardTotal": 10,
@@ -328,7 +328,7 @@
         "municipalityName":"Gauriganga Municipality"
     },
     {
-        "municipalityId" : 1,
+        "municipalityId" : 709,
         "stateId" : 7,
         "districtId": 72,
         "wardTotal": 10,

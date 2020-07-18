@@ -25,14 +25,14 @@
         "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
-        "municipalityName":"फक्ताङलुङ गाउँपालिका"
+        "municipalityName":"फक्तङ्लुङ गाउँपालिका"
     },
     {
         "municipalityId" : 5,
         "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
-        "municipalityName":"मिक्वाखोला गाउँपालिका"
+        "municipalityName":"मिक्वखोला गाउँपालिका"
     },
     {
         "municipalityId" : 6,
@@ -60,7 +60,7 @@
         "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
-        "municipalityName":"सिरीजङ्घा गाउँपालिका"
+        "municipalityName":" सिरिजङ्हा गाउँपालिका"
     },
     {
         "municipalityId" : 10,
@@ -958,4 +958,4 @@
         "wardTotal": 10,
         "municipalityName":"लिम्चुङ्बुङ गाउँपालिका"
     }
-    ]
+]

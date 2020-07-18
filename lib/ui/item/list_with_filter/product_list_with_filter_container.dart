@@ -75,18 +75,15 @@ print(widget.productParameterHolder.runtimeType);
           ),
           elevation: 1,
         ),
-        body:Container( child: FutureBuilder<List<OfflineFeeYear>>(
-          future: FetchOffline(http.Client()),
+        body:Container( child: FutureBuilder<List<SubCategory>>(
+          future: FetchSubCategory(http.Client()),
           builder: (context, snapshot) {
             if (snapshot.hasError) ;
             if(snapshot.hasData) {
-              print('------------------------');
-              print(snapshot.data.length);
               return snapshot.data.length> 0 ?ListView.builder(
                   shrinkWrap: true,
                   itemCount: snapshot.data.length,
                   itemBuilder: (BuildContext context, int index) {
-
                     return
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
