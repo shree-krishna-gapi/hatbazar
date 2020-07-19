@@ -149,6 +149,7 @@ class PsConfig {
   static const int RECENT_ITEM_LOADING_LIMIT = 10;
   static const int POPULAR_ITEM_LOADING_LIMIT = 10;
   static const int BLOCK_SLIDER_LOADING_LIMIT = 10;
+  static const int BLOCK_SLIDER_LOADING_LIMIT1 = 10;
   static const int FOLLOWER_ITEM_LOADING_LIMIT = 10;
 
   ///

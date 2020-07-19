@@ -134,6 +134,8 @@ class PsUrl {
 
   static const String ps_bloglist_url = 'rest/feeds/get';
 
+  static const String ps_videolist_url = 'rest/videos/get';
+
   static const String ps_transactionList_url = 'rest/transactionheaders/get';
 
   static const String ps_transactionDetail_url = 'rest/transactiondetails/get';

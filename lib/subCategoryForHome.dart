@@ -14,6 +14,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:hatbazar/constant/route_paths.dart';
+import 'package:hatbazar/provider/category/category_provider.dart';
+import 'package:hatbazar/viewobject/holder/intent_holder/product_list_intent_holder.dart';
+import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
 class SubCategoryForHome extends StatefulWidget {
   const SubCategoryForHome({@required this.categoryId,this.appBarTitle});
 
@@ -153,15 +157,26 @@ class _SubCategoryForHomeState extends State<SubCategoryForHome>
                                   ),
                                   subCategory: provider.subCategoryList.data[index],
                                   onTap: () {
+                                    final ProductParameterHolder
+                                    productParameterHolder =      ProductParameterHolder()
+                                        .getLatestParameterHolder();
                                     print(provider.subCategoryList.data[index]
                                         .defaultPhoto.imgPath);
-                                    //Navigator.pop(context, provider.subCategoryList.data[index]);
-
-                                    Navigator.of(context, rootNavigator: true)
-                                        .pop(provider.subCategoryList.data[index]);
 
                                     print(
                                         provider.subCategoryList.data[index].name);
+                                    //Navigator.pop(context, provider.subCategoryList.data[index]);
+                                    Navigator.pushNamed(
+                                        context, RoutePaths.filterProductList,
+                                        arguments: ProductListIntentHolder(
+                                          appBarTitle: provider.subCategoryList.data[index].name,
+                                          productParameterHolder: productParameterHolder,
+                                        )
+                                    );
+
+//                                    Navigator.of(context, rootNavigator: true)
+//                                        .pop(provider.subCategoryList.data[index]);
+
                                     // if (index == 0) {
                                     //   Navigator.pushNamed(
                                     //     context,

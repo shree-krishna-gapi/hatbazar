@@ -23,8 +23,8 @@ import 'package:hatbazar/ui/common/ps_ui_widget.dart';
 class ProductListWithFilterView extends StatefulWidget {
   const ProductListWithFilterView(
       {Key key,
-      @required this.productParameterHolder,
-      @required this.animationController})
+        @required this.productParameterHolder,
+        @required this.animationController})
       : super(key: key);
 
   final ProductParameterHolder productParameterHolder;
@@ -103,194 +103,194 @@ class _ProductListWithFilterViewState extends State<ProductListWithFilterView>
     print(
         '............................Build UI Again ............................');
     return
-        // EasyLocalizationProvider(
-        //     data: data,
-        //     child:
-        ChangeNotifierProvider<SearchProductProvider>(
-            lazy: false,
-            create: (BuildContext context) {
-              final SearchProductProvider provider = SearchProductProvider(
-                  repo: repo1, psValueHolder: valueHolder);
-              widget.productParameterHolder.itemLocationId =
-                  provider.psValueHolder.locationId;
-              provider.loadProductListByKey(widget.productParameterHolder);
-              _searchProductProvider = provider;
-              _searchProductProvider.productParameterHolder =
-                  widget.productParameterHolder;
+      // EasyLocalizationProvider(
+      //     data: data,
+      //     child:
+      ChangeNotifierProvider<SearchProductProvider>(
+          lazy: false,
+          create: (BuildContext context) {
+            final SearchProductProvider provider = SearchProductProvider(
+                repo: repo1, psValueHolder: valueHolder);
+            widget.productParameterHolder.itemLocationId =
+                provider.psValueHolder.locationId;
+            provider.loadProductListByKey(widget.productParameterHolder);
+            _searchProductProvider = provider;
+            _searchProductProvider.productParameterHolder =
+                widget.productParameterHolder;
 
-              return _searchProductProvider;
-            },
-            child: Consumer<SearchProductProvider>(builder:
-                (BuildContext context, SearchProductProvider provider,
-                    Widget child) {
-              // print(provider.productList.data.isEmpty);
-              // if (provider.productList.data.isNotEmpty) {
-              return Column(
-                children: <Widget>[
-                  const PsAdMobBannerWidget(),
-                  Expanded(
-                    child: Container(
-                      color: PsColors.coreBackgroundColor,
-                      child: Stack(children: <Widget>[
-                        if (provider.productList.data.isNotEmpty &&
-                            provider.productList.data != null)
-                          Container(
-                              color: PsColors.coreBackgroundColor,
-                              margin: const EdgeInsets.only(
-                                  left: PsDimens.space4,
-                                  right: PsDimens.space4,
-                                  top: PsDimens.space4,
-                                  bottom: PsDimens.space4),
-                              child: RefreshIndicator(
-                                child: CustomScrollView(
-                                    controller: _scrollController,
-                                    scrollDirection: Axis.vertical,
-                                    shrinkWrap: true,
-                                    slivers: <Widget>[
-                                      SliverGrid(
-                                        gridDelegate:
-                                            const SliverGridDelegateWithMaxCrossAxisExtent(
-                                                maxCrossAxisExtent: 280,
-                                                childAspectRatio: 0.55),
-                                        delegate: SliverChildBuilderDelegate(
-                                          (BuildContext context, int index) {
-                                            if (provider.productList.data !=
-                                                    null ||
-                                                provider.productList.data
-                                                    .isNotEmpty) {
-                                              final int count = provider
-                                                  .productList.data.length;
-                                              return ProductVeticalListItem(
-                                                coreTagKey: provider.hashCode
-                                                        .toString() +
-                                                    provider.productList
-                                                        .data[index].id,
-                                                animationController:
-                                                    widget.animationController,
-                                                animation: Tween<double>(
-                                                        begin: 0.0, end: 1.0)
-                                                    .animate(
-                                                  CurvedAnimation(
-                                                    parent: widget
-                                                        .animationController,
-                                                    curve: Interval(
-                                                        (1 / count) * index,
-                                                        1.0,
-                                                        curve: Curves
-                                                            .fastOutSlowIn),
-                                                  ),
+            return _searchProductProvider;
+          },
+          child: Consumer<SearchProductProvider>(builder:
+              (BuildContext context, SearchProductProvider provider,
+              Widget child) {
+            // print(provider.productList.data.isEmpty);
+            // if (provider.productList.data.isNotEmpty) {
+            return Column(
+              children: <Widget>[
+                const PsAdMobBannerWidget(),
+                Expanded(
+                  child: Container(
+                    color: PsColors.coreBackgroundColor,
+                    child: Stack(children: <Widget>[
+                      if (provider.productList.data.isNotEmpty &&
+                          provider.productList.data != null)
+                        Container(
+                            color: PsColors.coreBackgroundColor,
+                            margin: const EdgeInsets.only(
+                                left: PsDimens.space4,
+                                right: PsDimens.space4,
+                                top: PsDimens.space4,
+                                bottom: PsDimens.space4),
+                            child: RefreshIndicator(
+                              child: CustomScrollView(
+                                  controller: _scrollController,
+                                  scrollDirection: Axis.vertical,
+                                  shrinkWrap: true,
+                                  slivers: <Widget>[
+                                    SliverGrid(
+                                      gridDelegate:
+                                      const SliverGridDelegateWithMaxCrossAxisExtent(
+                                          maxCrossAxisExtent: 280,
+                                          childAspectRatio: 0.55),
+                                      delegate: SliverChildBuilderDelegate(
+                                            (BuildContext context, int index) {
+                                          if (provider.productList.data !=
+                                              null ||
+                                              provider.productList.data
+                                                  .isNotEmpty) {
+                                            final int count = provider
+                                                .productList.data.length;
+                                            return ProductVeticalListItem(
+                                              coreTagKey: provider.hashCode
+                                                  .toString() +
+                                                  provider.productList
+                                                      .data[index].id,
+                                              animationController:
+                                              widget.animationController,
+                                              animation: Tween<double>(
+                                                  begin: 0.0, end: 1.0)
+                                                  .animate(
+                                                CurvedAnimation(
+                                                  parent: widget
+                                                      .animationController,
+                                                  curve: Interval(
+                                                      (1 / count) * index,
+                                                      1.0,
+                                                      curve: Curves
+                                                          .fastOutSlowIn),
                                                 ),
-                                                product: provider
-                                                    .productList.data[index],
-                                                onTap: () {
-                                                  final Product product =
-                                                      provider.productList.data
-                                                          .reversed
-                                                          .toList()[index];
-                                                  final ProductDetailIntentHolder
-                                                      holder =
-                                                      ProductDetailIntentHolder(
-                                                          product: provider
-                                                              .productList
-                                                              .data[index],
-                                                          heroTagImage: provider
-                                                                  .hashCode
-                                                                  .toString() +
-                                                              product.id +
-                                                              PsConst
-                                                                  .HERO_TAG__IMAGE,
-                                                          heroTagTitle: provider
-                                                                  .hashCode
-                                                                  .toString() +
-                                                              product.id +
-                                                              PsConst
-                                                                  .HERO_TAG__TITLE);
-                                                  Navigator.pushNamed(context,
-                                                      RoutePaths.productDetail,
-                                                      arguments: holder);
-                                                },
-                                              );
-                                            } else {
-                                              return null;
-                                            }
-                                          },
-                                          childCount:
-                                              provider.productList.data.length,
-                                        ),
+                                              ),
+                                              product: provider
+                                                  .productList.data[index],
+                                              onTap: () {
+                                                final Product product =
+                                                provider.productList.data
+                                                    .reversed
+                                                    .toList()[index];
+                                                final ProductDetailIntentHolder
+                                                holder =
+                                                ProductDetailIntentHolder(
+                                                    product: provider
+                                                        .productList
+                                                        .data[index],
+                                                    heroTagImage: provider
+                                                        .hashCode
+                                                        .toString() +
+                                                        product.id +
+                                                        PsConst
+                                                            .HERO_TAG__IMAGE,
+                                                    heroTagTitle: provider
+                                                        .hashCode
+                                                        .toString() +
+                                                        product.id +
+                                                        PsConst
+                                                            .HERO_TAG__TITLE);
+                                                Navigator.pushNamed(context,
+                                                    RoutePaths.productDetail,
+                                                    arguments: holder);
+                                              },
+                                            );
+                                          } else {
+                                            return null;
+                                          }
+                                        },
+                                        childCount:
+                                        provider.productList.data.length,
                                       ),
-                                    ]),
-                                onRefresh: () {
-                                  return provider.resetLatestProductList(
-                                      _searchProductProvider
-                                          .productParameterHolder);
-                                },
-                              ))
-                        else if (provider.productList.status !=
-                                PsStatus.PROGRESS_LOADING &&
-                            provider.productList.status !=
-                                PsStatus.BLOCK_LOADING &&
-                            provider.productList.status != PsStatus.NOACTION)
-                          Align(
-                            child: Container(
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisSize: MainAxisSize.min,
-                                children: <Widget>[
-                                  Image.asset(
-                                    'assets/images/baseline_empty_item_grey_24.png',
-                                    height: 100,
-                                    width: 150,
-                                    fit: BoxFit.contain,
-                                  ),
-                                  const SizedBox(
-                                    height: PsDimens.space32,
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                        left: PsDimens.space20,
-                                        right: PsDimens.space20),
-                                    child: Text(
-                                      Utils.getString(context,
-                                          'procuct_list__no_result_data'),
-                                      textAlign: TextAlign.center,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .headline6
-                                          .copyWith(),
                                     ),
+                                  ]),
+                              onRefresh: () {
+                                return provider.resetLatestProductList(
+                                    _searchProductProvider
+                                        .productParameterHolder);
+                              },
+                            ))
+                      else if (provider.productList.status !=
+                          PsStatus.PROGRESS_LOADING &&
+                          provider.productList.status !=
+                              PsStatus.BLOCK_LOADING &&
+                          provider.productList.status != PsStatus.NOACTION)
+                        Align(
+                          child: Container(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                Image.asset(
+                                  'assets/images/baseline_empty_item_grey_24.png',
+                                  height: 100,
+                                  width: 150,
+                                  fit: BoxFit.contain,
+                                ),
+                                const SizedBox(
+                                  height: PsDimens.space32,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: PsDimens.space20,
+                                      right: PsDimens.space20),
+                                  child: Text(
+                                    Utils.getString(context,
+                                        'procuct_list__no_result_data'),
+                                    textAlign: TextAlign.center,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .headline6
+                                        .copyWith(),
                                   ),
-                                  const SizedBox(
-                                    height: PsDimens.space20,
-                                  ),
-                                ],
-                              ),
+                                ),
+                                const SizedBox(
+                                  height: PsDimens.space20,
+                                ),
+                              ],
                             ),
                           ),
-                        Positioned(
-                          bottom: _offset,
-                          width: MediaQuery.of(context).size.width,
-                          child: Container(
-                            margin: const EdgeInsets.only(
-                                left: PsDimens.space12,
-                                top: PsDimens.space8,
-                                right: PsDimens.space12,
-                                bottom: PsDimens.space16),
-                            child: Container(
-                                width: double.infinity,
-                                height: _containerMaxHeight,
-                                child: BottomNavigationImageAndText(
-                                    searchProductProvider:
-                                        _searchProductProvider)),
-                          ),
                         ),
-                        PSProgressIndicator(provider.productList.status),
-                      ]),
-                    ),
-                  )
-                ],
-              );
-            }));
+                      Positioned(
+                        bottom: _offset,
+                        width: MediaQuery.of(context).size.width,
+                        child: Container(
+                          margin: const EdgeInsets.only(
+                              left: PsDimens.space12,
+                              top: PsDimens.space8,
+                              right: PsDimens.space12,
+                              bottom: PsDimens.space16),
+                          child: Container(
+                              width: double.infinity,
+                              height: _containerMaxHeight,
+                              child: BottomNavigationImageAndText(
+                                  searchProductProvider:
+                                  _searchProductProvider)),
+                        ),
+                      ),
+                      PSProgressIndicator(provider.productList.status),
+                    ]),
+                  ),
+                )
+              ],
+            );
+          }));
   }
 }
 
@@ -330,7 +330,7 @@ class _BottomNavigationImageAndTextState
           ],
           color: PsColors.backgroundColor,
           borderRadius:
-              const BorderRadius.all(Radius.circular(PsDimens.space8))),
+          const BorderRadius.all(Radius.circular(PsDimens.space8))),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
@@ -363,10 +363,10 @@ class _BottomNavigationImageAndTextState
 
               if (result != null && result is Map<String, String>) {
                 widget.searchProductProvider.productParameterHolder.catId =
-                    result[PsConst.CATEGORY_ID];
+                result[PsConst.CATEGORY_ID];
 
                 widget.searchProductProvider.productParameterHolder.subCatId =
-                    result[PsConst.SUB_CATEGORY_ID];
+                result[PsConst.SUB_CATEGORY_ID];
                 widget.searchProductProvider.resetLatestProductList(
                     widget.searchProductProvider.productParameterHolder);
 
@@ -400,7 +400,7 @@ class _BottomNavigationImageAndTextState
               final dynamic result = await Navigator.pushNamed(
                   context, RoutePaths.itemSearch,
                   arguments:
-                      widget.searchProductProvider.productParameterHolder);
+                  widget.searchProductProvider.productParameterHolder);
               if (result != null && result is ProductParameterHolder) {
                 widget.searchProductProvider.productParameterHolder = result;
                 widget.searchProductProvider.resetLatestProductList(
@@ -432,7 +432,7 @@ class _BottomNavigationImageAndTextState
             ),
             onTap: () async {
               if (widget.searchProductProvider.productParameterHolder.lat ==
-                      '' &&
+                  '' &&
                   widget.searchProductProvider.productParameterHolder.lng ==
                       '') {
                 widget.searchProductProvider.productParameterHolder.lat =
@@ -443,16 +443,16 @@ class _BottomNavigationImageAndTextState
               final dynamic result = await Navigator.pushNamed(
                   context, RoutePaths.mapFilter,
                   arguments:
-                      widget.searchProductProvider.productParameterHolder);
+                  widget.searchProductProvider.productParameterHolder);
               if (result != null && result is ProductParameterHolder) {
                 widget.searchProductProvider.productParameterHolder = result;
                 if (widget.searchProductProvider.productParameterHolder.mile != null &&
                     widget.searchProductProvider.productParameterHolder.mile != '' &&
                     double.parse(widget.searchProductProvider
-                            .productParameterHolder.mile) <
+                        .productParameterHolder.mile) <
                         1) {
                   widget.searchProductProvider.productParameterHolder.mile =
-                      '1';
+                  '1';
                 } //for 0.5 km, it is less than 1 miles and error
                 widget.searchProductProvider.resetLatestProductList(
                     widget.searchProductProvider.productParameterHolder);

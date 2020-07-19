@@ -6,6 +6,7 @@ import 'package:hatbazar/config/ps_colors.dart';
 import 'package:hatbazar/config/ps_config.dart';
 import 'package:hatbazar/constant/ps_constants.dart';
 import 'package:hatbazar/provider/blog/blog_provider.dart';
+import 'package:hatbazar/provider/video/video_provider.dart';
 import 'package:hatbazar/provider/chat/user_unread_message_provider.dart';
 import 'package:hatbazar/provider/common/notification_provider.dart';
 import 'package:hatbazar/provider/item_location/item_location_provider.dart';
@@ -14,6 +15,7 @@ import 'package:hatbazar/provider/product/recent_product_provider.dart';
 import 'package:hatbazar/provider/product/popular_product_provider.dart';
 import 'package:hatbazar/repository/Common/notification_repository.dart';
 import 'package:hatbazar/repository/blog_repository.dart';
+import 'package:hatbazar/repository/video_repository.dart';
 import 'package:hatbazar/repository/item_location_repository.dart';
 import 'package:hatbazar/repository/user_unread_message_repository.dart';
 import 'package:hatbazar/ui/category/item/category_horizontal_list_item.dart';
@@ -24,6 +26,7 @@ import 'package:hatbazar/ui/dashboard/home/blog_product_slider.dart';
 import 'package:hatbazar/ui/item/item/product_horizontal_list_item.dart';
 import 'package:hatbazar/utils/utils.dart';
 import 'package:hatbazar/viewobject/blog.dart';
+import 'package:hatbazar/viewobject/video.dart';
 import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
 import 'package:hatbazar/viewobject/holder/category_parameter_holder.dart';
 import 'package:hatbazar/viewobject/holder/intent_holder/item_entry_intent_holder.dart';
@@ -74,12 +77,12 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
   CategoryRepository repo1;
   ProductRepository repo2;
   BlogRepository repo3;
+//  VideoRepository repo;
   ItemLocationRepository repo4;
   NotificationRepository notificationRepository;
   CategoryProvider _categoryProvider;
   UserUnreadMessageProvider userUnreadMessageProvider;
   UserUnreadMessageRepository userUnreadMessageRepository;
-
   final int count = 8;
   final CategoryParameterHolder trendingCategory = CategoryParameterHolder();
   final CategoryParameterHolder categoryIconList = CategoryParameterHolder();
@@ -152,6 +155,7 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
     repo1 = Provider.of<CategoryRepository>(context);
     repo2 = Provider.of<ProductRepository>(context);
     repo3 = Provider.of<BlogRepository>(context);
+//    repo5 = Provider.of<VideoRepository>(context);
     repo4 = Provider.of<ItemLocationRepository>(context);
     userUnreadMessageRepository =
         Provider.of<UserUnreadMessageRepository>(context);
@@ -217,6 +221,15 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                 provider.loadBlogList();
                 return provider;
               }),
+          ChangeNotifierProvider<VideoProvider>(
+              lazy: false,
+              create: (BuildContext context) {
+                final VideoProvider provider = VideoProvider(
+//                    repo: repo31,
+                    limit: PsConfig.BLOCK_SLIDER_LOADING_LIMIT1);
+                provider.loadVideoList();
+                return provider;
+              }),
           ChangeNotifierProvider<UserUnreadMessageProvider>(
               lazy: false,
               create: (BuildContext context) {
@@ -257,79 +270,6 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
               }),
         ],
         child: Scaffold(
-//          floatingActionButton: FadeTransition(
-//            opacity: widget.animationControllerForFab,
-//            child: ScaleTransition(
-//              scale: widget.animationControllerForFab,
-//              child: FloatingActionButton.extended(
-//                onPressed: () async {
-//                  if (await Utils.checkInternetConnectivity()) {
-//                    Utils.navigateOnUserVerificationView(
-//                        _categoryProvider, context, () async {
-//                      Navigator.pushNamed(context, RoutePaths.itemEntry,
-//                          arguments: ItemEntryIntentHolder(
-//                              flag: PsConst.ADD_NEW_ITEM, item: Product()));
-//                    });
-//                  } else {
-//                    showDialog<dynamic>(
-//                        context: context,
-//                        builder: (BuildContext context) {
-//                          return ErrorDialog(
-//                            message: Utils.getString(
-//                                context, 'error_dialog__no_internet'),
-//                          );
-//                        });
-//                  }
-//                },
-//                icon: Icon(Icons.camera_alt, color: PsColors.white),
-//                backgroundColor: PsColors.mainColor,
-//                label: Text(Utils.getString(context, 'dashboard__submit_ad'),
-//                    style: Theme.of(context)
-//                        .textTheme
-//                        .caption
-//                        .copyWith(color: PsColors.white)),
-//              ),
-//            ),
-//          ),
-// gapi home page floating buttom no needed
-
-          // floatingActionButton: AnimatedContainer(
-          //   duration: const Duration(milliseconds: 300),
-          //   child: FloatingActionButton.extended(
-          //     onPressed: () async {
-          //       if (await Utils.checkInternetConnectivity()) {
-          //         Utils.navigateOnUserVerificationView(
-          //             _categoryProvider, context, () async {
-          //           Navigator.pushNamed(context, RoutePaths.itemEntry,
-          //               arguments: ItemEntryIntentHolder(
-          //                   flag: PsConst.ADD_NEW_ITEM, item: Product()));
-          //         });
-          //       } else {
-          //         showDialog<dynamic>(
-          //             context: context,
-          //             builder: (BuildContext context) {
-          //               return ErrorDialog(
-          //                 message: Utils.getString(
-          //                     context, 'error_dialog__no_internet'),
-          //               );
-          //             });
-          //       }
-          //     },
-          //     icon: _isVisible ? const Icon(Icons.camera_alt) : null,
-          //     backgroundColor: PsColors.mainColor,
-          //     label: _isVisible
-          //         ? Text(Utils.getString(context, 'dashboard__submit_ad'),
-          //             style: Theme.of(context)
-          //                 .textTheme
-          //                 .caption
-          //                 .copyWith(color: PsColors.white))
-          //         : const Text(''),
-          //   ),
-          //   height: _isVisible ? PsDimens.space52 : 0.0,
-          //   width: PsDimens.space200,
-          // ),
-
-          // FloatingActionButton(child: Icon(Icons.add), onPressed: () {}),
           body: Container(
             color: PsColors.coreBackgroundColor,
             child: CustomScrollView(
@@ -388,7 +328,15 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                           curve: Interval((1 / count) * 5, 1.0,
                               curve: Curves.fastOutSlowIn))), //animation
                 ),
-
+//                _HomeBlogProductSliderListWidget1(
+//                  animationController:
+//                  widget.animationController, //animationController,
+//                  animation: Tween<double>(begin: 0.0, end: 1.0).animate(
+//                      CurvedAnimation(
+//                          parent: widget.animationController,
+//                          curve: Interval((1 / count) * 5, 1.0,
+//                              curve: Curves.fastOutSlowIn))), //animation
+//                ),
                 _HomeItemListFromFollowersHorizontalListWidget(
                   animationController:
                   widget.animationController, //animationController,
@@ -687,53 +635,72 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
                         arguments: blog);
                   },
                 ),
+              ],
+            )
+                : Container(),
+            builder: (BuildContext context, Widget child) {
+              return FadeTransition(
+                  opacity: animation,
+                  child: Transform(
+                      transform: Matrix4.translationValues(
+                          0.0, 100 * (1.0 - animation.value), 0.0),
+                      child: child));
+            });
+      }),
+    );
+  }
+}
+
+class _HomeBlogProductSliderListWidget1 extends StatelessWidget {
+  const _HomeBlogProductSliderListWidget1({
+    Key key,
+    @required this.animationController,
+    @required this.animation,
+  }) : super(key: key);
+
+  final AnimationController animationController;
+  final Animation<double> animation;
+
+  @override
+  Widget build(BuildContext context) {
+    const int count = 6;
+    final Animation<double> animation = Tween<double>(begin: 0.0, end: 1.0)
+        .animate(CurvedAnimation(
+        parent: animationController,
+        curve: const Interval((1 / count) * 1, 1.0,
+            curve: Curves.fastOutSlowIn)));
+
+    return SliverToBoxAdapter(
+      child: Consumer<VideoProvider>(builder:
+          (BuildContext context, VideoProvider videoProvider, Widget child) {
+        return AnimatedBuilder(
+            animation: animationController,
+            child: (videoProvider.videoList != null &&
+                videoProvider.videoList.data.isNotEmpty)
+                ? Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
                 _MyHeaderWidget(
                   headerName:
-                  Utils.getString(context, 'news__section__main__tab__heading3'),
+                  Utils.getString(context, 'home__menu_drawer_blogsdfs '),
                   headerDescription: Utils.getString(context, ''),
                   viewAllClicked: () {
-                    Navigator.pushNamed(
-                      context,
-                      RoutePaths.blogList,
-                    );
+//                    Navigator.pushNamed(
+//                      context,
+//                      RoutePaths.videoList,
+//                    );
                   },
                 ),
-                VideoBlog(
-                  blogList: blogProvider.blogList.data,
-                  onTap: (Blog blog) {
-                    print(RoutePaths.blogDetail);
-                    print(RoutePaths.blogVideos);
-                    Navigator.pushNamed(context, RoutePaths.blogVideos,
-                        arguments: blog);
-                  },
-                ),
-                rowChips(),
-                rowChips(),
-                SizedBox(height: 15,),
-//                Container(
-//                  height: 450,
-//                  decoration: BoxDecoration(
-//                    boxShadow: <BoxShadow>[
-//                      BoxShadow(
-//                          color: PsColors.mainLightShadowColor,
-//                          offset: const Offset(1.1, 1.1),
-//                          blurRadius: 20.0),
-//                    ],
-//                  ),
-//                  margin: const EdgeInsets.only(
-//                      top: PsDimens.space8, bottom: PsDimens.space20),
-//                  width: double.infinity,
-//                  child: BlogSliderView(
-//                    blogList: blogProvider.blogList.data,
-//                    onTap: (Blog blog) {
-//                      print(RoutePaths.blogDetail);
-//                      print(blog);
-//                      Navigator.pushNamed(context, RoutePaths.blogDetail,
-//                          arguments: blog);
-//                    },
-//                  ),
+                Text('helo ere'),
+//                VideoBlog(
+//                  videoList: videoProvider.videoList.data,
+//                  onTap: (Video video) {
+//                    print(RoutePaths.videoDetail);
+//                    print(video);
+//                    Navigator.pushNamed(context, RoutePaths.videoDetail,
+//                        arguments: video);
+//                  },
 //                ),
-
               ],
             )
                 : Container(),
@@ -853,8 +820,7 @@ class __HomeCategoryHorizontalListWidgetState
                             print(categoryProvider.categoryList
                                 .data[index].defaultPhoto.imgPath);
                             final ProductParameterHolder
-                            productParameterHolder =
-                            ProductParameterHolder()
+                            productParameterHolder =      ProductParameterHolder()
                                 .getLatestParameterHolder();
                             productParameterHolder.catId =
                                 categoryProvider

@@ -104,7 +104,7 @@ class _RadioStreamState extends State<RadioStream> with SingleTickerProviderStat
                     height: 500,
                     child: ListView.builder(
                       shrinkWrap: true,
-                      itemCount: radioData.length,
+                      itemCount: radioData == null ? 0 : radioData.length,
                       itemBuilder: (BuildContext context, int index){
                         return FadeAnimation(
                           0.3, Material(

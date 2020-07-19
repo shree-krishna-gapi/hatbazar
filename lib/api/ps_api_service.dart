@@ -15,6 +15,7 @@ import 'package:hatbazar/viewobject/shipping_method.dart';
 import 'package:hatbazar/config/ps_config.dart';
 import 'package:hatbazar/viewobject/api_status.dart';
 import 'package:hatbazar/viewobject/blog.dart';
+import 'package:hatbazar/viewobject/video.dart';
 import 'package:hatbazar/viewobject/category.dart';
 import 'package:hatbazar/viewobject/coupon_discount.dart';
 import 'package:hatbazar/viewobject/default_photo.dart';
@@ -409,6 +410,13 @@ class PsApiService extends PsApi {
         '${PsUrl.ps_bloglist_url}/api_key/${PsConfig.ps_api_key}/limit/$limit/offset/$offset';
 
     return await getServerCall<Blog, List<Blog>>(Blog(), url);
+  }
+  Future<PsResource<List<Video>>> getVideoList(int limit, int offset) async {
+
+    final String url =
+        '${PsUrl.ps_videolist_url}/api_key/${PsConfig.ps_api_key}/limit/$limit/offset/$offset';
+    print('video-> $url');
+    return await getServerCall<Video, List<Video>>(Video(), url);
   }
 
   ///
