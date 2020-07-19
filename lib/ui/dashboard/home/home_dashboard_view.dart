@@ -48,8 +48,12 @@ import 'package:hatbazar/repository/category_repository.dart';
 import 'package:hatbazar/repository/product_repository.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'news_blog.dart';
-import 'video_blog.dart';
+//import 'video_blog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:http/http.dart' as http;
+//import '../test/testVideo.dart';
+import '../test/videoService.dart';
+import '../test/video_blog.dart';
 class HomeDashboardViewWidget extends StatefulWidget {
   const HomeDashboardViewWidget(
       this.scrollController,
@@ -328,6 +332,15 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                           curve: Interval((1 / count) * 5, 1.0,
                               curve: Curves.fastOutSlowIn))), //animation
                 ),
+                _HomeBlogProductSliderListWidget2(
+                  animationController:
+                  widget.animationController, //animationController,
+                  animation: Tween<double>(begin: 0.0, end: 1.0).animate(
+                      CurvedAnimation(
+                          parent: widget.animationController,
+                          curve: Interval((1 / count) * 5, 1.0,
+                              curve: Curves.fastOutSlowIn))), //animation
+                ),
 //                _HomeBlogProductSliderListWidget1(
 //                  animationController:
 //                  widget.animationController, //animationController,
@@ -337,6 +350,7 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
 //                          curve: Interval((1 / count) * 5, 1.0,
 //                              curve: Curves.fastOutSlowIn))), //animation
 //                ),
+
                 _HomeItemListFromFollowersHorizontalListWidget(
                   animationController:
                   widget.animationController, //animationController,
@@ -617,7 +631,7 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
               children: <Widget>[
                 _MyHeaderWidget(
                   headerName:
-                  Utils.getString(context, 'home__menu_drawer_blog'),
+                  Utils.getString(context, 'news__section__main__heading'),
                   headerDescription: Utils.getString(context, ''),
                   viewAllClicked: () {
                     Navigator.pushNamed(
@@ -651,47 +665,47 @@ class _HomeBlogProductSliderListWidget extends StatelessWidget {
   }
 }
 
-class _HomeBlogProductSliderListWidget1 extends StatelessWidget {
-  const _HomeBlogProductSliderListWidget1({
-    Key key,
-    @required this.animationController,
-    @required this.animation,
-  }) : super(key: key);
-
-  final AnimationController animationController;
-  final Animation<double> animation;
-
-  @override
-  Widget build(BuildContext context) {
-    const int count = 6;
-    final Animation<double> animation = Tween<double>(begin: 0.0, end: 1.0)
-        .animate(CurvedAnimation(
-        parent: animationController,
-        curve: const Interval((1 / count) * 1, 1.0,
-            curve: Curves.fastOutSlowIn)));
-
-    return SliverToBoxAdapter(
-      child: Consumer<VideoProvider>(builder:
-          (BuildContext context, VideoProvider videoProvider, Widget child) {
-        return AnimatedBuilder(
-            animation: animationController,
-            child: (videoProvider.videoList != null &&
-                videoProvider.videoList.data.isNotEmpty)
-                ? Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                _MyHeaderWidget(
-                  headerName:
-                  Utils.getString(context, 'home__menu_drawer_blogsdfs '),
-                  headerDescription: Utils.getString(context, ''),
-                  viewAllClicked: () {
-//                    Navigator.pushNamed(
-//                      context,
-//                      RoutePaths.videoList,
-//                    );
-                  },
-                ),
-                Text('helo ere'),
+//class _HomeBlogProductSliderListWidget1 extends StatelessWidget {
+//  const _HomeBlogProductSliderListWidget1({
+//    Key key,
+//    @required this.animationController,
+//    @required this.animation,
+//  }) : super(key: key);
+//
+//  final AnimationController animationController;
+//  final Animation<double> animation;
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    const int count = 6;
+//    final Animation<double> animation = Tween<double>(begin: 0.0, end: 1.0)
+//        .animate(CurvedAnimation(
+//        parent: animationController,
+//        curve: const Interval((1 / count) * 1, 1.0,
+//            curve: Curves.fastOutSlowIn)));
+//
+//    return SliverToBoxAdapter(
+//      child: Consumer<VideoProvider>(builder:
+//          (BuildContext context, VideoProvider videoProvider, Widget child) {
+//        return AnimatedBuilder(
+//            animation: animationController,
+//            child: (videoProvider.videoList != null &&
+//                videoProvider.videoList.data.isNotEmpty)
+//                ? Column(
+//              mainAxisSize: MainAxisSize.min,
+//              children: <Widget>[
+//                _MyHeaderWidget(
+//                  headerName:
+//                  Utils.getString(context, 'home__menu_drawer_blogsdfs '),
+//                  headerDescription: Utils.getString(context, ''),
+//                  viewAllClicked: () {
+////                    Navigator.pushNamed(
+////                      context,
+////                      RoutePaths.videoList,
+////                    );
+//                  },
+//                ),
+//                Text('helo ere'),
 //                VideoBlog(
 //                  videoList: videoProvider.videoList.data,
 //                  onTap: (Video video) {
@@ -701,51 +715,51 @@ class _HomeBlogProductSliderListWidget1 extends StatelessWidget {
 //                        arguments: video);
 //                  },
 //                ),
-              ],
-            )
-                : Container(),
-            builder: (BuildContext context, Widget child) {
-              return FadeTransition(
-                  opacity: animation,
-                  child: Transform(
-                      transform: Matrix4.translationValues(
-                          0.0, 100 * (1.0 - animation.value), 0.0),
-                      child: child));
-            });
-      }),
-    );
-  }
-  rowChips() {
-    return Container(
-//        width: double.infinity,
-      padding: EdgeInsets.symmetric(horizontal: 10),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-          chipForRow('title1',Color(0xFF79aa93)),
-          chipForRow('title1',Color(0xFF69a223)),
-          chipForRow('title1',Color(0xFF89a113)),
-        ],
-      ),
-    );
-  }
-  Widget chipForRow(String label,Color color) {
-    return Chip(
-//      labelPadding: EdgeInsets.all(0.0),
-      padding: EdgeInsets.all(0.0),
-      avatar: CircleAvatar(
-        backgroundColor: Colors.green[900],
-        child: Text('AB'),
-      ),
-      label: Text(label,style: TextStyle(),
-
-      ),
-      backgroundColor: Colors.transparent,
-      shape: StadiumBorder(side: BorderSide()),
-
-    );
-  }
-}
+//              ],
+//            )
+//                : Container(),
+//            builder: (BuildContext context, Widget child) {
+//              return FadeTransition(
+//                  opacity: animation,
+//                  child: Transform(
+//                      transform: Matrix4.translationValues(
+//                          0.0, 100 * (1.0 - animation.value), 0.0),
+//                      child: child));
+//            });
+//      }),
+//    );
+//  }
+//  rowChips() {
+//    return Container(
+////        width: double.infinity,
+//      padding: EdgeInsets.symmetric(horizontal: 10),
+//      child: Row(
+//        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//        children: <Widget>[
+//          chipForRow('title1',Color(0xFF79aa93)),
+//          chipForRow('title1',Color(0xFF69a223)),
+//          chipForRow('title1',Color(0xFF89a113)),
+//        ],
+//      ),
+//    );
+//  }
+//  Widget chipForRow(String label,Color color) {
+//    return Chip(
+////      labelPadding: EdgeInsets.all(0.0),
+//      padding: EdgeInsets.all(0.0),
+//      avatar: CircleAvatar(
+//        backgroundColor: Colors.green[900],
+//        child: Text('AB'),
+//      ),
+//      label: Text(label,style: TextStyle(),
+//
+//      ),
+//      backgroundColor: Colors.transparent,
+//      shape: StadiumBorder(side: BorderSide()),
+//
+//    );
+//  }
+//}
 
 class _HomeCategoryHorizontalListWidget extends StatefulWidget {
   const _HomeCategoryHorizontalListWidget(
@@ -1251,6 +1265,139 @@ class MySeparator extends StatelessWidget {
           direction: Axis.horizontal,
         );
       },
+    );
+  }
+}
+
+class _HomeBlogProductSliderListWidget2 extends StatelessWidget {
+  const _HomeBlogProductSliderListWidget2({
+    Key key,
+    @required this.animationController,
+    @required this.animation,
+  }) : super(key: key);
+
+  final AnimationController animationController;
+  final Animation<double> animation;
+
+  @override
+  Widget build(BuildContext context) {
+    const int count = 6;
+    final Animation<double> animation = Tween<double>(begin: 0.0, end: 1.0)
+        .animate(CurvedAnimation(
+        parent: animationController,
+        curve: const Interval((1 / count) * 1, 1.0,
+            curve: Curves.fastOutSlowIn)));
+
+    return SliverToBoxAdapter(
+      child: Consumer<BlogProvider>(builder:
+          (BuildContext context, BlogProvider blogProvider, Widget child) {
+        return AnimatedBuilder(
+            animation: animationController,
+            child: (blogProvider.blogList != null &&
+                blogProvider.blogList.data.isNotEmpty)
+                ? Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                  _MyHeaderWidget(
+                    headerName:
+                    Utils.getString(context, 'news__section__main__tab__heading3'),
+                    headerDescription: Utils.getString(context, ''),
+                    viewAllClicked: () {
+                      Navigator.pushNamed(
+                        context,
+                        RoutePaths.blogList,
+                      );
+                    },
+                  ),
+                       Container(
+                         height: 200,
+                       width: double.infinity,
+                         child: FutureBuilder<List<VideoServices>>(
+                             future: FetchVideoServices(http.Client()),
+                             builder: (context, snapshot) {
+                               if (snapshot.hasError) ;
+                               return snapshot.hasData ?
+
+                               ListView.builder(
+                                   scrollDirection: Axis.horizontal,
+                                   itemCount: snapshot.data == null ? 0 : snapshot.data.length,
+                                   itemBuilder: (BuildContext context,int index) {
+                                     return Container(
+                                       height: 220,
+                                       width: 140,
+                                       margin: EdgeInsets.only(left: 10),
+                                       child: InkWell(
+                                         onTap: () {
+                                           Navigator.push(
+                                               context,
+                                               MaterialPageRoute(builder: (context) => BlogVideo(
+                                                 title:snapshot.data[index].title,
+                                                 description: snapshot.data[index].description,
+                                                 videoSrc: snapshot.data[index].videoUrl
+                                               )));
+                                         },
+                                         child: Column(
+                                           mainAxisAlignment: MainAxisAlignment.start,
+                                           crossAxisAlignment: CrossAxisAlignment.start,
+                                           children: <Widget>[
+                                             Stack(
+                                               children: <Widget>[
+                                                 Container(
+                                                   color: Colors.green,
+                                                   width: double.infinity,
+                                                   height: 100,
+                                                   child: CachedNetworkImage(
+                                                     alignment: Alignment.topLeft,
+                                                     placeholder: (context, url) => Image.asset(
+                                                       'assets/images/placeholder_image.png',
+                                                       width: double.infinity,
+                                                       height: 80.0,
+                                                       fit: BoxFit.fitWidth,
+                                                     ),
+                                                     imageUrl: '${PsConfig.ps_app_image_thumbs_url}${snapshot.data[index].imgPath}',
+                                                     fit: BoxFit.cover,
+                                                     errorWidget: (context, url, error) => Image.asset(
+                                                       'assets/images/placeholder_image.png',
+                                                       width: double.infinity,
+//                      height: blogImageHeight,
+                                                       fit: BoxFit.fitWidth,
+                                                     ),
+                                                   ),
+                                                 ),
+
+                                                 Positioned(child: Container(
+                                                   padding: EdgeInsets.fromLTRB(5, 2, 5, 2)
+                                                   ,child: Text('${snapshot.data[index].addedDateStr}',style: TextStyle(color: Colors.white, fontSize: 12),
+
+                                                 ), color: Colors.black38,),
+                                                   bottom: 5, right: 5,),
+
+                                               ],
+                                             ),
+                                             Padding(
+                                               padding: const EdgeInsets.only(top:8.0,bottom:3.0),
+                                               child: Text('${snapshot.data[index].description}'),
+                                             ),
+                                             Text('${snapshot.data[index].title}',style: TextStyle(
+                                               fontSize: 12,color: Colors.black38
+                                             ),)
+                                           ],
+                                         ),
+                                       ),
+                                     ); } ) : Center(child: CircularProgressIndicator()); } ),
+                       )
+              ],
+            )
+                : Container(),
+            builder: (BuildContext context, Widget child) {
+              return FadeTransition(
+                  opacity: animation,
+                  child: Transform(
+                      transform: Matrix4.translationValues(
+                          0.0, 100 * (1.0 - animation.value), 0.0),
+                      child: child));
+            });
+      }),
     );
   }
 }

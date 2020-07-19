@@ -87,8 +87,9 @@ class _BlogVideoState extends State<BlogVideo> {
 
                 ],
               ),
+
               Expanded(child: Container(
-                height: 110,
+                height: 200,
 //      color: Colors.black12,
                 child: ListView(
                   scrollDirection: Axis.horizontal,

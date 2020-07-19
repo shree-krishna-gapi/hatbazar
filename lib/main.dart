@@ -32,6 +32,7 @@ Future<void> main() async {
   }
 
   final SharedPreferences prefs = await SharedPreferences.getInstance();
+  prefs.setBool('getLoadVideo', true); // gapi
   if (prefs.getString('codeC') == null) {
     await prefs.setString('codeC', null);
     await prefs.setString('codeL', null);
