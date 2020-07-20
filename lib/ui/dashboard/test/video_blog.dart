@@ -87,20 +87,31 @@ class _BlogVideoState extends State<BlogVideo> {
           child: FadeAnimation(
             0.3, Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 CustomScrollView(
                   shrinkWrap: true,
                   slivers: <Widget>[
                     SliverAppBar(
                       brightness: Utils.getBrightnessForAppBar(context),
-                      expandedHeight: 276.0,
+                      expandedHeight: 240, //276.0,
                       floating: true,
                       pinned: true,
                       snap: false,
                       elevation: 0,
-
                       backgroundColor: PsColors.mainColor,
-                      flexibleSpace: Padding(
+//                      flexibleSpace: Padding(
+//                        padding: const EdgeInsets.only(top:24),
+//                        child: Container(
+//                          color: Colors.lightGreen,
+//                          width: double.infinity,
+//                          child: Chewie(
+//                            controller: _chewieController,
+//                          ),
+//                        ),
+//                      ),
+                    flexibleSpace: FlexibleSpaceBar(
+                      background: Padding(
                         padding: const EdgeInsets.only(top:24),
                         child: Container(
                           color: Colors.lightGreen,
@@ -110,7 +121,7 @@ class _BlogVideoState extends State<BlogVideo> {
                           ),
                         ),
                       ),
-
+                    ),
                     ),
 
                   ],

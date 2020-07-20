@@ -4,6 +4,7 @@ import 'package:hatbazar/ui/app_info/app_info_view.dart';
 import 'package:hatbazar/ui/app_loading/app_loading_view.dart';
 import 'package:hatbazar/ui/blog/detail/blog_view.dart';
 import 'package:hatbazar/ui/blog/list/blog_list_container.dart';
+import 'package:hatbazar/ui/dashboard/test/blog_list_container.dart';
 import 'package:hatbazar/ui/category/filter_list/category_filter_list_view.dart';
 import 'package:hatbazar/ui/category/list/category_list_view_container.dart';
 import 'package:hatbazar/ui/chat/detail/chat_view.dart';
@@ -191,6 +192,13 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         return NotiView(noti: noti);
       });
 
+//    case '${RoutePaths.filterProductList}':
+//      return MaterialPageRoute<dynamic>(builder: (BuildContext context) {
+//        final Object args = settings.arguments;
+//        final String category = args ?? String;
+//        return SubCategorySearchListView(categoryId: category);
+//      });
+
     case '${RoutePaths.filterProductList}':
       return MaterialPageRoute<dynamic>(builder: (BuildContext context) {
         final Object args = settings.arguments;
@@ -201,6 +209,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
             productParameterHolder:
                 productListIntentHolder.productParameterHolder);
       });
+// todo: bottombar category
 
     case '${RoutePaths.privacyPolicy}':
       return MaterialPageRoute<dynamic>(builder: (BuildContext context) {
@@ -214,7 +223,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case '${RoutePaths.blogList}':
       return MaterialPageRoute<dynamic>(
           builder: (BuildContext context) => BlogListContainerView());
-
+    case '${RoutePaths.videoList}':
+      return MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => VideoListContainerView());
     case '${RoutePaths.appinfo}':
       return MaterialPageRoute<dynamic>(
           builder: (BuildContext context) => AppInfoView());

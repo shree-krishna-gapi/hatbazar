@@ -34,6 +34,7 @@ class RoutePaths {
   static const String setting = '/setting';
   static const String privacyPolicy = '/privacyPolicy';
   static const String blogList = '/blogList';
+  static const String videoList = '/videoList';
   static const String appinfo = '/appinfo';
   static const String blogDetail = '/blogDetail';
   static const String videoDetail = '/videoDetail'; // gapi

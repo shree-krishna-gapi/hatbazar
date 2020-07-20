@@ -1305,7 +1305,7 @@ class _HomeBlogProductSliderListWidget2 extends StatelessWidget {
                     viewAllClicked: () {
                       Navigator.pushNamed(
                         context,
-                        RoutePaths.blogList,
+                        RoutePaths.videoList,
                       );
                     },
                   ),
@@ -1359,7 +1359,6 @@ class _HomeBlogProductSliderListWidget2 extends StatelessWidget {
                                                      errorWidget: (context, url, error) => Image.asset(
                                                        'assets/images/placeholder_image.png',
                                                        width: double.infinity,
-//                      height: blogImageHeight,
                                                        fit: BoxFit.fitWidth,
                                                      ),
                                                    ),
