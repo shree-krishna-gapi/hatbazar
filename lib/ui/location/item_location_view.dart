@@ -12,7 +12,7 @@ import 'package:provider/provider.dart';
 import 'package:hatbazar/constant/ps_dimens.dart';
 import 'package:hatbazar/constant/route_paths.dart';
 import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 class ItemLocationView extends StatefulWidget {
   const ItemLocationView({Key key, @required this.animationController})
       : super(key: key);
@@ -167,6 +167,10 @@ class _ItemLocationListViewWidgetState
                                     dataList[index].name,
                                     dataList[index].lat,
                                     dataList[index].lng);
+//
+//                                    int stateId = dataList[index].state_id;
+//                                    SharedPreferences prefs = await SharedPreferences.getInstance();
+//                                prefs.setInt('addProductStateId', stateId);
                                 Navigator.pushReplacementNamed(
                                     context, RoutePaths.home);
                               },

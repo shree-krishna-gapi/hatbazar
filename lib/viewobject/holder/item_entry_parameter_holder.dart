@@ -24,6 +24,9 @@ class ItemEntryParameterHolder extends PsHolder<ItemEntryParameterHolder> {
     this.longitude,
     this.id,
     this.addedUserId,
+    this.stateId,
+    this.districtId,
+    this.municipalityId,
   });
 
   final String catId;
@@ -47,7 +50,9 @@ class ItemEntryParameterHolder extends PsHolder<ItemEntryParameterHolder> {
   final String longitude;
   final String id;
   final String addedUserId;
-
+  final int stateId;
+  final int districtId;
+  final int municipalityId;
   @override
   Map<String, dynamic> toMap() {
     final Map<String, dynamic> map = <String, dynamic>{};
@@ -73,7 +78,9 @@ class ItemEntryParameterHolder extends PsHolder<ItemEntryParameterHolder> {
     map['lng'] = longitude;
     map['id'] = id;
     map['added_user_id'] = addedUserId;
-
+    map['state_id']= stateId;
+    map['district_id'] = districtId;
+    map['municipality_id'] = municipalityId;
     return map;
   }
 
@@ -101,6 +108,9 @@ class ItemEntryParameterHolder extends PsHolder<ItemEntryParameterHolder> {
       longitude: dynamicData['lng'],
       id: dynamicData['id'],
       addedUserId: dynamicData['added_user_id'],
+      stateId: dynamicData['state_id'],
+      districtId: dynamicData['district_id'],
+      municipalityId: dynamicData['municipality_id'],
     );
   }
 

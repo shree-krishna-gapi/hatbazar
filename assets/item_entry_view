@@ -1,3 +1,5 @@
+to update district and municipality field replace this code
+ui/item/entry/item_entry_view.dart
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -675,7 +677,6 @@ class AllControllerTextWidget extends StatefulWidget {
 class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
   LatLng _latlng;
 //gapi
-  int productStateId;
   int stateId;
   String stringStateId;
   int districtIndex;
@@ -959,7 +960,6 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
           width: double.infinity,
           titleText: Utils.getString(context, 'login__submit'),
           onPressed: () async {
-
             if (!widget.isSelectedFirstImagePath &&
                 !widget.isSelectedSecondImagePath &&
                 !widget.isSelectedThirdImagePath &&
@@ -1069,6 +1069,8 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
                   });
             } else {
               if (widget.flag == PsConst.ADD_NEW_ITEM) {
+                //add new
+                print('bs');
                 // TODO:// App Product Item
                 final ItemEntryParameterHolder itemEntryParameterHolder =
                     ItemEntryParameterHolder(
@@ -1093,10 +1095,7 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
                         longitude: widget.userInputLongitude.text,
                         address: widget.userInputAddress.text,
                         id: '', //must be ''
-                        addedUserId: widget.provider.psValueHolder.loginUserId,
-                        stateId: productStateId,
-                        districtId: districtId,
-                        municipalityId : municipalityId
+                        addedUserId: widget.provider.psValueHolder.loginUserId
                     );
 
                 final PsResource<Product> itemData = await widget.provider
@@ -1138,9 +1137,8 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
                         address: widget.userInputAddress.text,
                         id: widget.item.id,
                         addedUserId: widget.provider.psValueHolder.loginUserId,
-                        stateId: productStateId,
-                        districtId: districtId,
-                        municipalityId : municipalityId
+//                        districtId: districtId,
+//                        municipalityId : municipalityId
                     );
 
                 final PsResource<Product> itemData = await widget.provider
@@ -1492,25 +1490,6 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
                 municipalityId = 0;
               });
             }
-            if(stringStateId == 'itm_locc91e7fd5ffc739b26951228b0a564569') {
-              productStateId = 1;
-            }else if (stringStateId == 'itm_loc892e3dbe2fbf07ae7b19455a4e75b28c') {
-              productStateId = 2;
-            }else if (stringStateId == 'itm_loca7b66748e03d457e976ca63a50e1bde0') {
-              productStateId = 3;
-            }
-            else if (stringStateId == 'itm_loc385aa4e50e654df21b9de999273c0a2c') {
-              productStateId = 4;
-            }
-            else if (stringStateId == 'itm_loc413981c0f76ad269307aaee5eff59517') {
-              productStateId = 5;
-            }
-            else if (stringStateId == 'itm_locb0f1625541a5cdebaf354c027b8462ee') {
-              productStateId = 6;
-            }
-            else if (stringStateId == 'itm_loc94a5a8f9492d0a5ec93165f0f639695d') {
-              productStateId = 7;
-            }
             prefs.setString('stringStateIdExisting',stringStateId);
           }),
 
@@ -1547,17 +1526,8 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
           onTap: () async {
             SharedPreferences prefs = await SharedPreferences.getInstance();
             String existingStringStateId = prefs.getString('stringStateIdExisting');
-            if( existingStringStateId == 'itm_loc409cd45d76efdcb4613f978cbdb0c9c3') {
-              Fluttertoast.showToast(
-                msg: Utils.getString(context, 'warning__choose__state'),
-                toastLength: Toast.LENGTH_SHORT,
-                gravity: ToastGravity.BOTTOM,
-                timeInSecForIosWeb: 1,
-                backgroundColor: PsColors.mainColor,
-                textColor: Colors.white,
-                fontSize: 16.0,
-              );
-            } else
+//            stateId = prefs.getInt('addProductStateId');
+
             if(existingStringStateId == 'itm_locc91e7fd5ffc739b26951228b0a564569') {
               _districtDialog(1);
             }else if (existingStringStateId == 'itm_loc892e3dbe2fbf07ae7b19455a4e75b28c') {
@@ -1631,25 +1601,24 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
             readOnly: true,
             onTap: () {
               if(districtId != 0) {
-                _municipalityDialog(productStateId);
-//                if(stringStateId == 'itm_locc91e7fd5ffc739b26951228b0a564569') {
-//                  _municipalityDialog(productStateId);
-//                }else if (stringStateId == 'itm_loc892e3dbe2fbf07ae7b19455a4e75b28c') {
-//                  _municipalityDialog(2);
-//                }else if (stringStateId == 'itm_loca7b66748e03d457e976ca63a50e1bde0') {
-//                  _municipalityDialog(3);
-//                }
-//                else if (stringStateId == 'itm_loc385aa4e50e654df21b9de999273c0a2c') {
-//                  _municipalityDialog(4);
-//                }
-//                else if (stringStateId == 'itm_loc413981c0f76ad269307aaee5eff59517') {
-//                  _municipalityDialog(5);
-//                }
-//                else if (stringStateId == 'itm_locb0f1625541a5cdebaf354c027b8462ee') {
-//                  _municipalityDialog(6);
-//                }
-//                else if (stringStateId == 'itm_loc94a5a8f9492d0a5ec93165f0f639695d') {
-//                  _municipalityDialog(7);
+                if(stringStateId == 'itm_locc91e7fd5ffc739b26951228b0a564569') {
+                  _municipalityDialog(1);
+                }else if (stringStateId == 'itm_loc892e3dbe2fbf07ae7b19455a4e75b28c') {
+                  _municipalityDialog(2);
+                }else if (stringStateId == 'itm_loca7b66748e03d457e976ca63a50e1bde0') {
+                  _municipalityDialog(3);
+                }
+                else if (stringStateId == 'itm_loc385aa4e50e654df21b9de999273c0a2c') {
+                  _municipalityDialog(4);
+                }
+                else if (stringStateId == 'itm_loc413981c0f76ad269307aaee5eff59517') {
+                  _municipalityDialog(5);
+                }
+                else if (stringStateId == 'itm_locb0f1625541a5cdebaf354c027b8462ee') {
+                  _municipalityDialog(6);
+                }
+                else if (stringStateId == 'itm_loc94a5a8f9492d0a5ec93165f0f639695d') {
+                  _municipalityDialog(7);
                 }
                 else {
                   Fluttertoast.showToast(
@@ -1662,7 +1631,17 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
                     fontSize: 16.0,
                   );
                 }
-
+              }else {
+                Fluttertoast.showToast(
+                  msg: Utils.getString(context, 'warning__choose__district'),
+                  toastLength: Toast.LENGTH_SHORT,
+                  gravity: ToastGravity.BOTTOM,
+                  timeInSecForIosWeb: 1,
+                  backgroundColor: PsColors.mainColor,
+                  textColor: Colors.white,
+                  fontSize: 16.0,
+                );
+              }
             },
             decoration: InputDecoration(
                 border: InputBorder.none,

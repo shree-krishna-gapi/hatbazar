@@ -2,7 +2,6 @@ import 'package:hatbazar/constant/ps_dimens.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hatbazar/viewobject/item_location.dart';
-
 class ItemLocationListItem extends StatelessWidget {
   const ItemLocationListItem(
       {Key key,
@@ -52,7 +51,7 @@ class ItemLocationListItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(PsDimens.space16),
-      child: Text(
+      child: itemLocation.id == 'itm_loc409cd45d76efdcb4613f978cbdb0c9c3' ?Text(''):Text(
         itemLocation.name,
         style: Theme.of(context)
             .textTheme

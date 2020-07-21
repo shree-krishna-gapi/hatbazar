@@ -300,7 +300,7 @@
         "municipalityName":"Nalgad Municipality"
     },
     {
-        "municipalityId" : 627
+        "municipalityId" : 627,
         "stateId" : 6,
         "districtId": 62,
         "wardTotal": 10,

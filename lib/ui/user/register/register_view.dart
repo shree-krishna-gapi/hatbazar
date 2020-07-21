@@ -899,6 +899,59 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
         children: <Widget>[
           //                                gapi
           // state
+          Container(
+            margin: _marginEdgeInsetWidget,
+            child: TextField(
+              controller: widget.nameText,
+              style: Theme.of(context).textTheme.button.copyWith(),
+              decoration: InputDecoration(
+                  border: InputBorder.none,
+                  hintText: Utils.getString(context, 'register__user_name'),
+                  hintStyle: Theme.of(context)
+                      .textTheme
+                      .button
+                      .copyWith(color: PsColors.textPrimaryLightColor),
+                  icon: Icon(Icons.people,
+                      color: Theme.of(context).iconTheme.color)),
+            ),
+          ),
+          _dividerWidget,
+          Container(
+            margin: _marginEdgeInsetWidget,
+            child: TextField(
+              controller: widget.emailText,
+              style: Theme.of(context).textTheme.button.copyWith(),
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                  border: InputBorder.none,
+                  hintText: Utils.getString(context, 'register__email'),
+                  hintStyle: Theme.of(context)
+                      .textTheme
+                      .button
+                      .copyWith(color: PsColors.textPrimaryLightColor),
+                  icon: Icon(Icons.email,
+                      color: Theme.of(context).iconTheme.color)),
+            ),
+          ),
+          _dividerWidget,
+          Container(
+            margin: _marginEdgeInsetWidget,
+            child: TextField(
+              controller: widget.passwordText,
+              obscureText: true,
+              style: Theme.of(context).textTheme.button.copyWith(),
+              decoration: InputDecoration(
+                  border: InputBorder.none,
+                  hintText: Utils.getString(context, 'register__password'),
+                  hintStyle: Theme.of(context)
+                      .textTheme
+                      .button
+                      .copyWith(color: PsColors.textPrimaryLightColor),
+                  icon: Icon(Icons.lock,
+                      color: Theme.of(context).iconTheme.color)),
+              // keyboardType: TextInputType.number,
+            ),
+          ),
           Row(
             children: <Widget>[
               Expanded(
@@ -1165,61 +1218,9 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
 
             ),
           ),
-          Divider(height: 1.0,),
+
 //                                gapi
-          Container(
-            margin: _marginEdgeInsetWidget,
-            child: TextField(
-              controller: widget.nameText,
-              style: Theme.of(context).textTheme.button.copyWith(),
-              decoration: InputDecoration(
-                  border: InputBorder.none,
-                  hintText: Utils.getString(context, 'register__user_name'),
-                  hintStyle: Theme.of(context)
-                      .textTheme
-                      .button
-                      .copyWith(color: PsColors.textPrimaryLightColor),
-                  icon: Icon(Icons.people,
-                      color: Theme.of(context).iconTheme.color)),
-            ),
-          ),
-          _dividerWidget,
-          Container(
-            margin: _marginEdgeInsetWidget,
-            child: TextField(
-              controller: widget.emailText,
-              style: Theme.of(context).textTheme.button.copyWith(),
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                  border: InputBorder.none,
-                  hintText: Utils.getString(context, 'register__email'),
-                  hintStyle: Theme.of(context)
-                      .textTheme
-                      .button
-                      .copyWith(color: PsColors.textPrimaryLightColor),
-                  icon: Icon(Icons.email,
-                      color: Theme.of(context).iconTheme.color)),
-            ),
-          ),
-          _dividerWidget,
-          Container(
-            margin: _marginEdgeInsetWidget,
-            child: TextField(
-              controller: widget.passwordText,
-              obscureText: true,
-              style: Theme.of(context).textTheme.button.copyWith(),
-              decoration: InputDecoration(
-                  border: InputBorder.none,
-                  hintText: Utils.getString(context, 'register__password'),
-                  hintStyle: Theme.of(context)
-                      .textTheme
-                      .button
-                      .copyWith(color: PsColors.textPrimaryLightColor),
-                  icon: Icon(Icons.lock,
-                      color: Theme.of(context).iconTheme.color)),
-              // keyboardType: TextInputType.number,
-            ),
-          ),
+
         ],
       ),
     );

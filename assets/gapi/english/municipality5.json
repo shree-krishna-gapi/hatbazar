@@ -83,7 +83,7 @@
         "municipalityName":"Malika village municipality"
     },
     {
-        "municipalityId" : 483
+        "municipalityId" : 483,
         "stateId" : 5,
         "districtId": 47,
         "wardTotal": 10,
@@ -293,7 +293,7 @@
         "municipalityName":"Maharajganj Municipality"
     },
     {
-        "municipalityId" : 1513
+        "municipalityId" : 1513,
         "stateId" : 5,
         "districtId": 49,
         "wardTotal": 10,
@@ -363,7 +363,7 @@
         "municipalityName":"Chhatradev village municipality"
     },
     {
-        "municipalityId" : 523
+        "municipalityId" : 523,
         "stateId" : 5,
         "districtId": 50,
         "wardTotal": 10,
@@ -678,7 +678,7 @@
         "municipalityName":"Badaiyatal village municipality"
     },
     {
-        "municipalityId" : 568
+        "municipalityId" : 568,
         "stateId" : 5,
         "districtId": 56,
         "wardTotal": 10,

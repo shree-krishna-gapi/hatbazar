@@ -244,15 +244,15 @@ Route<dynamic> generateRoute(RouteSettings settings) {
 
       // gapi
 
-    case '${RoutePaths.blogVideos}':
-      return MaterialPageRoute<dynamic>(builder: (BuildContext context) {
-        final Object args = settings.arguments;
-        final Blog blog = args ?? Blog;
-        return BlogVideo(
-//          blog: blog,
-//          heroTagImage: blog.id,
-        );
-      });
+//    case '${RoutePaths.blogVideos}':
+//      return MaterialPageRoute<dynamic>(builder: (BuildContext context) {
+//        final Object args = settings.arguments;
+//        final Blog blog = args ?? Blog;
+//        return BlogVideo(
+////          blog: blog,
+////          heroTagImage: blog.id,
+//        );
+//      });
     case '${RoutePaths.paidAdItemList}':
       return MaterialPageRoute<dynamic>(
           builder: (BuildContext context) => PaidItemListContainerView());
@@ -428,7 +428,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           safetyTips: safetyTipsIntentHolder.safetyTips,
         );
       });
-
+    // this is for product state line 432
     case '${RoutePaths.itemLocationList}':
       return MaterialPageRoute<dynamic>(builder: (BuildContext context) {
         return ItemLocationContainerView();

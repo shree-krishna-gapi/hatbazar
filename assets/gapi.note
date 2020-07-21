@@ -37,3 +37,7 @@ print('$baseCategoryUrl');
 remeaning task
 sub-category display filter
 ui/item/list_with_filter/product_list_with_filter_view.dart 170 line no.
+
+
+
+item_location comment state_id cause of not posting product

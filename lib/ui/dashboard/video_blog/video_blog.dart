@@ -88,30 +88,30 @@ class _BlogVideoState extends State<BlogVideo> {
           top: false,
           child: FadeAnimation(
             0.3, Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                CustomScrollView(
-                  shrinkWrap: true,
-                  slivers: <Widget>[
-                    SliverAppBar(
-                      brightness: Utils.getBrightnessForAppBar(context),
-                      expandedHeight: 240, //276.0,
-                      floating: true,
-                      pinned: true,
-                      snap: false,
-                      elevation: 0,
-                      backgroundColor: PsColors.mainColor,
-                      flexibleSpace: Padding(
-                        padding: const EdgeInsets.only(top:24),
-                        child: Container(
-                          color: Colors.lightGreen,
-                          width: double.infinity,
-                          child: Chewie(
-                            controller: _chewieController,
-                          ),
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              CustomScrollView(
+                shrinkWrap: true,
+                slivers: <Widget>[
+                  SliverAppBar(
+                    brightness: Utils.getBrightnessForAppBar(context),
+                    expandedHeight: 240, //276.0,
+                    floating: true,
+                    pinned: true,
+                    snap: false,
+                    elevation: 0,
+                    backgroundColor: PsColors.mainColor,
+                    flexibleSpace: Padding(
+                      padding: const EdgeInsets.only(top:24),
+                      child: Container(
+                        color: Colors.lightGreen,
+                        width: double.infinity,
+                        child: Chewie(
+                          controller: _chewieController,
                         ),
                       ),
+                    ),
 //                    flexibleSpace: FlexibleSpaceBar(
 //                      background: Padding(
 //                        padding: const EdgeInsets.only(top:24),
@@ -124,120 +124,120 @@ class _BlogVideoState extends State<BlogVideo> {
 //                        ),
 //                      ),
 //                    ),
-                    ),
+                  ),
 
-                  ],
-                ),
+                ],
+              ),
 
-                Column(
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(12,10,15,5),
+              Column(
+                mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12,10,15,5),
                     child: Text('$usedDescription',
                         style: Theme.of(context).textTheme.headline6.copyWith(
                             fontWeight: FontWeight.w600, fontSize: 18,
                             color: PsColors.textPrimaryDarkColor)),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            left: PsDimens.space12,
-                            right: PsDimens.space12,
-                            bottom: PsDimens.space4),
-                        child:  Text('$usedTitle',style: TextStyle(
-                            fontSize: 12,color: Colors.black38
-                        ),)
-                    ),
+                  ),
+                  Padding(
+                      padding: const EdgeInsets.only(
+                          left: PsDimens.space12,
+                          right: PsDimens.space12,
+                          bottom: PsDimens.space4),
+                      child:  Text('$usedTitle',style: TextStyle(
+                          fontSize: 12,color: Colors.black38
+                      ),)
+                  ),
 
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only( top: PsDimens.space10,
-                      left: PsDimens.space16,
-                      right: PsDimens.space16,
-                      bottom: PsDimens.space10),
-                  child: Text( Utils.getString(context, 'news__section__main__tab__pages_heading3'),
-                      style: Theme.of(context).textTheme.headline6.copyWith(
-                          fontWeight: FontWeight.w700,
-                          color: PsColors.textPrimaryDarkColor)),
-                ),
-                Expanded(child: Container(
-                  height: 120,
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.only( top: PsDimens.space10,
+                    left: PsDimens.space16,
+                    right: PsDimens.space16,
+                    bottom: PsDimens.space10),
+                child: Text( Utils.getString(context, 'news__section__main__tab__pages_heading3'),
+                    style: Theme.of(context).textTheme.headline6.copyWith(
+                        fontWeight: FontWeight.w700,
+                        color: PsColors.textPrimaryDarkColor)),
+              ),
+              Expanded(child: Container(
+                height: 120,
 //      color: Colors.black12,
-                  child: FutureBuilder<List<VideoServices>>(
-                      future: FetchVideoServices(http.Client()),
-                      builder: (context, snapshot) {
-                        if (snapshot.hasError) ;
-                        return snapshot.hasData ?
-                        ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemCount: snapshot.data == null ? 0 : snapshot.data.length,
-                            itemBuilder: (BuildContext context,int index) {
-                              return Container(
-                                height: 220,
-                                width: 140,
-                                margin: EdgeInsets.only(left: 10),
-                                child: InkWell(
-                                  onTap: () {
-                                    setState(() {
-                                      usedTitle = snapshot.data[index].title;
-                                      usedDescription = snapshot.data[index].description;
-                                    });
-                                    play(snapshot.data[index].videoUrl);
+                child: FutureBuilder<List<VideoServices>>(
+                    future: FetchVideoServices(http.Client()),
+                    builder: (context, snapshot) {
+                      if (snapshot.hasError) ;
+                      return snapshot.hasData ?
+                      ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: snapshot.data == null ? 0 : snapshot.data.length,
+                          itemBuilder: (BuildContext context,int index) {
+                            return Container(
+                              height: 220,
+                              width: 140,
+                              margin: EdgeInsets.only(left: 10),
+                              child: InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    usedTitle = snapshot.data[index].title;
+                                    usedDescription = snapshot.data[index].description;
+                                  });
+                                  play(snapshot.data[index].videoUrl);
 
-                                  },
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: <Widget>[
-                                      Stack(
-                                        children: <Widget>[
-                                          Container(
-                                            color: Colors.green,
-                                            width: double.infinity,
-                                            height: 100,
-                                            child: CachedNetworkImage(
-                                              alignment: Alignment.topLeft,
-                                              placeholder: (context, url) => Image.asset(
-                                                'assets/images/placeholder_image.png',
-                                                width: double.infinity,
-                                                height: 80.0,
-                                                fit: BoxFit.fitWidth,
-                                              ),
-                                              imageUrl: '${PsConfig.ps_app_image_thumbs_url}${snapshot.data[index].imgPath}',
-                                              fit: BoxFit.cover,
-                                              errorWidget: (context, url, error) => Image.asset(
-                                                'assets/images/placeholder_image.png',
-                                                width: double.infinity,
+                                },
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Stack(
+                                      children: <Widget>[
+                                        Container(
+                                          color: Colors.green,
+                                          width: double.infinity,
+                                          height: 100,
+                                          child: CachedNetworkImage(
+                                            alignment: Alignment.topLeft,
+                                            placeholder: (context, url) => Image.asset(
+                                              'assets/images/placeholder_image.png',
+                                              width: double.infinity,
+                                              height: 80.0,
+                                              fit: BoxFit.fitWidth,
+                                            ),
+                                            imageUrl: '${PsConfig.ps_app_image_thumbs_url}${snapshot.data[index].imgPath}',
+                                            fit: BoxFit.cover,
+                                            errorWidget: (context, url, error) => Image.asset(
+                                              'assets/images/placeholder_image.png',
+                                              width: double.infinity,
 //                      height: blogImageHeight,
-                                                fit: BoxFit.fitWidth,
-                                              ),
+                                              fit: BoxFit.fitWidth,
                                             ),
                                           ),
-                                          Positioned(child: Container(
-                                            padding: EdgeInsets.fromLTRB(5, 2, 5, 2)
-                                            ,child: Text('${snapshot.data[index].addedDateStr}',style: TextStyle(color: Colors.white, fontSize: 12),
+                                        ),
+                                        Positioned(child: Container(
+                                          padding: EdgeInsets.fromLTRB(5, 2, 5, 2)
+                                          ,child: Text('${snapshot.data[index].addedDateStr}',style: TextStyle(color: Colors.white, fontSize: 12),
 
-                                          ), color: Colors.black38,),
-                                            bottom: 5, right: 5,),
+                                        ), color: Colors.black38,),
+                                          bottom: 5, right: 5,),
 
-                                        ],
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(top:8.0,bottom:3.0),
-                                        child: Text('${snapshot.data[index].description}'),
-                                      ),
-                                      Text('${snapshot.data[index].title}',style: TextStyle(
-                                          fontSize: 12,color: Colors.black38
-                                      ),)
-                                    ],
-                                  ),
+                                      ],
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top:8.0,bottom:3.0),
+                                      child: Text('${snapshot.data[index].description}'),
+                                    ),
+                                    Text('${snapshot.data[index].title}',style: TextStyle(
+                                        fontSize: 12,color: Colors.black38
+                                    ),)
+                                  ],
                                 ),
-                              ); } ) : Center(child: CircularProgressIndicator()); } ),
-                ))
-              ],
-            ),
+                              ),
+                            ); } ) : Center(child: CircularProgressIndicator()); } ),
+              ))
+            ],
+          ),
           ),
         )
     );

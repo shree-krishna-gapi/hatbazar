@@ -121,13 +121,20 @@ class _TextWidgetState extends State<TextWidget> {
                 padding: const EdgeInsets.only(
                     left: PsDimens.space12,
                     right: PsDimens.space12,
-                    bottom: PsDimens.space12),
+                    bottom: PsDimens.space4),
                 child: HtmlWidget(widget.blog.description)
                 //  Text(
                 //   widget.blog.description,
                 //   style: Theme.of(context).textTheme.bodyText1.copyWith(height: 1.5),
                 // ),
                 ),
+            Align(
+              alignment: Alignment.centerRight,
+              child: Padding(
+                padding: const EdgeInsets.only(right:PsDimens.space12,bottom:PsDimens.space8),
+                child: Text(widget.blog.addedDate),
+              ),
+            ),
             const PsAdMobBannerWidget(),
           ],
         ),
