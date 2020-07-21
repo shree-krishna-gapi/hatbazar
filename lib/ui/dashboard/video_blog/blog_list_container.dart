@@ -4,8 +4,8 @@ import 'package:hatbazar/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'videoService.dart';
-import '../test/videoService.dart';
-import '../test/video_blog.dart';
+import '../video_blog/videoService.dart';
+import '../video_blog/video_blog.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:hatbazar/gapi/fadeAnimation.dart';
 class VideoListContainerView extends StatefulWidget {

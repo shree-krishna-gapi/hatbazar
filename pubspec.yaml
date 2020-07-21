@@ -74,7 +74,7 @@ dependencies:
   flutter_offline: ^0.3.0
   video_player: ^0.10.11+2
   chewie: ^0.9.10
-
+  youtube_player_flutter: ^7.0.0+7
 #  advanced_share: ^0.1.0
 dev_dependencies:
   flutter_test:

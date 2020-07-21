@@ -32,3 +32,8 @@ SharedPreferences prefs = await SharedPreferences.getInstance();
   String baseCategoryUrl = 'https://sajilo.net/hatbazaar/index.php/rest/subcategories/get/api_key/hatbazarthamelktm1/?cat_id=$catId';
   print('******************************************************************************************');
 print('$baseCategoryUrl');
+
+
+remeaning task
+sub-category display filter
+ui/item/list_with_filter/product_list_with_filter_view.dart 170 line no.

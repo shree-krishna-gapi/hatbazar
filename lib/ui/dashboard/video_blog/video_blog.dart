@@ -9,7 +9,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:video_player/video_player.dart';
 import 'package:chewie/chewie.dart';
 import 'package:flutter/cupertino.dart';
-import '../test/videoService.dart';
+import '../video_blog/videoService.dart';
 import 'package:http/http.dart' as http;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:hatbazar/gapi/fadeAnimation.dart';
@@ -40,16 +40,18 @@ class _BlogVideoState extends State<BlogVideo> {
   play(url){
     print('url $url');
     if(url == null || url == '') {
+      print('url ${widget.videoSrc}');
       _videoPlayerController1 = VideoPlayerController.network(widget.videoSrc);
     }
     else {
+      print('url $url');
       _videoPlayerController1 = VideoPlayerController.network(url);
     }
 
     _chewieController = ChewieController(
       videoPlayerController: _videoPlayerController1,
       aspectRatio: 3 / 2,
-      autoPlay: false,
+      autoPlay: true,
       looping: false,
       // Try playing around with some of these other options:
 
@@ -100,18 +102,7 @@ class _BlogVideoState extends State<BlogVideo> {
                       snap: false,
                       elevation: 0,
                       backgroundColor: PsColors.mainColor,
-//                      flexibleSpace: Padding(
-//                        padding: const EdgeInsets.only(top:24),
-//                        child: Container(
-//                          color: Colors.lightGreen,
-//                          width: double.infinity,
-//                          child: Chewie(
-//                            controller: _chewieController,
-//                          ),
-//                        ),
-//                      ),
-                    flexibleSpace: FlexibleSpaceBar(
-                      background: Padding(
+                      flexibleSpace: Padding(
                         padding: const EdgeInsets.only(top:24),
                         child: Container(
                           color: Colors.lightGreen,
@@ -121,7 +112,18 @@ class _BlogVideoState extends State<BlogVideo> {
                           ),
                         ),
                       ),
-                    ),
+//                    flexibleSpace: FlexibleSpaceBar(
+//                      background: Padding(
+//                        padding: const EdgeInsets.only(top:24),
+//                        child: Container(
+//                          color: Colors.lightGreen,
+//                          width: double.infinity,
+//                          child: Chewie(
+//                            controller: _chewieController,
+//                          ),
+//                        ),
+//                      ),
+//                    ),
                     ),
 
                   ],

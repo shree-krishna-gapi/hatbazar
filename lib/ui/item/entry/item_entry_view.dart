@@ -40,7 +40,8 @@ import 'package:latlong/latlong.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
-
+import 'package:hatbazar/constant/ps_dimens.dart';
+import 'package:hatbazar/district.dart';
 class ItemEntryView extends StatefulWidget {
   const ItemEntryView(
       {Key key, this.flag, this.item, @required this.animationController})
@@ -1180,15 +1181,7 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
       ),
       PsDropdownBaseWithControllerWidget(
           title: Utils.getString(context, 'item_entry__location'),
-          // selectedText: provider.selectedItemLocation == ''
-          //     ? provider.psValueHolder.locactionName
-          //     : provider.selectedItemLocation,
-
           textEditingController:
-              // locationController.text == ''
-              // ?
-              // provider.psValueHolder.locactionName
-              // :
               widget.locationController,
           onTap: () async {
             FocusScope.of(context).requestFocus(FocusNode());
@@ -1217,6 +1210,37 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
             }
           }),
 
+// gapi 
+//      PsDropdownBaseWithControllerWidget(
+//          title: Utils.getString(context, 'item_entry__location'),
+//          textEditingController:
+//          widget.locationController,
+//          onTap: () async {
+//            FocusScope.of(context).requestFocus(FocusNode());
+//            final ItemEntryProvider provider =
+//            Provider.of<ItemEntryProvider>(context, listen: false);
+//
+////            final dynamic itemLocationResult =
+////            await Navigator.pushNamed(context, RoutePaths.itemLocation);
+//            final dynamic itemLocationResult = await Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => District()));
+//            if (itemLocationResult != null &&
+//                itemLocationResult is ItemLocation) {
+//              provider.itemLocationId = itemLocationResult.id;
+//              setState(() {
+//                widget.locationController.text = itemLocationResult.name;
+//                _latlng = LatLng(double.parse(itemLocationResult.lat),
+//                    double.parse(itemLocationResult.lng));
+//
+//                widget.mapController.move(_latlng, widget.zoom);
+//
+//                widget.userInputLattitude.text = itemLocationResult.lat;
+//                widget.userInputLongitude.text = itemLocationResult.lng;
+//
+//                // tappedPoints = <LatLng>[];
+//                // tappedPoints.add(latlng);
+//              });
+//            }
+//          }),
       Padding(
         padding: const EdgeInsets.only(right: 8, left: 8),
         child: Container(
@@ -1256,6 +1280,52 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
           ),
         ),
       ),
+      Container(
+        width: double.infinity,
+        height: 44,
+        margin: const EdgeInsets.all(PsDimens.space12),
+        decoration: BoxDecoration(
+          color: PsColors.backgroundColor,
+          borderRadius: BorderRadius.circular(PsDimens.space4),
+          border: Border.all(color: PsColors.mainDividerColor),
+        ),
+        child: TextField(
+          style: Theme.of(context).textTheme.button.copyWith(),
+          readOnly: true,
+          onTap: () {
+//          if(stateId != 0) {
+//            _districtDialog();
+//          }
+//          else {
+//            Fluttertoast.showToast(
+//              msg: Utils.getString(context, 'warning__choose__state'),
+//              toastLength: Toast.LENGTH_SHORT,
+//              gravity: ToastGravity.BOTTOM,
+//              timeInSecForIosWeb: 1,
+//              backgroundColor: PsColors.mainColor,
+//              textColor: Colors.white,
+//              fontSize: 16.0,
+//            );
+//          }
+          },
+          decoration: InputDecoration(
+            contentPadding: const EdgeInsets.only(
+              left: PsDimens.space12,
+              bottom: PsDimens.space8,
+            ),
+            border: InputBorder.none,
+            hintText: 'hintText',
+            hintStyle: Theme.of(context)
+                .textTheme
+                .bodyText2.copyWith(color: PsColors.textPrimaryLightColor),
+          ),
+
+
+
+        ),
+      ),
+
+      // Todo: // district
       PsTextFieldWidget(
         titleText: Utils.getString(context, 'item_entry__latitude'),
         textAboutMe: false,

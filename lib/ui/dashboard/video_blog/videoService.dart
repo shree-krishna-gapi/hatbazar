@@ -10,7 +10,6 @@ Future<List<VideoServices>> FetchVideoServices(http.Client client) async {
   final SharedPreferences prefs = await SharedPreferences.getInstance();
 //  String url = 'https://sajilo.net/hatbazaar/index.php/rest/videos/get/api_key/hatbazarthamelktm1';
   String url = "${PsConfig.ps_app_url}${PsUrl.ps_videolist_url}/api_key/hatbazarthamelktm1";
-  print('this is new hai ta $url');
   String stringData;
     print(url);
   bool loadStatus = prefs.getBool('getLoadVideo');

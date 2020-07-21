@@ -234,6 +234,7 @@ class PsApiService extends PsApi {
   /// Item List From Follower
   ///
   Future<PsResource<List<Product>>> getAllItemListFromFollower(
+
       String loginUserId, int limit, int offset) async {
     final String url =
         '${PsUrl.ps_item_list_from_followers_url}/api_key/${PsConfig.ps_api_key}/login_user_id/$loginUserId/limit/$limit/offset/$offset';
@@ -348,6 +349,7 @@ class PsApiService extends PsApi {
     final String url =
         '${PsUrl.ps_product_url}/api_key/${PsConfig.ps_api_key}/limit/$limit/offset/$offset';
     // TODO:// product list
+    print('producttttt $url');
     return await postData<Product, List<Product>>(Product(), url, paramMap);
   }
 
@@ -358,6 +360,7 @@ class PsApiService extends PsApi {
       String itemId, String loginUserId) async {
     final String url =
         '${PsUrl.ps_item_detail_url}/api_key/${PsConfig.ps_api_key}/id/$itemId/login_user_id/$loginUserId';
+    print('producttttt2 $url');
     return await getServerCall<Product, Product>(Product(), url);
   }
 
@@ -437,7 +440,7 @@ class PsApiService extends PsApi {
       String collectionId, int limit, int offset) async {
     final String url =
         '${PsUrl.ps_all_collection_url}/api_key/${PsConfig.ps_api_key}/id/$collectionId/limit/$limit/offset/$offset';
-
+      print('-----> ${PsUrl.ps_all_collection_url}');
     return await getServerCall<Product, List<Product>>(Product(), url);
   }
 

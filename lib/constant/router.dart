@@ -4,7 +4,7 @@ import 'package:hatbazar/ui/app_info/app_info_view.dart';
 import 'package:hatbazar/ui/app_loading/app_loading_view.dart';
 import 'package:hatbazar/ui/blog/detail/blog_view.dart';
 import 'package:hatbazar/ui/blog/list/blog_list_container.dart';
-import 'package:hatbazar/ui/dashboard/test/blog_list_container.dart';
+import 'package:hatbazar/ui/dashboard/video_blog/blog_list_container.dart';
 import 'package:hatbazar/ui/category/filter_list/category_filter_list_view.dart';
 import 'package:hatbazar/ui/category/list/category_list_view_container.dart';
 import 'package:hatbazar/ui/chat/detail/chat_view.dart';
@@ -206,8 +206,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
             args ?? ProductListIntentHolder;
         return ProductListWithFilterContainerView(
             appBarTitle: productListIntentHolder.appBarTitle,
-            productParameterHolder:
-                productListIntentHolder.productParameterHolder);
+            productParameterHolder: productListIntentHolder.productParameterHolder);
       });
 // todo: bottombar category
 

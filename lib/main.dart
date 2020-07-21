@@ -20,8 +20,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'config/ps_colors.dart';
 import 'config/ps_config.dart';
 import 'db/common/ps_shared_preferences.dart';
-import 'package:hatbazar/ui/user/register/register_view.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
+
 Future<void> main() async {
   // add this, and it should be the first line in main method
   WidgetsFlutterBinding.ensureInitialized();
@@ -56,51 +55,6 @@ List<Locale> getSupportedLanguages() {
   print('Loaded Languages');
   return localeList;
 }
-class PSApp1 extends StatefulWidget {
-
-  @override
-  _PSApp1State createState() => _PSApp1State();
-}
-
-class _PSApp1State extends State<PSApp1> {
-
-
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-//      home: RegisterView(),
-    home: RadioStream(),
-    );
-  }
-}
-class RegisterView1 extends StatefulWidget {
-  @override
-  _RegisterView1State createState() => _RegisterView1State();
-}
-
-class _RegisterView1State extends State<RegisterView1> {
-  FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
-  getToken() {
-    _firebaseMessaging.getToken().then((token) async {
-      SharedPreferences prefs = await SharedPreferences.getInstance();
-      print('***********************************************************');
-      print(token);
-      print('***********************************************************');
-
-    });
-  }
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: Center(
-        child: FlatButton(onPressed: getToken, child: Text('get token')),
-      ),
-    );
-  }
-}
-
 
 class PSApp extends StatefulWidget {
   @override
@@ -110,19 +64,8 @@ class PSApp extends StatefulWidget {
 class _PSAppState extends State<PSApp> {
   Completer<ThemeData> themeDataCompleter;
   PsSharedPreferences psSharedPreferences;
-  FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
-  getToken() {
-    _firebaseMessaging.getToken().then((token) async {
-      SharedPreferences prefs = await SharedPreferences.getInstance();
-      print('***********************************************************');
-      print(token);
-      print('***********************************************************');
-
-    });
-  }
   @override
   void initState() {
-    getToken();
     super.initState();
   }
 

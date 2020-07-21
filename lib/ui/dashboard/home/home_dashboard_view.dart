@@ -52,8 +52,8 @@ import 'news_blog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 //import '../test/testVideo.dart';
-import '../test/videoService.dart';
-import '../test/video_blog.dart';
+import '../video_blog/videoService.dart';
+import '../video_blog/video_blog.dart';
 class HomeDashboardViewWidget extends StatefulWidget {
   const HomeDashboardViewWidget(
       this.scrollController,
@@ -225,15 +225,15 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                 provider.loadBlogList();
                 return provider;
               }),
-          ChangeNotifierProvider<VideoProvider>(
-              lazy: false,
-              create: (BuildContext context) {
-                final VideoProvider provider = VideoProvider(
-//                    repo: repo31,
-                    limit: PsConfig.BLOCK_SLIDER_LOADING_LIMIT1);
-                provider.loadVideoList();
-                return provider;
-              }),
+//          ChangeNotifierProvider<VideoProvider>(
+//              lazy: false,
+//              create: (BuildContext context) {
+//                final VideoProvider provider = VideoProvider(
+////                    repo: repo31,
+//                    limit: PsConfig.BLOCK_SLIDER_LOADING_LIMIT1);
+//                provider.loadVideoList();
+//                return provider;
+//              }),
           ChangeNotifierProvider<UserUnreadMessageProvider>(
               lazy: false,
               create: (BuildContext context) {
@@ -332,7 +332,7 @@ class _HomeDashboardViewWidgetState extends State<HomeDashboardViewWidget> {
                           curve: Interval((1 / count) * 5, 1.0,
                               curve: Curves.fastOutSlowIn))), //animation
                 ),
-                _HomeBlogProductSliderListWidget2(
+                _HomeVideoBlogListWidget(
                   animationController:
                   widget.animationController, //animationController,
                   animation: Tween<double>(begin: 0.0, end: 1.0).animate(
@@ -1269,8 +1269,8 @@ class MySeparator extends StatelessWidget {
   }
 }
 
-class _HomeBlogProductSliderListWidget2 extends StatelessWidget {
-  const _HomeBlogProductSliderListWidget2({
+class _HomeVideoBlogListWidget extends StatelessWidget {
+  const _HomeVideoBlogListWidget({
     Key key,
     @required this.animationController,
     @required this.animation,

@@ -18,6 +18,8 @@ import 'package:hatbazar/constant/route_paths.dart';
 import 'package:hatbazar/provider/category/category_provider.dart';
 import 'package:hatbazar/viewobject/holder/intent_holder/product_list_intent_holder.dart';
 import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
+import 'package:hatbazar/constant/ps_constants.dart';
+//import 'package:hatbazar/test.dart';
 class SubCategoryForHome extends StatefulWidget {
   const SubCategoryForHome({@required this.categoryId,this.appBarTitle});
 
@@ -156,16 +158,21 @@ class _SubCategoryForHomeState extends State<SubCategoryForHome>
                                     ),
                                   ),
                                   subCategory: provider.subCategoryList.data[index],
-                                  onTap: () {
+                                  onTap: () async {
+                                    SharedPreferences prefs = await SharedPreferences.getInstance();
+                                    String subCatId = provider.subCategoryList.data[index].id;
+                                    prefs.setString('subCatId', subCatId);
                                     final ProductParameterHolder
                                     productParameterHolder =      ProductParameterHolder()
                                         .getLatestParameterHolder();
                                     print(provider.subCategoryList.data[index]
                                         .defaultPhoto.imgPath);
 
-                                    print(
-                                        provider.subCategoryList.data[index].name);
                                     //Navigator.pop(context, provider.subCategoryList.data[index]);
+                                    String catId = prefs.getString('categoryCatId');
+                                    final Map<String, String> dataHolder = <String, String>{};
+                                    dataHolder[PsConst.CATEGORY_ID] = catId;
+                                    dataHolder[PsConst.SUB_CATEGORY_ID] = subCatId;
                                     Navigator.pushNamed(
                                         context, RoutePaths.filterProductList,
                                         arguments: ProductListIntentHolder(
@@ -178,10 +185,7 @@ class _SubCategoryForHomeState extends State<SubCategoryForHome>
 //                                        .pop(provider.subCategoryList.data[index]);
 
                                     // if (index == 0) {
-                                    //   Navigator.pushNamed(
-                                    //     context,
-                                    //     RoutePaths.searchCategory,
-                                    //   );
+
                                     // }
                                   },
                                 ),

@@ -19,7 +19,7 @@ import 'package:provider/provider.dart';
 import 'package:hatbazar/constant/ps_dimens.dart';
 import 'package:hatbazar/constant/route_paths.dart';
 import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 class ProductListWithFilterView extends StatefulWidget {
   const ProductListWithFilterView(
       {Key key,
@@ -49,7 +49,7 @@ class _ProductListWithFilterViewState extends State<ProductListWithFilterView>
   @override
   void initState() {
     super.initState();
-
+    getCatId();
     _offset = 0;
     _scrollController.addListener(() {
       if (_scrollController.position.pixels ==
@@ -72,7 +72,12 @@ class _ProductListWithFilterViewState extends State<ProductListWithFilterView>
       print(' Offset $_offset');
     });
   }
-
+  String subCatId;
+getCatId() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    subCatId = prefs.getString('subCatId');
+    print('subCatId $subCatId');
+}
   final double _containerMaxHeight = 60;
   double _offset, _delta = 0, _oldOffset = 0;
   ProductRepository repo1;
@@ -134,7 +139,8 @@ class _ProductListWithFilterViewState extends State<ProductListWithFilterView>
                     child: Stack(children: <Widget>[
                       if (provider.productList.data.isNotEmpty &&
                           provider.productList.data != null)
-                        Container(
+
+                         Container(
                             color: PsColors.coreBackgroundColor,
                             margin: const EdgeInsets.only(
                                 left: PsDimens.space4,
@@ -160,7 +166,9 @@ class _ProductListWithFilterViewState extends State<ProductListWithFilterView>
                                                   .isNotEmpty) {
                                             final int count = provider
                                                 .productList.data.length;
-                                            return ProductVeticalListItem(
+                                            return
+//                                              subCatId == provider.productList.data[i].subCategory.catId ?
+                                              ProductVeticalListItem(
                                               coreTagKey: provider.hashCode
                                                   .toString() +
                                                   provider.productList
@@ -225,48 +233,13 @@ class _ProductListWithFilterViewState extends State<ProductListWithFilterView>
                                         .productParameterHolder);
                               },
                             ))
+
                       else if (provider.productList.status !=
                           PsStatus.PROGRESS_LOADING &&
                           provider.productList.status !=
                               PsStatus.BLOCK_LOADING &&
-                          provider.productList.status != PsStatus.NOACTION)
-                        Align(
-                          child: Container(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisSize: MainAxisSize.min,
-                              children: <Widget>[
-                                Image.asset(
-                                  'assets/images/baseline_empty_item_grey_24.png',
-                                  height: 100,
-                                  width: 150,
-                                  fit: BoxFit.contain,
-                                ),
-                                const SizedBox(
-                                  height: PsDimens.space32,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                      left: PsDimens.space20,
-                                      right: PsDimens.space20),
-                                  child: Text(
-                                    Utils.getString(context,
-                                        'procuct_list__no_result_data'),
-                                    textAlign: TextAlign.center,
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .headline6
-                                        .copyWith(),
-                                  ),
-                                ),
-                                const SizedBox(
-                                  height: PsDimens.space20,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
+                            provider.productList.status != PsStatus.NOACTION)
+                        emptyMessage(),
                       Positioned(
                         bottom: _offset,
                         width: MediaQuery.of(context).size.width,
@@ -291,6 +264,45 @@ class _ProductListWithFilterViewState extends State<ProductListWithFilterView>
               ],
             );
           }));
+  }
+  emptyMessage() {
+    return Align(
+      child: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Image.asset(
+              'assets/images/baseline_empty_item_grey_24.png',
+              height: 100,
+              width: 150,
+              fit: BoxFit.contain,
+            ),
+            const SizedBox(
+              height: PsDimens.space32,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: PsDimens.space20,
+                  right: PsDimens.space20),
+              child: Text(
+                Utils.getString(context,
+                    'procuct_list__no_result_data'),
+                textAlign: TextAlign.center,
+                style: Theme.of(context)
+                    .textTheme
+                    .headline6
+                    .copyWith(),
+              ),
+            ),
+            const SizedBox(
+              height: PsDimens.space20,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -463,6 +475,7 @@ class _BottomNavigationImageAndTextState
       ),
     );
   }
+
 }
 
 class PsIconWithCheck extends StatelessWidget {
