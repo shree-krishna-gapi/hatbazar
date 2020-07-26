@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/viewobject/ItemSpec.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/viewobject/ItemSpec.dart';
 
 class ProductSpecificationListItem extends StatelessWidget {
   const ProductSpecificationListItem({

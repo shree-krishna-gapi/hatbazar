@@ -2,12 +2,12 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/api/ps_api_service.dart';
-import 'package:hatbazar/db/noti_dao.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
-import 'package:hatbazar/viewobject/noti.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/ps_api_service.dart';
+import 'package:flutterbuyandsell/db/noti_dao.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/viewobject/noti.dart';
 
 class NotiRepository extends PsRepository {
   NotiRepository(

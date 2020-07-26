@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/deal_option.dart';
+import 'package:flutterbuyandsell/viewobject/deal_option.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
 
 class ItemDealOptionDao extends PsDao<DealOption> {
   ItemDealOptionDao() {

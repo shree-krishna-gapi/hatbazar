@@ -1,4 +1,4 @@
-import 'package:hatbazar/viewobject/common/ps_holder.dart'
+import 'package:flutterbuyandsell/viewobject/common/ps_holder.dart'
     show PsHolder;
 import 'package:flutter/cupertino.dart';
 

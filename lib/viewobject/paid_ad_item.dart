@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:quiver/core.dart';
-import 'package:hatbazar/viewobject/common/ps_object.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_object.dart';
 
 class PaidAdItem extends PsObject<PaidAdItem> {
   PaidAdItem({

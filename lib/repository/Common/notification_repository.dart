@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:hatbazar/viewobject/api_status.dart';
+import 'package:flutterbuyandsell/viewobject/api_status.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/api/ps_api_service.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/ps_api_service.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
 
 class NotificationRepository extends PsRepository {
   NotificationRepository({@required PsApiService psApiService}) {

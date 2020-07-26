@@ -1,5 +1,5 @@
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/ui/location/item_location_view.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/ui/location/item_location_view.dart';
 import 'package:flutter/material.dart';
 
 class ItemLocationContainerView extends StatefulWidget {

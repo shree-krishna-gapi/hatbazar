@@ -1,15 +1,15 @@
-import 'package:hatbazar/api/common/ps_admob_banner_widget.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/provider/blog/blog_provider.dart';
-import 'package:hatbazar/repository/blog_repository.dart';
-import 'package:hatbazar/ui/blog/item/blog_list_item.dart';
+import 'package:flutterbuyandsell/api/common/ps_admob_banner_widget.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/provider/blog/blog_provider.dart';
+import 'package:flutterbuyandsell/repository/blog_repository.dart';
+import 'package:flutterbuyandsell/ui/blog/item/blog_list_item.dart';
 
 import 'package:flutter/material.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:provider/provider.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
 
 class BlogListView extends StatefulWidget {
   const BlogListView({Key key, @required this.animationController})

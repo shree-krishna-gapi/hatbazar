@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/about_us.dart';
+import 'package:flutterbuyandsell/viewobject/about_us.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart' show PsDao;
+import 'package:flutterbuyandsell/db/common/ps_dao.dart' show PsDao;
 
 class AboutUsDao extends PsDao<AboutUs> {
   AboutUsDao._() {

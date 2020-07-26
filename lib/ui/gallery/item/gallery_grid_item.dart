@@ -1,6 +1,6 @@
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/viewobject/default_photo.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/viewobject/default_photo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

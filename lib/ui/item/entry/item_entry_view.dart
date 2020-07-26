@@ -2,49 +2,49 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_map/flutter_map.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/entry/item_entry_provider.dart';
-import 'package:hatbazar/provider/gallery/gallery_provider.dart';
-import 'package:hatbazar/repository/gallery_repository.dart';
-import 'package:hatbazar/repository/product_repository.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_multi_provider.dart';
-import 'package:hatbazar/ui/common/dialog/error_dialog.dart';
-import 'package:hatbazar/ui/common/dialog/success_dialog.dart';
-import 'package:hatbazar/ui/common/dialog/warning_dialog_view.dart';
-import 'package:hatbazar/ui/common/ps_button_widget.dart';
-import 'package:hatbazar/ui/common/ps_dropdown_base_with_controller_widget.dart';
-import 'package:hatbazar/ui/common/ps_textfield_widget.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/utils/ps_progress_dialog.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/category.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/condition_of_item.dart';
-import 'package:hatbazar/viewobject/deal_option.dart';
-import 'package:hatbazar/viewobject/default_photo.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/map_pin_call_back_holder.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/map_pin_intent_holder.dart';
-import 'package:hatbazar/viewobject/holder/item_entry_parameter_holder.dart';
-import 'package:hatbazar/viewobject/item_currency.dart';
-import 'package:hatbazar/viewobject/item_location.dart';
-import 'package:hatbazar/viewobject/item_price_type.dart';
-import 'package:hatbazar/viewobject/item_type.dart';
-import 'package:hatbazar/viewobject/product.dart';
-import 'package:hatbazar/viewobject/sub_category.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/entry/item_entry_provider.dart';
+import 'package:flutterbuyandsell/provider/gallery/gallery_provider.dart';
+import 'package:flutterbuyandsell/repository/gallery_repository.dart';
+import 'package:flutterbuyandsell/repository/product_repository.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_multi_provider.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/error_dialog.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/success_dialog.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/warning_dialog_view.dart';
+import 'package:flutterbuyandsell/ui/common/ps_button_widget.dart';
+import 'package:flutterbuyandsell/ui/common/ps_dropdown_base_with_controller_widget.dart';
+import 'package:flutterbuyandsell/ui/common/ps_textfield_widget.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/utils/ps_progress_dialog.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/category.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/condition_of_item.dart';
+import 'package:flutterbuyandsell/viewobject/deal_option.dart';
+import 'package:flutterbuyandsell/viewobject/default_photo.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/map_pin_call_back_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/map_pin_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/item_entry_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/item_currency.dart';
+import 'package:flutterbuyandsell/viewobject/item_location.dart';
+import 'package:flutterbuyandsell/viewobject/item_price_type.dart';
+import 'package:flutterbuyandsell/viewobject/item_type.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/sub_category.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:latlong/latlong.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/district.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/district.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
-import 'package:hatbazar/gapi/fadeAnimation.dart';
+import 'package:flutterbuyandsell/gapi/fadeAnimation.dart';
 import 'dart:convert';
 import 'dart:async';
 class ItemEntryView extends StatefulWidget {
@@ -959,7 +959,7 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
           width: double.infinity,
           titleText: Utils.getString(context, 'login__submit'),
           onPressed: () async {
-
+          print(productStateId);
             if (!widget.isSelectedFirstImagePath &&
                 !widget.isSelectedSecondImagePath &&
                 !widget.isSelectedThirdImagePath &&
@@ -1113,7 +1113,6 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
                 }
               } else {
                 // edit item
-                print('as');
                 final ItemEntryParameterHolder itemEntryParameterHolder =
                     ItemEntryParameterHolder(
                         catId: widget.provider.categoryId,

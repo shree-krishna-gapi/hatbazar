@@ -1,14 +1,14 @@
 import 'dart:async';
-import 'package:hatbazar/db/category_map_dao.dart';
-import 'package:hatbazar/viewobject/api_status.dart';
-import 'package:hatbazar/viewobject/category_map.dart';
-import 'package:hatbazar/viewobject/holder/category_parameter_holder.dart';
+import 'package:flutterbuyandsell/db/category_map_dao.dart';
+import 'package:flutterbuyandsell/viewobject/api_status.dart';
+import 'package:flutterbuyandsell/viewobject/category_map.dart';
+import 'package:flutterbuyandsell/viewobject/holder/category_parameter_holder.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/api/ps_api_service.dart';
-import 'package:hatbazar/db/cateogry_dao.dart';
-import 'package:hatbazar/viewobject/category.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/ps_api_service.dart';
+import 'package:flutterbuyandsell/db/cateogry_dao.dart';
+import 'package:flutterbuyandsell/viewobject/category.dart';
 import 'package:sembast/sembast.dart';
 import 'Common/ps_repository.dart';
 

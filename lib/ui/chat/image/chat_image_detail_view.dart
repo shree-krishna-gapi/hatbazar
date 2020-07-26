@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/viewobject/message.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/viewobject/message.dart';
 import 'package:photo_view/photo_view_gallery.dart';
 
 class ChatImageDetailView extends StatefulWidget {

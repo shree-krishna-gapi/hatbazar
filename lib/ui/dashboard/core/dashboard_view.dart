@@ -1,66 +1,66 @@
 import 'dart:io';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/chat/user_unread_message_provider.dart';
-import 'package:hatbazar/provider/delete_task/delete_task_provider.dart';
-import 'package:hatbazar/provider/user/user_provider.dart';
-import 'package:hatbazar/repository/category_repository.dart';
-import 'package:hatbazar/repository/delete_task_repository.dart';
-import 'package:hatbazar/repository/product_repository.dart';
-import 'package:hatbazar/repository/user_repository.dart';
-import 'package:hatbazar/repository/user_unread_message_repository.dart';
-import 'package:hatbazar/ui/category/list/category_list_view.dart';
-import 'package:hatbazar/ui/chat/list/chat_list_view.dart';
-import 'package:hatbazar/ui/common/dialog/chat_noti_dialog.dart';
-import 'package:hatbazar/ui/contact/contact_us_view.dart';
-import 'package:hatbazar/ui/common/dialog/confirm_dialog_view.dart';
-import 'package:hatbazar/ui/common/dialog/noti_dialog.dart';
-import 'package:hatbazar/ui/dashboard/home/home_dashboard_view.dart';
-import 'package:hatbazar/ui/history/list/history_list_view.dart';
-import 'package:hatbazar/ui/item/favourite/favourite_product_list_view.dart';
-import 'package:hatbazar/ui/item/list_with_filter/product_list_with_filter_view.dart';
-import 'package:hatbazar/ui/item/paid_ad/paid_ad_item_list_view.dart';
-import 'package:hatbazar/ui/language/setting/language_setting_view.dart';
-import 'package:hatbazar/ui/search/home_item_search_view.dart';
-import 'package:hatbazar/ui/terms_and_conditions/terms_and_conditions_view.dart';
-import 'package:hatbazar/ui/setting/setting_view.dart';
-import 'package:hatbazar/ui/user/forgot_password/forgot_password_view.dart';
-import 'package:hatbazar/ui/user/login/login_view.dart';
-import 'package:hatbazar/ui/user/phone/sign_in/phone_sign_in_view.dart';
-import 'package:hatbazar/ui/user/phone/verify_phone/verify_phone_view.dart';
-import 'package:hatbazar/ui/user/profile/profile_view.dart';
-import 'package:hatbazar/ui/user/profile/profile_view1.dart';
-import 'package:hatbazar/ui/user/register/register_view.dart';
-import 'package:hatbazar/ui/user/verify/verify_email_view.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/chat_history_intent_holder.dart';
-import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/chat/user_unread_message_provider.dart';
+import 'package:flutterbuyandsell/provider/delete_task/delete_task_provider.dart';
+import 'package:flutterbuyandsell/provider/user/user_provider.dart';
+import 'package:flutterbuyandsell/repository/category_repository.dart';
+import 'package:flutterbuyandsell/repository/delete_task_repository.dart';
+import 'package:flutterbuyandsell/repository/product_repository.dart';
+import 'package:flutterbuyandsell/repository/user_repository.dart';
+import 'package:flutterbuyandsell/repository/user_unread_message_repository.dart';
+import 'package:flutterbuyandsell/ui/category/list/category_list_view.dart';
+import 'package:flutterbuyandsell/ui/chat/list/chat_list_view.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/chat_noti_dialog.dart';
+import 'package:flutterbuyandsell/ui/contact/contact_us_view.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/confirm_dialog_view.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/noti_dialog.dart';
+import 'package:flutterbuyandsell/ui/dashboard/home/home_dashboard_view.dart';
+import 'package:flutterbuyandsell/ui/history/list/history_list_view.dart';
+import 'package:flutterbuyandsell/ui/item/favourite/favourite_product_list_view.dart';
+import 'package:flutterbuyandsell/ui/item/list_with_filter/product_list_with_filter_view.dart';
+import 'package:flutterbuyandsell/ui/item/paid_ad/paid_ad_item_list_view.dart';
+import 'package:flutterbuyandsell/ui/language/setting/language_setting_view.dart';
+import 'package:flutterbuyandsell/ui/search/home_item_search_view.dart';
+import 'package:flutterbuyandsell/ui/terms_and_conditions/terms_and_conditions_view.dart';
+import 'package:flutterbuyandsell/ui/setting/setting_view.dart';
+import 'package:flutterbuyandsell/ui/user/forgot_password/forgot_password_view.dart';
+import 'package:flutterbuyandsell/ui/user/login/login_view.dart';
+import 'package:flutterbuyandsell/ui/user/phone/sign_in/phone_sign_in_view.dart';
+import 'package:flutterbuyandsell/ui/user/phone/verify_phone/verify_phone_view.dart';
+import 'package:flutterbuyandsell/ui/user/profile/profile_view.dart';
+import 'package:flutterbuyandsell/ui/user/profile/profile_view1.dart';
+import 'package:flutterbuyandsell/ui/user/register/register_view.dart';
+import 'package:flutterbuyandsell/ui/user/verify/verify_email_view.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/chat_history_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/product_parameter_holder.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_facebook_login/flutter_facebook_login.dart';
-import 'package:hatbazar/viewobject/holder/user_unread_message_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/user_unread_message_parameter_holder.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:provider/single_child_widget.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/item_entry_intent_holder.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/item_entry_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:hatbazar/ui/item/entry/item_entry_container.dart';
+import 'package:flutterbuyandsell/ui/item/entry/item_entry_container.dart';
 //import 'test.dart';
-//import 'package:hatbazar/gapi/newDrawer/news/news.dart';
-import 'package:hatbazar/gapi/newDrawer/agriculturalVideo/agriculturalVideo.dart';
+//import 'package:flutterbuyandsell/gapi/newDrawer/news/news.dart';
+import 'package:flutterbuyandsell/gapi/newDrawer/agriculturalVideo/agriculturalVideo.dart';
 import 'package:share/share.dart';
-import 'package:hatbazar/gapi/newDrawer/radio/radioStream.dart';
+import 'package:flutterbuyandsell/gapi/newDrawer/radio/radioStream.dart';
 class DashboardView extends StatefulWidget {
   @override
   _HomeViewState createState() => _HomeViewState();
@@ -266,10 +266,10 @@ class _HomeViewState extends State<DashboardView>
   }
   void shareApp() {
 
-
+    // TODO:// Share Apps
     final RenderBox box = context.findRenderObject();
-    Share.share('www.hatbazar.com',
-        subject: 'hatbazar subject',
+    Share.share('www.flutterbuyandsell.com',
+        subject: 'flutterbuyandsell subject',
         sharePositionOrigin:
         box.localToGlobal(Offset.zero) &
         box.size);

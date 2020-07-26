@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/default_photo.dart';
+import 'package:flutterbuyandsell/viewobject/default_photo.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
 
 class GalleryDao extends PsDao<DefaultPhoto> {
   GalleryDao._() {

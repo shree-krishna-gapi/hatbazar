@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 class AgriculturalVideo extends StatefulWidget {
   @override
   _AgriculturalVideoState createState() => _AgriculturalVideoState();

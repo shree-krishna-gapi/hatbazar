@@ -1,7 +1,7 @@
-import 'package:hatbazar/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/item_location.dart';
+import 'package:flutterbuyandsell/viewobject/item_location.dart';
 class ItemLocationListItem extends StatelessWidget {
   const ItemLocationListItem(
       {Key key,

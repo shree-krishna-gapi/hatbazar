@@ -1,13 +1,13 @@
 import 'dart:async';
 
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/repository/noti_repository.dart';
-import 'package:hatbazar/viewobject/noti.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/repository/noti_repository.dart';
+import 'package:flutterbuyandsell/viewobject/noti.dart';
 
 class NotiProvider extends PsProvider {
   NotiProvider({@required NotiRepository repo, this.psValueHolder, int limit = 0})

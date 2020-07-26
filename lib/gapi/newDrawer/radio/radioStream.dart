@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'dart:async';
 
 import 'package:flutter_radio/flutter_radio.dart';
 import 'dart:convert';
-import 'package:hatbazar/gapi/fadeAnimation.dart';
+import 'package:flutterbuyandsell/gapi/fadeAnimation.dart';
 import 'package:flutter_offline/flutter_offline.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 class RadioStream extends StatefulWidget {

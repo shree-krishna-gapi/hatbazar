@@ -1,11 +1,11 @@
 import 'dart:async';
-import 'package:hatbazar/repository/history_repsitory.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/repository/history_repsitory.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
 
 class HistoryProvider extends PsProvider {
   HistoryProvider({@required HistoryRepository repo,int limit = 0}) : super(repo,limit) {

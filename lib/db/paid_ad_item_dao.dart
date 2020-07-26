@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/paid_ad_item.dart';
+import 'package:flutterbuyandsell/viewobject/paid_ad_item.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
 
 class PaidAdItemDao extends PsDao<PaidAdItem> {
   PaidAdItemDao._() {

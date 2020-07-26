@@ -1,5 +1,5 @@
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/viewobject/common/ps_holder.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_holder.dart';
 
 class ChatHistoryParameterHolder extends PsHolder<dynamic> {
   ChatHistoryParameterHolder() {

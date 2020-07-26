@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/repository/ps_theme_repository.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/repository/ps_theme_repository.dart';
 
 class PsThemeProvider extends PsProvider {
   PsThemeProvider({@required PsThemeRepository repo, int limit = 0}) : super(repo,limit) {

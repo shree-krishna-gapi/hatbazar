@@ -175,7 +175,7 @@ packages:
       name: equatable
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.2"
+    version: "1.2.3"
   esys_flutter_share:
     dependency: "direct main"
     description:
@@ -293,6 +293,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.0"
+  flutter_inappwebview:
+    dependency: transitive
+    description:
+      name: flutter_inappwebview
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.0+4"
   flutter_localizations:
     dependency: transitive
     description: flutter
@@ -490,6 +497,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
+  mime:
+    dependency: transitive
+    description:
+      name: mime
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.9.6+3"
   multi_image_picker:
     dependency: "direct main"
     description:
@@ -950,6 +964,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.6.1"
+  youtube_player_flutter:
+    dependency: "direct main"
+    description:
+      name: youtube_player_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "7.0.0+7"
 sdks:
   dart: ">=2.8.0 <3.0.0"
   flutter: ">=1.16.0 <2.0.0"

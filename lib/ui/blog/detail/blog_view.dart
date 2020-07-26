@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
-import 'package:hatbazar/api/common/ps_admob_banner_widget.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/ui/common/ps_back_button_with_circle_bg_widget.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/blog.dart';
+import 'package:flutterbuyandsell/api/common/ps_admob_banner_widget.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/ui/common/ps_back_button_with_circle_bg_widget.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/blog.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -128,13 +128,13 @@ class _TextWidgetState extends State<TextWidget> {
                 //   style: Theme.of(context).textTheme.bodyText1.copyWith(height: 1.5),
                 // ),
                 ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: Padding(
-                padding: const EdgeInsets.only(right:PsDimens.space12,bottom:PsDimens.space8),
-                child: Text(widget.blog.addedDate),
-              ),
-            ),
+//            Align(
+//              alignment: Alignment.centerRight,
+//              child: Padding(
+//                padding: const EdgeInsets.only(right:PsDimens.space12,bottom:PsDimens.space8),
+//                child: Text(widget.blog.addedDate),
+//              ),
+//            ),
             const PsAdMobBannerWidget(),
           ],
         ),

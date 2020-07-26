@@ -1,4 +1,4 @@
-import 'package:hatbazar/ui/common/ps_textfield_widget.dart';
+import 'package:flutterbuyandsell/ui/common/ps_textfield_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_credit_card/credit_card_model.dart';

@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:hatbazar/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
 
 const Duration _kExpand = Duration(milliseconds: 200);
 

@@ -1,13 +1,13 @@
 import 'dart:async';
-import 'package:hatbazar/repository/user_repository.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/repository/user_repository.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/holder/user_parameter_holder.dart';
-import 'package:hatbazar/viewobject/user.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/user_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/user.dart';
 
 class UserListProvider extends PsProvider {
   UserListProvider({@required UserRepository repo, this.psValueHolder,int limit = 0})

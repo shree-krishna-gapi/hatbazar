@@ -1,6 +1,6 @@
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
-import 'package:hatbazar/viewobject/sub_category.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/viewobject/sub_category.dart';
 
 class SubCategoryDao extends PsDao<SubCategory> {
   SubCategoryDao() {

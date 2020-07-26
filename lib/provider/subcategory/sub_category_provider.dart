@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/repository/sub_category_repository.dart';
-import 'package:hatbazar/viewobject/sub_category.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/repository/sub_category_repository.dart';
+import 'package:flutterbuyandsell/viewobject/sub_category.dart';
 
 class SubCategoryProvider extends PsProvider {
   SubCategoryProvider({@required SubCategoryRepository repo,int limit = 0}) : super(repo,limit) {

@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/common/ps_object.dart';
-import 'package:hatbazar/viewobject/delete_object.dart';
-import 'package:hatbazar/viewobject/ps_app_version.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_object.dart';
+import 'package:flutterbuyandsell/viewobject/delete_object.dart';
+import 'package:flutterbuyandsell/viewobject/ps_app_version.dart';
 
 class PSAppInfo extends PsObject<PSAppInfo> {
   PSAppInfo(

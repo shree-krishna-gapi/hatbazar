@@ -1,19 +1,19 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:hatbazar/db/user_dao.dart';
-import 'package:hatbazar/db/user_login_dao.dart';
-import 'package:hatbazar/db/user_map_dao.dart';
-import 'package:hatbazar/viewobject/api_status.dart';
-import 'package:hatbazar/viewobject/holder/user_parameter_holder.dart';
-import 'package:hatbazar/viewobject/user.dart';
-import 'package:hatbazar/viewobject/user_login.dart';
+import 'package:flutterbuyandsell/db/user_dao.dart';
+import 'package:flutterbuyandsell/db/user_login_dao.dart';
+import 'package:flutterbuyandsell/db/user_map_dao.dart';
+import 'package:flutterbuyandsell/viewobject/api_status.dart';
+import 'package:flutterbuyandsell/viewobject/holder/user_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/user.dart';
+import 'package:flutterbuyandsell/viewobject/user_login.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/api/ps_api_service.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
-import 'package:hatbazar/viewobject/user_map.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/ps_api_service.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/viewobject/user_map.dart';
 import 'package:sembast/sembast.dart';
 
 class UserRepository extends PsRepository {

@@ -1,4 +1,4 @@
-import 'package:hatbazar/viewobject/common/ps_object.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_object.dart';
 
 abstract class PsMapObject<T> extends PsObject<T> {
   int sorting;

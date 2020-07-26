@@ -1,14 +1,14 @@
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/provider/noti/noti_provider.dart';
-import 'package:hatbazar/repository/noti_repository.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/holder/noti_post_parameter_holder.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/provider/noti/noti_provider.dart';
+import 'package:flutterbuyandsell/repository/noti_repository.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/noti_post_parameter_holder.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/noti.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/noti.dart';
 import 'package:provider/provider.dart';
 
 class NotiView extends StatefulWidget {

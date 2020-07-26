@@ -1,4 +1,4 @@
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

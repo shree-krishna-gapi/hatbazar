@@ -1,13 +1,13 @@
 import 'dart:async';
 
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/repository/product_repository.dart';
-import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/repository/product_repository.dart';
+import 'package:flutterbuyandsell/viewobject/holder/product_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 
 class PopularProductProvider extends PsProvider {
   PopularProductProvider({@required ProductRepository repo, int limit = 0})

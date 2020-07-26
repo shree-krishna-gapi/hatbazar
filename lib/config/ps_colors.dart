@@ -5,7 +5,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 
 /// Colors Config For the whole App
 /// Please change the color based on your brand need.

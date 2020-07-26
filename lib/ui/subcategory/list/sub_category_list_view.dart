@@ -1,20 +1,20 @@
-import 'package:hatbazar/api/common/ps_admob_banner_widget.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/ui/subcategory/item/sub_category_vertical_list_item.dart';
+import 'package:flutterbuyandsell/api/common/ps_admob_banner_widget.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/ui/subcategory/item/sub_category_vertical_list_item.dart';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:shimmer/shimmer.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
 
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/provider/subcategory/sub_category_provider.dart';
-import 'package:hatbazar/repository/sub_category_repository.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/category.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/provider/subcategory/sub_category_provider.dart';
+import 'package:flutterbuyandsell/repository/sub_category_repository.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/category.dart';
 
 class SubCategoryListView extends StatefulWidget {
   const SubCategoryListView({this.category});

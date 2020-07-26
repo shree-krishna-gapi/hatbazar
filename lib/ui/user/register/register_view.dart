@@ -1,23 +1,23 @@
 import 'package:flutter/widgets.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
 
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/user/user_provider.dart';
-import 'package:hatbazar/repository/user_repository.dart';
-import 'package:hatbazar/ui/common/dialog/error_dialog.dart';
-import 'package:hatbazar/ui/common/dialog/warning_dialog_view.dart';
-import 'package:hatbazar/ui/common/ps_button_widget.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/holder/user_register_parameter_holder.dart';
-import 'package:hatbazar/viewobject/user.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/user/user_provider.dart';
+import 'package:flutterbuyandsell/repository/user_repository.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/error_dialog.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/warning_dialog_view.dart';
+import 'package:flutterbuyandsell/ui/common/ps_button_widget.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/user_register_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/user.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'dart:convert';
-import 'package:hatbazar/gapi/fadeAnimation.dart';
+import 'package:flutterbuyandsell/gapi/fadeAnimation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -671,7 +671,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                 return Container(
                                   width: 300.0, // Change as per your requirement
                                   child: FadeAnimation(
-                                    0.1, ListView.builder(
+                                    0.2, ListView.builder(
                                     shrinkWrap: true,
                                     itemCount: showData == null ? 0 : showData.length,
                                     itemBuilder: (BuildContext context, int index) {
@@ -1310,7 +1310,17 @@ class __SignInButtonWidgetState extends State<_SignInButtonWidget> {
           int shareMunicipalityId = prefs.getInt('municipalityId');
           int shareWardId = prefs.getInt('wardId');
           if (widget.provider.isCheckBoxSelect) {
-            //
+
+            if (widget.nameTextEditingController.text.isEmpty) {
+              callWarningDialog(context,
+                  Utils.getString(context, 'warning_dialog__input_name'));
+            } else if (widget.emailTextEditingController.text.isEmpty) {
+              callWarningDialog(context,
+                  Utils.getString(context, 'warning_dialog__input_email'));
+            } else if (widget.passwordTextEditingController.text.isEmpty) {
+              callWarningDialog(context,
+                  Utils.getString(context, 'warning_dialog__input_password'));
+            } else
             if(shareStateId == 0) {
               callWarningDialog(context,
                   Utils.getString(context, 'warning_dialog__input_state'));
@@ -1326,20 +1336,11 @@ class __SignInButtonWidgetState extends State<_SignInButtonWidget> {
             if(shareWardId == 0) {
               callWarningDialog(context,
                   Utils.getString(context, 'warning_dialog__input_ward'));
-            }else
-            if (widget.streetTextEditingController.text.isEmpty) {
+            }     else  if (widget.streetTextEditingController.text.isEmpty) {
               callWarningDialog(context,
                   Utils.getString(context, 'warning_dialog__input_street')); }
-            else if (widget.nameTextEditingController.text.isEmpty) {
-              callWarningDialog(context,
-                  Utils.getString(context, 'warning_dialog__input_name'));
-            } else if (widget.emailTextEditingController.text.isEmpty) {
-              callWarningDialog(context,
-                  Utils.getString(context, 'warning_dialog__input_email'));
-            } else if (widget.passwordTextEditingController.text.isEmpty) {
-              callWarningDialog(context,
-                  Utils.getString(context, 'warning_dialog__input_password'));
-            } else {
+
+            else {
               if (await Utils.checkInternetConnectivity()) {
                 print('here the register');
                 final UserRegisterParameterHolder userRegisterParameterHolder =

@@ -1,16 +1,16 @@
 import 'package:admob_flutter/admob_flutter.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:hatbazar/api/common/ps_admob_banner_widget.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/ui/common/ps_dropdown_base_widget.dart';
-import 'package:hatbazar/viewobject/common/language.dart';
+import 'package:flutterbuyandsell/api/common/ps_admob_banner_widget.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/ui/common/ps_dropdown_base_widget.dart';
+import 'package:flutterbuyandsell/viewobject/common/language.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/language/language_provider.dart';
-import 'package:hatbazar/repository/language_repository.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/language/language_provider.dart';
+import 'package:flutterbuyandsell/repository/language_repository.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 
 class LanguageSettingView extends StatefulWidget {
   const LanguageSettingView(

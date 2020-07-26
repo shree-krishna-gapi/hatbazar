@@ -1,8 +1,8 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/ui/item/list_with_filter/product_list_with_filter_view.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/ui/item/list_with_filter/product_list_with_filter_view.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/holder/product_parameter_holder.dart';
 import 'package:flutter/material.dart';
 
 class ProductListWithFilterContainerView extends StatefulWidget {

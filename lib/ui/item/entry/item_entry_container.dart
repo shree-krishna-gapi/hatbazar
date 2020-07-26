@@ -1,8 +1,8 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 
 import 'item_entry_view.dart';
 

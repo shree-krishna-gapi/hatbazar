@@ -1,8 +1,8 @@
 import 'dart:async';
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 
 class PsSharedPreferences {
   PsSharedPreferences._() {

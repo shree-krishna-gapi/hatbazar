@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/repository/product_repository.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/api_status.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/repository/product_repository.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/api_status.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 import 'package:flutter/cupertino.dart';
 
 class TouchCountProvider extends PsProvider {

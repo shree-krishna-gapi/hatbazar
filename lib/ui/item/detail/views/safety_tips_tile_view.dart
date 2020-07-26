@@ -1,12 +1,12 @@
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/about_us/about_us_provider.dart';
-import 'package:hatbazar/ui/common/ps_expansion_tile.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/about_us/about_us_provider.dart';
+import 'package:flutterbuyandsell/ui/common/ps_expansion_tile.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/safety_tips_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/safety_tips_intent_holder.dart';
 import 'package:provider/provider.dart';
 
 class SafetyTipsTileView extends StatelessWidget {

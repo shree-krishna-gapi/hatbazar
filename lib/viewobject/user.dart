@@ -1,5 +1,5 @@
-import 'package:hatbazar/viewobject/common/ps_object.dart';
-import 'package:hatbazar/viewobject/rating_detail.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_object.dart';
+import 'package:flutterbuyandsell/viewobject/rating_detail.dart';
 import 'package:quiver/core.dart';
 
 class User extends PsObject<User> {

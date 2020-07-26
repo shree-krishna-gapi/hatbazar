@@ -1,14 +1,14 @@
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:hatbazar/ui/common/ps_hero.dart';
-import 'package:hatbazar/viewobject/default_icon.dart';
+import 'package:flutterbuyandsell/ui/common/ps_hero.dart';
+import 'package:flutterbuyandsell/viewobject/default_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/viewobject/default_photo.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/viewobject/default_photo.dart';
 
 class PsNetworkImage extends StatelessWidget {
   const PsNetworkImage(

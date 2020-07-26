@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:hatbazar/db/gallery_dao.dart';
-import 'package:hatbazar/viewobject/default_photo.dart';
+import 'package:flutterbuyandsell/db/gallery_dao.dart';
+import 'package:flutterbuyandsell/viewobject/default_photo.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/api/ps_api_service.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/ps_api_service.dart';
 import 'package:sembast/sembast.dart';
 
 import 'Common/ps_repository.dart';

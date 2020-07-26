@@ -1,8 +1,8 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/condition_of_item.dart';
+import 'package:flutterbuyandsell/viewobject/condition_of_item.dart';
 
 class ItemConditionListViewItem extends StatelessWidget {
   const ItemConditionListViewItem(

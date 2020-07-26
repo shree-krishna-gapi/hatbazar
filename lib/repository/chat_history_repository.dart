@@ -1,16 +1,16 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/db/chat_history_dao.dart';
-import 'package:hatbazar/db/chat_history_map_dao.dart';
-import 'package:hatbazar/viewobject/chat_history.dart';
-import 'package:hatbazar/viewobject/chat_history_map.dart';
-import 'package:hatbazar/viewobject/holder/chat_history_parameter_holder.dart';
-import 'package:hatbazar/viewobject/holder/get_chat_history_parameter_holder.dart';
+import 'package:flutterbuyandsell/db/chat_history_dao.dart';
+import 'package:flutterbuyandsell/db/chat_history_map_dao.dart';
+import 'package:flutterbuyandsell/viewobject/chat_history.dart';
+import 'package:flutterbuyandsell/viewobject/chat_history_map.dart';
+import 'package:flutterbuyandsell/viewobject/holder/chat_history_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/get_chat_history_parameter_holder.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/api/ps_api_service.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/ps_api_service.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
 
 class ChatHistoryRepository extends PsRepository {
   ChatHistoryRepository(

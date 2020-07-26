@@ -1,22 +1,22 @@
 import 'dart:io';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/provider/promotion/item_promotion_provider.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar_with_no_provider.dart';
-import 'package:hatbazar/ui/common/dialog/error_dialog.dart';
-import 'package:hatbazar/ui/common/dialog/success_dialog.dart';
-import 'package:hatbazar/ui/common/dialog/warning_dialog_view.dart';
-import 'package:hatbazar/ui/common/ps_button_widget.dart';
-import 'package:hatbazar/ui/common/ps_credit_card_form.dart';
-import 'package:hatbazar/utils/ps_progress_dialog.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/holder/item_paid_history_parameter_holder.dart';
-import 'package:hatbazar/viewobject/item_paid_history.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/provider/promotion/item_promotion_provider.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar_with_no_provider.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/error_dialog.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/success_dialog.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/warning_dialog_view.dart';
+import 'package:flutterbuyandsell/ui/common/ps_button_widget.dart';
+import 'package:flutterbuyandsell/ui/common/ps_credit_card_form.dart';
+import 'package:flutterbuyandsell/utils/ps_progress_dialog.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/holder/item_paid_history_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/item_paid_history.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/credit_card_model.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:stripe_payment/stripe_payment.dart';
 
 class CreditCardView extends StatefulWidget {

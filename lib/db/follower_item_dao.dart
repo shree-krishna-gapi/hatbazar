@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/follower_item.dart';
+import 'package:flutterbuyandsell/viewobject/follower_item.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
 
 class FollowerItemDao extends PsDao<FollowerItem> {
   FollowerItemDao._() {

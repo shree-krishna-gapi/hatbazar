@@ -1,6 +1,6 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/viewobject/category.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/viewobject/category.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

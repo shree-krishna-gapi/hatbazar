@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 
 class ItemEntryIntentHolder {
   const ItemEntryIntentHolder({

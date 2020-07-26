@@ -1,4 +1,4 @@
-import 'package:hatbazar/viewobject/user.dart';
+import 'package:flutterbuyandsell/viewobject/user.dart';
 import 'package:quiver/core.dart';
 import 'common/ps_object.dart';
 

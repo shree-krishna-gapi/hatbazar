@@ -1,4 +1,4 @@
-import 'package:hatbazar/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
 
 class PsResource<T> {
   PsResource(this.status, this.message, this.data);

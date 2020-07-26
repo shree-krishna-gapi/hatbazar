@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/provider/about_us/about_us_provider.dart';
-import 'package:hatbazar/repository/about_us_repository.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/provider/about_us/about_us_provider.dart';
+import 'package:flutterbuyandsell/repository/about_us_repository.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 import 'package:provider/provider.dart';
 
 class TermsAndConditionsView extends StatefulWidget {

@@ -1,4 +1,4 @@
-import 'package:hatbazar/config/ps_config.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
 
 class PsUrl {
   PsUrl._();

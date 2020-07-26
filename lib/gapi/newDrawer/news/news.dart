@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'tabs/tabOne.dart';
 import 'tabs/tabThree.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 class News extends StatefulWidget {
   @override
   _NewsState createState() => _NewsState();

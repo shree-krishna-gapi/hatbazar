@@ -1,11 +1,11 @@
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/gallery/gallery_provider.dart';
-import 'package:hatbazar/repository/gallery_repository.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar.dart';
-import 'package:hatbazar/ui/gallery/item/gallery_grid_item.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/gallery/gallery_provider.dart';
+import 'package:flutterbuyandsell/repository/gallery_repository.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar.dart';
+import 'package:flutterbuyandsell/ui/gallery/item/gallery_grid_item.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

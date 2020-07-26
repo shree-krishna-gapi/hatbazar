@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/ui/common/ps_button_widget.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/ui/common/ps_button_widget.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 
 class ChatMakeOfferDialog extends StatefulWidget {
   const ChatMakeOfferDialog(

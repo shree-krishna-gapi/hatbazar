@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/ui/chat/list/chat_buyer_list_view.dart';
-import 'package:hatbazar/ui/chat/list/chat_list_view_app_bar.dart';
-import 'package:hatbazar/ui/chat/list/chat_seller_list_view.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/ui/chat/list/chat_buyer_list_view.dart';
+import 'package:flutterbuyandsell/ui/chat/list/chat_list_view_app_bar.dart';
+import 'package:flutterbuyandsell/ui/chat/list/chat_seller_list_view.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 
 int _selectedIndex = 0;
 

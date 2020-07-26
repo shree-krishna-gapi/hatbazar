@@ -1,8 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 class TabOne extends StatefulWidget {
   @override
   _TabOneState createState() => _TabOneState();

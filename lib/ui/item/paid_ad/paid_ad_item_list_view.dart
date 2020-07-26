@@ -1,15 +1,15 @@
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/product/paid_id_item_provider.dart';
-import 'package:hatbazar/repository/paid_ad_item_repository.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/ui/item/paid_ad/paid_ad_item_vertical_list_item.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/product/paid_id_item_provider.dart';
+import 'package:flutterbuyandsell/repository/paid_ad_item_repository.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/ui/item/paid_ad/paid_ad_item_vertical_list_item.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/product_detail_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/product_detail_intent_holder.dart';
 import 'package:provider/provider.dart';
 
 class PaidAdItemListView extends StatefulWidget {

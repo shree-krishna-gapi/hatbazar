@@ -1,9 +1,9 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/user/user_provider.dart';
-import 'package:hatbazar/repository/user_repository.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/user/user_provider.dart';
+import 'package:flutterbuyandsell/repository/user_repository.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:provider/provider.dart';

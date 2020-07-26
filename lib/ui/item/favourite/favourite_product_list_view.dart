@@ -1,19 +1,19 @@
-import 'package:hatbazar/api/common/ps_admob_banner_widget.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/product/favourite_item_provider.dart';
-import 'package:hatbazar/repository/product_repository.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/ui/item/item/product_vertical_list_item.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/api/common/ps_admob_banner_widget.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/product/favourite_item_provider.dart';
+import 'package:flutterbuyandsell/repository/product_repository.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/ui/item/item/product_vertical_list_item.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/product_detail_intent_holder.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/product_detail_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:provider/provider.dart';
 
 class FavouriteProductListView extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
-import 'package:hatbazar/viewobject/noti.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/viewobject/noti.dart';
 
 class NotiDao extends PsDao<Noti> {
   NotiDao._() {

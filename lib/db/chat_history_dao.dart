@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/chat_history.dart';
+import 'package:flutterbuyandsell/viewobject/chat_history.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
 
 class ChatHistoryDao extends PsDao<ChatHistory> {
   ChatHistoryDao._() {

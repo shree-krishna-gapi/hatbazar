@@ -1,18 +1,18 @@
-import 'package:hatbazar/api/common/ps_admob_banner_widget.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/holder/noti_parameter_holder.dart';
+import 'package:flutterbuyandsell/api/common/ps_admob_banner_widget.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/noti_parameter_holder.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/noti/noti_provider.dart';
-import 'package:hatbazar/repository/noti_repository.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/viewobject/category.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/noti/noti_provider.dart';
+import 'package:flutterbuyandsell/repository/noti_repository.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/viewobject/category.dart';
 import '../item/noti_list_item.dart';
 
 class NotiListView extends StatefulWidget {

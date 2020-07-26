@@ -1,10 +1,10 @@
 import 'dart:math';
 import 'package:flutter_map/flutter_map.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar_with_no_provider.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar_with_no_provider.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/holder/product_parameter_holder.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:latlong/latlong.dart';

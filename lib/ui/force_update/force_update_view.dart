@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/ps_app_version.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/ps_app_version.dart';
 import 'package:flutter/material.dart';
 
 class ForceUpdateView extends StatelessWidget {

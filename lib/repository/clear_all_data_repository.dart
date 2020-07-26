@@ -1,21 +1,21 @@
 import 'dart:async';
 
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/db/about_us_dao.dart';
-import 'package:hatbazar/db/blog_dao.dart';
-import 'package:hatbazar/db/category_map_dao.dart';
-import 'package:hatbazar/db/cateogry_dao.dart';
-import 'package:hatbazar/db/chat_history_dao.dart';
-import 'package:hatbazar/db/chat_history_map_dao.dart';
-import 'package:hatbazar/db/product_dao.dart';
-import 'package:hatbazar/db/product_map_dao.dart';
-import 'package:hatbazar/db/rating_dao.dart';
-import 'package:hatbazar/db/related_product_dao.dart';
-import 'package:hatbazar/db/sub_category_dao.dart';
-import 'package:hatbazar/db/user_unread_message_dao.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/db/about_us_dao.dart';
+import 'package:flutterbuyandsell/db/blog_dao.dart';
+import 'package:flutterbuyandsell/db/category_map_dao.dart';
+import 'package:flutterbuyandsell/db/cateogry_dao.dart';
+import 'package:flutterbuyandsell/db/chat_history_dao.dart';
+import 'package:flutterbuyandsell/db/chat_history_map_dao.dart';
+import 'package:flutterbuyandsell/db/product_dao.dart';
+import 'package:flutterbuyandsell/db/product_map_dao.dart';
+import 'package:flutterbuyandsell/db/rating_dao.dart';
+import 'package:flutterbuyandsell/db/related_product_dao.dart';
+import 'package:flutterbuyandsell/db/sub_category_dao.dart';
+import 'package:flutterbuyandsell/db/user_unread_message_dao.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 
 class ClearAllDataRepository extends PsRepository {
   Future<dynamic> clearAllData(

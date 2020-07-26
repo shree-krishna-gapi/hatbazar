@@ -1,13 +1,13 @@
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/provider/language/language_provider.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar.dart';
-import 'package:hatbazar/ui/common/dialog/confirm_dialog_view.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/provider/language/language_provider.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/confirm_dialog_view.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:provider/provider.dart';
-import 'package:hatbazar/repository/language_repository.dart';
+import 'package:flutterbuyandsell/repository/language_repository.dart';
 
 import '../item/language_list_item.dart';
 

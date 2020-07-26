@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/repository/language_repository.dart';
-import 'package:hatbazar/viewobject/common/language.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/repository/language_repository.dart';
+import 'package:flutterbuyandsell/viewobject/common/language.dart';
 
 class LanguageProvider extends PsProvider {
   LanguageProvider({@required LanguageRepository repo, int limit = 0 }) : super(repo,limit) {

@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/rating.dart';
+import 'package:flutterbuyandsell/viewobject/rating.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart' show PsDao;
+import 'package:flutterbuyandsell/db/common/ps_dao.dart' show PsDao;
 
 class RatingDao extends PsDao<Rating> {
   RatingDao._() {

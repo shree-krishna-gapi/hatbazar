@@ -4,22 +4,22 @@ import 'package:apple_sign_in/apple_sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_platform_interface/firebase_auth_platform_interface.dart';
 import 'package:flutter/services.dart';
-import 'package:hatbazar/repository/user_repository.dart';
-import 'package:hatbazar/ui/common/dialog/error_dialog.dart';
-import 'package:hatbazar/ui/common/dialog/warning_dialog_view.dart';
-import 'package:hatbazar/utils/ps_progress_dialog.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/api_status.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/holder/apple_login_parameter_holder.dart';
-import 'package:hatbazar/viewobject/holder/user_parameter_holder.dart';
-import 'package:hatbazar/viewobject/shipping_city.dart';
-import 'package:hatbazar/viewobject/shipping_country.dart';
-import 'package:hatbazar/viewobject/user.dart';
+import 'package:flutterbuyandsell/repository/user_repository.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/error_dialog.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/warning_dialog_view.dart';
+import 'package:flutterbuyandsell/utils/ps_progress_dialog.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/api_status.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/apple_login_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/user_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/shipping_city.dart';
+import 'package:flutterbuyandsell/viewobject/shipping_country.dart';
+import 'package:flutterbuyandsell/viewobject/user.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
 
 class UserProvider extends PsProvider {
   UserProvider(

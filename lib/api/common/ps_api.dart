@@ -1,13 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:hatbazar/api/common/ps_api_reponse.dart';
+import 'package:flutterbuyandsell/api/common/ps_api_reponse.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 import 'package:path/path.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/viewobject/common/ps_object.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_object.dart';
 
 abstract class PsApi {
   PsResource<T> psObjectConvert<T>(dynamic dataList, T data) {

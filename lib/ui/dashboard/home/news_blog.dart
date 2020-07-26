@@ -1,11 +1,12 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/blog.dart';
-import 'package:hatbazar/config/ps_config.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/blog.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
 class NewsBlog extends StatefulWidget {
   const NewsBlog({
     Key key,
@@ -31,7 +32,7 @@ class _NewsBlogState extends State<NewsBlog> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 200,
+      height: 204,
       child: ListView(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
@@ -74,7 +75,20 @@ class _NewsBlogState extends State<NewsBlog> {
                 },
                 child: Padding(
                   padding: const EdgeInsets.only(top: 8),
-                  child: Text('${blogProduct.name}'),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(left: PsDimens.space8),
+                        child: Text('${blogProduct.name}'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: PsDimens.space8),
+                        child: Text('${blogProduct.addedDateStr}',style: TextStyle(color: Colors.black38,fontSize: 12),),
+                      ),
+                    ],
+                  ),
                 ),
               )
             ],
@@ -146,10 +160,16 @@ class FirstRow extends StatelessWidget {
                   height: videoContainerHeight,
                   color: Colors.green[200],
                 ),
-                Text('Some phonetically similar Nepali letters:',
-                  style: TextStyle(fontSize: 14,color: Colors.black87),),
-                Text('BBC News Nepali',
-                  style: TextStyle(fontSize: 12,color: Colors.black38),)
+                Padding(
+                  padding: const EdgeInsets.only(left: PsDimens.space8),
+                  child: Text('Some phonetically similar Nepali letters:',
+                    style: TextStyle(fontSize: 14,color: Colors.black87),),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: PsDimens.space8),
+                  child: Text('BBC News Nepali',
+                    style: TextStyle(fontSize: 12,color: Colors.black38),),
+                )
               ],
             ),
           ),

@@ -1,13 +1,13 @@
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/ui/common/ps_expansion_tile.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/ui/common/ps_expansion_tile.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/map_pin_intent_holder.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/map_pin_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:geolocator/geolocator.dart';
 import 'dart:math';
 class LocationTileView extends StatefulWidget {

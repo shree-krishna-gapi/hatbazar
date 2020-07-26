@@ -2,7 +2,7 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // Panacea-Soft license that can be found in the LICENSE file.
 
-import 'package:hatbazar/viewobject/common/language.dart';
+import 'package:flutterbuyandsell/viewobject/common/language.dart';
 
 class PsConfig {
   PsConfig._();

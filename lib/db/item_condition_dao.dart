@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/condition_of_item.dart';
+import 'package:flutterbuyandsell/viewobject/condition_of_item.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
 
 class ItemConditionDao extends PsDao<ConditionOfItem> {
   ItemConditionDao() {

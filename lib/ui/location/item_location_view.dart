@@ -1,17 +1,17 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/provider/item_location/item_location_provider.dart';
-import 'package:hatbazar/repository/item_location_repository.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/provider/item_location/item_location_provider.dart';
+import 'package:flutterbuyandsell/repository/item_location_repository.dart';
 
 import 'package:flutter/material.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar_no_app_bar_title.dart';
-import 'package:hatbazar/ui/location/item_location_list_item.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/item_location.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar_no_app_bar_title.dart';
+import 'package:flutterbuyandsell/ui/location/item_location_list_item.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/item_location.dart';
 import 'package:provider/provider.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 class ItemLocationView extends StatefulWidget {
   const ItemLocationView({Key key, @required this.animationController})
@@ -161,7 +161,8 @@ class _ItemLocationListViewWidgetState
                                 ),
                               ),
                               itemLocation: dataList[index],
-                              onTap: () async {
+                              onTap: ()  async {
+//                                print(dataList[index].name);print(dataList[index].stateId);
                                 await _provider.replaceItemLocationData(
                                     dataList[index].id,
                                     dataList[index].name,

@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
 
 class PsProvider extends ChangeNotifier {
   PsProvider(this.psRepository,int limit){

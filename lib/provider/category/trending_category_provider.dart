@@ -1,13 +1,13 @@
 import 'dart:async';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/api_status.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/api_status.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/repository/category_repository.dart';
-import 'package:hatbazar/viewobject/category.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/repository/category_repository.dart';
+import 'package:flutterbuyandsell/viewobject/category.dart';
 
 class TrendingCategoryProvider extends PsProvider {
   TrendingCategoryProvider(

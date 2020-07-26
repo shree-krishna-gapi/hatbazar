@@ -1,10 +1,10 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/viewobject/sub_category.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/viewobject/sub_category.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:hatbazar/config/ps_config.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
 class SubCategorySearchListItem1 extends StatelessWidget {
   const SubCategorySearchListItem1(
       {Key key,

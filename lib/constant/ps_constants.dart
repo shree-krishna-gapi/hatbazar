@@ -5,7 +5,7 @@
 /// www.panacea-soft.com
 ///
 
-import 'package:hatbazar/config/ps_config.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
 import 'package:intl/intl.dart';
 
 class PsConst {

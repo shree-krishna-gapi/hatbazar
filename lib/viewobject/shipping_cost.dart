@@ -1,5 +1,5 @@
-import 'package:hatbazar/viewobject/common/ps_object.dart';
-import 'package:hatbazar/viewobject/shipping_zone.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_object.dart';
+import 'package:flutterbuyandsell/viewobject/shipping_zone.dart';
 
 class ShippingCost extends PsObject<ShippingCost> {
   ShippingCost({this.shippingZone});

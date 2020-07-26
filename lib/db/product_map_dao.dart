@@ -1,6 +1,6 @@
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
-import 'package:hatbazar/viewobject/product_map.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/viewobject/product_map.dart';
 
 class ProductMapDao extends PsDao<ProductMap> {
   ProductMapDao._() {

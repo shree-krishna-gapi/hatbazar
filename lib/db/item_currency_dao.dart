@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/item_currency.dart';
+import 'package:flutterbuyandsell/viewobject/item_currency.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
 
 class ItemCurrencyDao extends PsDao<ItemCurrency> {
   ItemCurrencyDao() {

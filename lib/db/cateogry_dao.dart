@@ -1,6 +1,6 @@
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart' show PsDao;
-import 'package:hatbazar/viewobject/category.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart' show PsDao;
+import 'package:flutterbuyandsell/viewobject/category.dart';
 
 class CategoryDao extends PsDao<Category> {
   CategoryDao() {

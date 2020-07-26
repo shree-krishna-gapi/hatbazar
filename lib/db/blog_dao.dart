@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/blog.dart';
+import 'package:flutterbuyandsell/viewobject/blog.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart' show PsDao;
+import 'package:flutterbuyandsell/db/common/ps_dao.dart' show PsDao;
 
 class BlogDao extends PsDao<Blog> {
   BlogDao._() {

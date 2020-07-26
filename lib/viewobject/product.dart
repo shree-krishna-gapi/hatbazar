@@ -1,18 +1,18 @@
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/category.dart';
-import 'package:hatbazar/viewobject/condition_of_item.dart';
-import 'package:hatbazar/viewobject/deal_option.dart';
-import 'package:hatbazar/viewobject/item_currency.dart';
-import 'package:hatbazar/viewobject/item_location.dart';
-import 'package:hatbazar/viewobject/item_price_type.dart';
-import 'package:hatbazar/viewobject/item_type.dart';
-import 'package:hatbazar/viewobject/rating_detail.dart';
-// import 'package:hatbazar/viewobject/color.dart';
-// import 'package:hatbazar/viewobject/specs.dart';
-import 'package:hatbazar/viewobject/sub_category.dart';
-import 'package:hatbazar/viewobject/user.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/category.dart';
+import 'package:flutterbuyandsell/viewobject/condition_of_item.dart';
+import 'package:flutterbuyandsell/viewobject/deal_option.dart';
+import 'package:flutterbuyandsell/viewobject/item_currency.dart';
+import 'package:flutterbuyandsell/viewobject/item_location.dart';
+import 'package:flutterbuyandsell/viewobject/item_price_type.dart';
+import 'package:flutterbuyandsell/viewobject/item_type.dart';
+import 'package:flutterbuyandsell/viewobject/rating_detail.dart';
+// import 'package:flutterbuyandsell/viewobject/color.dart';
+// import 'package:flutterbuyandsell/viewobject/specs.dart';
+import 'package:flutterbuyandsell/viewobject/sub_category.dart';
+import 'package:flutterbuyandsell/viewobject/user.dart';
 import 'package:quiver/core.dart';
-import 'package:hatbazar/viewobject/common/ps_object.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_object.dart';
 import 'default_photo.dart';
 
 class Product extends PsObject<Product> {

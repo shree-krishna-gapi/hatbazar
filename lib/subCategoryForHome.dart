@@ -1,25 +1,25 @@
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/config/ps_colors.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
 
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/provider/subcategory/sub_category_provider.dart';
-import 'package:hatbazar/repository/sub_category_repository.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar.dart';
-import 'package:hatbazar/ui/common/ps_frame_loading_widget.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/ui/subcategory/item/sub_category_search_list_item1.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/provider/subcategory/sub_category_provider.dart';
+import 'package:flutterbuyandsell/repository/sub_category_repository.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar.dart';
+import 'package:flutterbuyandsell/ui/common/ps_frame_loading_widget.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/ui/subcategory/item/sub_category_search_list_item1.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/category/category_provider.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/product_list_intent_holder.dart';
-import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
-//import 'package:hatbazar/test.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/category/category_provider.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/product_list_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/product_parameter_holder.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+//import 'package:flutterbuyandsell/test.dart';
 class SubCategoryForHome extends StatefulWidget {
   const SubCategoryForHome({@required this.categoryId,this.appBarTitle});
 

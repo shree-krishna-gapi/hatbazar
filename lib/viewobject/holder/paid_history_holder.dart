@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:hatbazar/provider/promotion/item_promotion_provider.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/provider/promotion/item_promotion_provider.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 
 class PaidHistoryHolder {
   const PaidHistoryHolder(

@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/api/ps_api_service.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
-import 'package:hatbazar/viewobject/item_paid_history.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/ps_api_service.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/viewobject/item_paid_history.dart';
 
 class ItemPaidHistoryRepository extends PsRepository {
   ItemPaidHistoryRepository({@required PsApiService psApiService}) {

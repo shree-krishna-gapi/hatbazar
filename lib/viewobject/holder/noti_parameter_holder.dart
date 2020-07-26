@@ -1,4 +1,4 @@
-import 'package:hatbazar/viewobject/common/ps_holder.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_holder.dart';
 import 'package:flutter/cupertino.dart';
 
 class GetNotiParameterHolder extends PsHolder<GetNotiParameterHolder> {

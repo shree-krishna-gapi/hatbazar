@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/favourite_product.dart';
+import 'package:flutterbuyandsell/viewobject/favourite_product.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
 
 class FavouriteProductDao extends PsDao<FavouriteProduct> {
   FavouriteProductDao._() {

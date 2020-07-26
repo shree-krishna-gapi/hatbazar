@@ -1,12 +1,12 @@
 import 'dart:async';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/db/favourite_product_dao.dart';
-import 'package:hatbazar/db/history_dao.dart';
-import 'package:hatbazar/db/user_login_dao.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/db/favourite_product_dao.dart';
+import 'package:flutterbuyandsell/db/history_dao.dart';
+import 'package:flutterbuyandsell/db/user_login_dao.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
 
-import 'package:hatbazar/viewobject/user_login.dart';
+import 'package:flutterbuyandsell/viewobject/user_login.dart';
 
 class DeleteTaskRepository extends PsRepository {
   Future<dynamic> deleteTask(

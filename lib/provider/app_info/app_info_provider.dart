@@ -1,10 +1,10 @@
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/repository/app_info_repository.dart';
-import 'package:hatbazar/viewobject/ps_app_info.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/repository/app_info_repository.dart';
+import 'package:flutterbuyandsell/viewobject/ps_app_info.dart';
 
 class AppInfoProvider extends PsProvider {
   AppInfoProvider({@required AppInfoRepository repo, this.psValueHolder,int limit = 0 })

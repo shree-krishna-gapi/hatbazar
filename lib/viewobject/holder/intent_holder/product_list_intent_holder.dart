@@ -1,4 +1,4 @@
-import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/product_parameter_holder.dart';
 import 'package:flutter/cupertino.dart';
 
 class ProductListIntentHolder {

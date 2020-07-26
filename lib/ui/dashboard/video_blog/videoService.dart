@@ -4,8 +4,8 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:connectivity/connectivity.dart';
-import 'package:hatbazar/api/ps_url.dart';
-import 'package:hatbazar/config/ps_config.dart';
+import 'package:flutterbuyandsell/api/ps_url.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
 Future<List<VideoServices>> FetchVideoServices(http.Client client) async {
   final SharedPreferences prefs = await SharedPreferences.getInstance();
 //  String url = 'https://sajilo.net/hatbazaar/index.php/rest/videos/get/api_key/hatbazarthamelktm1';

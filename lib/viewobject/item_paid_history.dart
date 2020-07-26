@@ -1,7 +1,7 @@
-import 'package:hatbazar/viewobject/product.dart';
-import 'package:hatbazar/viewobject/user.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/user.dart';
 import 'package:quiver/core.dart';
-import 'package:hatbazar/viewobject/common/ps_object.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_object.dart';
 
 class ItemPaidHistory extends PsObject<ItemPaidHistory> {
   ItemPaidHistory(

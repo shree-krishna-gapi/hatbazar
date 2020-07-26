@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:hatbazar/db/item_loacation_dao.dart';
+import 'package:flutterbuyandsell/db/item_loacation_dao.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/api/ps_api_service.dart';
-import 'package:hatbazar/viewobject/item_location.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/ps_api_service.dart';
+import 'package:flutterbuyandsell/viewobject/item_location.dart';
 
 import 'Common/ps_repository.dart';
 

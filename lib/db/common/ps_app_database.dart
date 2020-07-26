@@ -5,7 +5,7 @@ import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sembast/sembast.dart';
 import 'package:sembast/sembast_io.dart';
-import 'package:hatbazar/config/ps_config.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
 
 class PsAppDatabase {
   // A private constructor. Allows us to create instances of AppDatabase

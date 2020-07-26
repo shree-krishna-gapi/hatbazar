@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/config/ps_theme_data.dart';
-import 'package:hatbazar/db/common/ps_shared_preferences.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/config/ps_theme_data.dart';
+import 'package:flutterbuyandsell/db/common/ps_shared_preferences.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
 
 class PsThemeRepository extends PsRepository {
   PsThemeRepository({@required PsSharedPreferences psSharedPreferences}) {

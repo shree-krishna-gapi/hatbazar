@@ -1,24 +1,24 @@
 import 'dart:async';
 
-import 'package:hatbazar/db/favourite_product_dao.dart';
-import 'package:hatbazar/db/follower_item_dao.dart';
-import 'package:hatbazar/db/related_product_dao.dart';
-import 'package:hatbazar/viewobject/api_status.dart';
-import 'package:hatbazar/viewobject/favourite_product.dart';
-import 'package:hatbazar/viewobject/holder/mark_sold_out_item_parameter_holder.dart';
-import 'package:hatbazar/viewobject/follower_item.dart';
-import 'package:hatbazar/viewobject/related_product.dart';
+import 'package:flutterbuyandsell/db/favourite_product_dao.dart';
+import 'package:flutterbuyandsell/db/follower_item_dao.dart';
+import 'package:flutterbuyandsell/db/related_product_dao.dart';
+import 'package:flutterbuyandsell/viewobject/api_status.dart';
+import 'package:flutterbuyandsell/viewobject/favourite_product.dart';
+import 'package:flutterbuyandsell/viewobject/holder/mark_sold_out_item_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/follower_item.dart';
+import 'package:flutterbuyandsell/viewobject/related_product.dart';
 import 'package:flutter/material.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/api/ps_api_service.dart';
-import 'package:hatbazar/db/product_dao.dart';
-import 'package:hatbazar/db/product_map_dao.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
-import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
-import 'package:hatbazar/viewobject/product.dart';
-import 'package:hatbazar/viewobject/product_map.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/ps_api_service.dart';
+import 'package:flutterbuyandsell/db/product_dao.dart';
+import 'package:flutterbuyandsell/db/product_map_dao.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/viewobject/holder/product_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/product_map.dart';
 
 class ProductRepository extends PsRepository {
   ProductRepository(

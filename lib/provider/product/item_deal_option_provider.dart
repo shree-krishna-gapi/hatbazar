@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'package:hatbazar/repository/item_deal_option_repository.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/repository/item_deal_option_repository.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/viewobject/deal_option.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/viewobject/deal_option.dart';
 
 class ItemDealOptionProvider extends PsProvider {
   ItemDealOptionProvider({@required ItemDealOptionRepository repo, int limit = 0 })

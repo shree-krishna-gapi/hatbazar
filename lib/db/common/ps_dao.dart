@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'dart:core';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/db/common/ps_app_database.dart';
-import 'package:hatbazar/viewobject/common/ps_map_object.dart';
-import 'package:hatbazar/viewobject/common/ps_object.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/db/common/ps_app_database.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_map_object.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_object.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
 
 abstract class PsDao<T extends PsObject<T>> {
   PsDao();

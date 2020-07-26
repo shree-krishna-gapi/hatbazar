@@ -1,9 +1,9 @@
 import 'dart:async';
-import 'package:hatbazar/db/history_dao.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/db/history_dao.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
 
 import 'Common/ps_repository.dart';
 

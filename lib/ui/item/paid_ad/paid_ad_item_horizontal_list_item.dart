@@ -1,11 +1,11 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/paid_ad_item.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/paid_ad_item.dart';
 
 class PaidAdItemHorizontalListItem extends StatelessWidget {
   const PaidAdItemHorizontalListItem({

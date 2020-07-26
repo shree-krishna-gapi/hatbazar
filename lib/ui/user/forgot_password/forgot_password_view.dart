@@ -1,20 +1,20 @@
 import 'package:flutter/services.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
 
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/user/user_provider.dart';
-import 'package:hatbazar/repository/user_repository.dart';
-import 'package:hatbazar/ui/common/dialog/error_dialog.dart';
-import 'package:hatbazar/ui/common/dialog/success_dialog.dart';
-import 'package:hatbazar/ui/common/dialog/warning_dialog_view.dart';
-import 'package:hatbazar/ui/common/ps_button_widget.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/api_status.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/holder/forgot_password_parameter_holder.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/user/user_provider.dart';
+import 'package:flutterbuyandsell/repository/user_repository.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/error_dialog.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/success_dialog.dart';
+import 'package:flutterbuyandsell/ui/common/dialog/warning_dialog_view.dart';
+import 'package:flutterbuyandsell/ui/common/ps_button_widget.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/api_status.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/forgot_password_parameter_holder.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/provider/product/product_provider.dart';
-import 'package:hatbazar/ui/common/ps_expansion_tile.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/provider/product/product_provider.dart';
+import 'package:flutterbuyandsell/ui/common/ps_expansion_tile.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 
 class StatisticTileView extends StatefulWidget {
   const StatisticTileView(this.itemDetail);

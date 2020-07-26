@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/viewobject/common/language_value_holder.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/viewobject/common/language_value_holder.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/db/common/ps_shared_preferences.dart';
-import 'package:hatbazar/repository/Common/ps_repository.dart';
-import 'package:hatbazar/viewobject/common/language.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/db/common/ps_shared_preferences.dart';
+import 'package:flutterbuyandsell/repository/Common/ps_repository.dart';
+import 'package:flutterbuyandsell/viewobject/common/language.dart';
 
 class LanguageRepository extends PsRepository {
   LanguageRepository({@required PsSharedPreferences psSharedPreferences}) {

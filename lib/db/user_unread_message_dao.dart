@@ -1,6 +1,6 @@
-import 'package:hatbazar/viewobject/user_unread_message.dart';
+import 'package:flutterbuyandsell/viewobject/user_unread_message.dart';
 import 'package:sembast/sembast.dart';
-import 'package:hatbazar/db/common/ps_dao.dart';
+import 'package:flutterbuyandsell/db/common/ps_dao.dart';
 
 class UserUnreadMessageDao extends PsDao<UserUnreadMessage> {
   UserUnreadMessageDao._() {

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/product/product_provider.dart';
-import 'package:hatbazar/ui/common/ps_expansion_tile.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/user_intent_holder.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/product/product_provider.dart';
+import 'package:flutterbuyandsell/ui/common/ps_expansion_tile.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/user_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
 import 'package:url_launcher/url_launcher.dart';
 

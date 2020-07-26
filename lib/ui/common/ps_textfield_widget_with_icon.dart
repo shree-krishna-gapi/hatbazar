@@ -1,13 +1,13 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/product_list_intent_holder.dart';
-import 'package:hatbazar/viewobject/holder/product_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/product_list_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/product_parameter_holder.dart';
 
 class PsTextFieldWidgetWithIcon extends StatelessWidget {
   const PsTextFieldWidgetWithIcon(

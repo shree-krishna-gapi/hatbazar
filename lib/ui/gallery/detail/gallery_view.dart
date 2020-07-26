@@ -1,10 +1,10 @@
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/provider/gallery/gallery_provider.dart';
-import 'package:hatbazar/repository/gallery_repository.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar_no_app_bar_title.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/default_photo.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/provider/gallery/gallery_provider.dart';
+import 'package:flutterbuyandsell/repository/gallery_repository.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar_no_app_bar_title.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/default_photo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view_gallery.dart';

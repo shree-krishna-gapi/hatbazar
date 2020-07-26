@@ -1,17 +1,17 @@
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/provider/user/user_list_provider.dart';
-import 'package:hatbazar/repository/user_repository.dart';
-import 'package:hatbazar/ui/common/base/ps_widget_with_appbar.dart';
-import 'package:hatbazar/ui/user/list/user_vertical_list_item.dart';
-import 'package:hatbazar/utils/utils.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/provider/user/user_list_provider.dart';
+import 'package:flutterbuyandsell/repository/user_repository.dart';
+import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar.dart';
+import 'package:flutterbuyandsell/ui/user/list/user_vertical_list_item.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/user_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/user_intent_holder.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
 
 class FollowerUserListView extends StatefulWidget {
   @override

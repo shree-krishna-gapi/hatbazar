@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:hatbazar/viewobject/common/ps_holder.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_holder.dart';
 
 class AppleLoginParameterHolder extends PsHolder<AppleLoginParameterHolder> {
   AppleLoginParameterHolder(

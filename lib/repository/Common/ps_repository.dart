@@ -1,4 +1,4 @@
-import 'package:hatbazar/db/common/ps_shared_preferences.dart';
+import 'package:flutterbuyandsell/db/common/ps_shared_preferences.dart';
 
 class PsRepository {
   void loadValueHolder() {

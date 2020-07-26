@@ -1,5 +1,5 @@
 import 'package:quiver/core.dart';
-import 'package:hatbazar/viewobject/common/ps_map_object.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_map_object.dart';
 
 class CategoryMap extends PsMapObject<CategoryMap> {
   CategoryMap(

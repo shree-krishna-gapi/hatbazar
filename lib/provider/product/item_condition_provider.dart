@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'package:hatbazar/repository/item_condition_repository.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/repository/item_condition_repository.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/viewobject/condition_of_item.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/viewobject/condition_of_item.dart';
 
 class ItemConditionProvider extends PsProvider {
   ItemConditionProvider({@required ItemConditionRepository repo, int limit = 0})

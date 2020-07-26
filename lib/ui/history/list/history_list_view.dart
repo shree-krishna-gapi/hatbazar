@@ -1,13 +1,13 @@
-import 'package:hatbazar/api/common/ps_admob_banner_widget.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/provider/history/history_provider.dart';
-import 'package:hatbazar/repository/history_repsitory.dart';
-import 'package:hatbazar/ui/history/item/history_list_item.dart';
+import 'package:flutterbuyandsell/api/common/ps_admob_banner_widget.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/provider/history/history_provider.dart';
+import 'package:flutterbuyandsell/repository/history_repsitory.dart';
+import 'package:flutterbuyandsell/ui/history/item/history_list_item.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/product_detail_intent_holder.dart';
-import 'package:hatbazar/viewobject/product.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/product_detail_intent_holder.dart';
+import 'package:flutterbuyandsell/viewobject/product.dart';
 import 'package:provider/provider.dart';
 
 class HistoryListView extends StatefulWidget {

@@ -1,15 +1,15 @@
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/provider/chat/chat_history_list_provider.dart';
-import 'package:hatbazar/ui/chat/item/chat_seller_list_item.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/provider/chat/chat_history_list_provider.dart';
+import 'package:flutterbuyandsell/ui/chat/item/chat_seller_list_item.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
 
 import 'package:flutter/material.dart';
-import 'package:hatbazar/constant/ps_constants.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-import 'package:hatbazar/repository/chat_history_repository.dart';
-import 'package:hatbazar/viewobject/common/ps_value_holder.dart';
-import 'package:hatbazar/viewobject/holder/chat_history_parameter_holder.dart';
-import 'package:hatbazar/viewobject/holder/intent_holder/chat_history_intent_holder.dart';
+import 'package:flutterbuyandsell/constant/ps_constants.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/repository/chat_history_repository.dart';
+import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/chat_history_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/intent_holder/chat_history_intent_holder.dart';
 import 'package:provider/provider.dart';
 
 class ChatSellerListView extends StatefulWidget {

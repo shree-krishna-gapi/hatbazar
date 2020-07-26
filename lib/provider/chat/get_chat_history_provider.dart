@@ -1,14 +1,14 @@
 import 'dart:async';
 
-import 'package:hatbazar/repository/chat_history_repository.dart';
-import 'package:hatbazar/utils/utils.dart';
+import 'package:flutterbuyandsell/repository/chat_history_repository.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/api/common/ps_resource.dart';
-import 'package:hatbazar/api/common/ps_status.dart';
-import 'package:hatbazar/provider/common/ps_provider.dart';
-import 'package:hatbazar/viewobject/chat_history.dart';
-import 'package:hatbazar/viewobject/holder/get_chat_history_parameter_holder.dart';
-import 'package:hatbazar/viewobject/holder/make_mark_as_sold_parameter_holder.dart';
+import 'package:flutterbuyandsell/api/common/ps_resource.dart';
+import 'package:flutterbuyandsell/api/common/ps_status.dart';
+import 'package:flutterbuyandsell/provider/common/ps_provider.dart';
+import 'package:flutterbuyandsell/viewobject/chat_history.dart';
+import 'package:flutterbuyandsell/viewobject/holder/get_chat_history_parameter_holder.dart';
+import 'package:flutterbuyandsell/viewobject/holder/make_mark_as_sold_parameter_holder.dart';
 
 class GetChatHistoryProvider extends PsProvider {
   GetChatHistoryProvider({@required ChatHistoryRepository repo, int limit = 0})

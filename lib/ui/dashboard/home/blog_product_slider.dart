@@ -1,14 +1,14 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:hatbazar/viewobject/blog.dart';
-import 'package:hatbazar/config/ps_config.dart';
-import 'package:hatbazar/ui/common/ps_hero.dart';
-import 'package:hatbazar/constant/route_paths.dart';
-//import 'package:hatbazar/gapi/blog_view1.dart';
+import 'package:flutterbuyandsell/viewobject/blog.dart';
+import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:flutterbuyandsell/ui/common/ps_hero.dart';
+import 'package:flutterbuyandsell/constant/route_paths.dart';
+//import 'package:flutterbuyandsell/gapi/blog_view1.dart';
 class BlogSliderView extends StatefulWidget {
   const BlogSliderView({
     Key key,

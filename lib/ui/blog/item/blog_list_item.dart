@@ -1,7 +1,7 @@
-import 'package:hatbazar/config/ps_colors.dart';
-import 'package:hatbazar/constant/ps_dimens.dart';
-import 'package:hatbazar/ui/common/ps_ui_widget.dart';
-import 'package:hatbazar/viewobject/blog.dart';
+import 'package:flutterbuyandsell/config/ps_colors.dart';
+import 'package:flutterbuyandsell/constant/ps_dimens.dart';
+import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
+import 'package:flutterbuyandsell/viewobject/blog.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -78,6 +78,11 @@ class BlogListItemWidget extends StatelessWidget {
                 .copyWith(fontWeight: FontWeight.bold),
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.only(left: PsDimens.space8,),
+          child: Text('${blog.addedDateStr}',
+            style: TextStyle(fontSize: 12,color: Colors.black38),),
+        )
       ],
     );
   }
