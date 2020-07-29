@@ -10,7 +10,6 @@ import 'package:provider/provider.dart';
 import 'package:flutterbuyandsell/constant/ps_dimens.dart';
 import 'package:flutterbuyandsell/constant/route_paths.dart';
 import 'package:flutterbuyandsell/ui/common/ps_ui_widget.dart';
-
 class BlogListView extends StatefulWidget {
   const BlogListView({Key key, @required this.animationController})
       : super(key: key);

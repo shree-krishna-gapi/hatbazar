@@ -47,6 +47,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutterbuyandsell/gapi/fadeAnimation.dart';
 import 'dart:convert';
 import 'dart:async';
+import 'package:flutterbuyandsell/ui/dashboard/core/dashboard_view.dart';
 class ItemEntryView extends StatefulWidget {
   const ItemEntryView(
       {Key key, this.flag, this.item, @required this.animationController})
@@ -224,7 +225,7 @@ class _ItemEntryViewState extends State<ItemEntryView> {
               return SuccessDialog(
                 message: Utils.getString(context, 'item_entry_item_uploaded'),
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => DashboardView()));
                 },
               );
             });
