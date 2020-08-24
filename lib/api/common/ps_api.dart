@@ -42,7 +42,8 @@ abstract class PsApi {
     print('getting url of category -> ${PsConfig.ps_app_url}$url');
     try {
       final Response response = await client.get('${PsConfig.ps_app_url}$url');
-
+      // todo: response.body
+      print(response.body);
       final PsApiResponse psApiResponse = PsApiResponse(response);
 
       if (psApiResponse.isSuccessful()) {

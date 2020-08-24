@@ -1328,13 +1328,23 @@ class _HomeVideoBlogListWidget extends StatelessWidget {
                                        margin: EdgeInsets.only(left: 10),
                                        child: InkWell(
                                          onTap: () {
-                                           Navigator.push(
-                                               context,
-                                               MaterialPageRoute(builder: (context) => BlogVideo(
-                                                 title:snapshot.data[index].title,
-                                                 description: snapshot.data[index].description,
-                                                 videoSrc: snapshot.data[index].videoUrl
-                                               )));
+//                                           Navigator.push(
+//                                               context,
+//                                               MaterialPageRoute(builder: (context) => BlogVideo(
+//                                                 title:snapshot.data[index].title,
+//                                                 description: snapshot.data[index].description,
+//                                                 videoSrc: snapshot.data[index].videoUrl
+//                                               )));
+    showDialog<void>(
+    context: context,
+    barrierDismissible: false, // user must tap button!
+    builder: (BuildContext context) {
+    return BlogVideo(
+        title:snapshot.data[index].title,
+        description: snapshot.data[index].description,
+        videoSrc: snapshot.data[index].videoUrl
+    ); });
+
                                          },
                                          child: Column(
                                            mainAxisAlignment: MainAxisAlignment.start,

@@ -11,7 +11,8 @@ Future<List<VideoServices>> FetchVideoServices(http.Client client) async {
 //  String url = 'https://sajilo.net/hatbazaar/index.php/rest/videos/get/api_key/hatbazarthamelktm1';
   String url = "${PsConfig.ps_app_url}${PsUrl.ps_videolist_url}/api_key/hatbazarthamelktm1";
   String stringData;
-    print(url);
+//  print('**********************************');
+//    print(url);
   bool loadStatus = prefs.getBool('getLoadVideo');
   if(loadStatus == true) {
     prefs.setBool('getLoadVideo',false);

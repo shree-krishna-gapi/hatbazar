@@ -76,6 +76,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+	sourceCompatibility 1.8
+	targetCompatibility 1.8
+    }
+configurations {
+    all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+}
 }
 
 flutter {

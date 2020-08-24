@@ -8,7 +8,7 @@ import 'package:flutterbuyandsell/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterbuyandsell/viewobject/holder/intent_holder/map_pin_intent_holder.dart';
 import 'package:flutterbuyandsell/viewobject/product.dart';
-import 'package:geolocator/geolocator.dart';
+//import 'package:geolocator/geolocator.dart';
 import 'dart:math';
 class LocationTileView extends StatefulWidget {
   const LocationTileView({
@@ -29,42 +29,44 @@ class _LocationTileViewState extends State<LocationTileView> {
   @override
   void initState() {
     // TODO: implement initState
-    this._getCurrentLocation();
+//    this._getCurrentLocation();
     super.initState();
   }
-  _getCurrentLocation() async {
-    final position = await Geolocator().getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
-    double currentLatitude = position.latitude;
-    double currentLongitude = position.longitude;
-    double calculateDistance(lat1, lon1, lat2, lon2){
-      var p = 0.017453292519943295;
-      var c = cos;
-      var a = 0.5 - c((lat2 - lat1) * p)/2 +
-          c(lat1 * p) * c(lat2 * p) *
-              (1 - c((lon2 - lon1) * p))/2;
-      return 12742 * asin(sqrt(a));
-    }
-
-    List<dynamic> data = [
-      {
-        "lat": widget.item.lat,
-        "lng": widget.item.lng
-      },{
-        "lat": currentLatitude,
-        "lng": currentLongitude
-      }
-    ];
-    double totalDistance = 0;
-    for(var i = 0; i < data.length-1; i++){
-      totalDistance += calculateDistance(data[i]["lat"], data[i]["lng"], data[i+1]["lat"], data[i+1]["lng"]);
-    }
-    print('total is $totalDistance');
-    setState(() {
-      adtionalDistance = totalDistance.toString();
-    });
-  }
+//  _getCurrentLocation() async {
+//    print('ddfdfdf');
+//    final position = await Geolocator().getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+//    double currentLatitude = position.latitude;
+//    double currentLongitude = position.longitude;
+//    print('$currentLatitude fsfsf');
+//    double calculateDistance(lat1, lon1, lat2, lon2){
+//      var p = 0.017453292519943295;
+//      var c = cos;
+//      var a = 0.5 - c((lat2 - lat1) * p)/2 +
+//          c(lat1 * p) * c(lat2 * p) *
+//              (1 - c((lon2 - lon1) * p))/2;
+//      return 12742 * asin(sqrt(a));
+//    }
+//
+//    List<dynamic> data = [
+//      {
+//        "lat": widget.item.lat,
+//        "lng": widget.item.lng
+//      },{
+//        "lat": currentLatitude,
+//        "lng": currentLongitude
+//      }
+//    ];
+//    double totalDistance = 0;
+//    for(var i = 0; i < data.length-1; i++){
+//      totalDistance += calculateDistance(data[i]["lat"], data[i]["lng"], data[i+1]["lat"], data[i+1]["lng"]);
+//    }
+//    print('total is $totalDistance');
+//    setState(() {
+//      adtionalDistance = totalDistance.toString();
+//    });
+//  }
   @override
-  final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
+//  final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
   Widget build(BuildContext context) {
     final Widget _expansionTileTitleWidget = Text(
         Utils.getString(context, 'location_tile__title'),

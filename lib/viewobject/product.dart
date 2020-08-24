@@ -61,7 +61,9 @@ class Product extends PsObject<Product> {
       this.user,
       this.ratingDetail,
       this.isFavourited,
-      this.isOwner});
+      this.isOwner,
+        this.stateId
+      });
 
   String id;
   String catId;
@@ -97,6 +99,7 @@ class Product extends PsObject<Product> {
   String photoCount;
   String isFavourited;
   String isOwner;
+  String stateId;
   DefaultPhoto defaultPhoto;
   Category category;
   SubCategory subCategory;
@@ -121,6 +124,10 @@ class Product extends PsObject<Product> {
 
   @override
   Product fromMap(dynamic dynamicData) {
+    print('******************');
+
+    print(stateId);
+    print('******************');
     if (dynamicData != null) {
       return Product(
         id: dynamicData['id'],
@@ -157,6 +164,7 @@ class Product extends PsObject<Product> {
         photoCount: dynamicData['photo_count'],
         isFavourited: dynamicData['is_favourited'],
         isOwner: dynamicData['is_owner'],
+        stateId: dynamicData['state_id'],
         defaultPhoto: DefaultPhoto().fromMap(dynamicData['default_photo']),
         category: Category().fromMap(dynamicData['category']),
         subCategory: SubCategory().fromMap(dynamicData['sub_category']),
@@ -213,6 +221,7 @@ class Product extends PsObject<Product> {
       data['photo_count'] = object.photoCount;
       data['is_favourited'] = object.isFavourited;
       data['is_owner'] = object.isOwner;
+      data['state_id'] = object.stateId;
       data['default_photo'] = DefaultPhoto().toMap(object.defaultPhoto);
       data['category'] = Category().toMap(object.category);
       data['sub_category'] = SubCategory().toMap(object.subCategory);

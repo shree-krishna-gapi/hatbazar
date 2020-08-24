@@ -614,10 +614,10 @@ class _HomeViewState extends State<DashboardView>
                                       rightButtonText: Utils.getString(context,
                                           'home__logout_dialog_ok_button'),
                                       onAgreeTap: () async {
-                                        // setState(() {
-                                        //   _currentIndex =
-                                        //       PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT;
-                                        // });
+                                         setState(() {
+                                           _currentIndex =
+                                               PsConst.REQUEST_CODE__MENU_HOME_FRAGMENT;
+                                         });
                                         callLogout(
                                             provider,
                                             deleteTaskProvider,

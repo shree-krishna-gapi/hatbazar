@@ -5,21 +5,23 @@ class ItemLocation extends PsObject<ItemLocation> {
   ItemLocation(
       {this.id,
       this.name,
+      this.stateId,
       this.lat,
       this.lng,
       this.status,
       this.addedDate,
       this.addedDateStr,
-//        this.stateId,
+
       });
   String id;
   String name;
+  String stateId;
   String lat;
   String lng;
   String status;
   String addedDate;
   String addedDateStr;
-//  int stateId;
+
   @override
   bool operator ==(dynamic other) => other is ItemLocation && id == other.id;
 
@@ -39,12 +41,13 @@ class ItemLocation extends PsObject<ItemLocation> {
       return ItemLocation(
           id: dynamicData['id'],
           name: dynamicData['name'],
+          stateId: dynamicData['state_id'],
           lat: dynamicData['lat'],
           lng: dynamicData['lng'],
           status: dynamicData['status'],
           addedDate: dynamicData['added_date'],
           addedDateStr: dynamicData['added_date_str'],
-//          stateId: dynamicData['state_id'],
+
       );
     } else {
       return null;
@@ -57,12 +60,13 @@ class ItemLocation extends PsObject<ItemLocation> {
       final Map<String, dynamic> data = <String, dynamic>{};
       data['id'] = object.id;
       data['name'] = object.name;
+      data['state_id'] = object.stateId;
       data['lat'] = object.lat;
       data['lng'] = object.lng;
       data['status'] = object.status;
       data['added_date'] = object.addedDate;
       data['added_date_str'] = object.addedDateStr;
-//      data['state_id'] = object.stateId;
+
       return data;
     } else {
       return null;

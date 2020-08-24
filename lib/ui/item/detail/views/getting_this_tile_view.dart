@@ -10,10 +10,12 @@ class GettingThisTileView extends StatelessWidget {
     Key key,
     @required this.detailOptionId,
     @required this.address,
+    @required this.stateId,
   }) : super(key: key);
 
   final String detailOptionId;
   final String address;
+  final String stateId;
   @override
   Widget build(BuildContext context) {
     final Widget _expansionTileTitleWidget = Text(
@@ -73,10 +75,16 @@ class GettingThisTileView extends StatelessWidget {
                             const SizedBox(
                               height: PsDimens.space8,
                             ),
-                            Text(
-                              address != '' ? address : '',
-                              style: Theme.of(context).textTheme.bodyText1,
-                            )
+                            Row(
+                              children: [
+                                Text(
+                                  address != '' ? address : '',
+                                  style: Theme.of(context).textTheme.bodyText1,
+                                ),
+//                                stateId != '' ? Text('$stateId',style: Theme.of(context).textTheme.bodyText1,) :
+//                                Text(''),
+                              ],
+                            ),
                           ],
                         ),
                       ),

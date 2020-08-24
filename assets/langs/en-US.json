@@ -285,7 +285,7 @@
   "home__menu_drawer_paid_ad_transaction": "Paid AD Transaction",
   "home__menu_drawer_user_history": "User History",
   "home__menu_drawer_purchased_product": "Purchased Product",
-  "home__menu_drawer_logout": "Logout",
+  "home__drawer_menu_popular_item": "Logout",
   "home__menu_drawer_contact_us": "Contact Us",
   "home__logout_dialog_cancel_button": "CANCEL",
   "home__logout_dialog_ok_button": "OK",

@@ -41,3 +41,6 @@ ui/item/list_with_filter/product_list_with_filter_view.dart 170 line no.
 
 
 item_location comment state_id cause of not posting product
+
+
+YoutubePlayerController(initialVideoId: snapshot.data[index].videoUrl);

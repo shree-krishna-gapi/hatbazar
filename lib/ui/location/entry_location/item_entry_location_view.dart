@@ -11,9 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:flutterbuyandsell/viewobject/common/ps_value_holder.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
-
 import 'item_entry_location_list_view_item.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 class ItemEntryLocationView extends StatefulWidget {
   // const ItemEntryLocationView({@required this.categoryId});
 
@@ -126,11 +125,14 @@ class ItemEntryLocationViewState extends State<ItemEntryLocationView>
                             child: ItemEntryLocationListViewItem(
                               itemLocation:
                                   provider.itemLocationList.data[index],
-                              onTap: () {
+                              onTap: () async{
+                                SharedPreferences prefs = await SharedPreferences.getInstance();
+                                String sId = provider.itemLocationList.data[index].stateId;
+                                int integerId = int.parse(sId);
+                                prefs.setInt('stateId', integerId);
+
                                 Navigator.pop(context,
                                     provider.itemLocationList.data[index]);
-                                print(
-                                    provider.itemLocationList.data[index].name);
                                 // if (index == 0) {
                                 //   Navigator.pushNamed(
                                 //     context,

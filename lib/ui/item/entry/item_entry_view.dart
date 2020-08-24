@@ -677,7 +677,7 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
   LatLng _latlng;
 //gapi
   int productStateId;
-  int stateId;
+
   String stringStateId;
   int districtIndex;
   String districtText;
@@ -695,9 +695,7 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
           return AlertDialog(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(5.0))),
-
               contentPadding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-
               content: Container(
                   height: districtDialogHeight,
                   width: double.infinity,
@@ -751,7 +749,7 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
                                     itemBuilder: (BuildContext context, int index) {
 //                                      print('you choose state id-> $stateId && ${showData[index]['stateId']}');
                                       return index == districtIndex ? InkWell(
-                                        child: showData[index]['stateId'] == stateId ? Container(
+                                        child: showData[index]['stateId'] == z ? Container(
                                           color: PsColors.mainColor,
                                           padding: EdgeInsets.symmetric(horizontal: 15.0),
                                           child: Padding(
@@ -960,6 +958,8 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
           width: double.infinity,
           titleText: Utils.getString(context, 'login__submit'),
           onPressed: () async {
+            final SharedPreferences prefs = await SharedPreferences.getInstance();
+            int stateId = prefs.getInt('stateId');
           print(productStateId);
             if (!widget.isSelectedFirstImagePath &&
                 !widget.isSelectedSecondImagePath &&
@@ -999,7 +999,8 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
                           Utils.getString(context, 'item_entry_need_category'),
                     );
                   });
-            } else if (widget.subCategoryController.text == null ||
+            }
+            else if (widget.subCategoryController.text == null ||
                 widget.subCategoryController.text == '') {
               showDialog<dynamic>(
                   context: context,
@@ -1068,7 +1069,17 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
                           context, 'item_entry_need_deal_option'),
                     );
                   });
-            } else {
+            }else if (stateId == 11) {
+              showDialog<dynamic>(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return WarningDialog(
+                      message:
+                      Utils.getString(context, 'choose__state'),
+                    );
+                  });
+            }
+            else {
               if (widget.flag == PsConst.ADD_NEW_ITEM) {
                 // TODO:// App Product Item
                 final ItemEntryParameterHolder itemEntryParameterHolder =
@@ -1545,37 +1556,10 @@ class _AllControllerTextWidgetState extends State<AllControllerTextWidget> {
           style: Theme.of(context).textTheme.button.copyWith(),
           readOnly: true,
           onTap: () async {
-            SharedPreferences prefs = await SharedPreferences.getInstance();
-            String existingStringStateId = prefs.getString('stringStateIdExisting');
-            if( existingStringStateId == 'itm_loc409cd45d76efdcb4613f978cbdb0c9c3') {
-              Fluttertoast.showToast(
-                msg: Utils.getString(context, 'warning__choose__state'),
-                toastLength: Toast.LENGTH_SHORT,
-                gravity: ToastGravity.BOTTOM,
-                timeInSecForIosWeb: 1,
-                backgroundColor: PsColors.mainColor,
-                textColor: Colors.white,
-                fontSize: 16.0,
-              );
-            } else
-            if(existingStringStateId == 'itm_locc91e7fd5ffc739b26951228b0a564569') {
-              _districtDialog(1);
-            }else if (existingStringStateId == 'itm_loc892e3dbe2fbf07ae7b19455a4e75b28c') {
-              _districtDialog(2);
-            }else if (existingStringStateId == 'itm_loca7b66748e03d457e976ca63a50e1bde0') {
-              _districtDialog(3);
-            }
-            else if (existingStringStateId == 'itm_loc385aa4e50e654df21b9de999273c0a2c') {
-              _districtDialog(4);
-            }
-            else if (existingStringStateId == 'itm_loc413981c0f76ad269307aaee5eff59517') {
-              _districtDialog(5);
-            }
-            else if (existingStringStateId == 'itm_locb0f1625541a5cdebaf354c027b8462ee') {
-              _districtDialog(6);
-            }
-            else if (existingStringStateId == 'itm_loc94a5a8f9492d0a5ec93165f0f639695d') {
-              _districtDialog(7);
+            final SharedPreferences prefs = await SharedPreferences.getInstance();
+            int stateId = prefs.getInt('stateId');
+            if( stateId != 11) {
+              _districtDialog(stateId);
             }
             else {
               Fluttertoast.showToast(

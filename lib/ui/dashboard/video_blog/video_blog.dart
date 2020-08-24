@@ -1,11 +1,7 @@
-import 'dart:async';
-import 'dart:convert';
+
+//https://www.youtube.com/embed/nPt8bK2gbaU
+
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-
-
-
-
 
 import 'package:flutterbuyandsell/config/ps_colors.dart';
 import 'package:flutterbuyandsell/constant/ps_dimens.dart';
@@ -18,6 +14,12 @@ import 'package:http/http.dart' as http;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutterbuyandsell/gapi/fadeAnimation.dart';
 import 'package:flutterbuyandsell/config/ps_config.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
+
+import 'package:flutter/rendering.dart';
+
 class BlogVideo extends StatefulWidget {
   BlogVideo({this.title,this.description,this.videoSrc});
   final String title;
@@ -28,119 +30,127 @@ class BlogVideo extends StatefulWidget {
 }
 
 class _BlogVideoState extends State<BlogVideo> {
-  final Completer<WebViewController> _controller =
-  Completer<WebViewController>();
-  String url;
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
+  YoutubePlayerController _controller;
+  TextEditingController _idController;
+  TextEditingController _seekToController;
+
+  PlayerState _playerState;
+  YoutubeMetaData _videoMetaData;
+  double _volume = 100;
+  bool _muted = false;
+  bool _isPlayerReady = false;
+  String usedTitle;
+  String usedDescription;
+  String videoId;
+  @override
+  void initState() {
+    super.initState();
+    videoId = YoutubePlayer.convertUrlToId(widget.videoSrc);
+    playFn(widget.title,widget.description,widget.videoSrc);
+    _controller = YoutubePlayerController(
+      initialVideoId: videoId,
+      flags: const YoutubePlayerFlags(
+          mute: false,
+          autoPlay: true,
+          disableDragSeek: false,
+          loop: false,
+          isLive: false,
+          forceHD: false,
+          enableCaption: true,
+
+//          endAt: 10
+      ),
+    );
+  }
+  playFn(title,description,url) {
+    String videoId;
+    setState(() {
+      videoId = YoutubePlayer.convertUrlToId(url);
+      usedTitle = title;
+      usedDescription = description;
+    });
+    if(videoId != null) {
+
+      _idController = TextEditingController();
+      _seekToController = TextEditingController();
+      _videoMetaData = const YoutubeMetaData();
+      _playerState = PlayerState.unknown;
+    }
+    else {
+
+    }
+  }
+
+  bool test = false;
   @override
   Widget build(BuildContext context) {
-    url = widget.videoSrc;
-    return Scaffold(
-      body: ListView(
-        children: <Widget>[
-          Builder(builder: (BuildContext context) {
-            return CustomScrollView(
-              shrinkWrap: true,
-              slivers: <Widget>[
-               SliverAppBar(
-                expandedHeight: 540.0,
-                floating: false,
-                pinned: true,
-              backgroundColor: Colors.grey,
-              flexibleSpace: WebView(
-                initialUrl: url, //https://www.youtube.com/embed/mdvJJMAjZlc
-                javascriptMode: JavascriptMode.unrestricted,
-                onWebViewCreated: (WebViewController webViewController) {
-                  _controller.complete(webViewController);
-                },
+    return YoutubePlayerBuilder(
+      player: YoutubePlayer(
+        controller: _controller,
+        showVideoProgressIndicator: true,
+        progressIndicatorColor: PsColors.mainColor,
+        topActions: <Widget>[
+          const SizedBox(width: 8.0),
+          Expanded(
+            child: Text(
+              _controller.metadata.title,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
               ),
-
-               )],
-            );
-          },
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
+            ),
           ),
-          SizedBox(height: 20,),
-          Container(
-              height: 220,
-//      color: Colors.black12,
-              child: FutureBuilder<List<VideoServices>>(
-                  future: FetchVideoServices(http.Client()),
-                  builder: (context, snapshot) {
-                    if (snapshot.hasError) ;
-                    return snapshot.hasData ?
-                    ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: snapshot.data == null ? 0 : snapshot.data.length,
-                        itemBuilder: (BuildContext context,int index) {
-                          return Container(
-                            height: 220,
-                            width: 140,
-                            margin: EdgeInsets.only(left: 10),
-                            child: InkWell(
-                              onTap: () {
-                                setState(() {
-//    usedTitle = snapshot.data[index].title;
-//    usedDescription = snapshot.data[index].description;
-                                  url = 'https://www.youtube.com/embed/mdvJJMAjZlc';
-                                });
-//    play(snapshot.data[index].videoUrl);
-
-                              },
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Stack(
-                                    children: <Widget>[
-                                      Container(
-                                        color: Colors.green,
-                                        width: double.infinity,
-                                        height: 100,
-                                        child: CachedNetworkImage(
-                                          alignment: Alignment.topLeft,
-                                          placeholder: (context, url) => Image.asset(
-                                            'assets/images/placeholder_image.png',
-                                            width: double.infinity,
-                                            height: 80.0,
-                                            fit: BoxFit.fitWidth,
-                                          ),
-                                          imageUrl: '${PsConfig.ps_app_image_thumbs_url}${snapshot.data[index].imgPath}',
-                                          fit: BoxFit.cover,
-                                          errorWidget: (context, url, error) => Image.asset(
-                                            'assets/images/placeholder_image.png',
-                                            width: double.infinity,
-//                      height: blogImageHeight,
-                                            fit: BoxFit.fitWidth,
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned(child: Container(
-                                        padding: EdgeInsets.fromLTRB(5, 2, 5, 2)
-                                        ,child: Text('${snapshot.data[index].addedDateStr}',style: TextStyle(color: Colors.white, fontSize: 12),
-
-                                      ), color: Colors.black38,),
-                                        bottom: 5, right: 5,),
-
-                                    ],
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(top:8.0,bottom:3.0),
-                                    child: Text('${snapshot.data[index].description}'),
-                                  ),
-                                  Text('${snapshot.data[index].title}',style: TextStyle(
-                                      fontSize: 12,color: Colors.black38
-                                  ),)
-                                ],
-                              ),
-                            ),
-                          ); } ) : Center(child: CircularProgressIndicator()); } ))
+          IconButton(
+            icon: const Icon(
+              Icons.settings,
+              color: Colors.white,
+              size: 25.0,
+            ),
+            onPressed: () {
+            },
+          ),
         ],
+        onReady: () {
+          _isPlayerReady = true;
+        },
+
+      ),
+      builder: (context, player) => Scaffold(
+        key: _scaffoldKey,
+        backgroundColor: Colors.black54,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            player,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(12,10,15,5),
+              child: Text('$usedDescription',
+                  style: Theme.of(context).textTheme.headline6.copyWith(
+                      fontWeight: FontWeight.w600, fontSize: 18,
+                      color: Colors.white.withOpacity(0.8))),
+            ),
+            Padding(
+                padding: const EdgeInsets.only(
+                    left: PsDimens.space12,
+                    right: PsDimens.space12,
+                    bottom: PsDimens.space36),
+                child:  Text('$usedTitle',style: TextStyle(
+                    fontSize: 12,color: Colors.white.withOpacity(0.8)
+                ),)
+            ),
+
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.close,color: Colors.white.withOpacity(0.8),size: 26,),
+          backgroundColor: Colors.transparent , //Colors.white24,
+          onPressed: () {Navigator.of(context).pop();},
+        ),
       ),
     );
   }
 }
-
-
-
-
-
-

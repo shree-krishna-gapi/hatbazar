@@ -661,7 +661,10 @@ class _ProductDetailState extends State<ProductDetailView>
                                       detailOptionId:
                                       provider.itemDetail.data.dealOptionId,
                                       address:
-                                      provider.itemDetail.data.address),
+                                      provider.itemDetail.data.address,
+                                      stateId:
+                                      provider.itemDetail.data.stateId
+                                  ),
                                   StatisticTileView(
                                     provider,
                                   ),
