@@ -663,7 +663,15 @@ class _ProductDetailState extends State<ProductDetailView>
                                       address:
                                       provider.itemDetail.data.address,
                                       stateId:
-                                      provider.itemDetail.data.stateId
+                                      widget.product.user.stateId,
+                                      districtId:
+                                      widget.product.user.districtId,
+                                      municipalityId:
+                                      widget.product.user.municipalityId,
+                                  wardId:
+                                      widget.product.user.wardId,
+                                      streetName:
+                                      widget.product.user.streetName
                                   ),
                                   StatisticTileView(
                                     provider,

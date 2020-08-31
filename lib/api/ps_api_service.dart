@@ -357,7 +357,7 @@ class PsApiService extends PsApi {
       String itemId, String loginUserId) async {
     final String url =
         '${PsUrl.ps_item_detail_url}/api_key/${PsConfig.ps_api_key}/id/$itemId/login_user_id/$loginUserId';
-    print('producttttt2 $url');
+    // print('producttttt2 $url');
     return await getServerCall<Product, Product>(Product(), url);
   }
 
@@ -415,7 +415,7 @@ class PsApiService extends PsApi {
 
     final String url =
         '${PsUrl.ps_videolist_url}/api_key/${PsConfig.ps_api_key}/limit/$limit/offset/$offset';
-    print('video-> $url');
+    // print('video-> $url');
     return await getServerCall<Video, List<Video>>(Video(), url);
   }
 

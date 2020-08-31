@@ -37,7 +37,7 @@ class User extends PsObject<User> {
       this.isFollowed,
       this.ratingDetail,
       this.isFavourited,
-      this.isOwner});
+      this.isOwner,this.stateId,this.districtId,this.municipalityId,this.wardId,this.streetName});
   String userId;
   String userIsSysAdmin;
   String facebookId;
@@ -72,7 +72,11 @@ class User extends PsObject<User> {
   RatingDetail ratingDetail;
   String isFavourited;
   String isOwner;
-
+  String stateId;
+  String districtId;
+  String municipalityId;
+  String wardId;
+  String streetName;
   @override
   bool operator ==(dynamic other) => other is User && userId == other.userId;
 
@@ -124,6 +128,11 @@ class User extends PsObject<User> {
         ratingDetail: RatingDetail().fromMap(dynamicData['rating_details']),
         isFavourited: dynamicData['is_favourited'],
         isOwner: dynamicData['is_owner'],
+        stateId: dynamicData['state_id'],
+        districtId: dynamicData['district_id'],
+        municipalityId: dynamicData['municipality_id'],
+        wardId: dynamicData['ward_id'],
+        streetName: dynamicData['street_name'],
         // city: ShippingCity().fromMap(dynamicData['city'])
       );
     } else {
@@ -169,6 +178,11 @@ class User extends PsObject<User> {
       data['rating_details'] = RatingDetail().toMap(object.ratingDetail);
       data['is_favourited'] = object.isFavourited;
       data['is_owner'] = object.isOwner;
+      data['state_id'] = object.stateId;
+      data['district_id'] = object.districtId;
+      data['municipality_id'] = object.municipalityId;
+      data['ward_id'] = object.wardId;
+      data['street_name'] = object.streetName;
       return data;
     } else {
       return null;
