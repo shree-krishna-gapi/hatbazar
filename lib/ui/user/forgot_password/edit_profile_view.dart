@@ -43,7 +43,7 @@ class _EditProfileViewState extends State<EditProfileView>
   final TextEditingController cityController = TextEditingController();
 
   bool bindDataFirstTime = true;
-
+  String stateId;
   @override
   void initState() {
     animationController =
@@ -95,6 +95,7 @@ class _EditProfileViewState extends State<EditProfileView>
                 if (bindDataFirstTime) {
                   userNameController.text = userProvider.user.data.userName;
                   emailController.text = userProvider.user.data.userEmail;
+                  stateId = userProvider.user.data.stateId;
                   phoneController.text = userProvider.user.data.userPhone;
                   aboutMeController.text = userProvider.user.data.userAboutMe;
 
@@ -112,6 +113,7 @@ class _EditProfileViewState extends State<EditProfileView>
                         aboutMeController: aboutMeController,
                         addressController: addressController,
                         cityController: cityController,
+                        stateId: stateId,
                       ),
                       const SizedBox(
                         height: PsDimens.space16,
@@ -528,14 +530,14 @@ class _UserFirstCardWidget extends StatelessWidget {
       @required this.phoneController,
       @required this.aboutMeController,
       @required this.addressController,
-      @required this.cityController});
+      @required this.cityController,this.stateId});
   final TextEditingController userNameController;
   final TextEditingController emailController;
   final TextEditingController phoneController;
   final TextEditingController aboutMeController;
   final TextEditingController addressController;
   final TextEditingController cityController;
-
+  final String stateId;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -559,6 +561,7 @@ class _UserFirstCardWidget extends StatelessWidget {
               keyboardType: TextInputType.emailAddress,
               textAboutMe: false,
               textEditingController: emailController),
+          // Text('$stateId'),
           PsTextFieldWidget(
               titleText: Utils.getString(context, 'edit_profile__phone'),
               textAboutMe: false,

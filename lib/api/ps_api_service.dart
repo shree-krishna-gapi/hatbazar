@@ -47,6 +47,7 @@ class PsApiService extends PsApi {
   Future<PsResource<ShippingCost>> postZoneShippingMethod(
       Map<dynamic, dynamic> jsonMap) async {
     const String url = '${PsUrl.ps_post_ps_zone_shipping_method_url}';
+    print('postZoneShippingMethod $url');
     return await postData<ShippingCost, ShippingCost>(
         ShippingCost(), url, jsonMap);
   }
@@ -57,6 +58,7 @@ class PsApiService extends PsApi {
   Future<PsResource<User>> postUserRegister(
       Map<dynamic, dynamic> jsonMap) async {
     const String url = '${PsUrl.ps_post_ps_user_register_url}';
+
     return await postData<User, User>(User(), url, jsonMap);
   }
 
@@ -126,6 +128,8 @@ class PsApiService extends PsApi {
   Future<PsResource<User>> postProfileUpdate(
       Map<dynamic, dynamic> jsonMap) async {
     const String url = '${PsUrl.ps_post_ps_user_update_profile_url}';
+    print('postProfileUpdate $url');
+    // print(postData<User, User>);
     return await postData<User, User>(User(), url, jsonMap);
   }
 
@@ -161,9 +165,11 @@ class PsApiService extends PsApi {
   ///
   Future<PsResource<User>> getUserDetail(Map<dynamic, dynamic> jsonMap) async {
     const String url = '${PsUrl.ps_user_detail_url}';
+    print('getUserDetail $url');
     return await postData<User, User>(User(), url, jsonMap);
   }
 
+  ///
   ///
   /// Touch Count
   ///

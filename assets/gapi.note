@@ -1,3 +1,13 @@
+current
+ui/user/forgot_password/edit_profile_view.dart
+
+
+
+
+
+***************************************
+
+
 user/register/register_view
 adding field (state district municipality ward and street)
 getCategoryList -> rest/categories/get/api_key/hatbazarthamelktm1/limit/10/offset/0  // offline save data

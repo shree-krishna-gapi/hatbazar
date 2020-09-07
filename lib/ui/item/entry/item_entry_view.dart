@@ -41,7 +41,7 @@ import 'package:multi_image_picker/multi_image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 import 'package:flutterbuyandsell/constant/ps_dimens.dart';
-import 'package:flutterbuyandsell/district.dart';
+// import 'package:flutterbuyandsell/district.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutterbuyandsell/gapi/fadeAnimation.dart';
