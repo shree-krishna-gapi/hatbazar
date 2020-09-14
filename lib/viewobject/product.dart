@@ -164,7 +164,7 @@ class Product extends PsObject<Product> {
         photoCount: dynamicData['photo_count'],
         isFavourited: dynamicData['is_favourited'],
         isOwner: dynamicData['is_owner'],
-        stateId: dynamicData['state_id'],
+        stateId: dynamicData['province_id'],
         defaultPhoto: DefaultPhoto().fromMap(dynamicData['default_photo']),
         category: Category().fromMap(dynamicData['category']),
         subCategory: SubCategory().fromMap(dynamicData['sub_category']),
@@ -221,7 +221,7 @@ class Product extends PsObject<Product> {
       data['photo_count'] = object.photoCount;
       data['is_favourited'] = object.isFavourited;
       data['is_owner'] = object.isOwner;
-      data['state_id'] = object.stateId;
+      data['province_id'] = object.stateId;
       data['default_photo'] = DefaultPhoto().toMap(object.defaultPhoto);
       data['category'] = Category().toMap(object.category);
       data['sub_category'] = SubCategory().toMap(object.subCategory);

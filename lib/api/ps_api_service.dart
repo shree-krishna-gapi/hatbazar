@@ -128,8 +128,8 @@ class PsApiService extends PsApi {
   Future<PsResource<User>> postProfileUpdate(
       Map<dynamic, dynamic> jsonMap) async {
     const String url = '${PsUrl.ps_post_ps_user_update_profile_url}';
-    print('postProfileUpdate $url');
-    // print(postData<User, User>);
+    print('postProfileUpdate->');
+    // print(User);
     return await postData<User, User>(User(), url, jsonMap);
   }
 

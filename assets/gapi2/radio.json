@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Kantipur",
+        "url": "http://broadcast.radiokantipur.com:7248/stream",
+        "logo": "assets/images/baesline_access_time_black_24.png",
+        "channel": "105.4",
+        "picture": ""
+    },
+    {
+        "name": "Kantipur",
+        "url": "http://live.itechnepal.com:8640/stream?type=.mp3",
+        "logo": "assets/images/baesline_access_time_black_24.png",
+        "channel": "105.4",
+        "picture": ""
+    },
+    {
+        "name": "Kantipur",
+        "url": "http://mp3channels.webradio.antenne.de:80/antenne",
+        "logo": "assets/images/baesline_access_time_black_24.png",
+        "channel": "105.4",
+        "picture": ""
+    },
+    {
+        "name": "Internet Radio",
+        "url": "http://server.internetradiohd.com/stream11",
+        "logo": "assets/images/baesline_access_time_black_24.png",
+        "channel": "105.4",
+        "picture": ""
+    },
+    {
+        "name": "Nagarik FM",
+        "url": "",
+        "logo": "assets/images/baesline_access_time_black_24.png",
+        "channel": "105.4",
+        "picture": ""
+    }
+]

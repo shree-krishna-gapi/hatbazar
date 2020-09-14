@@ -13,6 +13,11 @@ class ProfileUpdateParameterHolder
     @required this.userAddress,
     @required this.city,
     @required this.deviceToken,
+    @required this.stateId,
+    @required this.districtId,
+    @required this.municipalityId,
+    @required this.wardId,
+    @required this.streetName,
   });
 
   final String userId;
@@ -23,7 +28,11 @@ class ProfileUpdateParameterHolder
   final String userAddress;
   final String city;
   final String deviceToken;
-
+  final String stateId;
+  final String districtId;
+  final String municipalityId;
+  final String wardId;
+  final String streetName;
   @override
   Map<String, dynamic> toMap() {
     final Map<String, dynamic> map = <String, dynamic>{};
@@ -36,6 +45,11 @@ class ProfileUpdateParameterHolder
     map['user_address'] = userAddress;
     map['city'] = city;
     map['device_token'] = deviceToken;
+    map['state_id'] = stateId;
+    map['district_id'] = districtId;
+    map['municipality_id'] = municipalityId;
+    map['ward_id'] = wardId;
+    map['street_name'] = streetName;
 
     return map;
   }
@@ -51,6 +65,11 @@ class ProfileUpdateParameterHolder
       userAddress: dynamicData['user_address'],
       city: dynamicData['city'],
       deviceToken: dynamicData['device_token'],
+      stateId: dynamicData['state_id'],
+      districtId: dynamicData['district_id'],
+      municipalityId: dynamicData['municipality_id'],
+      wardId: dynamicData['ward_id'],
+      streetName: dynamicData['street_name'],
     );
   }
 

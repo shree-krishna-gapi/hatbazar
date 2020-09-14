@@ -77,10 +77,11 @@ class UserProvider extends PsProvider {
   }
 
   Future<dynamic> postUserRegister(
+
     Map<dynamic, dynamic> jsonMap,
   ) async {
     isLoading = true;
-
+    print('#####');
     isConnectedToInternet = await Utils.checkInternetConnectivity();
 
     _user = await _repo.postUserRegister(
@@ -160,7 +161,9 @@ class UserProvider extends PsProvider {
     Map<dynamic, dynamic> jsonMap,
   ) async {
     isLoading = true;
-
+    print('gapi');
+    print(jsonMap);
+    print('gapi');
     isConnectedToInternet = await Utils.checkInternetConnectivity();
 
     _holderUser = await _repo.postProfileUpdate(jsonMap, isConnectedToInternet,

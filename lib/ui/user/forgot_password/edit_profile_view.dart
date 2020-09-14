@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutterbuyandsell/api/common/ps_resource.dart';
 import 'package:flutterbuyandsell/config/ps_colors.dart';
@@ -5,6 +6,7 @@ import 'package:flutterbuyandsell/config/ps_config.dart';
 import 'package:flutterbuyandsell/constant/ps_constants.dart';
 import 'package:flutterbuyandsell/constant/ps_dimens.dart';
 import 'package:flutterbuyandsell/constant/route_paths.dart';
+import 'package:flutterbuyandsell/profileAddress.dart';
 import 'package:flutterbuyandsell/provider/user/user_provider.dart';
 import 'package:flutterbuyandsell/repository/user_repository.dart';
 import 'package:flutterbuyandsell/ui/common/base/ps_widget_with_appbar.dart';
@@ -23,6 +25,7 @@ import 'package:flutter/material.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class EditProfileView extends StatefulWidget {
   @override
@@ -43,7 +46,7 @@ class _EditProfileViewState extends State<EditProfileView>
   final TextEditingController cityController = TextEditingController();
 
   bool bindDataFirstTime = true;
-  String stateId;
+  // String stateId;
   @override
   void initState() {
     animationController =
@@ -95,7 +98,6 @@ class _EditProfileViewState extends State<EditProfileView>
                 if (bindDataFirstTime) {
                   userNameController.text = userProvider.user.data.userName;
                   emailController.text = userProvider.user.data.userEmail;
-                  stateId = userProvider.user.data.stateId;
                   phoneController.text = userProvider.user.data.userPhone;
                   aboutMeController.text = userProvider.user.data.userAboutMe;
 
@@ -113,7 +115,11 @@ class _EditProfileViewState extends State<EditProfileView>
                         aboutMeController: aboutMeController,
                         addressController: addressController,
                         cityController: cityController,
-                        stateId: stateId,
+                        stateId: userProvider.user.data.stateId,
+                        districtId: userProvider.user.data.districtId,
+                        municipalityId: userProvider.user.data.municipalityId,
+                        wardId: userProvider.user.data.wardId,
+                        streetName: userProvider.user.data.streetName,
                       ),
                       const SizedBox(
                         height: PsDimens.space16,
@@ -149,6 +155,7 @@ class _TwoButtonWidget extends StatelessWidget {
     @required this.aboutMeController,
     @required this.addressController,
     @required this.cityController,
+    @required this.stateId,
   });
 
   final TextEditingController userNameController;
@@ -159,7 +166,7 @@ class _TwoButtonWidget extends StatelessWidget {
   final TextEditingController cityController;
 
   final UserProvider userProvider;
-
+  final String stateId;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -171,7 +178,14 @@ class _TwoButtonWidget extends StatelessWidget {
             hasShadow: true,
             width: double.infinity,
             titleText: Utils.getString(context, 'edit_profile__save'),
-            onPressed: () async {
+            onPressed: () async{
+
+              SharedPreferences prefs = await SharedPreferences.getInstance();
+              int sid = prefs.getInt('profileStateId');
+              int did = prefs.getInt('profileDistrictId');
+              int mid = prefs.getInt('profileMunicipalityId');
+              int wid = prefs.getInt('profileWardId');
+              String sn = prefs.getString('profileStreetName');
               if (userNameController.text == '') {
                 showDialog<dynamic>(
                     context: context,
@@ -190,8 +204,46 @@ class _TwoButtonWidget extends StatelessWidget {
                             context, 'edit_profile__email_error'),
                       );
                     });
+              }else if (did == 0){
+                showDialog<dynamic>(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return ErrorDialog(
+                        message: Utils.getString(
+                            context, 'warning_dialog__input_district'),
+                      );
+                    });
+              }else if (mid == 0){
+                showDialog<dynamic>(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return ErrorDialog(
+                        message: Utils.getString(
+                            context, 'warning_dialog__input_municipality'),
+                      );
+                    });
+              }else if (wid == 0){
+                showDialog<dynamic>(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return ErrorDialog(
+                        message: Utils.getString(
+                            context, 'warning_dialog__input_ward'),
+                      );
+                    });
+              } else if (sn == '' || sn == null){
+                showDialog<dynamic>(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return ErrorDialog(
+                        message: Utils.getString(
+                            context, 'warning_dialog__input_street'),
+                      );
+                    });
               } else {
                 if (await Utils.checkInternetConnectivity()) {
+
+
                   final ProfileUpdateParameterHolder
                       profileUpdateParameterHolder =
                       ProfileUpdateParameterHolder(
@@ -202,9 +254,20 @@ class _TwoButtonWidget extends StatelessWidget {
                           userAboutMe: aboutMeController.text,
                           userAddress: addressController.text,
                           city: cityController.text,
-                          deviceToken: userProvider.psValueHolder.deviceToken);
+                          deviceToken: userProvider.psValueHolder.deviceToken,
+                          stateId: sid.toString(),
+                          districtId: did.toString(),
+                          municipalityId: mid.toString(),
+                          wardId: wid.toString(),
+                          streetName: sn,
+
+
+
+                          // gapi works
+                      );
                   // final ProgressDialog progressDialog = loadingDialog(context);
                   // progressDialog.show();
+                  // usr2a42a4a986c1cb5ac3094c8161262e5d
                   PsProgressDialog.showDialog(context);
                   final PsResource<User> _apiStatus = await userProvider
                       .postProfileUpdate(profileUpdateParameterHolder.toMap());
@@ -530,14 +593,14 @@ class _UserFirstCardWidget extends StatelessWidget {
       @required this.phoneController,
       @required this.aboutMeController,
       @required this.addressController,
-      @required this.cityController,this.stateId});
+      @required this.cityController,this.stateId,this.districtId,this.municipalityId,this.wardId,this.streetName});
   final TextEditingController userNameController;
   final TextEditingController emailController;
   final TextEditingController phoneController;
   final TextEditingController aboutMeController;
   final TextEditingController addressController;
   final TextEditingController cityController;
-  final String stateId;
+  final String stateId,districtId,municipalityId,wardId,streetName;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -562,22 +625,17 @@ class _UserFirstCardWidget extends StatelessWidget {
               textAboutMe: false,
               textEditingController: emailController),
           // Text('$stateId'),
+
+          Container(
+            child: ProfileAddress(stateId: int.parse(stateId),districtId:int.parse(districtId),municipalityId:int.parse(municipalityId),
+                wardId:int.parse(wardId),streetName:streetName),
+          ),
           PsTextFieldWidget(
               titleText: Utils.getString(context, 'edit_profile__phone'),
               textAboutMe: false,
               keyboardType: TextInputType.phone,
               hintText: Utils.getString(context, 'edit_profile__phone'),
               textEditingController: phoneController),
-          PsTextFieldWidget(
-              titleText: Utils.getString(context, 'edit_profile__address'),
-              hintText: Utils.getString(context, 'edit_profile__address'),
-              textAboutMe: false,
-              textEditingController: addressController),
-          PsTextFieldWidget(
-              titleText: Utils.getString(context, 'edit_profile__city_name'),
-              textAboutMe: false,
-              hintText: Utils.getString(context, 'edit_profile__city_name'),
-              textEditingController: cityController),
           PsTextFieldWidget(
               titleText: Utils.getString(context, 'edit_profile__about_me'),
               height: PsDimens.space120,

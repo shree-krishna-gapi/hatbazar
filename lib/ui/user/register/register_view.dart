@@ -402,7 +402,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                           stateIndex=index;
                                           int currentId = showData[index]['stateId'];
                                           SharedPreferences prefs = await SharedPreferences.getInstance();
-                                          int oldId = prefs.get('stateId');
+                                          int oldId = prefs.getInt('stateId');
                                           stateId = currentId;
                                           if(oldId != currentId) {
                                             districtId = 0;
@@ -429,7 +429,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                           stateIndex=index;
                                           int currentId = showData[index]['stateId'];
                                           SharedPreferences prefs = await SharedPreferences.getInstance();
-                                          int oldId = prefs.get('stateId');
+                                          int oldId = prefs.getInt('stateId');
                                           stateId = currentId;
                                           if(oldId != currentId) {
                                             districtId = 0;
@@ -553,7 +553,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                           districtIndex=index;
                                           int currentId = showData[index]['districtId'];
                                           SharedPreferences prefs = await SharedPreferences.getInstance();
-                                          int oldId = prefs.get('districtId');
+                                          int oldId = prefs.getInt('districtId');
                                           if(oldId != currentId) {
                                             municipalityId = 0;
                                             wardId = 0;
@@ -577,7 +577,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                           districtIndex=index;
                                           int currentId = showData[index]['districtId'];
                                           SharedPreferences prefs = await SharedPreferences.getInstance();
-                                          int oldId = prefs.get('districtId');
+                                          int oldId = prefs.getInt('districtId');
                                           if(oldId != currentId) {
                                             municipalityId = 0;
                                             wardId = 0;
@@ -688,7 +688,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                         ),
                                         onTap: () async{
                                           SharedPreferences prefs = await SharedPreferences.getInstance();
-                                          int oldId = prefs.get('municipalityId');
+                                          int oldId = prefs.getInt('municipalityId');
                                           int currentId = showData[index]['municipalityId'];
                                           if(oldId != currentId) {
                                             wardId = 0;
@@ -711,7 +711,7 @@ class __TextFieldWidgetState extends State<_TextFieldWidget> {
                                       InkWell(
                                         onTap: ()async {
                                           SharedPreferences prefs = await SharedPreferences.getInstance();
-                                          int oldId = prefs.get('municipalityId');
+                                          int oldId = prefs.getInt('municipalityId');
                                           int currentId = showData[index]['municipalityId'];
                                           if(oldId != currentId) {
                                             wardId = 0;

@@ -1,0 +1,37 @@
+[
+    {
+        "stateId" : 1,
+        "stateName" : "प्रदेश १"
+
+    },
+    {
+        "stateId" : 2,
+        "stateName" : "प्रदेश २"
+
+    },
+    {
+        "stateId" : 3,
+        "stateName" : "प्रदेश ३"
+
+    },
+    {
+        "stateId" : 4,
+        "stateName" : "प्रदेश ४"
+
+    },
+    {
+        "stateId" : 5,
+        "stateName" : "प्रदेश ५ "
+
+    },
+    {
+        "stateId" : 6,
+        "stateName" : "प्रदेश ६"
+
+    },
+    {
+        "stateId" : 7,
+        "stateName" : "प्रदेश ७"
+
+    }
+]

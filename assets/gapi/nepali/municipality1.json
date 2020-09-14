@@ -1,343 +1,294 @@
 [
     {
         "municipalityId" : 1,
-        "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
         "municipalityName":"फुङलिङ नगरपालिका"
     },
     {
         "municipalityId" : 2,
-        "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
         "municipalityName":"आठराई त्रिवेणी गाउँपालिका"
     },
     {
         "municipalityId" : 3,
-        "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
         "municipalityName":"सिदिङ्वा गाउँपालिका"
     },
     {
         "municipalityId" : 4,
-        "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
         "municipalityName":"फक्तङ्लुङ गाउँपालिका"
     },
     {
         "municipalityId" : 5,
-        "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
         "municipalityName":"मिक्वखोला गाउँपालिका"
     },
     {
         "municipalityId" : 6,
-        "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
         "municipalityName":"मेरिङदेन गाउँपालिका"
     },
     {
         "municipalityId" : 7,
-        "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
         "municipalityName":"मैवाखोला गाउँपालिका"
     },
     {
         "municipalityId" : 8,
-        "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
         "municipalityName":"पाथीभरा याङवरक गाउँपालिका"
     },
     {
         "municipalityId" : 9,
-        "stateId" : 1,
         "districtId": 77,
         "wardTotal": 10,
         "municipalityName":" सिरिजङ्हा गाउँपालिका"
     },
     {
         "municipalityId" : 10,
-        "stateId" : 1,
         "districtId": 1,
         "wardTotal": 10,
         "municipalityName":"फिदिम नगरपालिका"
     },
     {
         "municipalityId" : 11,
-        "stateId" : 1,
         "districtId": 1,
         "wardTotal": 10,
         "municipalityName":"फालेलुङ गाउँपालिका"
     },
     {
         "municipalityId" : 12,
-        "stateId" : 1,
         "districtId": 1,
         "wardTotal": 10,
         "municipalityName":"फाल्गुनन्द गाउँपालिका"
     },
     {
         "municipalityId" : 13,
-        "stateId" : 1,
         "districtId": 1,
         "wardTotal": 10,
         "municipalityName":"हिलिहाङ गाउँपालिका"
     },
     {
         "municipalityId" : 14,
-        "stateId" : 1,
         "districtId": 1,
         "wardTotal": 10,
         "municipalityName":"मिक्लाजुङ गाउँपालिका"
     },
     {
         "municipalityId" : 15,
-        "stateId" : 1,
         "districtId": 1,
         "wardTotal": 10,
         "municipalityName":"तुम्बेवा गाउँपालिका"
     },
     {
         "municipalityId" : 16,
-        "stateId" : 1,
         "districtId": 1,
         "wardTotal": 10,
         "municipalityName":"याङवरक गाउँपालिका"
     },
     {
         "municipalityId" : 17,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"ईलाम नगरपालिका"
     },
     {
         "municipalityId" : 18,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"देउमाई नगरपालिका"
     },
     {
         "municipalityId" : 19,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"माई नगरपालिका"
     },
     {
         "municipalityId" : 20,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"सूर्योदय नगरपालिका"
     },
     {
         "municipalityId" : 21,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"फाकफोकथुम गाउँपालिका"
     },
     {
         "municipalityId" : 22,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"चुलाचुली गाउँपालिका"
     },
     {
         "municipalityId" : 23,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"माईजोगमाई गाउँपालिका"
     },
     {
         "municipalityId" : 24,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"माङसेबुङ गाउँपालिका"
     },
     {
         "municipalityId" : 25,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"रोङ गाउँपालिका"
     },
     {
         "municipalityId" : 26,
-        "stateId" : 1,
         "districtId": 2,
         "wardTotal": 10,
         "municipalityName":"सन्दकपुर गाउँपालिका"
     },
     {
         "municipalityId" : 27,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"मेचीनगर नगरपालिका"
     },
     {
         "municipalityId" : 28,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"दमक नगरपालिका"
     },
     {
         "municipalityId" : 29,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"कन्काई नगरपालिका"
     },
     {
         "municipalityId" : 30,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"भद्रपुर नगरपालिका"
     },
     {
         "municipalityId" : 31,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"अर्जुनधारा नगरपालिका"
     },
     {
         "municipalityId" : 32,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"शिवशताक्षी नगरपालिका"
     },
     {
         "municipalityId" : 33,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"गौरादह नगरपालिका"
     },
     {
         "municipalityId" : 34,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"विर्तामोड नगरपालिका"
     },
     {
         "municipalityId" : 35,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"कमल गाउँपालिका"
     },
     {
         "municipalityId" : 36,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"गौरीगंज गाउँपालिका"
     },
     {
         "municipalityId" : 37,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"बाह्रदशी गाउँपालिका"
     },
     {
         "municipalityId" : 38,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"झापा गाउँपालिका"
     },
     {
         "municipalityId" : 39,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"बुद्धशान्ति गाउँपालिका"
     },
     {
         "municipalityId" : 40,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"हल्दिवारी गाउँपालिका"
     },
     {
         "municipalityId" : 41,
-        "stateId" : 1,
         "districtId": 3,
         "wardTotal": 10,
         "municipalityName":"कचनकवल गाउँपालिका"
     },
     {
         "municipalityId" : 42,
-        "stateId" : 1,
         "districtId": 4,
         "wardTotal": 10,
         "municipalityName":"विराटनगर महानगरपालिका"
     },
     {
         "municipalityId" : 43,
-        "stateId" : 1,
         "districtId": 4,
         "wardTotal": 10,
         "municipalityName":"बेलवारी नगरपालिका"
     },
     {
         "municipalityId" : 44,
-        "stateId" : 1,
         "districtId": 4,
         "wardTotal": 10,
         "municipalityName":"लेटाङ नगरपालिका"
     },
     {
         "municipalityId" : 45,
-        "stateId" : 1,
         "districtId": 4,
         "wardTotal": 10,
         "municipalityName":"पथरी शनिश्चरे नगरपालिका"
     },
     {
         "municipalityId" : 46,
-        "stateId" : 1,
         "districtId": 4,
         "wardTotal": 10,
         "municipalityName":"रंगेली नगरपालिका"
     },
     {
         "municipalityId" : 47,
-        "stateId" : 1,
         "districtId": 4,
         "wardTotal": 10,
         "municipalityName":"रतुवामाई नगरपालिका"
     },
     {
         "municipalityId" : 48,
-        "stateId" : 1,
         "districtId": 4,
         "wardTotal": 10,
         "municipalityName":"सुनवर्षि नगरपालिका"
     },
     {
         "municipalityId" : 49,
-        "stateId" : 1,
         "districtId": 4,
         "wardTotal": 10,
         "municipalityName":"उर्लावारी नगरपालिका"

@@ -1,0 +1,37 @@
+[
+    {
+        "stateId" : 1,
+        "stateName" : "प्रदेश नं. १"
+
+    },
+    {
+        "stateId" : 2,
+        "stateName" : "प्रदेश नं. २"
+
+    },
+    {
+        "stateId" : 3,
+        "stateName" : "बागमती प्रदेश"
+
+    },
+    {
+        "stateId" : 4,
+        "stateName" : "गण्डकी प्रदेश"
+
+    },
+    {
+        "stateId" : 5,
+        "stateName" : "प्रदेश ५"
+
+    },
+    {
+        "stateId" : 6,
+        "stateName" : "कर्णाली प्रदेश"
+
+    },
+    {
+        "stateId" : 7,
+        "stateName" : "सुदूरपश्चिम प्रदेश"
+
+    }
+]

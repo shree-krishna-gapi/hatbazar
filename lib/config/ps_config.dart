@@ -23,19 +23,22 @@ class PsConfig {
   /// API URL
   /// Change your backend url
   // TODO: Base Url
-//  static const String ps_app_url =
-//      'https://demo.wfusion.us/hatbazar/index.php/';  // old_base_url
-//  static const String ps_app_image_url =
-//      'https://demo.wfusion.us/hatbazar/uploads/';
-//  static const String ps_app_image_url =
-//      'https://demo.wfusion.us/hatbazar/uploads/';  // old_base_url
+ static const String ps_app_url =
+     'https://demo.wfusion.us/hatbazar5/index.php/';  // old_base_url
+ static const String ps_app_image_url =
+     'https://demo.wfusion.us/hatbazar5/uploads/';
+ static const String ps_app_image_thumbs_url =
+     'https://demo.wfusion.us/hatbazar5/uploads/thumbnail/'; // old_base_url
 
-//  static const String ps_app_image_thumbs_url =
-//      'https://demo.wfusion.us/hatbazar/uploads/thumbnail/'; // old_base_url
-  static const String ps_app_url = 'https://sajilo.net/hatbazaar/index.php/'; //new_base_url
-  static const String ps_app_image_url = 'https://sajilo.net/hatbazaar/uploads/';
-  static const String ps_app_image_thumbs_url =
-      'https://sajilo.net/hatbazaar/uploads/thumbnail/';
+
+
+  // static const String ps_app_url = 'https://sajilo.net/hatbazaar/index.php/'; //new_base_url
+  // static const String ps_app_image_url = 'https://sajilo.net/hatbazaar/uploads/';
+  // static const String ps_app_image_thumbs_url =
+  //     'https://sajilo.net/hatbazaar/uploads/thumbnail/';
+
+
+
 
   ///
   /// Chat Setting

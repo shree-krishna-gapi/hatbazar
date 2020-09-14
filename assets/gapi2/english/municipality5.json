@@ -1,0 +1,792 @@
+[{
+    "municipalityId" : 470,
+    "stateId" : 5,
+    "districtId": 46,
+    "wardTotal": 10,
+    "municipalityName":"Musikot Municipality"
+},
+    {
+        "municipalityId" : 471,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Resunga Municipality"
+    },
+    {
+        "municipalityId" : 472,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Isma village municipality"
+    },
+    {
+        "municipalityId" : 473,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Kaligandaki village municipality"
+    },
+    {
+        "municipalityId" : 474,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Gulmi Durbar village municipality"
+    },
+    {
+        "municipalityId" : 475,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Satyavati village municipality"
+    },
+    {
+        "municipalityId" : 476,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Chandrakot village municipality"
+    },
+    {
+        "municipalityId" : 478,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Rurukshetra village municipality"
+    },
+    {
+        "municipalityId" : 479,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Chhatrakot village municipality"
+    },
+    {
+        "municipalityId" : 480,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Dhurkot village municipality"
+    },
+    {
+        "municipalityId" : 481,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Madane village municipality"
+    },
+    {
+        "municipalityId" : 482,
+        "stateId" : 5,
+        "districtId": 46,
+        "wardTotal": 10,
+        "municipalityName":"Malika village municipality"
+    },
+    {
+        "municipalityId" : 483,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Rampur Municipality"
+    },
+    {
+        "municipalityId" : 484,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Tansen Municipality"
+    },
+    {
+        "municipalityId" : 485,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Nisdi village municipality"
+    },
+    {
+        "municipalityId" : 486,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Purbakhola village municipality"
+    },
+    {
+        "municipalityId" : 487,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Rambha village municipality"
+    },
+    {
+        "municipalityId" : 488,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Mathagadhi village municipality"
+    },
+    {
+        "municipalityId" : 489,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Tinau village municipality"
+    },
+    {
+        "municipalityId" : 490,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Baganaskali village municipality"
+    },
+    {
+        "municipalityId" : 491,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Ribdikot village municipality"
+    },
+    {
+        "municipalityId" : 492,
+        "stateId" : 5,
+        "districtId": 47,
+        "wardTotal": 10,
+        "municipalityName":"Rainadevi Chhahra village municipality"
+    },
+    {
+        "municipalityId" : 493,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Butwal Sub-metropolis"
+    },
+    {
+        "municipalityId" : 494,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Devadaha Municipality"
+    },
+    {
+        "municipalityId" : 495,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Lumbini Cultural Municipality"
+    },
+    {
+        "municipalityId" : 496,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Sanamina Municipality"
+    },
+    {
+        "municipalityId" : 497,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Siddharthnagar Municipality"
+    },
+    {
+        "municipalityId" : 498,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Tilotta Municipality"
+    },
+    {
+        "municipalityId" : 499,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Gaidhawa village municipality"
+    },
+    {
+        "municipalityId" : 500,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Kanchan village municipality"
+    },
+    {
+        "municipalityId" : 501,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Kothimai village municipality"
+    },
+    {
+        "municipalityId" : 502,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Marchwari village municipality"
+    },
+    {
+        "municipalityId" : 503,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Mayadevi village municipality"
+    },
+    {
+        "municipalityId" : 504,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Omasatiya village municipality"
+    },
+    {
+        "municipalityId" : 505,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Rohini village municipality"
+    },
+    {
+        "municipalityId" : 506,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Sammarimai village municipality"
+    },
+    {
+        "municipalityId" : 507,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Siyari village municipality"
+    },
+    {
+        "municipalityId" : 508,
+        "stateId" : 5,
+        "districtId": 48,
+        "wardTotal": 10,
+        "municipalityName":"Shuddhodhan village municipality"
+    },
+    {
+        "municipalityId" : 509,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Kapilvastu Municipality"
+    },
+    {
+        "municipalityId" : 510,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Buddhabhumi Municipality"
+    },
+    {
+        "municipalityId" : 511,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Shivraj Municipality"
+    },
+    {
+        "municipalityId" : 512,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Maharajganj Municipality"
+    },
+    {
+        "municipalityId" : 1513,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Krishnanagar Municipality"
+    },
+    {
+        "municipalityId" : 514,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Banganga Municipality"
+    },
+    {
+        "municipalityId" : 515,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Mayadevi village municipality"
+    },
+    {
+        "municipalityId" : 516,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Yasodhara village municipality"
+    },
+    {
+        "municipalityId" : 517,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Suddhodhan village municipality"
+    },
+    {
+        "municipalityId" : 518,
+        "stateId" : 5,
+        "districtId": 49,
+        "wardTotal": 10,
+        "municipalityName":"Vijayanagar village municipality"
+    },
+    {
+        "municipalityId" : 519,
+        "stateId" : 5,
+        "districtId": 50,
+        "wardTotal": 10,
+        "municipalityName":"Sandhikharka Municipality"
+    },
+    {
+        "municipalityId" : 520,
+        "stateId" : 5,
+        "districtId": 50,
+        "wardTotal": 10,
+        "municipalityName":"Shitganga Municipality"
+    },
+    {
+        "municipalityId" : 521,
+        "stateId" : 5,
+        "districtId": 50,
+        "wardTotal": 10,
+        "municipalityName":"Vumikasathan Municipality"
+    },
+    {
+        "municipalityId" : 522,
+        "stateId" : 5,
+        "districtId": 50,
+        "wardTotal": 10,
+        "municipalityName":"Chhatradev village municipality"
+    },
+    {
+        "municipalityId" : 523,
+        "stateId" : 5,
+        "districtId": 50,
+        "wardTotal": 10,
+        "municipalityName":"Panini village municipality"
+    },
+    {
+        "municipalityId" : 524,
+        "stateId" : 5,
+        "districtId": 50,
+        "wardTotal": 10,
+        "municipalityName":"Malarani village municipality"
+    },
+    {
+        "municipalityId" : 525,
+        "stateId" : 5,
+        "districtId": 51,
+        "wardTotal": 10,
+        "municipalityName":"Pyuthan Municipality"
+    },
+    {
+        "municipalityId" : 526,
+        "stateId" : 5,
+        "districtId": 51,
+        "wardTotal": 10,
+        "municipalityName":"Swargadwari Municipality"
+    },
+    {
+        "municipalityId" : 527,
+        "stateId" : 5,
+        "districtId": 51,
+        "wardTotal": 10,
+        "municipalityName":"Gaumukhi village municipality"
+    },
+    {
+        "municipalityId" : 528,
+        "stateId" : 5,
+        "districtId": 51,
+        "wardTotal": 10,
+        "municipalityName":"Mandvi village municipality"
+    },
+    {
+        "municipalityId" : 529,
+        "stateId" : 5,
+        "districtId": 51,
+        "wardTotal": 10,
+        "municipalityName":"Sarumarani village municipality"
+    },
+    {
+        "municipalityId" : 530,
+        "stateId" : 5,
+        "districtId": 51,
+        "wardTotal": 10,
+        "municipalityName":"Mallarani village municipality"
+    },
+    {
+        "municipalityId" : 531,
+        "stateId" : 5,
+        "districtId": 51,
+        "wardTotal": 10,
+        "municipalityName":"Naubahini village municipality"
+    },
+    {
+        "municipalityId" : 532,
+        "stateId" : 5,
+        "districtId": 51,
+        "wardTotal": 10,
+        "municipalityName":"Zhimruk village municipality"
+    },
+    {
+        "municipalityId" : 533,
+        "stateId" : 5,
+        "districtId": 51,
+        "wardTotal": 10,
+        "municipalityName":"Airavati village municipality"
+    },
+    {
+        "municipalityId" : 534,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Rolpa Municipality"
+    },
+    {
+        "municipalityId" : 535,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Triveni village municipality"
+    },
+    {
+        "municipalityId" : 536,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Parivartan village municipality"
+    },
+    {
+        "municipalityId" : 537,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Madi village municipality"
+    },
+    {
+        "municipalityId" : 538,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Runtigadhi village municipality"
+    },
+    {
+        "municipalityId" : 539,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Lungri village municipality"
+    },
+    {
+        "municipalityId" : 540,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Gangadev village municipality"
+    },
+    {
+        "municipalityId" : 541,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Sunchahari village municipality"
+    },
+    {
+        "municipalityId" : 542,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Sunil Smriti village municipality"
+    },
+    {
+        "municipalityId" : 543,
+        "stateId" : 5,
+        "districtId": 52,
+        "wardTotal": 10,
+        "municipalityName":"Thawang village municipality"
+    },
+    {
+        "municipalityId" : 544,
+        "stateId" : 5,
+        "districtId": 53,
+        "wardTotal": 10,
+        "municipalityName":"Musikot Municipality"
+    },
+    {
+        "municipalityId" : 545,
+        "stateId" : 5,
+        "districtId": 53,
+        "wardTotal": 10,
+        "municipalityName":"Chaurajahari Municipality"
+    },
+    {
+        "municipalityId" : 546,
+        "stateId" : 5,
+        "districtId": 53,
+        "wardTotal": 10,
+        "municipalityName":"Athabiscot Municipality"
+    },
+    {
+        "municipalityId" : 547,
+        "stateId" : 5,
+        "districtId": 53,
+        "wardTotal": 10,
+        "municipalityName":"Putha Uttarganga village municipality"
+    },
+    {
+        "municipalityId" : 548,
+        "stateId" : 5,
+        "districtId": 53,
+        "wardTotal": 10,
+        "municipalityName":"Bhume village municipality"
+    },
+    {
+        "municipalityId" : 549,
+        "stateId" : 5,
+        "districtId": 53,
+        "wardTotal": 10,
+        "municipalityName":"Sisne village municipality"
+    },
+    {
+        "municipalityId" :550,
+        "stateId" : 5,
+        "districtId": 53,
+        "wardTotal": 10,
+        "municipalityName":"Banfikot village municipality"
+    },
+    {
+        "municipalityId" : 551,
+        "stateId" : 5,
+        "districtId": 53,
+        "wardTotal": 10,
+        "municipalityName":"Triveni village municipality"
+    },
+    {
+        "municipalityId" : 552,
+        "stateId" : 5,
+        "districtId": 53,
+        "wardTotal": 10,
+        "municipalityName":"Sani Bheri village municipality"
+    },
+    {
+        "municipalityId" : 553,
+        "stateId" : 5,
+        "districtId": 55,
+        "wardTotal": 10,
+        "municipalityName":"Nepalganj Sub-metropolis"
+    },
+    {
+        "municipalityId" : 554,
+        "stateId" : 5,
+        "districtId": 55,
+        "wardTotal": 10,
+        "municipalityName":"Kohalpur Municipality"
+    },
+    {
+        "municipalityId" : 555,
+        "stateId" : 5,
+        "districtId": 55,
+        "wardTotal": 10,
+        "municipalityName":"Narainapur village municipality"
+    },
+    {
+        "municipalityId" : 556,
+        "stateId" : 5,
+        "districtId": 55,
+        "wardTotal": 10,
+        "municipalityName":"Rapti Sonari village municipality"
+    },
+    {
+        "municipalityId" : 557,
+        "stateId" : 5,
+        "districtId": 55,
+        "wardTotal": 10,
+        "municipalityName":"Baijnath village municipality"
+    },
+    {
+        "municipalityId" : 558,
+        "stateId" : 5,
+        "districtId": 55,
+        "wardTotal": 10,
+        "municipalityName":"Khajura village municipality"
+    },
+    {
+        "municipalityId" : 559,
+        "stateId" : 5,
+        "districtId": 55,
+        "wardTotal": 10,
+        "municipalityName":"Duduwa village municipality"
+    },
+    {
+        "municipalityId" : 560,
+        "stateId" : 5,
+        "districtId": 55,
+        "wardTotal": 10,
+        "municipalityName":"Janaki village municipality"
+    },
+    {
+        "municipalityId" : 561,
+        "stateId" : 5,
+        "districtId": 56,
+        "wardTotal": 10,
+        "municipalityName":"Gulariya Municipality"
+    },
+    {
+        "municipalityId" : 562,
+        "stateId" : 5,
+        "districtId": 56,
+        "wardTotal": 10,
+        "municipalityName":"Madhuvan Municipality"
+    },
+    {
+        "municipalityId" : 563,
+        "stateId" : 5,
+        "districtId": 56,
+        "wardTotal": 10,
+        "municipalityName":"Rajapur Municipality"
+    },
+    {
+        "municipalityId" : 564,
+        "stateId" : 5,
+        "districtId": 56,
+        "wardTotal": 10,
+        "municipalityName":"Thakur Baba Municipality"
+    },
+    {
+        "municipalityId" : 565,
+        "stateId" : 5,
+        "districtId": 56,
+        "wardTotal": 10,
+        "municipalityName":"Bansgadhi Municipality"
+    },
+    {
+        "municipalityId" : 566,
+        "stateId" : 5,
+        "districtId": 56,
+        "wardTotal": 10,
+        "municipalityName":"Barbardia Municipality"
+    },
+    {
+        "municipalityId" : 567,
+        "stateId" : 5,
+        "districtId": 56,
+        "wardTotal": 10,
+        "municipalityName":"Badaiyatal village municipality"
+    },
+    {
+        "municipalityId" : 568,
+        "stateId" : 5,
+        "districtId": 56,
+        "wardTotal": 10,
+        "municipalityName":"Geruwa village municipality"
+    },
+    {
+        "municipalityId" : 569,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Kawasoti Municipality"
+    },
+    {
+        "municipalityId" : 570,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Gaidakot Municipality"
+    },
+    {
+        "municipalityId" : 571,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Devachuli Municipality"
+    },
+    {
+        "municipalityId" : 572,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Madhyabindhu Municipality"
+    },
+    {
+        "municipalityId" : 573,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Baudikali village municipality"
+    },
+    {
+        "municipalityId" : 574,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Bulingtar village municipality"
+    },
+    {
+        "municipalityId" : 575,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Vinay Triveni village municipality"
+    },
+    {
+        "municipalityId" : 576,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Hupsekot village municipality"
+    },
+    {
+        "municipalityId" : 577,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Bardaghat Municipality"
+    },
+    {
+        "municipalityId" : 578,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Ramgram Municipality"
+    },
+    {
+        "municipalityId" : 579,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Sunwal Municipality"
+    },
+    {
+        "municipalityId" : 580,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Tribeni Susta village municipality"
+    },
+    {
+        "municipalityId" : 581,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Palhinandan village municipality"
+    },
+    {
+        "municipalityId" : 582,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Pratappur village municipality"
+    },
+    {
+        "municipalityId" : 583,
+        "stateId" : 5,
+        "districtId": 57,
+        "wardTotal": 10,
+        "municipalityName":"Sarawal village municipality"
+    }
+]

@@ -70,8 +70,8 @@ abstract class PsApi {
   Future<PsResource<R>> postData<T extends PsObject<dynamic>, R>(
       T obj, String url, Map<dynamic, dynamic> jsonMap) async {
     final Client client = http.Client();
-//    print('signUp -> ${PsConfig.ps_app_url}$url');
-//    print('data -> $jsonMap');
+   print('signUp -> ${PsConfig.ps_app_url}$url');
+   print('data -> ${jsonEncode(jsonMap)}');
     //TODO: SignUp Api Post
     try {
       final Response response = await client

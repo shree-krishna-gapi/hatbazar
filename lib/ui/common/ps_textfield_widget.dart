@@ -1,7 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutterbuyandsell/config/ps_colors.dart';
 import 'package:flutterbuyandsell/constant/ps_dimens.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutterbuyandsell/utils/utils.dart';
 
 class PsTextFieldWidget extends StatelessWidget {
   const PsTextFieldWidget(
@@ -101,6 +104,55 @@ class PsTextFieldWidget extends StatelessWidget {
                             .copyWith(color: PsColors.textPrimaryLightColor),
                       ))),
       ],
+    );
+  }
+}
+class StateEditWidget extends StatefulWidget {
+  StateEditWidget({this.id});
+  final String id;
+  @override
+  _StateEditWidgetState createState() => _StateEditWidgetState();
+}
+
+class _StateEditWidgetState extends State<StateEditWidget> {
+
+  @override
+  Widget build(BuildContext context) {
+    return    FutureBuilder(
+        builder: (context, snapshot) {
+          var stateData = json.decode(snapshot.data.toString());
+          return Container(
+            width: double.infinity,
+            height: PsDimens.space44,
+            margin: const EdgeInsets.all(PsDimens.space12),
+            padding: EdgeInsets.only(left: 10),
+            decoration: BoxDecoration(
+              color: PsColors.backgroundColor,
+              borderRadius: BorderRadius.circular(PsDimens.space4),
+              border: Border.all(color: PsColors.mainDividerColor),
+            ),
+            child: ListView.builder(
+              shrinkWrap: true,
+              itemCount: stateData == null ? 0 : stateData.length,
+              itemBuilder: (BuildContext context, int index){
+                return stateData[index]['stateId'].toString() == widget.id ? Center(child: Text('${stateData[index]['stateName']}',)):Container(height: 0,);
+                // return stateData[index]['stateId'].toString() == widget.id ? TextField(
+                //   style: Theme.of(context).textTheme.button.copyWith(),
+                //   readOnly: true,
+                //   // onTap: _stateDialog,
+                //   decoration: InputDecoration(
+                //       border: InputBorder.none,
+                //       hintText: stateData[index]['stateName'],
+                //       hintStyle: Theme.of(context).textTheme.button.copyWith(),
+                //     )
+                //
+                //   ,
+                // ):Container(height: 0,);
+              },
+            ),
+          );
+        },
+        future:  DefaultAssetBundle.of(context).loadString("assets/gapi/${Utils.getString(context, 'current__language')}/state.json")
     );
   }
 }

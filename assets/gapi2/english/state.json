@@ -1,0 +1,37 @@
+[
+    {
+        "stateId" : 1,
+        "stateName" : "State 1"
+
+    },
+    {
+        "stateId" : 2,
+        "stateName" : "State 2"
+
+    },
+    {
+        "stateId" : 3,
+        "stateName" : "State 3"
+
+    },
+    {
+        "stateId" : 4,
+        "stateName" : "State 4"
+
+    },
+    {
+        "stateId" : 5,
+        "stateName" : "State 5"
+
+    },
+    {
+        "stateId" : 6,
+        "stateName" : "State 6"
+
+    },
+    {
+        "stateId" : 7,
+        "stateName" : "State 7"
+
+    }
+]

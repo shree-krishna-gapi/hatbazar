@@ -1,580 +1,497 @@
 [{
     "municipalityId" : 595,
-    "stateId" : 6,
     "districtId": 59,
     "wardTotal": 10,
     "municipalityName":"शारदा नगरपालिका"
 },
     {
         "municipalityId" : 596,
-        "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
         "municipalityName":"बागचौर नगरपालिका"
     },
     {
         "municipalityId" : 597,
-        "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
         "municipalityName":"बनगाड कुपिण्डे नगरपालिका"
     },
     {
         "municipalityId" : 598,
-        "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
         "municipalityName":"कालिमाटी गाउँपालिका"
     },
     {
         "municipalityId" : 599,
-        "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
         "municipalityName":"त्रिवेणी गाउँपालिका"
     },
     {
         "municipalityId" : 600,
-        "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
         "municipalityName":"कपुरकोट गाउँपालिका"
     },
     {
         "municipalityId" : 601,
-        "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
         "municipalityName":"छत्रेश्वरी गाउँपालिका"
     },
     {
         "municipalityId" : 602,
-        "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
         "municipalityName":"सिद्ध कुमाख गाउँपालिका"
     },
     {
         "municipalityId" : 603,
-        "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
         "municipalityName":"कुमाख गाउँपालिका"
     },
     {
         "municipalityId" : 604,
-        "stateId" : 6,
         "districtId": 59,
         "wardTotal": 10,
         "municipalityName":"दार्मा गाउँपालिका"
     },
     {
         "municipalityId" : 605,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"तुल्सीपुर उपमहानगरपालिका"
     },
     {
         "municipalityId" : 606,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"घोराही उपमहानगरपालिका"
     },
     {
         "municipalityId" : 607,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"लमही नगरपालिका"
     },
     {
         "municipalityId" : 608,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"बंगलाचुली गाउँपालिका"
     },
     {
         "municipalityId" : 609,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"दंगीशरण गाउँपालिका"
     },
     {
         "municipalityId" : 610,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"गढवा गाउँपालिका"
     },
     {
         "municipalityId" : 611,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"राजपुर गाउँपालिका"
     },
     {
         "municipalityId" : 612,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"राप्ती गाउँपालिका"
     },
     {
         "municipalityId" : 613,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"शान्तिनगर गाउँपालिका"
     },
     {
         "municipalityId" : 614,
-        "stateId" : 6,
         "districtId": 54,
         "wardTotal": 10,
         "municipalityName":"बबई गाउँपालिका"
     },
     {
         "municipalityId" : 615,
-        "stateId" : 6,
         "districtId": 60,
         "wardTotal": 10,
         "municipalityName":"बीरेन्द्रनगर नगरपालिका"
     },
     {
         "municipalityId" : 616,
-        "stateId" : 6,
         "districtId": 60,
         "wardTotal": 10,
         "municipalityName":"भेरीगंगा नगरपालिका"
     },
     {
         "municipalityId" : 617,
-        "stateId" : 6,
         "districtId": 60,
         "wardTotal": 10,
         "municipalityName":"गुर्भाकोट नगरपालिका"
     },
     {
         "municipalityId" : 618,
-        "stateId" : 6,
         "districtId": 60,
         "wardTotal": 10,
         "municipalityName":"पञ्चपुरी नगरपालिका"
     },
     {
         "municipalityId" : 619,
-        "stateId" : 6,
         "districtId": 60,
         "wardTotal": 10,
         "municipalityName":"लेकवेशी नगरपालिका"
     },
     {
         "municipalityId" : 620,
-        "stateId" : 6,
         "districtId": 60,
         "wardTotal": 10,
         "municipalityName":"चौकुने गाउँपालिका"
     },
     {
         "municipalityId" : 621,
-        "stateId" : 6,
         "districtId": 60,
         "wardTotal": 10,
         "municipalityName":"बराहताल गाउँपालिका"
     },
     {
         "municipalityId" : 622,
-        "stateId" : 6,
         "districtId": 60,
         "wardTotal": 10,
         "municipalityName":"चिङ्गाड गाउँपालिका"
     },
     {
         "municipalityId" : 623,
-        "stateId" : 6,
         "districtId": 60,
         "wardTotal": 10,
         "municipalityName":"सिम्ता गाउँपालिका"
     },
     {
         "municipalityId" : 624,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"नारायण नगरपालिका"
     },
     {
         "municipalityId" : 625,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"दुल्लु नगरपालिका"
     },
     {
         "municipalityId" : 626,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"चामुण्डा विन्द्रासैनी नगरपालिका"
     },
     {
         "municipalityId" : 627,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"आठबीस नगरपालिका"
     },
     {
         "municipalityId" : 628,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"भगवतीमाई गाउँपालिका"
     },
     {
         "municipalityId" : 629,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"गुराँस गाउँपालिका"
     },
     {
         "municipalityId" : 630,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"डुंगेश्वर गाउँपालिका"
     },
     {
         "municipalityId" : 631,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"नौमुले गाउँपालिका"
     },
     {
         "municipalityId" : 632,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"महावु गाउँपालिका"
     },
     {
         "municipalityId" : 633,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"भैरवी गाउँपालिका"
     },
     {
         "municipalityId" : 634,
-        "stateId" : 6,
         "districtId": 61,
         "wardTotal": 10,
         "municipalityName":"ठाँटीकाँध गाउँपालिका"
     },
     {
         "municipalityId" : 635,
-        "stateId" : 6,
         "districtId": 62,
         "wardTotal": 10,
         "municipalityName":"भेरी नगरपालिका"
     },
     {
         "municipalityId" : 636,
-        "stateId" : 6,
         "districtId": 62,
         "wardTotal": 10,
         "municipalityName":"छेडागाड नगरपालिका"
     },
     {
         "municipalityId" : 637,
-        "stateId" : 6,
         "districtId": 62,
         "wardTotal": 10,
         "municipalityName":"नलगाड नगरपालिका"
     },
     {
         "municipalityId" : 638,
-        "stateId" : 6,
         "districtId": 62,
         "wardTotal": 10,
         "municipalityName":"बारेकोट गाउँपालिका"
     },
     {
         "municipalityId" : 639,
-        "stateId" : 6,
         "districtId": 62,
         "wardTotal": 10,
         "municipalityName":"कुसे गाउँपालिका"
     },
     {
         "municipalityId" : 640,
-        "stateId" : 6,
         "districtId": 62,
         "wardTotal": 10,
         "municipalityName":"जुनीचाँदे गाउँपालिका"
     },
     {
         "municipalityId" : 641,
-        "stateId" : 6,
         "districtId": 62,
         "wardTotal": 10,
         "municipalityName":"शिवालय गाउँपालिका"
     },
     {
         "municipalityId" : 642,
-        "stateId" : 6,
         "districtId": 63,
         "wardTotal": 10,
         "municipalityName":"ठूली भेरी नगरपालिका"
     },
     {
         "municipalityId" : 643,
-        "stateId" : 6,
         "districtId": 63,
         "wardTotal": 10,
         "municipalityName":"त्रिपुरासुन्दरी नगरपालिका"
     },
     {
         "municipalityId" : 644,
-        "stateId" : 6,
         "districtId": 63,
         "wardTotal": 10,
         "municipalityName":"डोल्पो बुद्ध गाउँपालिका"
     },
     {
         "municipalityId" : 645,
-        "stateId" : 6,
         "districtId": 63,
         "wardTotal": 10,
         "municipalityName":"शे फोक्सुन्डो गाउँपालिका"
     },
     {
         "municipalityId" : 646,
-        "stateId" : 6,
         "districtId": 63,
         "wardTotal": 10,
         "municipalityName":"जगदुल्ला गाउँपालिका"
     },
     {
         "municipalityId" : 647,
-        "stateId" : 6,
         "districtId": 63,
         "wardTotal": 10,
         "municipalityName":"मुड्केचुला गाउँपालिका"
     },
     {
         "municipalityId" : 648,
-        "stateId" : 6,
         "districtId": 63,
         "wardTotal": 10,
         "municipalityName":"काईके गाउँपालिका"
     },
     {
         "municipalityId" : 649,
-        "stateId" : 6,
         "districtId": 63,
         "wardTotal": 10,
         "municipalityName":"छार्का ताङसोङ गाउँपालिका"
     },
     {
         "municipalityId" : 650,
-        "stateId" : 6,
         "districtId": 64,
         "wardTotal": 10,
         "municipalityName":"चन्दननाथ नगरपालिका"
     },
     {
         "municipalityId" : 651,
-        "stateId" : 6,
         "districtId": 64,
         "wardTotal": 10,
         "municipalityName":"कनकासुन्दरी गाउँपालिका"
     },
     {
         "municipalityId" : 652,
-        "stateId" : 6,
         "districtId": 64,
         "wardTotal": 10,
         "municipalityName":"सिंजा गाउँपालिका"
     },
     {
         "municipalityId" : 653,
-        "stateId" : 6,
         "districtId": 64,
         "wardTotal": 10,
         "municipalityName":"हिमा गाउँपालिका"
     },
     {
         "municipalityId" : 654,
-        "stateId" : 6,
         "districtId": 64,
         "wardTotal": 10,
         "municipalityName":"तिला गाउँपालिका"
     },
     {
         "municipalityId" : 655,
-        "stateId" : 6,
         "districtId": 64,
         "wardTotal": 10,
         "municipalityName":"गुठिचौर गाउँपालिका"
     },
     {
         "municipalityId" : 656,
-        "stateId" : 6,
         "districtId": 64,
         "wardTotal": 10,
         "municipalityName":"तातोपानी गाउँपालिका"
     },
     {
         "municipalityId" : 657,
-        "stateId" : 6,
         "districtId": 64,
         "wardTotal": 10,
         "municipalityName":"पातारासी गाउँपालिका"
     },
     {
         "municipalityId" : 658,
-        "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
         "municipalityName":"खाँडाचक्र नगरपालिका"
     },
     {
         "municipalityId" : 659,
-        "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
         "municipalityName":"रास्कोट नगरपालिका"
     },
     {
         "municipalityId" : 660,
-        "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
         "municipalityName":"तिलागुफा नगरपालिका"
     },
     {
         "municipalityId" : 661,
-        "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
         "municipalityName":"पचालझरना गाउँपालिका"
     },
     {
         "municipalityId" : 662,
-        "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
         "municipalityName":"सान्नी त्रिवेणी गाउँपालिका"
     },
     {
         "municipalityId" : 663,
-        "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
         "municipalityName":"नरहरिनाथ गाउँपालिका"
     },
     {
         "municipalityId" : 664,
-        "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
         "municipalityName":"शुभ कालीका गाउँपालिका"
     },
     {
         "municipalityId" : 665,
-        "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
         "municipalityName":"महावै गाउँपालिका"
     },
     {
         "municipalityId" : 666,
-        "stateId" : 6,
         "districtId": 65,
         "wardTotal": 10,
         "municipalityName":"पलाता गाउँपालिका"
     },
     {
         "municipalityId" : 667,
-        "stateId" : 6,
         "districtId": 66,
         "wardTotal": 10,
         "municipalityName":"छायाँनाथ रारा नगरपालिका"
     },
     {
         "municipalityId" : 668,
-        "stateId" : 6,
         "districtId": 66,
         "wardTotal": 10,
         "municipalityName":"मुगुम कार्मारोंग गाउँपालिका"
     },
     {
         "municipalityId" : 669,
-        "stateId" : 6,
         "districtId": 66,
         "wardTotal": 10,
         "municipalityName":"सोरु गाउँपालिका"
     },
     {
         "municipalityId" : 670,
-        "stateId" : 6,
         "districtId": 66,
         "wardTotal": 10,
         "municipalityName":"खत्याड गाउँपालिका"
     },
     {
         "municipalityId" : 671,
-        "stateId" : 6,
         "districtId": 67,
         "wardTotal": 10,
         "municipalityName":"सिमकोट गाउँपालिका"
     },
     {
         "municipalityId" : 672,
-        "stateId" : 6,
         "districtId": 67,
         "wardTotal": 10,
         "municipalityName":"नाम्खा गाउँपालिका"
     },
     {
         "municipalityId" : 673,
-        "stateId" : 6,
         "districtId": 67,
         "wardTotal": 10,
         "municipalityName":"खार्पुनाथ गाउँपालिका"
     },
     {
         "municipalityId" : 674,
-        "stateId" : 6,
         "districtId": 67,
         "wardTotal": 10,
         "municipalityName":"सर्केगाड गाउँपालिका"
     },
     {
         "municipalityId" : 675,
-        "stateId" : 6,
         "districtId": 67,
         "wardTotal": 10,
         "municipalityName":"चंखेली गाउँपालिका"
     },
     {
         "municipalityId" : 676,
-        "stateId" : 6,
         "districtId": 67,
         "wardTotal": 10,
         "municipalityName":"अदानचुली गाउँपालिका"
     },
     {
         "municipalityId" : 677,
-        "stateId" : 6,
         "districtId": 67,
         "wardTotal": 10,
         "municipalityName":"ताँजाकोट गाउँपालिका"

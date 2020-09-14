@@ -1,0 +1,78 @@
+[
+    {
+        "wardId" : 1,
+        "wardName":"Ward No. 1"
+    },{
+    "wardId" : 2,
+    "wardName":"Ward No. 2"
+},{
+    "wardId" : 3,
+    "wardName":"Ward No. 3"
+},{
+    "wardId" : 4,
+    "wardName":"Ward No. 4"
+},{
+    "wardId" : 5,
+    "wardName":"Ward No. 5"
+},{
+    "wardId" : 6,
+    "wardName":"Ward No. 6"
+},{
+    "wardId" : 7,
+    "wardName":"Ward No. 7"
+},{
+    "wardId" : 8,
+    "wardName":"Ward No. 8"
+},{
+    "wardId" : 9,
+    "wardName":"Ward No. 9"
+},{
+    "wardId" : 10,
+    "wardName":"Ward No. 10"
+},{
+    "wardId" : 11,
+    "wardName":"Ward No. 11"
+},{
+    "wardId" : 12,
+    "wardName":"Ward No. 12"
+},{
+    "wardId" : 13,
+    "wardName":"Ward No. 13"
+},{
+    "wardId" : 14,
+    "wardName":"Ward No. 14"
+},{
+    "wardId" : 15,
+    "wardName":"Ward No. 15"
+},{
+    "wardId" : 16,
+    "wardName":"Ward No. 16"
+},{
+    "wardId" : 17,
+    "wardName":"Ward No. 17"
+},{
+    "wardId" : 18,
+    "wardName":"Ward No. 18"
+},{
+    "wardId" : 19,
+    "wardName":"Ward No. 19"
+},{
+    "wardId" : 20,
+    "wardName":"Ward No. 20"
+},{
+    "wardId" : 21,
+    "wardName":"Ward No. 21"
+},{
+    "wardId" : 22,
+    "wardName":"Ward No. 22"
+},{
+    "wardId" : 23,
+    "wardName":"Ward No. 23"
+},{
+    "wardId" : 24,
+    "wardName":"Ward No. 24"
+},{
+    "wardId" : 25,
+    "wardName":"Ward No. 25"
+}
+]
